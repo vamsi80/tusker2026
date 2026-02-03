@@ -9,7 +9,7 @@ export default function FixedSidebar() {
             </div>
 
             {/* Date Block */}
-            <div className="flex flex-col gap-0 text-xl font-bold leading-none tracking-tight text-black sm:text-3xl">
+            <div className="flex flex-col gap-0 text-xl font-bold leading-none tracking-widest text-black sm:text-3xl scale-x-[1.18]">
                 <div>++</div>
                 <div>20</div>
                 <div>26</div>

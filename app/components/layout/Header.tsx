@@ -1,35 +1,27 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
     return (
         <header className="fixed top-0 left-0 z-50 w-full px-6 py-4 sm:px-12 sm:py-6 pointer-events-none">
             <div className="mx-auto flex max-w-[1920px] items-center justify-between">
-                {/* Logo Area - Left Side */}
-                <div className="pointer-events-auto flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 backdrop-blur-md border border-white/20 shadow-sm transition-transform hover:scale-105">
-                    <Image src="/LOGO.svg" alt="Tusker Logo" width={110} height={24} className="h-6 w-auto object-contain" />
-                </div>
-
-                {/* Navigation - Right Side (Pill Shaped) */}
+                <Link href="/" className="pointer-events-auto flex items-center gap-2 rounded-full py-2 ">
+                    <Image src="/LOGO.svg" alt="Tusker Logo" width={210} height={48} className="h-12 w-auto object-contain" />
+                </Link>
                 <nav className="pointer-events-auto hidden md:block">
-                    <ul className="flex items-center gap-1 rounded-full border border-white/10 bg-[#050511]/80 p-1.5 px-2 text-sm font-medium text-white shadow-xl backdrop-blur-xl transition-all">
+                    <ul className="flex items-center gap-1 rounded-full bg-purple-500/5 border border-purple-500/10 p-1.5 px-2 text-base font-medium text-black backdrop-blur-2xl transition-all">
                         <li>
-                            <Link href="/" className="group flex items-center gap-2 rounded-full px-4 py-2 transition-all hover:bg-white/10">
-                                <span className="h-1.5 w-1.5 rounded-full bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.5)]"></span>
+                            <Link href="/work" className="group flex items-center gap-2 rounded-full px-4 py-2 transition-all hover:bg-purple-500/10">
                                 <span>Work</span>
                             </Link>
                         </li>
                         <li>
-                            <Link href="/" className="rounded-full px-4 py-2 opacity-70 transition-all hover:bg-white/10 hover:opacity-100">
-                                Studio
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/" className="rounded-full px-4 py-2 opacity-70 transition-all hover:bg-white/10 hover:opacity-100">
+                            <Link href="/about" className="rounded-full px-4 py-2 opacity-70 transition-all hover:bg-purple-500/10 hover:opacity-100">
                                 About
                             </Link>
                         </li>
                         <li>
-                            <Link href="/" className="rounded-full px-4 py-2 opacity-70 transition-all hover:bg-white/10 hover:opacity-100">
+                            <Link href="/contact" className="rounded-full px-4 py-2 opacity-70 transition-all hover:bg-purple-500/10 hover:opacity-100">
                                 Contact
                             </Link>
                         </li>
