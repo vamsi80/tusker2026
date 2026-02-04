@@ -3,6 +3,7 @@ import HeroSection from "./components/homepage/HeroSection";
 import StoryEngineSection from "./components/homepage/StoryEngineSection";
 import ExistToCreateSection from "./components/homepage/ExistToCreateSection";
 import FixedSidebar from "./components/layout/FixedSidebar";
+import FourVerticalIs from "./components/homepage/fourVerticaIs";
 
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export default function Home() {
         <HeroSection />
         <StoryEngineSection />
         <ExistToCreateSection />
+        <FourVerticalIs />
       </div>
       <FixedSidebar />
     </div>
