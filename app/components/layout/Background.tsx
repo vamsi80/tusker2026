@@ -65,42 +65,47 @@ float snoise(vec3 v) {
 }
 
 void main() {
-    // Slower, subtle time
-    float time = u_time * 0.15;
+    // Slower, video-like drift
+    float time = u_time * 0.09;
     
-    // Vertical anti-gravity flow (y - time)
-    vec2 p = vUv * 3.0;
-    float n = snoise(vec3(p.x, p.y - time, 0.0));
+    // Anisotropic "Ribbon" Scaling
+    // Stretch heavily in X (0.4) to make shapes wider than they are tall
+    vec2 p = vUv * vec2(0.5, 2.0); 
     
-    // Layered noise for detail
-    float n2 = snoise(vec3(p.x * 2.0, p.y * 2.0 - time * 1.5, 10.0));
-    float finalNoise = mix(n, n2, 0.4);
+    // Directional Drift (Video-like flow)
+    // Move mostly left (-x) with tiny vertical variance
+    p += vec2(-time * 0.25, time * 0.05);
     
-    // Dark Luxury Palette
-    // Deep Charcoal / Near Black base
-    vec3 colA = vec3(0.03, 0.03, 0.04); 
-    // Soft Muted dark grey/purple
-    vec3 colB = vec3(0.08, 0.08, 0.10);
-    // Subtle highlight (faint gold/white hint)
-    vec3 colC = vec3(0.12, 0.12, 0.14);
+    // Smooth Noise Layer
+    float n = snoise(vec3(p.x, p.y, time * 0.05));
     
-    // Smooth Stepping
-    float t = smoothstep(-0.6, 0.6, finalNoise);
+    // Secondary Layer for internal morphing (not boiling)
+    float warp = snoise(vec3(p.x * 1.5, p.y * 1.5 - time * 0.1, time * 0.1));
     
-    vec3 color = mix(colA, colB, t);
+    // Colors (Soleil Noir Palette)
+    vec3 white = vec3(0.97, 0.97, 0.98); // High-end off-white
+    vec3 purple = vec3(0.6, 0.5, 0.95);  // Primary
+    vec3 blue = vec3(0.4, 0.6, 0.95);    // Soft Secondary
+    vec3 orange = vec3(1.0, 0.7, 0.4);   // Rare Accent
     
-    // Add subtle flow lines
-    float lines = smoothstep(0.4, 0.41, abs(finalNoise)); // Sharp thin lines? No, soft.
+    // Gradient Logic
+    // Base gradient between Purple and Blue driven by 'warp' morphing
+    vec3 color = mix(purple, blue, smoothstep(-0.4, 0.6, warp));
     
-    // Soft accent areas
-    float accent = smoothstep(0.4, 0.8, n2);
-    color = mix(color, colC, accent * 0.3);
+    // Rare Accent (Orange)
+    // Only appears in tiny, fleeting high-points of the noise
+    float accent = smoothstep(0.7, 0.9, warp + n * 0.2);
+    color = mix(color, orange, accent * 0.5); // Very subtle (50% opacity max)
+    
+    // Mask / Negative Space
+    // Ensure 70% of screen is White
+    float mask = smoothstep(0.2, 0.75, n);
+    
+    // Video-Integrated Field
+    // Soft mix with white base
+    vec3 finalColor = mix(white, color, mask * 0.75); // 75% max opacity
 
-    // Vignette
-    float dist = distance(vUv, vec2(0.5));
-    color *= smoothstep(1.2, 0.2, dist);
-
-    gl_FragColor = vec4(color, 1.0);
+    gl_FragColor = vec4(finalColor, 1.0);
 }
 `
 
@@ -133,8 +138,8 @@ const BackgroundMesh = () => {
 
 export default function Background() {
     return (
-        <div className="fixed inset-0 z-[-1] h-full w-full bg-black">
-            <Canvas dpr={1} gl={{ antialias: false }}>
+        <div className="fixed inset-0 z-0 h-full w-full bg-white">
+            <Canvas dpr={[1, 2]} gl={{ antialias: true }}>
                 <BackgroundMesh />
             </Canvas>
         </div>

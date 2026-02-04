@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-white text-black selection:bg-purple-200">
+    <div className="relative min-h-screen w-full overflow-hidden text-black selection:bg-purple-200">
 
-      <div className="relative mx-auto max-w-[1920px] px-12">
+      <div className="relative mx-auto space-y-16 max-w-[1920px] px-24">
         <HeroSection />
         <StoryEngineSection />
         <ExistToCreateSection />
