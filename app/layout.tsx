@@ -4,6 +4,9 @@ import "./globals.css";
 import Header from "./components/layout/Header";
 import Background from "./components/layout/Background";
 import SmoothScroll from "./components/layout/SmoothScroll";
+import Footer from "./components/layout/footer";
+import MoreOptions from "./components/layout/moreOptions";
+import FixedSidebar from "./components/layout/FixedSidebar";
 
 const arial = localFont({
   src: "../public/fonts/arial.ttf",
@@ -28,7 +31,10 @@ export default function RootLayout({
         <SmoothScroll />
         <Background />
         <Header />
+        <FixedSidebar />
         {children}
+        <Footer />
+        <MoreOptions />
       </body>
     </html>
   );

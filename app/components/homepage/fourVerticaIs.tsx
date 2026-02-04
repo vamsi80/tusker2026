@@ -24,7 +24,7 @@ export default function FourVerticalIs() {
                         <p className="text-sm sm:text-base font-medium  max-w-2xl leading-[1.3]">
                             At The White Tusker, we don't operate in silos. We build experiences that move seamlessly from space to screen, from technology to emotion, from brand to belief.
                         </p>
-                        <div className="space-y-1">
+                        <div className="space-y-2">
                             <p className="text-sm sm:text-base font-medium  max-w-2xl leading-[1.3]">
                                 Our four verticals are not services. They are interlocking forces - each designed to strengthen the other, each rooted in one philosophy:
                             </p>
