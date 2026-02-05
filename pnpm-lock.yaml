@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  estree-walker: 2.0.2
+
 importers:
 
   .:
@@ -41,6 +44,9 @@ importers:
       typegpu:
         specifier: ^0.9.0
         version: 0.9.0
+      wgpu-matrix:
+        specifier: ^3.4.0
+        version: 3.4.0
     devDependencies:
       '@tailwindcss/postcss':
         specifier: ^4
@@ -66,6 +72,9 @@ importers:
       typescript:
         specifier: ^5
         version: 5.9.3
+      unplugin-typegpu:
+        specifier: 0.9.0
+        version: 0.9.0(typegpu@0.9.0)
 
 packages:
 
@@ -130,6 +139,10 @@ packages:
 
   '@babel/runtime@7.28.6':
     resolution: {integrity: sha512-05WQkdpL9COIMz4LjTxGpPNCdlpyimKppYNoJ5Di5EUObifl8t4tuLuUBBZEpoLYOmfvIWrsp9fCl0HoPRVTdA==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/standalone@7.29.0':
+    resolution: {integrity: sha512-ZbVDXDodISaxYugID/OCXRv6kMnADgTnHqNtSm2oBq4vHI81uFkbxXtdlSlguYe3BB4HiFwZ5kxa1kjrLMOuWg==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.28.6':
@@ -949,6 +962,9 @@ packages:
     resolution: {integrity: sha512-8QmQKqEASLd5nx0U1B1okLElbUuuttJ/AnYmRXbbbGDWh6uS208EjD4Xqq/I9wK7u0v6O08XhTWnt5XtEbR6Dg==}
     engines: {node: '>= 0.4'}
 
+  defu@6.1.4:
+    resolution: {integrity: sha512-mEQCMmwJu317oSz8CwdIOdwf3xMif1ttiM8LTufzc3g6kR+9Pe236twL8j3IYT1F7GfRgGcW6MWxzZjLIkuHIg==}
+
   detect-libc@2.1.2:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
@@ -1122,6 +1138,9 @@ packages:
   estraverse@5.3.0:
     resolution: {integrity: sha512-MMdARuVEQziNTeJD8DgMqmhwR11BRQ/cBP+pLtYdSTnf3MIO8fFeiINEbX36ZdNlfU/7A9f3gUw49B3oQsvwBA==}
     engines: {node: '>=4.0'}
+
+  estree-walker@2.0.2:
+    resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
 
   esutils@2.0.3:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
@@ -1570,6 +1589,10 @@ packages:
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
+  magic-string-ast@1.0.3:
+    resolution: {integrity: sha512-CvkkH1i81zl7mmb94DsRiFeG9V2fR2JeuK8yDgS8oiZSFa++wWLEgZ5ufEOyLHbvSbD1gTRKv9NdX69Rnvr9JA==}
+    engines: {node: '>=20.19.0'}
+
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
 
@@ -1700,6 +1723,9 @@ packages:
 
   path-parse@1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
+
+  pathe@2.0.3:
+    resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
@@ -1932,6 +1958,10 @@ packages:
   three@0.182.0:
     resolution: {integrity: sha512-GbHabT+Irv+ihI1/f5kIIsZ+Ef9Sl5A1Y7imvS5RQjWgtTPfPnZ43JmlYI7NtCRDK9zir20lQpfg8/9Yd02OvQ==}
 
+  tinyest-for-wgsl@0.2.0:
+    resolution: {integrity: sha512-aFKlgGEjQJYcq31+5ykwyd0Cbw5BCb3s/ATje9wlkgyNPwKtSZCSXAPsCswjaQBCiHXub0onzsfgYvy7ez8t0Q==}
+    engines: {node: '>=12.20.0'}
+
   tinyest@0.2.0:
     resolution: {integrity: sha512-k8XL8FipMVboHtNwAJ6PgGVkWk+9hWEROGoxEXJKmO9ZOXehlBgdGY5uCkGRgT60TYJhtfOelvC/ikMpKYAmHA==}
     engines: {node: '>=12.20.0'}
@@ -2002,6 +2032,15 @@ packages:
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
+  unplugin-typegpu@0.9.0:
+    resolution: {integrity: sha512-xEuOgh9u5BXAG+T2kiBKT2Dn5+gTkcBeHFGMMNMjOx5NT6HcKI/uu6XucAnGxaE/hkJzwR6aQxxmMe6lhbcxcg==}
+    peerDependencies:
+      typegpu: ^0.9.0
+
+  unplugin@2.3.11:
+    resolution: {integrity: sha512-5uKD0nqiYVzlmCRs01Fhs2BdkEgBS3SAVP6ndrBsuK42iC2+JHyxM05Rm9G8+5mkmRtzMZGY8Ct5+mliZxU/Ww==}
+    engines: {node: '>=18.12.0'}
+
   unrs-resolver@1.11.1:
     resolution: {integrity: sha512-bSjt9pjaEBnNiGgc9rUiHGKv5l4/TGzDmYw3RhnkJGtLhbnnA/5qJj7x3dNDCRx/PJxu774LlH8lCOlB4hEfKg==}
 
@@ -2018,6 +2057,12 @@ packages:
     resolution: {integrity: sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
+  webpack-virtual-modules@0.6.2:
+    resolution: {integrity: sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==}
+
+  wgpu-matrix@3.4.0:
+    resolution: {integrity: sha512-kXHrbAPKEn9A32Wf4wVldyx9MmnzwhuB5p8GCqoJP3ItU5+iDT4J3aTQwPZWkfb153hwGtqZtUwR2M+ipJKadg==}
 
   which-boxed-primitive@1.1.1:
     resolution: {integrity: sha512-TbX3mj8n0odCBFVlY8AxkqcHASw3L60jIuF8jFP78az3C2YhmGvqbHBpAjTRH2/xqYunrJ9g1jSyjCjpoWzIAA==}
@@ -2160,6 +2205,8 @@ snapshots:
       '@babel/types': 7.29.0
 
   '@babel/runtime@7.28.6': {}
+
+  '@babel/standalone@7.29.0': {}
 
   '@babel/template@7.28.6':
     dependencies:
@@ -2940,6 +2987,8 @@ snapshots:
       has-property-descriptors: 1.0.2
       object-keys: 1.1.1
 
+  defu@6.1.4: {}
+
   detect-libc@2.1.2: {}
 
   doctrine@2.1.0:
@@ -3266,6 +3315,8 @@ snapshots:
       estraverse: 5.3.0
 
   estraverse@5.3.0: {}
+
+  estree-walker@2.0.2: {}
 
   esutils@2.0.3: {}
 
@@ -3679,6 +3730,10 @@ snapshots:
     dependencies:
       react: 19.2.3
 
+  magic-string-ast@1.0.3:
+    dependencies:
+      magic-string: 0.30.21
+
   magic-string@0.30.21:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
@@ -3812,6 +3867,8 @@ snapshots:
   path-key@3.1.1: {}
 
   path-parse@1.0.7: {}
+
+  pathe@2.0.3: {}
 
   picocolors@1.1.1: {}
 
@@ -4101,6 +4158,10 @@ snapshots:
 
   three@0.182.0: {}
 
+  tinyest-for-wgsl@0.2.0:
+    dependencies:
+      tinyest: 0.2.0
+
   tinyest@0.2.0: {}
 
   tinyglobby@0.2.15:
@@ -4191,6 +4252,26 @@ snapshots:
 
   undici-types@6.21.0: {}
 
+  unplugin-typegpu@0.9.0(typegpu@0.9.0):
+    dependencies:
+      '@babel/standalone': 7.29.0
+      defu: 6.1.4
+      estree-walker: 2.0.2
+      magic-string-ast: 1.0.3
+      pathe: 2.0.3
+      picomatch: 4.0.3
+      tinyest: 0.2.0
+      tinyest-for-wgsl: 0.2.0
+      typegpu: 0.9.0
+      unplugin: 2.3.11
+
+  unplugin@2.3.11:
+    dependencies:
+      '@jridgewell/remapping': 2.3.5
+      acorn: 8.15.0
+      picomatch: 4.0.3
+      webpack-virtual-modules: 0.6.2
+
   unrs-resolver@1.11.1:
     dependencies:
       napi-postinstall: 0.3.4
@@ -4228,6 +4309,10 @@ snapshots:
   use-sync-external-store@1.6.0(react@19.2.3):
     dependencies:
       react: 19.2.3
+
+  webpack-virtual-modules@0.6.2: {}
+
+  wgpu-matrix@3.4.0: {}
 
   which-boxed-primitive@1.1.1:
     dependencies:
