@@ -45,7 +45,7 @@ export default function WorkHero() {
                             src="/ARCHITECTURAL.png"
                             alt="Classical statue at a creative console"
                             fill
-                            className="object-contain drop-shadow-2xl grayscale-[20%] contrast-110"
+                            className="object-contain drop-shadow-2xl grayscale-20 contrast-110"
                             priority
                         />
                     </div>

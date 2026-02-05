@@ -159,7 +159,6 @@ void main() {
 
   gl_FragColor = vec4(finalColor, 1.0);
 }
-
 `;
 
 function GradientMesh() {
@@ -204,9 +203,6 @@ export default function Background() {
                     alpha: true,
                     antialias: true
                 }}
-                // Orthographic camera is good for full screen quads if not bypassing matrices, 
-                // but our shader bypasses matrices so camera doesn't strictly matter for the quad.
-                // However, R3F setup is useful.
                 dpr={[1, 2]}
                 style={{ filter: 'blur(30px)' }}
             >

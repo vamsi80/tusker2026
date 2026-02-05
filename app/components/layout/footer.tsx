@@ -1,6 +1,13 @@
+'use client';
+
+import { usePathname } from 'next/navigation';
+
 export default function Footer() {
+    const pathname = usePathname();
+    const isHomePage = pathname === '/';
+
     return (
-        <footer className="relative h-screen w-full flex flex-col items-center justify-end overflow-hidden">
+        <footer className={`relative h-screen w-full flex flex-col items-center justify-end overflow-hidden ${isHomePage ? 'bg-transparent' : 'bg-white'}`}>
             <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
                 <div className="absolute bottom-0 right-0 translate-x-1/3 translate-y-1/5 w-[150%] h-[150%] z-0 pl-15">
                     <svg viewBox="0 0 100 100" className="w-full h-full opacity-40">

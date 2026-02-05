@@ -35,8 +35,8 @@ export default function RootLayout({
         <div className="">
           {children}
         </div>
-        <Footer />
         <MoreOptions />
+        <Footer />
       </body>
     </html>
   );
