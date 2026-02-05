@@ -29,10 +29,12 @@ export default function RootLayout({
         className={`${arial.variable} antialiased`}
       >
         <SmoothScroll />
-        <Background />
+        {/* <Background /> */}
         <Header />
         <FixedSidebar />
-        {children}
+        <div className="">
+          {children}
+        </div>
         <Footer />
         <MoreOptions />
       </body>
