@@ -36,7 +36,7 @@ export default function RootLayout({
           {children}
         </div>
         <MoreOptions />
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

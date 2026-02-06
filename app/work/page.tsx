@@ -2,6 +2,7 @@ import Footer from '../components/layout/footer';
 import InteriorSpaces from './_components/interiorSpaces';
 import Portfolio from './_components/portfolio';
 import InteractiveTech from './_components/intractiveTech';
+import BrandSolution from './_components/brandSolution';
 
 export default function WorkPage() {
     return (
@@ -10,6 +11,7 @@ export default function WorkPage() {
                 <InteriorSpaces />
                 <Portfolio />
                 <InteractiveTech />
+                <BrandSolution />
             </div>
             <div className="bg-white">
                 <Footer />
