@@ -1,68 +1,21 @@
 'use client';
 
-interface Project {
-    id: string;
-    title: string;
-    category: string;
-    description: string;
-    mainImage: string;
-    galleryImages: string[];
+import { projects } from '../data';
+
+interface PortfolioProps {
+    service?: string;
 }
 
-const projects: Project[] = [
-    {
-        id: 'collins',
-        title: 'Collins Aerospace',
-        category: 'Experience Centre',
-        description: 'At Collins Aerospace, we designed and delivered a future-ready Experience Center from concept to execution, integrating architecture, storytelling, AR, and touch-driven digital content into one cohesive narrative. The entire space is structured around the user journey at an airport from check-in to boarding allowing visitors to intuitively experience how Collins Aerospace technologies operate at every critical moment of flight. Each zone translates complex aviation systems into immersive, human-centric experiences, showcasing Collins Aerospace’s role in shaping safer, smarter, and more connected journeys across the global aviation ecosystem.',
-        mainImage: '/Portfolio_Images/INTERIOR SPACES/colinsAerospace/1/1.jpeg',
-        galleryImages: [
-            '/Portfolio_Images/INTERIOR SPACES/colinsAerospace/1/2.jpeg',
-            '/Portfolio_Images/INTERIOR SPACES/colinsAerospace/1/3.jpeg',
-            '/Portfolio_Images/INTERIOR SPACES/colinsAerospace/1/4.jpeg'
-        ]
-    },
-    {
-        id: 'collins2',
-        title: 'Collins Aerospace',
-        category: 'Experience Centre',
-        description: 'The space is designed to enhance productivity,collaboration, and identity. Clear spatial logic,supportive design elements, and cohesive brandingcreate an environment that aligns people, process, andpurpose',
-        mainImage: '/Portfolio_Images/INTERIOR SPACES/colinsAerospace/2/1.jpeg',
-        galleryImages: [
-            '/Portfolio_Images/INTERIOR SPACES/colinsAerospace/2/2.jpeg',
-            '/Portfolio_Images/INTERIOR SPACES/colinsAerospace/2/3.jpeg',
-            '/Portfolio_Images/INTERIOR SPACES/colinsAerospace/2/4.jpeg'
-        ]
-    },
-    {
-        id: 'collins3',
-        title: 'Collins Aerospace',
-        category: 'Architecture Design',
-        description: "The Collins Aerospace Courtyard was conceived and executed as an open-air narrative space celebrating the evolution of aerospace innovation. Designed from concept to completion, the courtyard traces the journey from the Wright Brothers' first flight to the futuristic Airbus Bird of Prey, weaving in key milestones from Collins Aerospace's global and Indian legacy. Sculptural elements, timelines, and spatial storytelling transform the courtyard into a living chronicle where history, innovation, and vision converge offering visitors a reflective yet inspiring pause within the larger campus experience.",
-        mainImage: '/Portfolio_Images/INTERIOR SPACES/colinsAerospace/2/1.jpeg',
-        galleryImages: [
-            '/Portfolio_Images/INTERIOR SPACES/colinsAerospace/2/2.jpeg',
-            '/Portfolio_Images/INTERIOR SPACES/colinsAerospace/3/3.jpeg',
-            '/Portfolio_Images/INTERIOR SPACES/colinsAerospace/3/4.jpeg'
-        ]
-    },
-    {
-        id: 'collins4',
-        title: 'Collins Aerospace',
-        category: 'Architecture Design',
-        description: "The Collins Aerospace building façade was conceived and executed as a bold architectural narrative of flightitself. Designed from concept to completion, thefaçade visualizes the dynamic path of aircraft takeoffand landing, with the striking red geometryrepresenting the precise curve and angle of ascentand descent. Integrated seamlessly into thearchitecture, a large-format LED wall becomes a livingstoryteller-broadcasting Collins Aerospace's industryinnovations, milestones, and futurevision-transforming the building into an iconic,ever-evolving expression of motion, technology, andaerospace excellence.",
-        mainImage: '/Portfolio_Images/INTERIOR SPACES/colinsAerospace/4/1.png',
-        galleryImages: [
-            '/Portfolio_Images/INTERIOR SPACES/colinsAerospace/2/2.jpeg',
-            '/Portfolio_Images/INTERIOR SPACES/colinsAerospace/4/3.jpeg'
-        ]
-    },
-];
+export default function Portfolio({ service }: PortfolioProps) {
+    const filteredProjects = service
+        ? projects.filter(project => project.service === service)
+        : projects;
 
-export default function Portfolio() {
+    if (filteredProjects.length === 0) return null;
+
     return (
-        <div className="w-full flex flex-col gap-24 pt-10">
-            {projects.map((project, index) => (
+        <div className="w-full flex flex-col gap-24 pt-10 pb-24">
+            {filteredProjects.map((project, index) => (
                 <div key={project.id} className="flex flex-col gap-8">
                     {/* Top Section: Info + Main Image */}
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-8">
@@ -97,7 +50,6 @@ export default function Portfolio() {
                             let containerClasses = "w-full overflow-hidden";
 
                             if (isTwoImages) {
-                                // Fixed height for perfect alignment on 2-image row
                                 containerClasses += " h-[300px] lg:h-[400px]";
                                 if (idx === 0) {
                                     containerClasses += " sm:col-span-1";
