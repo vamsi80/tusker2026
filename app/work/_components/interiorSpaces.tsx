@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 
-export default function WorkHero() {
+export default function InteriorSpaces() {
     return (
         <div className="relative flex min-h-screen w-full flex-col justify-center px-4 gap-4">
 
