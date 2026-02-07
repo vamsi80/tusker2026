@@ -43,7 +43,7 @@ export default function InteriorSpaces() {
                     <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center scale-260 -translate-x-20 -translate-y-20">
                         <div className="relative w-full h-full">
                             <Image
-                                src="/BG-1.png"
+                                src="/bagrounds/BG-1.png"
                                 alt="Background pattern"
                                 fill
                                 className="object-contain opacity-100"

@@ -20,7 +20,7 @@ export default function StoryEngineSection() {
                     <div className="lg:col-span-1 relative h-[90vh] lg:-mt-12 w-full flex items-end justify-center lg:justify-start z-10">
                         <div className="relative w-full h-full transform">
                             <Image
-                                src="/1.png"
+                                src="/homepage/1.png"
                                 alt="Classical statue using a laptop"
                                 fill
                                 className="object-contain object-bottom drop-shadow-2xl grayscale-10 z-10"

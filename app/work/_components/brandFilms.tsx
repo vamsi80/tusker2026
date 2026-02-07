@@ -8,7 +8,7 @@ export default function BrandFilms() {
             <div className="absolute top-0 bottom-0 right-0 w-screen z-0 pointer-events-none flex items-center justify-end -mr-6 sm:-mr-12 lg:-mr-24 overflow-visible">
                 <div className="relative w-full h-full scale-50 origin-right">
                     <Image
-                        src="/BG-3.png"
+                        src="/bagrounds/BG-3.png"
                         alt="Background pattern"
                         fill
                         className="object-contain object-right -scale-x-100"

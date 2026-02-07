@@ -7,7 +7,7 @@ export default function FourVerticalIs() {
                 <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-12 w-full h-full items-center">
                     <div className="relative w-full h-full z-2">
                         <Image
-                            src="/3.png"
+                            src="/homepage/3.png"
                             alt="Classical statue with futuristic tech nodes"
                             fill
                             className="object-contain object-left transform scale-[1.28] origin-left"

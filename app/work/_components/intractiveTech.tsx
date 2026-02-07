@@ -10,7 +10,7 @@ export default function InteractiveTech() {
                     <div className="absolute top-0 bottom-0 left-0 w-screen z-0 pointer-events-none flex items-center justify-start -ml-6 sm:-ml-12 lg:-ml-24 overflow-visible">
                         <div className="relative w-full h-full scale-150 origin-left">
                             <Image
-                                src="/BG-2.png"
+                                src="/bagrounds/BG-2.png"
                                 alt="Background pattern"
                                 fill
                                 className="object-contain object-left"

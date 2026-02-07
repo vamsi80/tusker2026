@@ -48,7 +48,7 @@ export default function Services() {
             <div className="absolute inset-0 z-1 flex justify-center items-center pointer-events-none">
                 <div className="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[600px]">
                     <Image
-                        src="/service.png"
+                        src="/homepage/service.png"
                         alt="Services Centerpiece"
                         fill
                         className="object-contain"

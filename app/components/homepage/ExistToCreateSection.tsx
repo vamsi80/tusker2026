@@ -71,7 +71,7 @@ export default function ExistToCreateSection() {
                     <div className="lg:col-span-1 relative flex items-end justify-end">
                         <div className="relative w-full h-[55vh] transform scale-125 origin-bottom-right">
                             <Image
-                                src="/2.png"
+                                src="/homepage/2.png"
                                 alt="Classical statue at a creative console"
                                 fill
                                 className="object-contain object-right-bottom drop-shadow-2xl grayscale-[20%] contrast-110"
