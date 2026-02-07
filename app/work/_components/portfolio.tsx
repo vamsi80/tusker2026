@@ -1,6 +1,9 @@
 'use client';
 
 import { projectsData } from '../data';
+import { Outfit } from 'next/font/google';
+
+const outfit = Outfit({ subsets: ['latin'], weight: ['100', '200', '300'] });
 
 interface PortfolioProps {
     service?: string;
@@ -12,30 +15,21 @@ export default function Portfolio({ service }: PortfolioProps) {
     if (!filteredProjects || filteredProjects.length === 0) return null;
 
     return (
-        <div className="w-full flex flex-col gap-16 pt-10">
+        <div className="w-full flex flex-col gap-4 pt-10">
             {filteredProjects.map((project) => {
                 const isStackedLayout = project.galleryImages.length === 0;
                 const hasMainImage = !!project.mainImage;
 
                 return (
-                    <div key={project.id} className="flex flex-col gap-8 z-1">
+                    <div key={project.id} className="flex flex-col gap-8 z-1 bg-[#EDECFA] p-4">
                         {isStackedLayout ? (
                             // --- STACKED LAYOUT (Single Image or Text Only) ---
-                            <div className="flex flex-col gap-8">
+                            <div className="flex flex-col gap-8 text-[#4038ae]">
                                 {/* Top: Text Content */}
-                                <div className={`w-full flex flex-col space-y-4 ${hasMainImage ? 'lg:w-3/4' : 'lg:w-[70%]'}`}>
-                                    <div className="space-y-2">
-                                        <p className="text-4xl sm:text-5xl md:text-5xl font-light tracking-tight text-black">
-                                            {project.title}
-                                        </p>
-                                        <h2 className="text-md font-bold uppercase tracking-wide text-black">
-                                            {project.category}
-                                        </h2>
-                                    </div>
-                                    <p className="text-base text-md leading-[1.2] text-gray-800 text-left">
-                                        {project.description}
-                                    </p>
-                                </div>
+                                <ProjectTextContent
+                                    project={project}
+                                    className={`${hasMainImage ? 'w-full lg:w-3/4' : 'w-full lg:w-[70%]'}`}
+                                />
 
                                 {/* Bottom: Main Image (Full width) */}
                                 {hasMainImage && (
@@ -55,20 +49,7 @@ export default function Portfolio({ service }: PortfolioProps) {
                                 {hasMainImage ? (
                                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-8">
                                         {/* Text Content */}
-                                        <div className="lg:col-span-1 flex flex-col space-y-4">
-                                            <div className="space-y-2">
-                                                <p className="text-4xl sm:text-5xl md:text-5xl font-light tracking-tight text-black">
-                                                    {project.title}
-                                                </p>
-                                                <h2 className="text-md font-bold uppercase tracking-wide text-black">
-                                                    {project.category}
-                                                </h2>
-                                            </div>
-
-                                            <p className="text-base text-md leading-[1.2] text-gray-800 text-left">
-                                                {project.description}
-                                            </p>
-                                        </div>
+                                        <ProjectTextContent project={project} className="lg:col-span-1" />
 
                                         <div className="lg:col-span-2 w-full h-[300px] sm:h-[400px] lg:h-[400px] overflow-hidden">
                                             <img
@@ -79,22 +60,10 @@ export default function Portfolio({ service }: PortfolioProps) {
                                         </div>
                                     </div>
                                 ) : (
-                                    <div className="w-full lg:w-[70%] flex flex-col space-y-4">
-                                        <div className="space-y-2">
-                                            <p className="text-4xl sm:text-5xl md:text-5xl font-light tracking-tight text-black">
-                                                {project.title}
-                                            </p>
-                                            <h2 className="text-md font-bold uppercase tracking-wide text-black">
-                                                {project.category}
-                                            </h2>
-                                        </div>
-                                        <p className="text-base text-md leading-[1.2] text-gray-800 text-left">
-                                            {project.description}
-                                        </p>
-                                    </div>
+                                    <ProjectTextContent project={project} className="w-full lg:w-[70%]" />
                                 )}
 
-                                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-8">
+                                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-4 ">
                                     {project.galleryImages.map((img, idx) => {
                                         const isTwoImages = project.galleryImages.length === 2;
                                         let containerClasses = "w-full overflow-hidden";
@@ -126,6 +95,30 @@ export default function Portfolio({ service }: PortfolioProps) {
                     </div>
                 );
             })}
+        </div>
+    );
+}
+
+function ProjectTextContent({ project, className }: { project: any; className?: string }) {
+    return (
+        <div className={`flex flex-col space-y-4 ${className || ''}`}>
+            <div className="space-y-3">
+                <p className={`${outfit.className} text-5xl sm:text-6xl md:text-5xl font-extralight tracking-tight text-black`}>
+                    {project.title}
+                </p>
+                <h2 className="text-md font-bold tracking-wide text-black">
+                    {project.category}
+                </h2>
+            </div>
+            <div className="text-sm leading-[1.2] text-left opacity-90 space-y-4">
+                {Array.isArray(project.description) ? (
+                    project.description.map((desc: string, index: number) => (
+                        <p key={index}>{desc}</p>
+                    ))
+                ) : (
+                    <p>{project.description}</p>
+                )}
+            </div>
         </div>
     );
 }

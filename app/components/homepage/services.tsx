@@ -43,8 +43,6 @@ export default function Services() {
 
     return (
         <section className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden px-6 py-24">
-
-            {/* Center Image - Layered Behind Content */}
             <div className="absolute inset-0 z-1 flex justify-center items-center pointer-events-none">
                 <div className="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[600px]">
                     <Image
@@ -57,7 +55,6 @@ export default function Services() {
                 </div>
             </div>
 
-            {/* Service Items Grid - Layered On Top */}
             <div className="relative z-2 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
 
                 {services.map((service, index) => (
@@ -82,7 +79,6 @@ export default function Services() {
                                     <p>{service.description}</p>
                                 )}
                             </div>
-
                             <button className="mt-6 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-black/90 h-10 px-8 py-2 uppercase tracking-widest">
                                 EXPLORE
                             </button>

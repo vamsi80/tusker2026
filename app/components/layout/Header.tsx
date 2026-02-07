@@ -40,7 +40,7 @@ export default function Header() {
                 {/* Glassy Band Container for Logo and Nav */}
                 <div className="flex w-full items-center justify-between gap-6 rounded-full bg-white/10 px-6 py-3 backdrop-blur-xl border border-white/20 shadow-sm transition-all hover:bg-white/20">
                     <Link href="/" className="flex items-center">
-                        <Image src="/LOGO.svg" alt="Tusker Logo" width={180} height={48} className="h-9 w-auto object-contain" />
+                        <Image src="/LOGO.svg" alt="Tusker Logo" width={180} height={48} className="h-7.5 w-auto object-contain" />
                     </Link>
 
                     <nav className="hidden md:block">
@@ -62,7 +62,6 @@ export default function Header() {
                         </ul>
                     </nav>
 
-                    {/* Mobile Menu Button */}
                     <button className="md:hidden group flex items-center justify-center rounded-full bg-black p-3 text-white shadow-lg transition-transform active:scale-95">
                         <div className="flex flex-col gap-1.5">
                             <span className="block h-0.5 w-5 bg-white transition-transform group-hover:translate-x-1"></span>
