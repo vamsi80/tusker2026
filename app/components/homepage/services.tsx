@@ -66,7 +66,7 @@ export default function Services() {
                         className={`flex flex-col space-y-4 ${service.col} text-left justify-center h-full ${index % 2 !== 0 ? 'lg:items-end' : 'lg:items-start'}`}
                     >
                         <div className="flex flex-col items-start text-left">
-                            <h3 className="flex flex-col text-3xl sm:text-4xl lg:text-4xl font-medium tracking-tighter text-black mb-3 transform scale-x-110 origin-left leading-[1]">
+                            <h3 className="flex flex-col text-3xl sm:text-4xl lg:text-4xl font-medium tracking-tighter text-black mb-3 transform scale-x-110 origin-left leading-none">
                                 {Array.isArray(service.title) ? service.title.map((line, i) => (
                                     <span key={i}>{line}</span>
                                 )) : service.title}

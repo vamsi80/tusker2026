@@ -51,7 +51,7 @@ export default function ExistToCreateSection() {
                                 </p>
                             </div>
                             <div className="relative pb-6">
-                                <div className="absolute bottom-[6.3rem] left-0 w-full sm:-left-8 sm:w-[calc(100%+40rem)] h-[1px] bg-black/20"></div>
+                                <div className="absolute bottom-[6.3rem] left-0 w-full sm:-left-8 sm:w-[calc(100%+40rem)] h-px bg-black/20"></div>
                                 <p className="font-normal w-full max-w-md text-black text-lg md:text-2xl leading-tight normal-case md:uppercase">
                                     WHAT OTHERS <br />
                                     HESITATE TO ATTEMPT. <br />
@@ -74,7 +74,7 @@ export default function ExistToCreateSection() {
                                 src="/homepage/2.png"
                                 alt="Classical statue at a creative console"
                                 fill
-                                className="object-contain object-right-bottom drop-shadow-2xl grayscale-[20%] contrast-110"
+                                className="object-contain object-bottom-right drop-shadow-2xl grayscale-20 contrast-110"
                                 priority
                             />
                         </div>
