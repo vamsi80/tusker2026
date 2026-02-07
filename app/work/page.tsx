@@ -1,4 +1,3 @@
-import Footer from '../components/layout/footer';
 import InteriorSpaces from './_components/interiorSpaces';
 import Portfolio from './_components/portfolio';
 import InteractiveTech from './_components/intractiveTech';
@@ -9,20 +8,25 @@ export default function WorkPage() {
     return (
         <>
             <div className="relative min-h-screen w-full max-w-[1920px] mx-auto px-6 sm:px-12 lg:px-24 overflow-hidden text-black bg-white">
-                <InteriorSpaces />
-                <Portfolio service="ARCHITECTURE & INTERIOR SPACES" />
+                <div id="interior-spaces">
+                    <InteriorSpaces />
+                    <Portfolio service="ARCHITECTURE & INTERIOR SPACES" />
+                </div>
 
-                <InteractiveTech />
-                <Portfolio service="IMMERSIVE & INTERACTIVE TECHNOLOGY" />
+                <div id="interactive-tech">
+                    <InteractiveTech />
+                    <Portfolio service="IMMERSIVE & INTERACTIVE TECHNOLOGY" />
+                </div>
 
-                <BrandSolution />
-                <Portfolio service="BRAND SOLUTIONS" />
+                <div id="brand-solutions">
+                    <BrandSolution />
+                    <Portfolio service="BRAND SOLUTIONS" />
+                </div>
 
-                <BrandFilms />
-                <Portfolio service="CORPORATE & BRAND FILMS" />
-            </div>
-            <div className="bg-white">
-                <Footer />
+                <div id="brand-films">
+                    <BrandFilms />
+                    <Portfolio service="CORPORATE & BRAND FILMS" />
+                </div>
             </div>
         </>
     );

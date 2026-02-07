@@ -1,20 +1,34 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function InteractiveTech() {
     return (
-        <div className="w-full flex flex-col py-24 bg-white text-black overflow-hidden">
+        <div className="w-full flex flex-col pt-24 bg-white text-black overflow-visible">
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                {/* Left Side: Image */}
-                <div className="relative w-full flex justify-start lg:col-span-2">
-                    <img
-                        src="/intractive_tech.png"
-                        alt="Immersive and Interactive Technology"
-                        className="w-auto h-auto lg:h-[600px] object-contain object-top-left -scale-x-100"
-                    />
+                <div className="relative w-full flex justify-start lg:col-span-2 overflow-visible z-0">
+                    <div className="absolute top-0 bottom-0 left-0 w-screen z-0 pointer-events-none flex items-center justify-start -ml-6 sm:-ml-12 lg:-ml-24 overflow-visible">
+                        <div className="relative w-full h-full scale-150 origin-left">
+                            <Image
+                                src="/BG-2.png"
+                                alt="Background pattern"
+                                fill
+                                className="object-contain object-left"
+                                priority
+                            />
+                        </div>
+                    </div>
+
+                    <div className="relative z-10">
+                        <img
+                            src="/intractive_tech.png"
+                            alt="Immersive and Interactive Technology"
+                            className="w-auto h-auto lg:h-[600px] object-contain object-top-left -scale-x-100"
+                        />
+                    </div>
                 </div>
 
-                {/* Right Side: content */}
-                <div className="flex flex-col space-y-4 justify-start lg:pl-20 lg:col-span-3">
+                <div className="flex flex-col space-y-4 justify-start lg:pl-20 lg:col-span-3 z-1">
                     <h2 className="text-5xl sm:text-6xl lg:text-[5.5rem] font-medium tracking-tighter leading-[0.85] text-black scale-x-110 origin-left -ml-22">
                         IMMERSIVE & <br />
                         INTERACTIVE <br />

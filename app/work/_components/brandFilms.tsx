@@ -1,9 +1,23 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function BrandFilms() {
     return (
-        <div className="w-full flex flex-col py-24 bg-white text-black overflow-hidden">
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
+        <div className="w-full flex flex-col pt-24 bg-white text-black overflow-visible relative">
+            <div className="absolute top-0 bottom-0 right-0 w-screen z-0 pointer-events-none flex items-center justify-end -mr-6 sm:-mr-12 lg:-mr-24 overflow-visible">
+                <div className="relative w-full h-full scale-50 origin-right">
+                    <Image
+                        src="/BG-3.png"
+                        alt="Background pattern"
+                        fill
+                        className="object-contain object-right -scale-x-100"
+                        priority
+                    />
+                </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 relative z-10">
                 <div className="relative w-full flex justify-start lg:col-span-2">
                     <img
                         src="/film.png"
@@ -25,7 +39,7 @@ export default function BrandFilms() {
                         </p>
                     </div>
 
-                    <p className="text-base sm:text-lg text-black leading-[1.2] max-w-2xl text-justify">
+                    <p className="text-base sm:text-lg text-black leading-[1.2] max-w-2xl text-left">
                         From storyboarding to on-ground shoots, from corporate films to brand narratives and explainer content we handle everything under one roof. <br />
                         Every frame is intentional. Every second serves the brand's larger story.
                     </p>

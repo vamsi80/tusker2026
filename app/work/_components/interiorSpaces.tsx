@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 export default function InteriorSpaces() {
     return (
-        <div className="relative flex min-h-screen w-full flex-col justify-center px-4 gap-4">
+        <div className="relative flex min-h-screen w-full flex-col px-4 gap-4 pt-34">
 
-            <div className="w-full mb-8 md:mb-0 relative z-2">
+            <div className="w-full mb-8 md:mb-0 relative z-10">
                 <h1 className="text-5xl font-medium leading-[0.9] tracking-tighter sm:text-7xl md:text-8xl lg:text-[5rem] xl:text-[5rem] scale-x-110 origin-left">
                     ARCHITECTURE & <br />
                     INTERIOR SPACES
@@ -14,7 +14,7 @@ export default function InteriorSpaces() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 w-full">
-                <div className="lg:col-span-1 flex flex-col justify-start space-y-12">
+                <div className="lg:col-span-1 flex flex-col justify-start space-y-12 z-2">
                     <div className="max-w-2xl space-y-3 text-black">
                         <p className="text-xl font-medium leading-[1.1]">
                             We don&apos;t design interiors.<br />
@@ -39,8 +39,19 @@ export default function InteriorSpaces() {
                     </div>
                 </div>
 
-                <div className="lg:col-span-1 relative flex items-start justify-start">
-                    <div className="relative w-full h-full transform ">
+                <div className="lg:col-span-1 relative flex items-start justify-start lg:min-h-full overflow-visible z-1">
+                    <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center scale-260 -translate-x-20 -translate-y-20">
+                        <div className="relative w-full h-full">
+                            <Image
+                                src="/BG-1.png"
+                                alt="Background pattern"
+                                fill
+                                className="object-contain opacity-100"
+                                priority
+                            />
+                        </div>
+                    </div>
+                    <div className="relative w-full h-full transform">
                         <Image
                             src="/ARCHITECTURAL.png"
                             alt="Classical statue at a creative console"
