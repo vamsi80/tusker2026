@@ -462,14 +462,72 @@ export const projectsData: Record<string, Project[]> = {
         },
         {
             id: '2',
-            title: 'Immersive Real Estate Platform',
-            category: 'Immersive Product',
-            description: "White Tusker's immersive real estate product reimagines how properties are experienced, evaluated, and sold. Designed as a feature-rich digital ecosystem, it brings together spatial visualization, interactive storytelling, real-time data layers, and intelligent user journeys. From concept to deployment, the platform transforms static listings into engaging, immersive experiences enabling informed decisions, faster engagement, and a future-ready approach to real estate discovery.",
-            mainImage: '/Portfolio_Images/Immersive Intractive/Realestate Platform/1.png',
+            title: 'Tata Steel',
+            category: 'Digital Twinning',
+            description: [
+                "The Digital Twinning solution for Tata Steel's Jamshedpur plant was delivered end-to-end from concept and data modeling to real-time deployment. Designed as an immersive, live experience, it mirrors plant operations with integrated chat assist, call and chat facility interfaces, and real-time system intelligence. The solution transforms physical infrastructure into an interactive digital environment, enabling insight-driven decisions, operational efficiency, and future-ready manufacturing."
+            ],
+            mainImage: '/Portfolio_Images/Immersive Intractive/Tata Steel/1.png',
             galleryImages: [
-                '/Portfolio_Images/Immersive Intractive/Realestate Platform/2.png',
-                '/Portfolio_Images/Immersive Intractive/Realestate Platform/3.png',
-                '/Portfolio_Images/Immersive Intractive/Realestate Platform/4.png'
+                '/Portfolio_Images/Immersive Intractive/Tata Steel/2.png',
+                '/Portfolio_Images/Immersive Intractive/Tata Steel/3.png',
+                '/Portfolio_Images/Immersive Intractive/Tata Steel/4.png'
+            ],
+        },
+        {
+            id: '3',
+            title: 'DXC - VIRTUAL EXPERIENCE CENTER',
+            category: 'Virtual Experience Center',
+            description: [
+                "The DXC Virtual Experience Center was delivered as an immersive, interactive digital platform designed to showcase enterprise transformation in a dynamic, virtual environment. From concept to deployment, the solution integrates storytelling, real-time interactions, and intelligent digital experiences. It enables seamless engagement across geographies, bringing DXC's capabilities, innovations, and customer journeys to life through a future-ready virtual ecosystem "
+            ],
+            mainImage: '/Portfolio_Images/Immersive Intractive/DXE Virtual/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Immersive Intractive/DXE Virtual/2.png',
+                '/Portfolio_Images/Immersive Intractive/DXE Virtual/3.png',
+                '/Portfolio_Images/Immersive Intractive/DXE Virtual/4.png'
+            ],
+        },
+        {
+            id: '4',
+            title: 'INFOSYS - DIGITAL HEALTH PLATFORM',
+            category: 'Gamified/Interactive Explainer Video',
+            description: [
+                "The interactive explainer and gamification solution for Infosys' Digital Health Platform was designed to simplify complex healthcare ecosystems through engagement-driven storytelling. By combining intuitive narratives, interactive visuals, and gamified user journeys, the experience transforms technology into understanding. Delivered end-to-end, the solution enables meaningful engagement, clearer communication, and a human-centered approach to digital health innovation."
+            ],
+            mainImage: '/Portfolio_Images/Immersive Intractive/Infosys Digital Helgth Platform/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Immersive Intractive/Infosys Digital Helgth Platform/2.png',
+                '/Portfolio_Images/Immersive Intractive/Infosys Digital Helgth Platform/3.png',
+                '/Portfolio_Images/Immersive Intractive/Infosys Digital Helgth Platform/4.png'
+            ],
+        },
+        {
+            id: '5',
+            title: 'AR/VR DIGITAL EXPERIENCE',
+            category: 'AR/VR Experience',
+            description: [
+                "White Tusker's future-ready AR/VR digital solution transforms complex ideas into immersive, interactive experiences. Designed from concept to deployment, it blends spatial storytelling, real-time interaction, and high-fidelity visualization. The platform enables intuitive exploration, deeper understanding, and meaningful engagement-bridging physical and digital worlds to deliver scalable, next-generation experiences across industries."
+            ],
+            mainImage: '/Portfolio_Images/Immersive Intractive/ARVR Digital Sloution/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Immersive Intractive/ARVR Digital Sloution/2.jpeg',
+                '/Portfolio_Images/Immersive Intractive/ARVR Digital Sloution/3.jpeg',
+                '/Portfolio_Images/Immersive Intractive/ARVR Digital Sloution/4.jpeg'
+            ],
+        },
+        {
+            id: '6',
+            title: 'REAL-TIME DATA ART VISUALIZATION',
+            category: 'Data Visualization',
+            description: [
+                "This solution transforms live data into a continuously evolving visual experience. Designed at the intersection of art, technology, and information, it translates complex real-time inputs into expressive, intuitive visual narratives. By merging analytics with aesthetics, the experience enables instant insight, emotional engagement, and a dynamic understanding of systems in motion."
+            ],
+            mainImage: '/Portfolio_Images/Immersive Intractive/Real-Time Data Art Visulization/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Immersive Intractive/Real-Time Data Art Visulization/2.jpeg',
+                '/Portfolio_Images/Immersive Intractive/Real-Time Data Art Visulization/3.jpeg',
+                '/Portfolio_Images/Immersive Intractive/Real-Time Data Art Visulization/4.jpeg'
             ],
         },
     ],
