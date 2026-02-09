@@ -22,7 +22,7 @@ export default function SectionNavigation() {
                 });
             },
             {
-                rootMargin: '-20% 0px -50% 0px', // Adjust trigger point
+                rootMargin: '-20% 0px -50% 0px',
                 threshold: 0
             }
         );
@@ -50,19 +50,19 @@ export default function SectionNavigation() {
                     <button
                         key={id}
                         onClick={() => scrollToSection(id)}
-                        className="group flex items-center gap-4 focus:outline-none"
+                        className="group flex items-center gap-1 focus:outline-none cursor-pointer"
                         aria-label={`Scroll to ${label}`}
                     >
                         <span
-                            className="bg-white/90 backdrop-blur-sm px-4 py-2 mr-4 rounded shadow-sm text-xs font-medium uppercase tracking-widest text-black transition-all duration-500 ease-in-out opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0"
+                            className="bg-[#41207be1] backdrop-blur-sm px-4 py-2 mr-4 rounded shadow-sm text-xs font-bold uppercase tracking-widest text-white transition-all duration-500 ease-in-out opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0"
                         >
                             {label}
                         </span>
 
                         <div
-                            className={`h-[2px] rounded-full transition-all duration-500 ease-in-out ${isActive
-                                ? 'w-12 bg-[#4038ae]'
-                                : 'w-6 bg-[#D8D8F5] group-hover:w-10 group-hover:bg-[#a0a0e0]'
+                            className={`h-[6px] rounded-full transition-all duration-500 ease-in-out ${isActive
+                                ? 'w-12 bg-[#41207be1]'
+                                : 'w-6 bg-[#D8D8F5] group-hover:w-10 group-hover:bg-[#41207bb7]'
                                 }`}
                         />
                     </button>

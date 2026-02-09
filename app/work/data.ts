@@ -5,6 +5,8 @@ export interface Project {
     description: string | string[];
     mainImage: string;
     galleryImages: string[];
+    videoLink?: string;
+    buttonLabel?: string;
 }
 
 export const projectsData: Record<string, Project[]> = {
@@ -636,6 +638,8 @@ export const projectsData: Record<string, Project[]> = {
             id: '1',
             title: 'Anamorph',
             category: 'Anamorphic story Build',
+            videoLink: '#',
+            buttonLabel: 'Watch Film',
             description: [
                 "The façade is transformed into a three-dimensional visual stage using forced perspective design, depth mapping, and content calibration. Screen geometry, viewing angles, and motion sequences are engineered to create realistic spatial illusions that amplify attention, recall, and brand impact in high-traffic urban environments.",
             ],

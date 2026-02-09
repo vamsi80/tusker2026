@@ -15,12 +15,16 @@ export default function Home() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden text-black selection:bg-purple-200">
       <div className="relative mx-auto space-y-16 max-w-[1920px] px-24 overflow-hidden">
-        <HeroSection />
+        <div id="home">
+          <HeroSection />
+        </div>
         <StoryEngineSection />
         <ExistToCreateSection />
         <FourVerticalIs />
-        <Services />
-        <Background />
+        <div id="works">
+          <Services />
+        </div>
+
       </div>
     </div>
   );

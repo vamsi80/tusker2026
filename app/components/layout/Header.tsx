@@ -8,6 +8,7 @@ import { usePathname } from 'next/navigation';
 export default function Header() {
     const pathname = usePathname();
     const [isVisible, setIsVisible] = useState(true);
+    const [activeSection, setActiveSection] = useState('');
     const lastScrollY = useRef(0);
 
     useEffect(() => {
@@ -29,9 +30,31 @@ export default function Header() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    useEffect(() => {
+        if (pathname === '/') {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id);
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: "-20% 0px -50% 0px"
+            });
+
+            const sections = document.querySelectorAll('#home, #works');
+            sections.forEach((section) => observer.observe(section));
+
+            return () => observer.disconnect();
+        } else {
+            setActiveSection('');
+        }
+    }, [pathname]);
+
     const navItems = [
         { label: 'Home', href: '/' },
-        { label: 'Work', href: '/work' },
+        { label: 'Work', href: '/#works' },
     ];
 
     return (
@@ -46,11 +69,27 @@ export default function Header() {
                     <nav className="hidden md:block">
                         <ul className="flex items-center gap-1">
                             {navItems.map((item) => {
-                                const isActive = pathname === item.href;
+                                let isActive = false;
+                                if (pathname === '/') {
+                                    if (item.href === '/' && (!activeSection || activeSection === 'home')) isActive = true;
+                                    if (item.href === '/#works' && activeSection === 'works') isActive = true;
+                                } else {
+                                    isActive = pathname === item.href;
+                                }
                                 return (
                                     <li key={item.href}>
                                         <Link
                                             href={item.href}
+                                            onClick={(e) => {
+                                                if (item.href.startsWith('/#') && pathname === '/') {
+                                                    const id = item.href.replace('/#', '');
+                                                    const element = document.getElementById(id);
+                                                    if (element) {
+                                                        e.preventDefault();
+                                                        element.scrollIntoView({ behavior: 'smooth' });
+                                                    }
+                                                }
+                                            }}
                                             className={`flex items-center gap-2 rounded-full px-4 py-1.5 transition-all hover:bg-black/5 ${isActive ? "text-black bg-black/5" : "text-black/70 hover:text-black"
                                                 }`}
                                         >

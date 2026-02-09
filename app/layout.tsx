@@ -5,8 +5,8 @@ import Header from "./components/layout/Header";
 import Background from "./components/layout/Background";
 import SmoothScroll from "./components/layout/SmoothScroll";
 import Footer from "./components/layout/footer";
-import MoreOptions from "./components/layout/moreOptions";
 import FixedSidebar from "./components/layout/FixedSidebar";
+import BackToTop from "./components/layout/backToTop";
 
 const arial = localFont({
   src: "../public/fonts/arial.ttf",
@@ -29,13 +29,13 @@ export default function RootLayout({
         className={`${arial.variable} antialiased`}
       >
         <SmoothScroll />
-        {/* <Background /> */}
+        <Background />
         <Header />
         <FixedSidebar />
         <div className="">
           {children}
         </div>
-        <MoreOptions />
+        <BackToTop />
         <Footer />
       </body>
     </html>

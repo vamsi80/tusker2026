@@ -5,13 +5,13 @@ import Image from 'next/image';
 export default function BrandFilms() {
     return (
         <div className="w-full flex flex-col pt-24 bg-white text-black overflow-visible relative">
-            <div className="absolute top-0 bottom-0 right-0 w-screen z-0 pointer-events-none flex items-center justify-end -mr-6 sm:-mr-12 lg:-mr-24 overflow-visible">
-                <div className="relative w-full h-full scale-50 origin-right">
+            <div className="absolute top-0 bottom-0 left-0 w-screen z-0 pointer-events-none flex items-center justify-start -ml-6 sm:-ml-12 lg:-ml-24 overflow-visible">
+                <div className="relative w-full h-full">
                     <Image
                         src="/bagrounds/BG-3.png"
                         alt="Background pattern"
                         fill
-                        className="object-contain object-right -scale-x-100"
+                        className="object-contain object-left"
                         priority
                     />
                 </div>

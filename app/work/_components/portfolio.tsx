@@ -15,7 +15,7 @@ export default function Portfolio({ service }: PortfolioProps) {
     if (!filteredProjects || filteredProjects.length === 0) return null;
 
     return (
-        <div className="w-full flex flex-col gap-4 pt-10">
+        <div className="w-full flex flex-col gap-4 pt-10 z-1">
             {filteredProjects.map((project) => {
                 const isStackedLayout = project.galleryImages.length === 0;
                 const hasMainImage = !!project.mainImage;
@@ -119,6 +119,19 @@ function ProjectTextContent({ project, className }: { project: any; className?: 
                     <p>{project.description}</p>
                 )}
             </div>
+
+            {project.videoLink && (
+                <div className="pt-4">
+                    <a
+                        href={project.videoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center rounded-full text-xs font-medium uppercase tracking-widest transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-neutral-800 h-9 px-6 hover:scale-105"
+                    >
+                        {project.buttonLabel || 'Watch Video'}
+                    </a>
+                </div>
+            )}
         </div>
     );
 }

@@ -12,6 +12,8 @@
     "@react-three/fiber": "^9.5.0",
     "@typegpu/noise": "^0.9.0",
     "@types/three": "^0.182.0",
+    "gl-react": "^5.2.0",
+    "gl-react-dom": "^5.2.1",
     "gsap": "^3.14.2",
     "lenis": "^1.3.17",
     "lucide-react": "^0.563.0",

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import WaterButton from '../ui/WaterButton';
 
 export default function Services() {
     const services = [
@@ -10,7 +11,8 @@ export default function Services() {
                 "Spaces are designed as living narratives where material, light, movement, and technology work together to express brand intent.",
                 "Whether it's a customer experience center, workplace, or hospitality space, every square foot is choreographed to engage, guide, and inspire."
             ],
-            col: 'lg:col-start-1 lg:row-start-1'
+            col: 'lg:col-start-1 lg:row-start-1',
+            link: '/work#interior-spaces'
         },
         {
             id: '02',
@@ -19,7 +21,8 @@ export default function Services() {
                 'We design experiences people participate in, not just observe.',
                 'Through interactive installations, custom CMS platforms, immersive environments, and digital twins, technology fades into the background while engagement takes center stage. The result is intuitive, intelligent storytelling at scale.'
             ],
-            col: 'lg:col-start-2 lg:row-start-1'
+            col: 'lg:col-start-2 lg:row-start-1',
+            link: '/work#interactive-tech'
         },
         {
             id: '03',
@@ -28,7 +31,8 @@ export default function Services() {
                 "We define brands from the inside out.",
                 "Logos, identity systems, brand books, and spatial branding are built with intent translating the brand's core philosophy into a consistent, living language across touchpoints. Not just recognition, but emotional connection."
             ],
-            col: 'lg:col-start-1 lg:row-start-2'
+            col: 'lg:col-start-1 lg:row-start-2',
+            link: '/work#brand-solutions'
         },
         {
             id: '04',
@@ -37,7 +41,8 @@ export default function Services() {
                 "We transform ideas into cinema with purpose.",
                 "From strategy-led storytelling and scripting to production and post, our films don't just look good they mean something. Each frame is crafted to reinforce brand perception, emotion, and clarity across corporate, product, and narrative films."
             ],
-            col: 'lg:col-start-2 lg:row-start-2'
+            col: 'lg:col-start-2 lg:row-start-2',
+            link: '/work#brand-films'
         }
     ];
 
@@ -56,7 +61,6 @@ export default function Services() {
             </div>
 
             <div className="relative z-2 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-
                 {services.map((service, index) => (
                     <div
                         key={service.id}
@@ -79,9 +83,11 @@ export default function Services() {
                                     <p>{service.description}</p>
                                 )}
                             </div>
-                            <button className="mt-6 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-black/90 h-10 px-8 py-2 uppercase tracking-widest">
-                                EXPLORE
-                            </button>
+                            <WaterButton
+                                href={service.link}
+                                label="EXPLORE"
+                                className="mt-6"
+                            />
                         </div>
                     </div>
                 ))}
