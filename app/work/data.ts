@@ -533,7 +533,7 @@ export const projectsData: Record<string, Project[]> = {
     ],
     "BRAND SOLUTIONS": [
         {
-            id: 'collins5',
+            id: '1',
             title: 'Collins Aerospace',
             category: 'Facility Branding & Installations',
             description: "The Collins Aerospace facility branding was delivered as a cohesive, end-to-end narrative from concept to execution. Spanning shopfloor environments, office spaces, and comprehensive wayfinding, every wall graphic and signage element was designed to communicate clarity, pride, and purpose. The visual language translates Collins Aerospace's industry stories into engaging spatial cues-celebrating innovation, engineering excellence, and people. Integrated seamlessly across functional and collaborative zones, the branding transforms the facility into a unified, story-driven environment that informs, inspires, and reinforces Collins Aerospace's global legacy at every touchpoint.",
@@ -542,6 +542,92 @@ export const projectsData: Record<string, Project[]> = {
                 '/Portfolio_Images/Branding/CA Facility Branding & Installation/12.jpeg',
                 '/Portfolio_Images/Branding/CA Facility Branding & Installation/13.png',
                 '/Portfolio_Images/Branding/CA Facility Branding & Installation/14.jpeg'
+            ],
+        },
+        {
+            id: '2',
+            title: 'Collins Aerospace',
+            category: 'Facility Branding & Installations',
+            description: [
+                "As people move through the space, the wall branding becomes a constant, intuitive presence. It energizes corridors, anchors collaboration zones, and creates moments of pause and reflection. More than static graphics, these interventions influence mood, reinforce shared values, and strengthen everyday connection to the brand.",
+                "Integrated seamlessly with architecture and circulation, the walls extend the experience beyond function-turning movement through space into engagement with culture."
+            ],
+            mainImage: '/Portfolio_Images/Branding/CA Facility Branding & Installation/21.png',
+            galleryImages: [
+                '/Portfolio_Images/Branding/CA Facility Branding & Installation/22.png',
+                '/Portfolio_Images/Branding/CA Facility Branding & Installation/23.jpeg',
+                '/Portfolio_Images/Branding/CA Facility Branding & Installation/24.jpeg'
+            ],
+        },
+        {
+            id: '3',
+            title: 'Collins Aerospace',
+            category: 'Facility Branding & Installations',
+            description: [
+                "The wall branding for Collins Aerospace transforms transitional spaces into storytelling surfaces. Large-format visuals, technical illustrations, and concise messaging communicate engineering excellence while reinforcing the brand's vision for the future of flight.",
+            ],
+            mainImage: '/Portfolio_Images/Branding/CA Facility Branding & Installation/31.png',
+            galleryImages: [
+                '/Portfolio_Images/Branding/CA Facility Branding & Installation/32.jpeg',
+                '/Portfolio_Images/Branding/CA Facility Branding & Installation/33.jpeg',
+                '/Portfolio_Images/Branding/CA Facility Branding & Installation/34.jpeg'
+            ],
+        },
+        {
+            id: '4',
+            title: 'ZEE',
+            category: 'Facility Branding',
+            description: [
+                "This project reimagines the office environment as a three-dimensional brand experience. From large-scale feature walls and graphic installations to value-driven visual systems and wayfinding elements, every touchpoint is designed to reflect the brand's identity and culture. A cohesive language of color, typography, and form is integrated across architectural surfaces transforming everyday workspaces into immersive environments that communicate purpose, creativity, and belonging.",
+            ],
+            mainImage: '/Portfolio_Images/Branding/ZEE/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Branding/ZEE/2.png',
+                '/Portfolio_Images/Branding/ZEE/3.png',
+                '/Portfolio_Images/Branding/ZEE/4.png'
+            ],
+        },
+        {
+            id: '5',
+            title: 'Infosys',
+            category: '',
+            description: [
+                "Each artwork merges illustration and typography to communicate ideas around innovation, mindset, progress, and resilience. The visual system brings together expressive portraits, bold typography, and layered graphic elements to create impactful compositions. Designed as a unified graphic language across multiple panels, the series maintains consistency while allowing each message to stand strong on its own, making it adaptable for large-scale displays and curated environments.",
+            ],
+            mainImage: '/Portfolio_Images/Branding/Infosys/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Branding/Infosys/2.png',
+                '/Portfolio_Images/Branding/Infosys/3.png',
+                '/Portfolio_Images/Branding/Infosys/4.png'
+            ],
+        },
+        {
+            id: '8',
+            title: 'Great Indian Gin',
+            category: 'Brand Identity & Packaging',
+            description: [
+                "The packaging design for GiG translates the brand's spirit into a bold, contemporary label system. Vibrant illustrations, distinctive typography, and a cohesive colour palette create strong shelf presence while clearly differentiating flavours within the range.",
+            ],
+            mainImage: '/Portfolio_Images/Branding/Infosys/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Branding/Infosys/2.png',
+                '/Portfolio_Images/Branding/Infosys/3.png',
+                '/Portfolio_Images/Branding/Infosys/4.png'
+            ],
+        },
+        {
+            id: '9',
+            title: 'World Of Brands',
+            category: 'Brand Identity & Packaging',
+            description: [
+                "The visual language is anchored in a custom logotype and a dialogue-inspired symbol, supported by a structured colour system that reflects empowerment, vision, and innovation.",
+                "Layout frameworks, iconography, and typographic hierarchies are meticulously designed to ensure clarity, scalability, and consistent brand expression across both digital and physical platforms, fostering meaningful engagement with culture.",
+            ],
+            mainImage: '/Portfolio_Images/Branding/WOB/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Branding/WOB/2.png',
+                '/Portfolio_Images/Branding/WOB/3.png',
+                '/Portfolio_Images/Branding/WOB/4.png'
             ],
         },
     ],
