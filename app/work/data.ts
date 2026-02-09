@@ -195,6 +195,90 @@ export const projectsData: Record<string, Project[]> = {
                 '/Portfolio_Images/Interior Spaces/GEP/4.png'
             ]
         },
+        {
+            id: '15',
+            title: 'Johnnie Walker',
+            category: 'Experience Center',
+            description: [
+                "This space brings to life the enduring story of Johnnie Walker-the world's best-selling whisky-through imagination, craftsmanship, and technology. Rooted in over 200 years of heritage, the experience reinterprets the traditional whisky journey for a contemporary audience. Visitors are invited to explore the brand's rich history, discover an extraordinary range of flavour possibilities, and engage through interactive storytelling and tasting experiences. Blending legacy with innovation, the space celebrates progress, curiosity, and the spirit of moving forward that defines Johnnie Walker.",
+            ],
+            mainImage: '/Portfolio_Images/Interior Spaces/Jonnie Walker/1.jpg',
+            galleryImages: [
+                '/Portfolio_Images/Interior Spaces/Jonnie Walker/2.jpg',
+                '/Portfolio_Images/Interior Spaces/Jonnie Walker/3.jpg',
+                '/Portfolio_Images/Interior Spaces/Jonnie Walker/4.jpg'
+            ]
+        },
+        {
+            id: '16',
+            title: 'Zensar',
+            category: 'Experience Center',
+            description: [
+                "The Zensar Experience Center is a collaborative space where innovation, design, and technology come together to solve real-world business challenges. Designed to showcase Zensar's digital capabilities and industry expertise, the center enables meaningful conversations through immersive storytelling and interactive experiences. It reflects Zensar's commitment to co-creating future-ready solutions, driven by insight, agility, and human-centered transformation.",
+            ],
+            mainImage: '/Portfolio_Images/Interior Spaces/Zensar/1.jpg',
+            galleryImages: [
+                '/Portfolio_Images/Interior Spaces/Zensar/2.png',
+                '/Portfolio_Images/Interior Spaces/Zensar/3.png',
+                '/Portfolio_Images/Interior Spaces/Zensar/4.png'
+            ]
+        },
+        {
+            id: '17',
+            title: 'NTT Data',
+            category: 'Office Space Design',
+            description: [
+                "This space represents NTT DATA's commitment to innovation, collaboration, and global expertise in information technology and consulting. Designed to reflect the brand's Japanese heritage and future-focused vision, the experience brings together collaborative environments and curated showcases. Through thoughtful spatial design and storytelling, the center demonstrates how technology, people, and ideas converge to create meaningful digital transformation.",
+            ],
+            mainImage: '/Portfolio_Images/Interior Spaces/NTT Data/1.jpg',
+            galleryImages: [
+                '/Portfolio_Images/Interior Spaces/NTT Data/2.png',
+                '/Portfolio_Images/Interior Spaces/NTT Data/3.png',
+                '/Portfolio_Images/Interior Spaces/NTT Data/4.png'
+            ]
+        },
+        {
+            id: '18',
+            title: 'NTT Data Customer Center',
+            category: 'Experience Center',
+            description: [
+                "Located in the heart of Bangalore, this space brings together NTT DATA's innovation, capabilities, and collaborative spirit. Designed as a platform for shared discovery, it showcases how technology, partnerships, and ideas come together to solve real-world challenges. Through immersive design and interactive storytelling, the center reflects NTT DATA's commitment to co-creation, integration, and future-ready digital transformation.",
+            ],
+            mainImage: '/Portfolio_Images/Interior Spaces/NTT Data Customer Centre/1.jpg',
+            galleryImages: [
+                '/Portfolio_Images/Interior Spaces/NTT Data Customer Centre/2.jpg',
+                '/Portfolio_Images/Interior Spaces/NTT Data Customer Centre/3.jpg',
+                '/Portfolio_Images/Interior Spaces/NTT Data Customer Centre/4.jpg'
+            ]
+        },
+        {
+            id: '19',
+            title: 'NTT Data Experience Center',
+            category: 'Experience Center',
+            description: [
+                "Located in the heart of Delhi, this space brings together NTT DATA's innovation ecosystem where technology, partnerships, and ideas converge. Designed as a platform for collaboration and co-creation, the center showcases shared capabilities and forward-looking solutions through immersive design and interactive storytelling. It reflects NTT DATA's commitment to building meaningful connections and shaping future-ready digital experiences.",
+            ],
+            mainImage: '/Portfolio_Images/Interior Spaces/NTT Data Experience Centre/1.jpg',
+            galleryImages: [
+                '/Portfolio_Images/Interior Spaces/NTT Data Experience Centre/2.jpg',
+                '/Portfolio_Images/Interior Spaces/NTT Data Experience Centre/3.jpg',
+                '/Portfolio_Images/Interior Spaces/NTT Data Experience Centre/4.jpg'
+            ]
+        },
+        {
+            id: '20',
+            title: 'L & T | Cisco',
+            category: 'Experience Center',
+            description: [
+                "The L&T-Cisco Experience Center in Bangalore is a collaborative platform showcasing the convergence of engineering excellence and digital innovation. Designed as an immersive environment, the space brings to life advanced networking, infrastructure, and smart solutions. Through thoughtful design and interactive storytelling, it enables meaningful engagement, co-creation, and dialogue reflecting a shared vision of building connected, intelligent, and future-ready enterprises.",
+            ],
+            mainImage: '/Portfolio_Images/Interior Spaces/L&T Cisco/1.jpg',
+            galleryImages: [
+                '/Portfolio_Images/Interior Spaces/L&T Cisco/2.jpg',
+                '/Portfolio_Images/Interior Spaces/L&T Cisco/3.jpg',
+                '/Portfolio_Images/Interior Spaces/L&T Cisco/4.jpg'
+            ]
+        },
     ],
     "IMMERSIVE & INTERACTIVE TECHNOLOGY": [
         {
