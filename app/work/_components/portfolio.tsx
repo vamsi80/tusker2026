@@ -103,7 +103,7 @@ function ProjectTextContent({ project, className }: { project: any; className?: 
     return (
         <div className={`flex flex-col space-y-4 ${className || ''}`}>
             <div className="space-y-3">
-                <p className={`${outfit.className} text-5xl sm:text-6xl md:text-5xl font-extralight tracking-tight text-black`}>
+                <p className={`${outfit.className} text-5xl sm:text-6xl md:text-[40px] font-extralight tracking-tight scale-x-110 origin-left text-black`}>
                     {project.title}
                 </p>
                 <h2 className="text-md font-bold tracking-wide text-black">

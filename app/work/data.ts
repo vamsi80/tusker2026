@@ -735,11 +735,11 @@ export const projectsData: Record<string, Project[]> = {
             description: [
                 "Through a corporate film for SAP, collaborative offices, innovation zones, and learning spaces are brought into focus. Clean architectural lines, branded environments, and active work settings come together to reflect efficiency, technology, and people-driven progress-showcasing how space, culture, and digital intelligence support everyday enterprise performanc ",
             ],
-            mainImage: '/Portfolio_Images/Corporate Brand Film/2D-Naratives/1.png',
+            mainImage: '/Portfolio_Images/Corporate Brand Film/SAP/1.png',
             galleryImages: [
-                '/Portfolio_Images/Corporate Brand Film/2D-Naratives/2.png',
-                '/Portfolio_Images/Corporate Brand Film/2D-Naratives/3.png',
-                '/Portfolio_Images/Corporate Brand Film/2D-Naratives/4.png'
+                '/Portfolio_Images/Corporate Brand Film/SAP/2.png',
+                '/Portfolio_Images/Corporate Brand Film/SAP/3.png',
+                '/Portfolio_Images/Corporate Brand Film/SAP/4.png'
             ],
         },
     ]
