@@ -279,10 +279,189 @@ export const projectsData: Record<string, Project[]> = {
                 '/Portfolio_Images/Interior Spaces/L&T Cisco/4.jpg'
             ]
         },
+        {
+            id: '21',
+            title: 'Tata Communication',
+            category: 'Experience Center',
+            description: [
+                "The Tata Communications Customer Zone Center is a collaborative environment designed to showcase the power of global connectivity and digital infrastructure. Through immersive storytelling and intelligent design, the space brings to life the brand's capabilities in networks, cloud, and communications. It enables meaningful engagement, co-creation, and dialogue reflecting Tata Communications role in connecting businesses, ecosystems, and the world.",
+            ],
+            mainImage: '/Portfolio_Images/Interior Spaces/Tata Communication/1.jpg',
+            galleryImages: [
+                '/Portfolio_Images/Interior Spaces/Tata Communication/2.png',
+                '/Portfolio_Images/Interior Spaces/Tata Communication/3.png',
+                '/Portfolio_Images/Interior Spaces/Tata Communication/4.png'
+            ]
+        },
+        {
+            id: '22',
+            title: 'QAD',
+            category: 'Office Space Design',
+            description: [
+                "The QAD Mumbai office is designed as a contemporary workplace that reflects the brand's global vision and collaborative culture. Through thoughtful spatial planning and refined execution, the space brings together functionality, technology, and human-centered design. It supports agile ways of working while fostering connection, innovation, and shared purpose translating QAD's values into a workplace built for modern enterprise teams ",
+            ],
+            mainImage: '/Portfolio_Images/Interior Spaces/QAD/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Interior Spaces/QAD/2.png',
+                '/Portfolio_Images/Interior Spaces/QAD/3.png'
+            ]
+        },
+        {
+            id: '23',
+            title: 'Wipro',
+            category: 'Experience Center',
+            description: [
+                "The Wipro Experience Center in Bangalore is a collaborative space designed to showcase innovation at the intersection of technology, sustainability, and human impact. Through immersive storytelling and thoughtful design, the center brings Wipro's capabilities and future-ready solutions to life enabling meaningful conversations, co-creation, and insight-driven transformation for clients and partners ",
+            ],
+            mainImage: '/Portfolio_Images/Interior Spaces/Wipro/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Interior Spaces/Wipro/2.png',
+                '/Portfolio_Images/Interior Spaces/Wipro/3.png',
+                '/Portfolio_Images/Interior Spaces/Wipro/4.png'
+            ]
+        },
+        {
+            id: '24',
+            title: 'The Flying Squirrel',
+            category: 'Cafe Interiors',
+            description: [
+                "Bangalore's first Flying Squirrel Coffee Roastery Café is conceived as an immersive space celebrating craft, origin, and experience. Designed and executed to reveal the journey from bean to cup, the space blends roasting, tasting, and storytelling into a single environment. It invites visitors to engage with coffee as a sensory ritual rooted in quality, transparency, and community.",
+            ],
+            mainImage: '/Portfolio_Images/Interior Spaces/The Flying Squirel/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Interior Spaces/The Flying Squirel/2.png',
+                '/Portfolio_Images/Interior Spaces/The Flying Squirel/3.png',
+                '/Portfolio_Images/Interior Spaces/The Flying Squirel/4.png'
+            ]
+        },
+        {
+            id: '25',
+            title: 'Smoke House Deli',
+            category: 'Restaurant Interiors',
+            description: [
+                "Smoke House Deli was executed as a narrative-driven dining experience where nostalgia and contemporary design coexist. The space balances handcrafted details with playful graphics and warm textures, translating the brand's storytelling ethos into an immersive environment that feels personal, familiar, and distinctly memorable.",
+            ],
+            mainImage: '/Portfolio_Images/Interior Spaces/Smoke House Deli/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Interior Spaces/Smoke House Deli/2.png',
+                '/Portfolio_Images/Interior Spaces/Smoke House Deli/3.png',
+                '/Portfolio_Images/Interior Spaces/Smoke House Deli/4.png'
+            ]
+        },
+        {
+            id: '26',
+            title: 'Caperberry',
+            category: 'Restaurant Interiors',
+            description: [
+                "Caperberry was executed as an intimate fine-dining environment focused on culinary precision and sensory restraint. The design emphasizes material honesty, lighting control, and spatial calm-allowing the food to remain the hero while offering guests a refined, immersive dining experience rooted in detail and craftsmanship ",
+            ],
+            mainImage: '/Portfolio_Images/Interior Spaces/Caperberry/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Interior Spaces/Caperberry/2.png',
+                '/Portfolio_Images/Interior Spaces/Caperberry/3.png',
+                '/Portfolio_Images/Interior Spaces/Caperberry/4.png'
+            ]
+        },
+        {
+            id: '27',
+            title: 'Cafe Mocha',
+            category: 'Cafe Interiors',
+            description: [
+                "The Cafe Mocha Mumbai outlet was executed as a vibrant social space that blends comfort, creativity, and community. The design reflects the brand's youthful spirit through layered materials, warm lighting, and an inviting spatial flow-creating an environment that encourages conversation, lingering, and shared moments over food and coffee.",
+            ],
+            mainImage: '/Portfolio_Images/Interior Spaces/Caperberry/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Interior Spaces/Caperberry/2.png',
+                '/Portfolio_Images/Interior Spaces/Caperberry/3.png',
+                '/Portfolio_Images/Interior Spaces/Caperberry/4.png'
+            ]
+        },
+        {
+            id: '28',
+            title: 'NPCC Mumbai',
+            category: 'Office Space Design',
+            description: [
+                "As people move through the space, the wall branding becomes a constant, intuitive presence. It energizes corridors, anchors collaboration zones, and creates moments of pause and reflection. More than static graphics, these interventions influence mood, reinforce shared values, and strengthen everyday connection to the brand.",
+                "Integrated seamlessly with architecture and circulation, the walls extend the experience beyond function-turning movement through space into engagement with culture.",
+            ],
+            mainImage: '/Portfolio_Images/Interior Spaces/NPCC Mumbai/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Interior Spaces/NPCC Mumbai/2.png',
+                '/Portfolio_Images/Interior Spaces/NPCC Mumbai/3.png',
+                '/Portfolio_Images/Interior Spaces/NPCC Mumbai/4.png'
+            ]
+        },
+        {
+            id: '29',
+            title: 'The Attic Grey',
+            category: 'Commercial Interiors',
+            description: [
+                "The Attic Grey showroom was executed as a modern retail space that reflects understated luxury and contemporary design. Clean lines, neutral palettes, and thoughtful spatial planning create a refined backdrop for the brand's products, enabling a seamless and elevated customer journey.",
+            ],
+            mainImage: '/Portfolio_Images/Interior Spaces/The Attic Gray/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Interior Spaces/The Attic Gray/2.png',
+                '/Portfolio_Images/Interior Spaces/The Attic Gray/3.png',
+                '/Portfolio_Images/Interior Spaces/The Attic Gray/4.png'
+            ]
+        },
+        {
+            id: '30',
+            title: 'Bomaby Shirting Co',
+            category: 'Commercial Interiors',
+            description: [
+                "Bangalore's first Bombay Shirt Company showroom is designed as a contemporary expression of craftsmanship and personalization. Executed to reflect the brand's made-to-measure philosophy, the space brings together fabric, fit, and form in a refined retail experience. It invites customers to engage with tailoring as a thoughtful, modern process where precision, choice, and individuality define the journey.",
+            ],
+            mainImage: "/Portfolio_Images/Interior Spaces/BombayShirtingCo/1.png",
+            galleryImages: [
+                "/Portfolio_Images/Interior Spaces/BombayShirtingCo/2.png",
+                "/Portfolio_Images/Interior Spaces/BombayShirtingCo/3.png",
+                "/Portfolio_Images/Interior Spaces/BombayShirtingCo/4.png"
+            ]
+        },
+        {
+            id: '31',
+            title: "Mr. Jousha's Office",
+            category: 'Office Space Design',
+            description: [
+                "This office interior combines understated elegance with functional precision. From the executive desk layout to the meeting and library spaces, every element supports productivity while maintaining a warm, professional atmosphere.",
+            ],
+            mainImage: "/Portfolio_Images/Interior Spaces/JoushasOffice/1.png",
+            galleryImages: [
+                "/Portfolio_Images/Interior Spaces/JoushasOffice/2.png",
+                "/Portfolio_Images/Interior Spaces/JoushasOffice/3.png",
+                "/Portfolio_Images/Interior Spaces/JoushasOffice/4.png"
+            ]
+        },
+        {
+            id: '32',
+            title: "TBZ",
+            category: 'Restaurant Interiors',
+            description: [
+                "The TBZ Jewellers showroom in Pune was executed as a premium retail environment that embodies trust, heritage, and precision. The design balances elegance with functionality, using refined materials and lighting to enhance product visibility while delivering a luxurious and reassuring customer experience.",
+            ],
+            mainImage: "/Portfolio_Images/Interior Spaces/TBZ/1.jpg",
+            galleryImages: [
+                "/Portfolio_Images/Interior Spaces/TBZ/2.jpg",
+                "/Portfolio_Images/Interior Spaces/TBZ/3.jpg"
+            ]
+        },
     ],
     "IMMERSIVE & INTERACTIVE TECHNOLOGY": [
         {
             id: '1',
+            title: 'Immersive Real Estate Platform',
+            category: 'Immersive Product',
+            description: "White Tusker's immersive real estate product reimagines how properties are experienced, evaluated, and sold. Designed as a feature-rich digital ecosystem, it brings together spatial visualization, interactive storytelling, real-time data layers, and intelligent user journeys. From concept to deployment, the platform transforms static listings into engaging, immersive experiences enabling informed decisions, faster engagement, and a future-ready approach to real estate discovery.",
+            mainImage: '/Portfolio_Images/Immersive Intractive/Realestate Platform/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Immersive Intractive/Realestate Platform/2.png',
+                '/Portfolio_Images/Immersive Intractive/Realestate Platform/3.png',
+                '/Portfolio_Images/Immersive Intractive/Realestate Platform/4.png'
+            ],
+        },
+        {
+            id: '2',
             title: 'Immersive Real Estate Platform',
             category: 'Immersive Product',
             description: "White Tusker's immersive real estate product reimagines how properties are experienced, evaluated, and sold. Designed as a feature-rich digital ecosystem, it brings together spatial visualization, interactive storytelling, real-time data layers, and intelligent user journeys. From concept to deployment, the platform transforms static listings into engaging, immersive experiences enabling informed decisions, faster engagement, and a future-ready approach to real estate discovery.",
