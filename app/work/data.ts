@@ -633,14 +633,113 @@ export const projectsData: Record<string, Project[]> = {
     ],
     "CORPORATE & BRAND FILMS": [
         {
-            id: 'collins5',
+            id: '1',
             title: 'Anamorph',
             category: 'Anamorphic story Build',
-            description: "The façade is transformed into a three-dimensional visual stage using forced perspective design, depth mapping, and content calibration. Screen geometry, viewing angles, and motion sequences are engineered to create realistic spatial illusions that amplify attention, recall, and brand impact in high-traffic urban environments.",
+            description: [
+                "The façade is transformed into a three-dimensional visual stage using forced perspective design, depth mapping, and content calibration. Screen geometry, viewing angles, and motion sequences are engineered to create realistic spatial illusions that amplify attention, recall, and brand impact in high-traffic urban environments.",
+            ],
             mainImage: '/Portfolio_Images/Corporate Brand Film/Anamorph/1.jpeg',
             galleryImages: [
                 '/Portfolio_Images/Corporate Brand Film/Anamorph/2.jpeg',
                 // '/Portfolio_Images/Corporate Brand Film/Anamorph/3.jpeg'
+            ],
+        },
+        {
+            id: '2',
+            title: '3D Narratives',
+            category: 'Brand Visualization Film',
+            description: [
+                "This corporate film explores storytelling through sculpted forms, digital environments, and layered motion. Abstract spaces, character movement, and visual rhythm come together to create immersive narratives demonstrating how design, technology, and imagination merge to shape compelling 3D experiences.",
+            ],
+            mainImage: '/Portfolio_Images/Corporate Brand Film/3D Narratives/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Corporate Brand Film/3D Narratives/2.png',
+                '/Portfolio_Images/Corporate Brand Film/3D Narratives/3.png'
+            ],
+        },
+        {
+            id: '3',
+            title: 'MPL',
+            category: 'CGI Sports League Opener',
+            description: [
+                "This corporate film for MPL captures the scale, spirit, and prestige of the league through cinematic storytelling and high-impact visuals. The narrative centers around the trophy as a symbol of ambition and excellence, supported by dramatic lighting, detailed close-ups, and immersive stadium environments. Team identities, emblems, and visual effects are woven seamlessly into the film to celebrate competition, legacy, and pride. Every frame is designed to elevate the league's stature-blending motion design, realism, and emotion to create a powerful brand experience that reflects MPL's authority in the sporting ecosystem.",
+            ],
+            mainImage: '/Portfolio_Images/Corporate Brand Film/MPL/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Corporate Brand Film/MPL/2.png',
+                '/Portfolio_Images/Corporate Brand Film/MPL/3.png',
+                '/Portfolio_Images/Corporate Brand Film/MPL/4.png'
+            ],
+        },
+        {
+            id: '4',
+            title: 'Tanishq',
+            category: 'Luxury Brand Film',
+            description: [
+                "This corporate film for Tanishq traces the journey of a diamond from its raw origin to refined brilliance. Through evocative visuals of mining, craftsmanship, and final creation, the film captures precision, purity, and purpose-reflecting the values, trust, and artistry that define the brand's legacy.",
+            ],
+            mainImage: '/Portfolio_Images/Corporate Brand Film/Tanishq/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Corporate Brand Film/Tanishq/2.png',
+                '/Portfolio_Images/Corporate Brand Film/Tanishq/3.png',
+                '/Portfolio_Images/Corporate Brand Film/Tanishq/4.png'
+            ],
+        },
+        {
+            id: '5',
+            title: 'BIAL',
+            category: 'Live - Action Corporate Film',
+            description: [
+                "Through a collaborative corporate film with BIAL (Bengaluru International Airport Limited) and JCDecaux, iconic airport spaces become storytelling platforms. Large-format digital displays, architectural backdrops, and real passenger movement come together to showcase brand presence, partnership, and purpose-capturing how communication, environment, and audience intersect in a living, operational space.",
+            ],
+            mainImage: '/Portfolio_Images/Corporate Brand Film/BIAL/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Corporate Brand Film/BIAL/2.png',
+                '/Portfolio_Images/Corporate Brand Film/BIAL/3.png',
+                '/Portfolio_Images/Corporate Brand Film/BIAL/4.png'
+            ],
+        },
+        {
+            id: '6',
+            title: 'Titan x Ducati',
+            category: 'Hybrid Product Film (Live + 3D)',
+            description: [
+                "The design system brings together Ducati's racing heritage and Titan's horological expertise through structured layouts, product-first storytelling, and precision-led visual execution. Every frame is optimized to reinforce credibility, performance, and luxury appeal.",
+            ],
+            mainImage: '/Portfolio_Images/Corporate Brand Film/Titan Ducati/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Corporate Brand Film/Titan Ducati/2.png',
+                '/Portfolio_Images/Corporate Brand Film/Titan Ducati/3.png',
+                '/Portfolio_Images/Corporate Brand Film/Titan Ducati/4.png'
+            ],
+        },
+        {
+            id: '7',
+            title: '2D Narratives',
+            category: 'Explainer Film',
+            description: [
+                "From island topography to interior spaces and natural environments, each element is designed with scale, continuity, and narrative flow in mind. Composition, texture, and color harmony are used to maintain consistency while supporting story-driven interaction.",
+            ],
+            mainImage: '/Portfolio_Images/Corporate Brand Film/2D-Naratives/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Corporate Brand Film/2D-Naratives/2.png',
+                '/Portfolio_Images/Corporate Brand Film/2D-Naratives/3.png',
+                '/Portfolio_Images/Corporate Brand Film/2D-Naratives/4.png'
+            ],
+        },
+        {
+            id: '8',
+            title: 'SAP',
+            category: 'Corporate Space and Mograph Film',
+            description: [
+                "Through a corporate film for SAP, collaborative offices, innovation zones, and learning spaces are brought into focus. Clean architectural lines, branded environments, and active work settings come together to reflect efficiency, technology, and people-driven progress-showcasing how space, culture, and digital intelligence support everyday enterprise performanc ",
+            ],
+            mainImage: '/Portfolio_Images/Corporate Brand Film/2D-Naratives/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Corporate Brand Film/2D-Naratives/2.png',
+                '/Portfolio_Images/Corporate Brand Film/2D-Naratives/3.png',
+                '/Portfolio_Images/Corporate Brand Film/2D-Naratives/4.png'
             ],
         },
     ]
