@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
+import Services from "./components/homepage/services";
 import HeroSection from "./components/homepage/HeroSection";
+import FourVerticalIs from "./components/homepage/fourVerticaIs";
 import StoryEngineSection from "./components/homepage/StoryEngineSection";
 import ExistToCreateSection from "./components/homepage/ExistToCreateSection";
-import FourVerticalIs from "./components/homepage/fourVerticaIs";
-import Services from "./components/homepage/services";
-import Background from "./components/layout/Background";
+import ClientLogos from "./components/homepage/ClientLogos";
 
 export const metadata: Metadata = {
   title: "The White Tusker | Fluid by Nature",
@@ -24,7 +24,7 @@ export default function Home() {
         <div id="works">
           <Services />
         </div>
-
+        <ClientLogos />
       </div>
     </div>
   );

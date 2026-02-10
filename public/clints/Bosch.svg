@@ -1,0 +1,1390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW (OEM Version) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="3.6in" height="3.6in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 3600 3600"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str146 {stroke:#282425;stroke-width:13.11;stroke-miterlimit:2.61313}
+    .str156 {stroke:#2A2627;stroke-width:10.09;stroke-miterlimit:2.61313}
+    .str166 {stroke:#2D292A;stroke-width:7.08;stroke-miterlimit:2.61313}
+    .str149 {stroke:#282526;stroke-width:12.2;stroke-miterlimit:2.61313}
+    .str159 {stroke:#2B2728;stroke-width:9.19;stroke-miterlimit:2.61313}
+    .str169 {stroke:#2E2A2B;stroke-width:6.18;stroke-miterlimit:2.61313}
+    .str152 {stroke:#292526;stroke-width:11.3;stroke-miterlimit:2.61313}
+    .str162 {stroke:#2C2829;stroke-width:8.29;stroke-miterlimit:2.61313}
+    .str172 {stroke:#2E2B2C;stroke-width:5.27;stroke-miterlimit:2.61313}
+    .str104 {stroke:#231F20;stroke-width:9.34;stroke-miterlimit:2.61313}
+    .str109 {stroke:#4C4949;stroke-width:9.34;stroke-miterlimit:2.61313}
+    .str110 {stroke:#6E6C6C;stroke-width:9.34;stroke-miterlimit:2.61313}
+    .str145 {stroke:#272324;stroke-width:13.41;stroke-miterlimit:2.61313}
+    .str155 {stroke:#2A2627;stroke-width:10.39;stroke-miterlimit:2.61313}
+    .str165 {stroke:#2D292A;stroke-width:7.38;stroke-miterlimit:2.61313}
+    .str148 {stroke:#282425;stroke-width:12.5;stroke-miterlimit:2.61313}
+    .str114 {stroke:#272324;stroke-width:7.47;stroke-miterlimit:2.61313}
+    .str0 {stroke:#6E6C6C;stroke-width:7.47;stroke-miterlimit:2.61313}
+    .str193 {stroke:white;stroke-width:7.47;stroke-miterlimit:2.61313}
+    .str158 {stroke:#2B2728;stroke-width:9.49;stroke-miterlimit:2.61313}
+    .str168 {stroke:#2E2A2B;stroke-width:6.48;stroke-miterlimit:2.61313}
+    .str151 {stroke:#292526;stroke-width:11.6;stroke-miterlimit:2.61313}
+    .str161 {stroke:#2C2829;stroke-width:8.59;stroke-miterlimit:2.61313}
+    .str171 {stroke:#2E2A2B;stroke-width:5.57;stroke-miterlimit:2.61313}
+    .str144 {stroke:#272324;stroke-width:13.71;stroke-miterlimit:2.61313}
+    .str154 {stroke:#2A2627;stroke-width:10.69;stroke-miterlimit:2.61313}
+    .str164 {stroke:#2C292A;stroke-width:7.69;stroke-miterlimit:2.61313}
+    .str80 {stroke:#231F20;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str79 {stroke:#242021;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str78 {stroke:#242122;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str77 {stroke:#252122;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str76 {stroke:#262223;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str75 {stroke:#262324;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str19 {stroke:#272324;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str18 {stroke:#282425;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str17 {stroke:#282526;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str16 {stroke:#292526;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str15 {stroke:#2A2627;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str14 {stroke:#2A2728;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str13 {stroke:#2B2728;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str115 {stroke:#2C2829;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str74 {stroke:#2D292A;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str73 {stroke:#2E2A2B;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str139 {stroke:#2F2B2C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str72 {stroke:#2F2C2D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str108 {stroke:#302C2D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str116 {stroke:#302D2E;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str71 {stroke:#312D2E;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str98 {stroke:#312E2E;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str92 {stroke:#312E2F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str174 {stroke:#322E2F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str70 {stroke:#322F30;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str117 {stroke:#332F30;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str91 {stroke:#333031;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str69 {stroke:#343031;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str175 {stroke:#343132;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str300 {stroke:#34373D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str333 {stroke:#34383D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str118 {stroke:#353132;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str68 {stroke:#353232;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str90 {stroke:#353233;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str299 {stroke:#35383D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str298 {stroke:#35383E;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str334 {stroke:#35393E;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str130 {stroke:#363233;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str189 {stroke:#363334;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str297 {stroke:#36393E;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str335 {stroke:#36393F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str296 {stroke:#363A3F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str67 {stroke:#373334;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str99 {stroke:#373434;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str89 {stroke:#373435;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str295 {stroke:#373A40;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str294 {stroke:#373B40;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str66 {stroke:#383435;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str293 {stroke:#383B41;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str329 {stroke:#383C41;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str292 {stroke:#383C42;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str119 {stroke:#393536;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str65 {stroke:#393637;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str336 {stroke:#393C42;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str291 {stroke:#393D42;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str290 {stroke:#393D43;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str88 {stroke:#3A3637;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str190 {stroke:#3A3738;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str289 {stroke:#3A3E43;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str288 {stroke:#3A3E44;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str64 {stroke:#3B3738;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str120 {stroke:#3B3838;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str287 {stroke:#3B3F44;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str337 {stroke:#3B3F45;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str286 {stroke:#3B4045;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str87 {stroke:#3C3839;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str63 {stroke:#3C393A;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str330 {stroke:#3C4045;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str285 {stroke:#3C4046;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str100 {stroke:#3D3A3A;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str121 {stroke:#3D3A3B;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str284 {stroke:#3D4146;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str283 {stroke:#3D4147;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str331 {stroke:#3D4247;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str62 {stroke:#3E3A3B;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str181 {stroke:#3E3B3B;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str282 {stroke:#3E4247;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str281 {stroke:#3E4248;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str332 {stroke:#3E4348;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str131 {stroke:#3F3B3C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str61 {stroke:#3F3C3C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str122 {stroke:#3F3C3D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str280 {stroke:#3F4349;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str279 {stroke:#3F4449;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str86 {stroke:#403C3D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str101 {stroke:#403D3D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str60 {stroke:#403D3E;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str278 {stroke:#40444A;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str277 {stroke:#40454A;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str338 {stroke:#40454B;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str188 {stroke:#413E3E;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str176 {stroke:#413E3F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str276 {stroke:#41464B;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str339 {stroke:#41464C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str85 {stroke:#423E3F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str59 {stroke:#423F3F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str140 {stroke:#423F40;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str217 {stroke:#42474C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str180 {stroke:#433F40;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str58 {stroke:#434041;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str84 {stroke:#444041;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str107 {stroke:#444141;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str191 {stroke:#444142;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str216 {stroke:#44494E;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str57 {stroke:#454142;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str275 {stroke:#45494F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str322 {stroke:#454A4F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str83 {stroke:#464243;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str102 {stroke:#464343;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str56 {stroke:#464344;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str215 {stroke:#464B50;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str177 {stroke:#474344;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str55 {stroke:#474445;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str274 {stroke:#474C52;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str214 {stroke:#474D52;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str82 {stroke:#484445;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str123 {stroke:#484545;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str187 {stroke:#484546;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str323 {stroke:#484D52;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str103 {stroke:#494546;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str54 {stroke:#494647;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str213 {stroke:#494F54;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str141 {stroke:#4A4647;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str81 {stroke:#4A4747;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str53 {stroke:#4A4748;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str273 {stroke:#4A4F55;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str106 {stroke:#4B4748;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str105 {stroke:#4B4849;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str324 {stroke:#4B5056;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str212 {stroke:#4B5156;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str52 {stroke:#4C4949;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str124 {stroke:#4C494A;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str272 {stroke:#4C5258;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str51 {stroke:#4D4A4B;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str211 {stroke:#4D5358;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str97 {stroke:#4E4B4B;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str125 {stroke:#4E4B4C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str325 {stroke:#4E5359;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str142 {stroke:#4F4B4C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str50 {stroke:#4F4C4C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str96 {stroke:#4F4C4D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str210 {stroke:#4F555A;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str186 {stroke:#504D4D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str49 {stroke:#504D4E;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str132 {stroke:#514E4E;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str95 {stroke:#514E4F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str209 {stroke:#51575C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str48 {stroke:#524E4F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str94 {stroke:#524F50;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str271 {stroke:#52585D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str126 {stroke:#535050;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str47 {stroke:#535051;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str208 {stroke:#53595E;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str143 {stroke:#545051;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str133 {stroke:#545151;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str46 {stroke:#545152;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str326 {stroke:#545A5F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str207 {stroke:#545B60;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str127 {stroke:#555252;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str93 {stroke:#555253;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str270 {stroke:#555B60;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str45 {stroke:#565354;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str206 {stroke:#565D62;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str134 {stroke:#575454;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str12 {stroke:#575455;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str327 {stroke:#575D63;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str269 {stroke:#575E63;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str185 {stroke:#585455;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str192 {stroke:#585555;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str11 {stroke:#585556;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str44 {stroke:#595657;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str10 {stroke:#5A5757;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str43 {stroke:#5A5758;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str313 {stroke:#5A6065;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str328 {stroke:#5A6066;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str268 {stroke:#5A6166;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str9 {stroke:#5B5858;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str128 {stroke:#5B5859;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str8 {stroke:#5B5959;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str42 {stroke:#5C5959;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str179 {stroke:#5C595A;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str7 {stroke:#5D5A5A;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str41 {stroke:#5D5A5B;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str184 {stroke:#5D5B5B;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str312 {stroke:#5D6369;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str267 {stroke:#5D6469;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str6 {stroke:#5E5B5B;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str111 {stroke:#5E5B5C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str5 {stroke:#5F5C5C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str183 {stroke:#5F5C5D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str129 {stroke:#5F5D5D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str4 {stroke:#605D5D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str40 {stroke:#605D5E;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str266 {stroke:#60666C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str311 {stroke:#60676C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str178 {stroke:#615E5E;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str3 {stroke:#615E5F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str39 {stroke:#615F5F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str2 {stroke:#625F60;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str265 {stroke:#62696F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str112 {stroke:#636060;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str1 {stroke:#636061;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str38 {stroke:#636161;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str310 {stroke:#636A6F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str37 {stroke:#646162;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str36 {stroke:#656262;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str35 {stroke:#656263;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str182 {stroke:#656363;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str264 {stroke:#656C72;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str34 {stroke:#666364;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str33 {stroke:#666464;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str309 {stroke:#666D73;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str32 {stroke:#676465;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str113 {stroke:#676565;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str356 {stroke:#676E73;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str350 {stroke:#676F74;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str31 {stroke:#686566;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str135 {stroke:#686666;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str263 {stroke:#686F74;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str30 {stroke:#696667;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str29 {stroke:#6A6768;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str28 {stroke:#6A6868;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str308 {stroke:#6A7176;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str357 {stroke:#6A7177;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str27 {stroke:#6B6869;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str26 {stroke:#6B6969;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str262 {stroke:#6B7277;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str25 {stroke:#6C696A;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str24 {stroke:#6C6A6A;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str351 {stroke:#6C7378;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str23 {stroke:#6D6A6B;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str22 {stroke:#6D6B6B;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str307 {stroke:#6D7479;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str21 {stroke:#6E6B6C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str20 {stroke:#6E6C6C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str261 {stroke:#6E757A;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str306 {stroke:#70787D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str260 {stroke:#71787D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str358 {stroke:#71797E;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str259 {stroke:#737B80;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str352 {stroke:#757C81;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str359 {stroke:#757C82;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str258 {stroke:#777E83;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str360 {stroke:#798085;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str257 {stroke:#798186;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str305 {stroke:#7A8287;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str256 {stroke:#7C8489;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str304 {stroke:#7D858A;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str255 {stroke:#7F878C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str361 {stroke:#80888C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str303 {stroke:#81888D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str353 {stroke:#828A8E;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str254 {stroke:#828A8F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str362 {stroke:#848B90;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str302 {stroke:#848C91;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str253 {stroke:#858D92;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str354 {stroke:#878E93;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str301 {stroke:#888F94;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str252 {stroke:#889094;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str251 {stroke:#8B9397;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str321 {stroke:#8D9599;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str250 {stroke:#8E969A;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str320 {stroke:#8F969B;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str363 {stroke:#8F979B;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str355 {stroke:#90979C;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str249 {stroke:#91989D;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str319 {stroke:#939A9F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str364 {stroke:#939B9F;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str248 {stroke:#949BA0;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str340 {stroke:#949CA0;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str318 {stroke:#959CA0;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str247 {stroke:#979EA2;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str341 {stroke:#989FA3;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str317 {stroke:#98A0A4;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str246 {stroke:#9AA1A5;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str316 {stroke:#9AA2A6;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str342 {stroke:#9BA3A7;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str365 {stroke:#9CA3A8;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str315 {stroke:#9CA4A8;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str245 {stroke:#9DA4A8;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str314 {stroke:#9EA5AA;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str343 {stroke:#9FA6AA;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str205 {stroke:#A0A7AB;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str366 {stroke:#A0A8AC;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str344 {stroke:#A2A9AD;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str204 {stroke:#A3AAAE;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str203 {stroke:#A5ACB0;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str345 {stroke:#A6ADB0;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str202 {stroke:#A7AEB2;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str244 {stroke:#A9AFB3;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str346 {stroke:#A9B0B4;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str201 {stroke:#AAB1B4;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str243 {stroke:#ACB2B6;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str200 {stroke:#ACB3B7;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str347 {stroke:#ADB3B7;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str367 {stroke:#AEB4B8;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str199 {stroke:#AFB5B9;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str348 {stroke:#B0B7BA;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str198 {stroke:#B1B8BB;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str242 {stroke:#B2B8BB;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str368 {stroke:#B2B9BC;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str197 {stroke:#B4BABD;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str241 {stroke:#B5BBBE;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str196 {stroke:#B6BCBF;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str369 {stroke:#B6BDC0;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str349 {stroke:#B7BDC1;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str240 {stroke:#B8BEC1;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str195 {stroke:#B9BFC2;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str194 {stroke:#BBC1C4;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str239 {stroke:#BEC4C7;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str238 {stroke:#C1C7C9;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str237 {stroke:#C4C9CC;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str236 {stroke:#C7CCCF;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str235 {stroke:#CACFD1;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str234 {stroke:#CDD2D4;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str233 {stroke:#D0D4D7;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str232 {stroke:#D3D7D9;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str231 {stroke:#D6DADC;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str230 {stroke:#D9DDDE;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str229 {stroke:#DCDFE1;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str228 {stroke:#DFE2E4;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str227 {stroke:#E2E5E7;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str226 {stroke:#E5E8E9;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str225 {stroke:#E8EBEC;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str224 {stroke:#ECEEEE;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str223 {stroke:#EFF0F1;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str222 {stroke:#F2F3F4;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str221 {stroke:#F5F6F6;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str220 {stroke:#F8F9F9;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str219 {stroke:#FBFCFC;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str218 {stroke:white;stroke-width:4.67;stroke-miterlimit:2.61313}
+    .str147 {stroke:#282425;stroke-width:12.8;stroke-miterlimit:2.61313}
+    .str157 {stroke:#2B2728;stroke-width:9.79;stroke-miterlimit:2.61313}
+    .str167 {stroke:#2D292A;stroke-width:6.78;stroke-miterlimit:2.61313}
+    .str150 {stroke:#292526;stroke-width:11.9;stroke-miterlimit:2.61313}
+    .str160 {stroke:#2B2728;stroke-width:8.89;stroke-miterlimit:2.61313}
+    .str170 {stroke:#2E2A2B;stroke-width:5.87;stroke-miterlimit:2.61313}
+    .str136 {stroke:#231F20;stroke-width:14.01;stroke-miterlimit:2.61313}
+    .str138 {stroke:#272324;stroke-width:14.01;stroke-miterlimit:2.61313}
+    .str137 {stroke:#6E6C6C;stroke-width:14.01;stroke-miterlimit:2.61313}
+    .str153 {stroke:#2A2627;stroke-width:11;stroke-miterlimit:2.61313}
+    .str163 {stroke:#2C2829;stroke-width:7.98;stroke-miterlimit:2.61313}
+    .str173 {stroke:#2F2B2C;stroke-width:4.97;stroke-miterlimit:2.61313}
+    .fil2 {fill:none;fill-rule:nonzero}
+    .fil0 {fill:#231F20;fill-rule:nonzero}
+    .fil5 {fill:#42474C;fill-rule:nonzero}
+    .fil3 {fill:#6E6C6C;fill-rule:nonzero}
+    .fil4 {fill:#DEE1E3;fill-rule:nonzero}
+    .fil6 {fill:#EC1B24;fill-rule:nonzero}
+    .fil1 {fill:white;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2217499740416">
+   <path class="fil0" d="M233.08 1800.12c0,93.39 36.67,180.69 103.16,245.65 66.11,64.59 154.42,100.24 248.57,100.24 190.71,0 345.9,-155.18 345.9,-345.89 0,-94.15 -35.53,-182.46 -100.24,-248.57 -64.96,-66.62 -152.26,-103.16 -245.65,-103.16 -193.88,0 -351.73,157.72 -351.73,351.73zm11.04 0c0,-187.92 152.78,-340.69 340.69,-340.69 187.92,0 340.69,152.77 340.69,340.69 0,187.92 -152.77,340.69 -340.69,340.69 -187.92,0 -340.69,-152.9 -340.69,-340.69zm34.01 0c0,169.14 137.54,306.69 306.69,306.69 169.14,0 306.69,-137.54 306.69,-306.69 0,-169.14 -137.55,-306.81 -306.69,-306.81 -169.14,0 -306.69,137.67 -306.69,306.81zm94.78 208.98c-57.73,-56.34 -89.58,-130.57 -89.58,-208.98 0,-166.22 135.26,-301.48 301.48,-301.48 78.54,0 152.77,31.85 208.98,89.58 55.96,57.35 86.67,132.72 86.67,211.9 0,163.05 -132.6,295.65 -295.65,295.65 -79.18,0 -154.42,-30.83 -211.9,-86.66zm310.62 -420.63l0 102.02 -203.15 0 0 -102.02c0,-8.12 -1.39,-18.91 -13.07,-18.91 -3.43,0 -6.85,1.02 -9.77,2.79 -80.44,48.72 -128.41,133.87 -128.41,227.76 0,91.48 46.82,172.44 128.28,221.93 2.92,1.78 6.34,2.79 9.77,2.79 9.77,0 13.07,-8.88 13.07,-12.94l0 -107.85 203.15 0 0 107.85c0,11.8 10.78,13.07 18.91,13.07 1.52,0 3.93,-0.13 6.72,-1.9 77.4,-46.19 125.49,-131.58 125.49,-222.81 0,-93.26 -48.09,-182.59 -122.45,-227.76 -2.92,-1.78 -6.34,-2.79 -9.77,-2.79 -10.41,-0.13 -18.78,8.25 -18.78,18.78l0 0zm4.44 113.06c3.68,0 6.6,-2.92 6.6,-6.6l0 -106.46c0,-4.31 3.55,-7.87 7.87,-7.87 1.39,0 2.79,0.38 4.06,1.14 77.02,46.7 122.96,128.41 122.96,218.37 0,89.96 -45.93,171.55 -122.96,218.37 -3.68,2.28 -8.63,1.02 -10.78,-2.67 -0.76,-1.27 -1.14,-2.67 -1.14,-4.06l0 -106.46c0,-3.68 -2.92,-6.6 -6.6,-6.6l-206.32 0c-3.68,0 -6.6,2.92 -6.6,6.6l0 106.46c0,4.31 -3.55,7.87 -7.87,7.87 -1.4,0 -2.79,-0.38 -4.06,-1.14 -77.02,-46.82 -122.95,-128.41 -122.95,-218.37 0,-89.96 45.93,-171.68 122.95,-218.37 1.27,-0.76 2.67,-1.14 4.06,-1.14 4.31,0 7.87,3.43 7.87,7.74l0 106.46c0,3.68 2.92,6.6 6.6,6.6l206.32 0.13zm45.04 -46.31l0.51 5.84 0.51 5.45c1.02,10.53 1.52,21.44 1.52,32.48l0 202.26c0,10.91 -0.51,21.82 -1.52,32.48l-1.14 12.94 8.12 -10.15c30.58,-38.45 47.45,-86.92 47.45,-136.41 0,-49.48 -16.87,-97.96 -47.45,-136.41l-8.12 -10.15 0.13 1.65zm7.49 256.57l0 -228.4c0,0 -0.13,-4.57 -0.26,-7.23 23.98,38.95 37.18,82.86 37.18,123.84 0,51.77 -19.67,90.6 -37.18,119.02 0,-2.28 0.13,-7.23 0.26,-7.23zm-304.66 -256.95l-7.11 8.88c-30.58,38.45 -47.46,86.92 -47.46,136.41 0,49.48 16.88,97.83 47.46,136.28l8.12 10.15 -1.27 -12.94c-1.02,-10.78 -1.52,-21.57 -1.52,-32.48l0 -202.13c0,-10.91 0.5,-21.82 1.52,-32.48l1.27 -12.94 -1.02 1.27zm-49.36 145.29c0,-51.77 19.8,-93.26 36.8,-119.4 -0.13,2.28 -0.25,7.23 -0.25,7.23l0 218.76 0.25 7.23c-25.12,-38.19 -36.8,-74.48 -36.8,-113.82zm95.17 -57.61c-3.68,0 -6.6,2.92 -6.6,6.6l0 101.89c0,3.68 2.92,6.6 6.6,6.6l206.19 0c3.68,0 6.59,-2.92 6.59,-6.6l0 -101.89c0,-3.68 -2.92,-6.6 -6.59,-6.6l-206.19 0zm201.88 5.2l0 98.85 -203.15 0 0 -98.85 203.15 0z"/>
+   <path class="fil1" d="M237.52 1800.12c0,92.25 36.17,178.4 101.76,242.48 65.35,63.83 152.52,98.97 245.53,98.97 188.3,0 341.46,-153.15 341.46,-341.45 0,-93.01 -35.15,-180.18 -98.97,-245.53 -64.08,-65.73 -150.24,-101.76 -242.48,-101.76 -191.47,0 -347.29,155.69 -347.29,347.29zm132.35 212.15c-58.62,-57.1 -90.98,-132.47 -90.98,-212.15 0,-168.63 137.29,-305.93 305.93,-305.93 79.69,0 155.06,32.23 212.16,90.85 56.72,58.24 87.93,134.63 87.93,214.95 0,165.46 -134.63,300.09 -300.09,300.09 -80.32,0.13 -156.7,-31.09 -214.94,-87.8l0 -0zm317.98 -423.8l0 106.46 -211.91 0 0 -106.46c0,-13.32 -4.44,-14.46 -8.63,-14.46 -2.67,0 -5.2,0.76 -7.49,2.16 -79.05,47.96 -126.13,131.71 -126.13,223.96 0,89.96 45.93,169.39 126.13,218.12 2.29,1.4 4.82,2.16 7.49,2.16 7.99,0 8.63,-8.5 8.63,-8.63l0 -112.3 211.91 0 0 112.3c0,4.19 1.14,8.75 14.46,8.75 1.14,0 2.54,-0.13 4.44,-1.27 76.13,-45.43 123.33,-129.43 123.33,-219.01 0,-91.74 -47.2,-179.67 -120.42,-223.96 -2.28,-1.39 -4.82,-2.16 -7.48,-2.16 -7.74,-0.13 -14.34,6.35 -14.34,14.34l0 0zm-268.24 328c-25.63,-39.08 -37.56,-76.13 -37.56,-116.35 0,-53.04 20.43,-95.42 37.56,-121.81l8.5 -13.2 -0.63 22.96 0 218.63c0,-0.13 0.25,7.11 0.25,7.11l0.51 15.61 -8.63 -12.94zm56.33 -69.91l0 -103.29 211.91 0 0 107.73 -211.91 0 0 -4.44zm260 -165.84l-0.64 -20.94 8.63 14.09c24.36,39.72 37.81,84.51 37.81,126.13 0,53.29 -20.17,92.75 -37.81,121.3l-8.63 13.96c0,0 0.64,-23.47 0.64,-23.6l0 -228.27 0.13 1.02 -0.13 -3.68z"/>
+   <g>
+    <g>
+     <path class="fil2 str0" d="M584.69 1456.26c-187.27,0 -344.02,156.47 -344.02,343.74"/>
+     <g>
+      <line class="fil2 str1" x1="253.05" y1="1932.55" x2="276.97" y2= "1921.82" />
+      <line class="fil2 str2" x1="255.52" y1="1938.32" x2="279.17" y2= "1927.05" />
+      <line class="fil2 str3" x1="258" y1="1944.37" x2="281.65" y2= "1932.82" />
+      <line class="fil2 str4" x1="260.74" y1="1950.15" x2="284.12" y2= "1938.05" />
+      <line class="fil2 str5" x1="263.5" y1="1955.92" x2="286.59" y2= "1943.54" />
+      <line class="fil2 str6" x1="266.52" y1="1961.69" x2="289.34" y2= "1949.04" />
+      <line class="fil2 str7" x1="269.54" y1="1967.47" x2="292.37" y2= "1954.54" />
+      <line class="fil2 str8" x1="272.57" y1="1972.97" x2="295.12" y2= "1959.77" />
+      <line class="fil2 str9" x1="275.87" y1="1978.47" x2="298.42" y2= "1965" />
+      <line class="fil2 str10" x1="279.17" y1="1983.97" x2="301.44" y2= "1970.22" />
+      <line class="fil2 str11" x1="282.47" y1="1989.47" x2="304.47" y2= "1975.44" />
+      <line class="fil2 str12" x1="285.77" y1="1994.69" x2="307.77" y2= "1980.39" />
+      <path class="fil2 str13" d="M467.81 2137.69l8.53 -24.75m1.37 28.05l7.7 -25.02"/>
+      <line class="fil2 str14" x1="487.89" y1="2144.01" x2="494.76" y2= "2118.71" />
+      <path class="fil2 str15" d="M498.34 2146.76l6.32 -25.57m4.13 28.05l5.5 -25.57"/>
+      <path class="fil2 str16" d="M519.51 2151.16l4.67 -25.85m6.05 27.77l3.85 -25.85"/>
+      <line class="fil2 str17" x1="540.96" y1="2154.46" x2="543.98" y2= "2128.34" />
+      <path class="fil2 str18" d="M551.96 2155.56l2.2 -26.13m8.52 26.95l1.65 -26.12"/>
+      <path class="fil2 str19" d="M573.69 2156.94l0.82 -26.12m10.18 26.12l0 -26.12"/>
+      <line class="fil2 str20" x1="584.96" y1="1443.06" x2="584.96" y2= "1469.19" />
+      <line class="fil2 str21" x1="591.56" y1="1443.34" x2="591.01" y2= "1469.46" />
+      <line class="fil2 str22" x1="598.43" y1="1443.34" x2="597.33" y2= "1469.74" />
+      <line class="fil2 str23" x1="605.31" y1="1443.89" x2="603.66" y2= "1470.01" />
+      <line class="fil2 str24" x1="611.91" y1="1444.16" x2="609.71" y2= "1470.29" />
+      <line class="fil2 str25" x1="618.78" y1="1444.99" x2="616.03" y2= "1471.11" />
+      <line class="fil2 str26" x1="625.38" y1="1445.54" x2="622.36" y2= "1471.66" />
+      <line class="fil2 str27" x1="631.98" y1="1446.36" x2="628.41" y2= "1472.49" />
+      <line class="fil2 str28" x1="638.58" y1="1447.46" x2="634.46" y2= "1473.59" />
+      <line class="fil2 str29" x1="645.18" y1="1448.56" x2="640.78" y2= "1474.41" />
+      <path class="fil2 str30" d="M651.78 1449.66l-4.95 25.85m11.28 -24.47l-5.5 25.57m5.5 -25.57l-5.5 25.57"/>
+      <path class="fil2 str31" d="M664.43 1452.41l-5.77 25.57m12.1 -24.2l-6.05 25.57"/>
+      <line class="fil2 str32" x1="677.08" y1="1455.44" x2="670.48" y2= "1481.01" />
+      <line class="fil2 str33" x1="683.41" y1="1457.09" x2="676.53" y2= "1482.39" />
+      <path class="fil2 str34" d="M689.73 1459.01l-7.15 25.3m13.2 -23.37l-7.7 25.02"/>
+      <line class="fil2 str35" x1="702.11" y1="1463.14" x2="694.13" y2= "1488.16" />
+      <line class="fil2 str36" x1="708.15" y1="1465.34" x2="699.63" y2= "1490.09" />
+      <line class="fil2 str37" x1="714.2" y1="1467.54" x2="705.41" y2= "1492.29" />
+      <line class="fil2 str38" x1="720.26" y1="1469.74" x2="711.18" y2= "1494.21" />
+      <path class="fil2 str1" d="M726.03 1472.49l-9.62 24.47m0 -0.28l9.62 -24.47"/>
+      <line class="fil2 str39" x1="721.91" y1="1499.44" x2="732.08" y2= "1475.24" />
+      <line class="fil2 str40" x1="727.68" y1="1501.91" x2="738.4" y2= "1477.71" />
+      <line class="fil2 str5" x1="733.45" y1="1504.94" x2="744.45" y2= "1481.29" />
+      <line class="fil2 str41" x1="739.78" y1="1508.24" x2="751.33" y2= "1484.59" />
+      <line class="fil2 str42" x1="746.1" y1="1511.54" x2="758.2" y2= "1488.16" />
+      <line class="fil2 str43" x1="752.43" y1="1515.39" x2="765.08" y2= "1492.29" />
+      <line class="fil2 str44" x1="759.03" y1="1519.24" x2="772.23" y2= "1496.69" />
+      <line class="fil2 str12" x1="765.63" y1="1523.63" x2="779.38" y2= "1501.36" />
+      <line class="fil2 str45" x1="772.23" y1="1528.04" x2="786.53" y2= "1506.04" />
+      <line class="fil2 str46" x1="778.83" y1="1532.71" x2="793.68" y2= "1510.98" />
+      <line class="fil2 str47" x1="785.7" y1="1537.66" x2="801.1" y2= "1516.48" />
+      <line class="fil2 str48" x1="792.3" y1="1542.89" x2="808.25" y2= "1521.98" />
+      <line class="fil2 str49" x1="798.9" y1="1548.39" x2="815.68" y2= "1528.04" />
+      <line class="fil2 str50" x1="805.5" y1="1554.16" x2="822.83" y2= "1534.36" />
+      <line class="fil2 str51" x1="812.1" y1="1560.21" x2="829.98" y2= "1540.96" />
+      <path class="fil2 str52" d="M818.43 1566.54l18.43 -18.43m-18.43 18.43l18.43 -18.43"/>
+      <line class="fil2 str53" x1="825.02" y1="1573.41" x2="844" y2= "1555.26" />
+      <line class="fil2 str54" x1="831.63" y1="1580.56" x2="851.15" y2= "1563.23" />
+      <line class="fil2 str55" x1="837.95" y1="1587.98" x2="858.02" y2= "1571.21" />
+      <line class="fil2 str56" x1="844.28" y1="1595.41" x2="864.9" y2= "1579.18" />
+      <line class="fil2 str57" x1="850.05" y1="1603.38" x2="871.22" y2= "1587.71" />
+      <line class="fil2 str58" x1="855.82" y1="1611.36" x2="877.28" y2= "1596.23" />
+      <line class="fil2 str59" x1="861.32" y1="1619.33" x2="883.32" y2= "1605.03" />
+      <line class="fil2 str60" x1="866.55" y1="1627.58" x2="888.82" y2= "1613.83" />
+      <line class="fil2 str61" x1="871.77" y1="1636.11" x2="894.6" y2= "1622.91" />
+      <line class="fil2 str62" x1="876.45" y1="1644.91" x2="899.55" y2= "1632.53" />
+      <line class="fil2 str63" x1="881.12" y1="1653.7" x2="904.5" y2= "1641.88" />
+      <line class="fil2 str64" x1="885.52" y1="1662.78" x2="909.45" y2= "1651.78" />
+      <line class="fil2 str65" x1="889.37" y1="1671.85" x2="913.57" y2= "1661.41" />
+      <line class="fil2 str66" x1="893.22" y1="1680.93" x2="917.7" y2= "1671.3" />
+      <line class="fil2 str67" x1="896.8" y1="1690.28" x2="921.55" y2= "1681.48" />
+      <line class="fil2 str68" x1="900.1" y1="1699.91" x2="925.12" y2= "1691.65" />
+      <line class="fil2 str69" x1="903.12" y1="1709.53" x2="928.42" y2= "1702.1" />
+      <line class="fil2 str70" x1="905.6" y1="1719.15" x2="930.9" y2= "1712.55" />
+      <line class="fil2 str71" x1="908.07" y1="1729.05" x2="933.65" y2= "1723.28" />
+      <line class="fil2 str72" x1="910.27" y1="1738.95" x2="936.12" y2= "1734" />
+      <line class="fil2 str73" x1="911.92" y1="1748.85" x2="937.77" y2= "1744.73" />
+      <line class="fil2 str74" x1="913.57" y1="1759.03" x2="939.7" y2= "1755.73" />
+      <line class="fil2 str13" x1="914.67" y1="1769.2" x2="940.8" y2= "1766.72" />
+      <line class="fil2 str15" x1="915.5" y1="1779.37" x2="941.62" y2= "1777.72" />
+      <line class="fil2 str17" x1="916.05" y1="1789.83" x2="942.17" y2= "1789" />
+      <path class="fil2 str19" d="M916.05 1800l26.13 0m-26.13 0l26.13 0m-26.13 10.45l26.12 0.83"/>
+      <path class="fil2 str75" d="M915.5 1820.9l26.13 1.65m-26.95 8.53l26.12 2.47"/>
+      <path class="fil2 str76" d="M913.57 1841.52l26.13 3.3m-27.5 6.87l25.85 4.13m-27.78 6.05l25.85 4.95m-27.78 4.95l25.57 5.78m-28.05 4.13l25.57 6.32"/>
+      <path class="fil2 str77" d="M903.4 1891.57l25.3 7.15m-28.32 2.48l25.02 7.98m-28.32 1.65l24.75 8.8m-28.05 0.82l24.48 9.35m-28.33 0l24.2 10.18"/>
+      <line class="fil2 str78" x1="885.8" y1="1938.87" x2="909.72" y2= "1949.59" />
+      <path class="fil2 str79" d="M881.67 1947.94l23.65 11.55m-28.32 -2.48l23.1 12.37m-27.78 -3.57l22.83 12.93m-27.78 -4.4l22.55 13.48m-28.05 -4.95l22 14.3m-27.5 -6.33l21.72 14.85"/>
+      <path class="fil2 str80" d="M850.87 1999.09l21.17 15.67m-27.22 -7.98l20.62 16.22m-26.67 -8.52l20.07 16.78m-26.4 -9.35l19.52 17.32m-26.12 -10.17l18.98 18.15m-25.85 -11.28l18.42 18.7m0 0l-18.43 -18.7m11 25.85l-17.87 -19.25m10.17 26.12l-17.33 -19.8m9.35 26.67l-16.77 -20.35m8.52 26.95l-15.95 -20.9m7.43 27.22l-15.4 -21.17"/>
+      <path class="fil2 str79" d="M789 2094.52l-14.85 -21.72m6.05 27.5l-14.02 -22m4.95 27.5l-13.47 -22.55m4.4 27.78l-12.65 -22.83m3.03 27.78l-12.1 -23.37m2.75 28.32l-11.28 -23.65"/>
+      <line class="fil2 str78" x1="733.18" y1="2125.31" x2="722.45" y2= "2101.39" />
+      <path class="fil2 str77" d="M723.56 2129.71l-9.9 -24.2m-0.28 28.05l-9.35 -24.47m-0.82 28.05l-8.52 -24.75m-1.65 28.05l-7.98 -25.02m-2.48 28.05l-7.15 -25.3"/>
+      <path class="fil2 str76" d="M672.13 2146.49l-6.32 -25.57m-4.4 27.78l-5.5 -25.57m-5.22 27.78l-4.95 -25.85m-5.78 27.77l-4.13 -25.85m-6.87 27.22l-3.3 -26.13"/>
+      <path class="fil2 str75" d="M618.23 2155.56l-2.48 -26.13m-8.8 26.95l-1.65 -26.12"/>
+      <path class="fil2 str19" d="M595.96 2156.94l-0.82 -26.12m-10.17 26.12l0 -26.12"/>
+      <line class="fil2 str52" x1="332.79" y1="2052.17" x2="351.22" y2= "2033.47" />
+      <line class="fil2 str81" x1="339.94" y1="2059.04" x2="357.81" y2= "2039.79" />
+      <line class="fil2 str82" x1="347.37" y1="2065.64" x2="364.69" y2= "2046.12" />
+      <line class="fil2 str83" x1="354.79" y1="2072.24" x2="371.84" y2= "2052.17" />
+      <line class="fil2 str84" x1="362.49" y1="2078.84" x2="378.99" y2= "2058.22" />
+      <line class="fil2 str85" x1="370.46" y1="2084.89" x2="386.42" y2= "2063.99" />
+      <line class="fil2 str86" x1="378.44" y1="2090.94" x2="393.84" y2= "2069.49" />
+      <line class="fil2 str62" x1="386.69" y1="2096.72" x2="401.54" y2= "2074.99" />
+      <line class="fil2 str87" x1="395.22" y1="2102.22" x2="409.24" y2= "2080.22" />
+      <line class="fil2 str88" x1="403.74" y1="2107.72" x2="417.22" y2= "2085.17" />
+      <line class="fil2 str89" x1="412.54" y1="2112.67" x2="425.46" y2= "2089.84" />
+      <line class="fil2 str90" x1="421.34" y1="2117.61" x2="433.44" y2= "2094.52" />
+      <line class="fil2 str91" x1="430.41" y1="2122.29" x2="441.96" y2= "2098.64" />
+      <line class="fil2 str92" x1="439.49" y1="2126.41" x2="450.21" y2= "2102.49" />
+      <line class="fil2 str72" x1="448.84" y1="2130.54" x2="459.01" y2= "2106.34" />
+      <line class="fil2 str74" x1="458.19" y1="2134.39" x2="467.54" y2= "2109.91" />
+      <line class="fil2 str13" x1="467.81" y1="2137.69" x2="476.34" y2= "2112.94" />
+      <line class="fil2 str12" x1="285.77" y1="1994.69" x2="307.77" y2= "1980.39" />
+      <line class="fil2 str45" x1="289.62" y1="2000.19" x2="311.34" y2= "1985.34" />
+      <line class="fil2 str93" x1="293.47" y1="2005.97" x2="314.92" y2= "1990.57" />
+      <line class="fil2 str46" x1="297.59" y1="2011.19" x2="318.49" y2= "1995.52" />
+      <line class="fil2 str47" x1="301.72" y1="2016.69" x2="322.34" y2= "2000.47" />
+      <line class="fil2 str94" x1="305.84" y1="2021.92" x2="326.19" y2= "2005.42" />
+      <line class="fil2 str95" x1="310.24" y1="2027.42" x2="330.32" y2= "2010.64" />
+      <line class="fil2 str49" x1="314.64" y1="2032.37" x2="334.44" y2= "2015.04" />
+      <line class="fil2 str96" x1="319.04" y1="2037.59" x2="338.57" y2= "2019.99" />
+      <line class="fil2 str97" x1="323.44" y1="2042.54" x2="342.69" y2= "2024.67" />
+      <line class="fil2 str51" x1="328.12" y1="2047.22" x2="346.82" y2= "2028.79" />
+      <line class="fil2 str52" x1="332.79" y1="2052.17" x2="351.22" y2= "2033.47" />
+      <line class="fil2 str30" x1="233.52" y1="1868.2" x2="259.09" y2= "1863.25" />
+      <path class="fil2 str31" d="M234.62 1874.25l25.57 -5.78m-24.2 11.83l25.57 -6.33"/>
+      <line class="fil2 str32" x1="237.65" y1="1886.35" x2="262.94" y2= "1879.47" />
+      <line class="fil2 str33" x1="239.3" y1="1892.4" x2="264.32" y2= "1884.97" />
+      <path class="fil2 str34" d="M240.94 1898.17l25.02 -7.98m-23.1 14.02l24.75 -8.52"/>
+      <line class="fil2 str35" x1="244.8" y1="1910" x2="269.27" y2= "1900.92" />
+      <line class="fil2 str36" x1="246.72" y1="1915.77" x2="271.19" y2= "1906.15" />
+      <line class="fil2 str37" x1="248.65" y1="1921.27" x2="272.85" y2= "1911.37" />
+      <line class="fil2 str38" x1="250.85" y1="1927.05" x2="275.04" y2= "1916.6" />
+      <line class="fil2 str1" x1="253.05" y1="1932.55" x2="276.97" y2= "1921.82" />
+      <line class="fil2 str20" x1="227.47" y1="1800" x2="253.59" y2= "1800" />
+      <line class="fil2 str21" x1="227.47" y1="1806.33" x2="253.59" y2= "1806.05" />
+      <line class="fil2 str22" x1="227.75" y1="1812.65" x2="253.87" y2= "1811.83" />
+      <line class="fil2 str23" x1="228.02" y1="1818.7" x2="254.15" y2= "1817.6" />
+      <line class="fil2 str24" x1="228.3" y1="1825.02" x2="254.42" y2= "1823.37" />
+      <line class="fil2 str25" x1="228.57" y1="1831.35" x2="254.7" y2= "1829.43" />
+      <line class="fil2 str26" x1="229.12" y1="1837.67" x2="255.24" y2= "1835.2" />
+      <line class="fil2 str27" x1="229.67" y1="1843.72" x2="255.8" y2= "1840.97" />
+      <line class="fil2 str28" x1="230.5" y1="1850.05" x2="256.62" y2= "1846.75" />
+      <line class="fil2 str29" x1="231.32" y1="1856.1" x2="257.44" y2= "1852.25" />
+      <path class="fil2 str30" d="M232.42 1862.15l25.85 -4.4m-24.75 10.45l25.57 -4.95"/>
+     </g>
+    </g>
+    <g>
+     <path class="fil2 str19" d="M584.69 1509.89l0 -26.4m11.27 26.68l0.83 -26.4"/>
+     <path class="fil2 str18" d="M607.23 1510.71l1.93 -26.12m8.8 27.22l2.75 -26.13"/>
+     <line class="fil2 str17" x1="628.96" y1="1513.19" x2="632.81" y2= "1487.33" />
+     <path class="fil2 str16" d="M639.41 1515.11l4.68 -25.85m5.77 28.05l5.78 -25.57"/>
+     <path class="fil2 str15" d="M660.31 1519.78l6.6 -25.3m3.57 28.33l7.7 -25.3"/>
+     <line class="fil2 str14" x1="680.38" y1="1526.11" x2="688.91" y2= "1501.36" />
+     <path class="fil2 str13" d="M690.56 1529.96l9.35 -24.48m0.28 28.6l10.17 -24.2"/>
+     <path class="fil2 str77" d="M467.26 1534.63l-10.72 -23.93m20.62 19.53l-9.9 -24.48m20.07 20.63l-8.8 -24.75m18.98 21.45l-7.98 -25.03"/>
+     <path class="fil2 str76" d="M507.96 1520.06l-6.87 -25.3m17.32 22.55l-6.05 -25.57m16.78 23.37l-4.95 -25.85m15.67 23.93l-3.85 -26.12m14.85 24.75l-3.02 -26.13"/>
+     <line class="fil2 str75" x1="562.13" y1="1510.71" x2="560.21" y2= "1484.59" />
+     <path class="fil2 str19" d="M573.41 1510.16l-1.1 -26.4m12.37 26.13l0 -26.4"/>
+     <path class="fil2 str80" d="M379.54 1594.58l-18.42 -18.7m25.57 11.83l-17.87 -19.25m25.02 12.93l-17.32 -19.8m24.75 13.48l-16.5 -20.35m24.2 14.3l-15.95 -20.9"/>
+     <path class="fil2 str79" d="M416.67 1563.23l-15.13 -21.45m23.1 15.95l-14.57 -21.72m22.55 16.78l-13.75 -22.28m22.27 17.33l-12.93 -22.83m21.45 18.15l-12.1 -23.37"/>
+     <line class="fil2 str78" x1="458.19" y1="1538.76" x2="446.91" y2= "1515.11" />
+     <line class="fil2 str77" x1="467.26" y1="1534.63" x2="456.54" y2= "1510.71" />
+     <path class="fil2 str80" d="M379.54 1594.58l-18.42 -18.7m11.82 25.57l-19.25 -18.15m12.65 25.3l-19.8 -17.32m13.75 24.75l-20.35 -16.78m14.3 24.2l-20.9 -15.95"/>
+     <path class="fil2 str79" d="M348.47 1631.16l-21.18 -15.4m15.68 23.37l-21.72 -14.85m16.5 22.82l-22.28 -13.75m17.32 22l-22.55 -13.2m17.87 21.45l-23.1 -12.1"/>
+     <line class="fil2 str78" x1="323.72" y1="1672.41" x2="300.07" y2= "1660.85" />
+     <path class="fil2 str77" d="M319.59 1681.2l-23.93 -10.72m0 0l23.93 10.72m-28.6 0.28l24.2 9.9m-28.6 1.38l24.75 8.8m-28.6 2.47l25.02 7.98"/>
+     <path class="fil2 str76" d="M279.44 1715.3l25.3 6.87m-28.32 4.95l25.57 6.05m-28.05 5.5l25.85 4.95m-28.05 7.15l25.85 3.85m-27.5 8.25l26.13 2.75"/>
+     <line class="fil2 str75" x1="269" y1="1775.25" x2="295.12" y2= "1777.18" />
+     <path class="fil2 str19" d="M268.44 1787.63l26.12 0.82m-26.4 11.83l26.13 -0.28"/>
+     <line class="fil2 str1" x1="465.61" y1="2092.87" x2="475.51" y2= "2068.67" />
+     <line class="fil2 str37" x1="475.79" y1="2096.72" x2="484.86" y2= "2072.24" />
+     <line class="fil2 str35" x1="485.96" y1="2100.29" x2="494.21" y2= "2075.26" />
+     <line class="fil2 str34" x1="496.41" y1="2103.59" x2="503.83" y2= "2078.29" />
+     <line class="fil2 str32" x1="507.14" y1="2106.61" x2="513.74" y2= "2081.31" />
+     <line class="fil2 str31" x1="517.59" y1="2109.09" x2="523.36" y2= "2083.52" />
+     <line class="fil2 str30" x1="528.59" y1="2111.29" x2="533.26" y2= "2085.44" />
+     <line class="fil2 str28" x1="539.59" y1="2113.21" x2="543.44" y2= "2087.37" />
+     <line class="fil2 str26" x1="550.59" y1="2114.59" x2="553.33" y2= "2088.46" />
+     <line class="fil2 str24" x1="561.86" y1="2115.41" x2="563.78" y2= "2089.29" />
+     <line class="fil2 str22" x1="573.13" y1="2116.24" x2="573.96" y2= "2090.11" />
+     <line class="fil2 str20" x1="584.69" y1="2116.24" x2="584.69" y2= "2090.11" />
+     <path class="fil2 str0" d="M888 1800c0,169.12 -133.92,303.04 -303.31,303.04"/>
+     <g>
+      <line class="fil2 str52" x1="359.19" y1="2021.37" x2="377.61" y2= "2002.67" />
+      <line class="fil2 str97" x1="367.72" y1="2029.62" x2="385.59" y2= "2010.37" />
+      <line class="fil2 str49" x1="376.24" y1="2037.59" x2="393.29" y2= "2017.79" />
+      <line class="fil2 str94" x1="385.31" y1="2045.02" x2="401.81" y2= "2024.67" />
+      <line class="fil2 str46" x1="394.39" y1="2052.44" x2="410.06" y2= "2031.27" />
+      <line class="fil2 str45" x1="403.74" y1="2059.04" x2="418.59" y2= "2037.32" />
+      <line class="fil2 str11" x1="413.37" y1="2065.64" x2="427.39" y2= "2043.37" />
+      <line class="fil2 str9" x1="423.26" y1="2071.69" x2="436.46" y2= "2049.14" />
+      <line class="fil2 str7" x1="433.44" y1="2077.46" x2="445.81" y2= "2054.37" />
+      <line class="fil2 str5" x1="443.89" y1="2082.96" x2="455.44" y2= "2059.31" />
+      <line class="fil2 str3" x1="454.61" y1="2087.92" x2="465.34" y2= "2063.99" />
+      <line class="fil2 str1" x1="465.61" y1="2092.87" x2="475.51" y2= "2068.67" />
+      <line class="fil2 str13" x1="291.82" y1="1917.97" x2="316.02" y2= "1908.07" />
+      <line class="fil2 str73" x1="296.22" y1="1928.42" x2="320.14" y2= "1917.42" />
+      <line class="fil2 str98" x1="301.17" y1="1938.87" x2="324.54" y2= "1927.05" />
+      <line class="fil2 str69" x1="306.12" y1="1949.04" x2="329.22" y2= "1936.39" />
+      <line class="fil2 str99" x1="311.62" y1="1958.94" x2="334.17" y2= "1945.47" />
+      <line class="fil2 str88" x1="317.39" y1="1968.57" x2="339.39" y2= "1954.54" />
+      <line class="fil2 str100" x1="323.72" y1="1977.92" x2="345.17" y2= "1963.07" />
+      <line class="fil2 str101" x1="330.04" y1="1986.99" x2="350.94" y2= "1971.32" />
+      <line class="fil2 str58" x1="336.92" y1="1996.07" x2="357.27" y2= "1979.57" />
+      <line class="fil2 str102" x1="344.07" y1="2004.87" x2="363.87" y2= "1987.54" />
+      <line class="fil2 str103" x1="351.49" y1="2013.12" x2="370.74" y2= "1995.24" />
+      <line class="fil2 str52" x1="359.19" y1="2021.37" x2="377.61" y2= "2002.67" />
+      <path class="fil2 str19" d="M268.17 1800.28l26.13 -0.28m-26.13 11.55l26.13 -1.1"/>
+      <path class="fil2 str18" d="M269 1822.82l26.12 -2.2m-25.02 13.47l26.13 -3.02"/>
+      <line class="fil2 str17" x1="271.47" y1="1844.82" x2="297.32" y2= "1840.7" />
+      <path class="fil2 str16" d="M273.39 1855.82l25.85 -4.95m-23.65 15.67l25.57 -6.05"/>
+      <path class="fil2 str15" d="M278.07 1877l25.3 -6.87m-22.28 17.33l25.02 -7.7"/>
+      <line class="fil2 str14" x1="284.39" y1="1897.62" x2="309.14" y2= "1889.1" />
+      <path class="fil2 str13" d="M287.97 1907.8l24.48 -9.35m-20.63 19.53l24.2 -9.9m384.16 -373.99l10.17 -24.2"/>
+      <line class="fil2 str73" x1="709.53" y1="1538.21" x2="720.53" y2= "1514.28" />
+      <line class="fil2 str98" x1="718.33" y1="1542.61" x2="729.88" y2= "1518.96" />
+      <line class="fil2 str69" x1="727.13" y1="1547.28" x2="739.5" y2= "1524.19" />
+      <line class="fil2 str99" x1="735.65" y1="1551.96" x2="748.85" y2= "1529.41" />
+      <line class="fil2 str88" x1="743.9" y1="1557.19" x2="757.93" y2= "1534.91" />
+      <line class="fil2 str100" x1="752.15" y1="1562.69" x2="767" y2= "1540.96" />
+      <line class="fil2 str101" x1="760.13" y1="1568.46" x2="775.53" y2= "1547.28" />
+      <line class="fil2 str58" x1="767.83" y1="1574.23" x2="784.05" y2= "1553.61" />
+      <line class="fil2 str102" x1="775.25" y1="1580.56" x2="792.3" y2= "1560.48" />
+      <line class="fil2 str103" x1="782.68" y1="1587.16" x2="800.55" y2= "1567.91" />
+      <path class="fil2 str52" d="M789.83 1594.03l18.43 -18.7m-18.43 18.7l18.43 -18.7"/>
+      <line class="fil2 str97" x1="797.25" y1="1601.46" x2="816.5" y2= "1583.58" />
+      <line class="fil2 str49" x1="804.13" y1="1609.43" x2="823.93" y2= "1592.11" />
+      <line class="fil2 str94" x1="811" y1="1617.68" x2="831.35" y2= "1601.18" />
+      <line class="fil2 str46" x1="817.33" y1="1625.93" x2="838.22" y2= "1610.26" />
+      <line class="fil2 str45" x1="823.37" y1="1634.73" x2="845.1" y2= "1619.88" />
+      <line class="fil2 str11" x1="829.15" y1="1643.53" x2="851.15" y2= "1629.51" />
+      <line class="fil2 str9" x1="834.37" y1="1652.61" x2="856.93" y2= "1639.13" />
+      <line class="fil2 str7" x1="839.6" y1="1661.96" x2="862.7" y2= "1649.31" />
+      <line class="fil2 str5" x1="844.55" y1="1671.58" x2="867.93" y2= "1659.76" />
+      <line class="fil2 str3" x1="848.95" y1="1681.48" x2="872.87" y2= "1670.48" />
+      <path class="fil2 str1" d="M853.35 1691.38l24.2 -10.45m-0.28 0l-24.2 10.45"/>
+      <line class="fil2 str37" x1="881.4" y1="1691.1" x2="856.93" y2= "1700.73" />
+      <line class="fil2 str35" x1="884.97" y1="1701.56" x2="860.22" y2= "1710.35" />
+      <line class="fil2 str34" x1="888.27" y1="1712" x2="863.25" y2= "1719.7" />
+      <line class="fil2 str32" x1="891.3" y1="1722.45" x2="866" y2= "1729.33" />
+      <line class="fil2 str31" x1="893.77" y1="1733.18" x2="868.2" y2= "1739.23" />
+      <line class="fil2 str30" x1="895.97" y1="1743.9" x2="870.12" y2= "1748.85" />
+      <line class="fil2 str28" x1="897.9" y1="1754.9" x2="872.05" y2= "1759.03" />
+      <line class="fil2 str26" x1="899.27" y1="1765.9" x2="873.15" y2= "1768.93" />
+      <line class="fil2 str24" x1="900.37" y1="1777.18" x2="874.25" y2= "1779.1" />
+      <line class="fil2 str22" x1="900.92" y1="1788.45" x2="874.8" y2= "1789.55" />
+      <line class="fil2 str20" x1="901.2" y1="1800" x2="875.07" y2= "1800" />
+     </g>
+    </g>
+    <g>
+     <path class="fil2 str104" d="M452.41 1641.88c-6.6,6.6 -12.93,13.47 -19.25,20.62 -1.93,2.2 -5.5,6.6 -7.15,8.8 -7.7,10.45 -14.3,21.45 -20.07,33"/>
+     <g>
+      <path class="fil2 str80" d="M394.11 1698.53l23.65 11.55m-27.5 -2.75l24.2 10.45m-27.78 -1.65l24.48 9.35"/>
+      <path class="fil2 str79" d="M383.39 1724.93l24.75 8.25m-27.77 0.83l25.3 7.43"/>
+      <line class="fil2 str78" x1="377.89" y1="1743.35" x2="403.46" y2= "1749.68" />
+      <path class="fil2 str77" d="M375.96 1752.43l25.85 5.23m-27.5 4.12l25.85 4.13"/>
+      <path class="fil2 str76" d="M372.94 1771.4l26.13 3.02m-26.95 6.33l26.13 1.93"/>
+      <line class="fil2 str75" x1="371.57" y1="1790.37" x2="397.69" y2= "1791.2" />
+      <line class="fil2 str19" x1="371.29" y1="1800" x2="397.42" y2= "1800" />
+      <line class="fil2 str52" x1="441.69" y1="1962.52" x2="458.46" y2= "1942.44" />
+      <line class="fil2 str105" x1="436.46" y1="1958.12" x2="454.89" y2= "1939.42" />
+      <line class="fil2 str106" x1="431.79" y1="1953.17" x2="451.31" y2= "1935.85" />
+      <line class="fil2 str53" x1="426.84" y1="1947.39" x2="447.19" y2= "1930.62" />
+      <line class="fil2 str81" x1="421.89" y1="1941.07" x2="442.24" y2= "1924.57" />
+      <path class="fil2 str54" d="M417.76 1935.3l20.63 -16.22m-24.48 10.72l20.9 -15.95m-20.9 15.95l20.9 -15.95"/>
+      <line class="fil2 str107" x1="408.69" y1="1922.09" x2="429.59" y2= "1906.42" />
+      <line class="fil2 str61" x1="403.74" y1="1914.4" x2="425.19" y2= "1899.27" />
+      <line class="fil2 str88" x1="398.79" y1="1906.7" x2="420.79" y2= "1892.4" />
+      <line class="fil2 str68" x1="394.11" y1="1898.45" x2="416.67" y2= "1885.25" />
+      <line class="fil2 str108" x1="389.99" y1="1889.65" x2="413.37" y2= "1877.82" />
+      <path class="fil2 str13" d="M386.14 1880.57l24.2 -10.45m-24.2 10.45l24.2 -10.45m-26.67 3.3l24.47 -9.62"/>
+      <line class="fil2 str14" x1="381.46" y1="1866.55" x2="406.22" y2= "1857.75" />
+      <path class="fil2 str15" d="M379.27 1859.4l25.02 -7.7m-26.95 0.28l25.3 -6.87"/>
+      <path class="fil2 str16" d="M375.96 1844.82l25.57 -6.05m-26.95 -1.1l25.85 -4.95"/>
+      <line class="fil2 str17" x1="373.49" y1="1830.25" x2="399.34" y2= "1826.13" />
+      <path class="fil2 str18" d="M372.39 1822.82l26.13 -3.02m-26.67 -4.4l26.12 -1.93"/>
+      <path class="fil2 str19" d="M371.57 1807.7l26.12 -1.1m-26.4 -6.6l26.13 0"/>
+     </g>
+    </g>
+   </g>
+   <path class="fil3" d="M436.23 1945.03l-1.02 -11.3c-1.02,-10.66 -1.52,-21.57 -1.52,-32.48l0 -202.26c0,-10.91 0.51,-21.82 1.52,-32.48l1.02 -11.29 -12.31 23.85c-0.13,4.44 -0.25,9.01 -0.25,9.01l0 218.76c0,0 0.13,4.57 0.25,9.01l12.31 29.19z"/>
+   <g>
+    <path class="fil2 str109" d="M743.9 1670.48c-1.65,-2.2 -7.15,-9.9 -10.45,-14.3 -0.28,-0.28 -5.5,-9.63 -9.35,-14.57"/>
+    <path class="fil2 str110" d="M785.7 1800c-2.2,28.6 -1.65,38.22 -10.72,65.17 -5.78,17.32 -17.32,43.17 -27.78,58.02 -3.02,4.4 -7.42,9.35 -10.72,13.75 -7.15,9.63 -12.1,17.87 -17.32,22.83"/>
+    <g>
+     <line class="fil2 str52" x1="733.73" y1="1678.73" x2="753.8" y2= "1661.96" />
+     <line class="fil2 str51" x1="736.75" y1="1683.41" x2="758.2" y2= "1668.28" />
+     <line class="fil2 str50" x1="739.78" y1="1688.35" x2="762.05" y2= "1674.33" />
+     <line class="fil2 str49" x1="742.53" y1="1693.85" x2="765.35" y2= "1680.65" />
+     <line class="fil2 str48" x1="745" y1="1699.35" x2="768.1" y2= "1686.7" />
+     <line class="fil2 str47" x1="747.75" y1="1705.13" x2="770.85" y2= "1692.48" />
+     <path class="fil2 str46" d="M750.78 1711.18l22.82 -12.92m-22.82 12.92l22.82 -12.92"/>
+     <line class="fil2 str12" x1="754.35" y1="1719.15" x2="777.73" y2= "1707.06" />
+     <line class="fil2 str44" x1="757.65" y1="1726.85" x2="781.57" y2= "1715.85" />
+     <line class="fil2 str8" x1="760.68" y1="1734.83" x2="784.88" y2= "1724.65" />
+     <line class="fil2 str111" x1="763.43" y1="1742.8" x2="788.18" y2= "1733.73" />
+     <line class="fil2 str40" x1="765.9" y1="1750.78" x2="790.93" y2= "1742.8" />
+     <line class="fil2 str112" x1="767.83" y1="1758.75" x2="793.13" y2= "1752.15" />
+     <line class="fil2 str35" x1="769.48" y1="1766.73" x2="795.05" y2= "1761.23" />
+     <line class="fil2 str113" x1="770.85" y1="1774.98" x2="796.7" y2= "1770.85" />
+     <line class="fil2 str29" x1="771.95" y1="1783.22" x2="798.07" y2= "1780.48" />
+     <line class="fil2 str25" x1="772.5" y1="1791.48" x2="798.63" y2= "1790.1" />
+     <line class="fil2 str20" x1="772.5" y1="1800" x2="798.63" y2= "1800" />
+    </g>
+   </g>
+   <path class="fil0" d="M739.74 1920.79l0.26 -9.01 0 -228.4c0,0 -0.13,-4.57 -0.26,-9.01l-6.22 -19.29 0.51 5.83 0.51 5.46c1.02,10.53 1.52,21.57 1.52,32.48l0 202.39c0,10.91 -0.51,21.95 -1.52,32.48l-1.02 11.3 6.22 -24.24z"/>
+   <g>
+    <g>
+     <path class="fil2 str114" d="M477.99 1848.12l0 -95.97c0,-3.57 1.65,-6.33 5.22,-6.33l202.12 0"/>
+     <path class="fil2 str0" d="M691.93 1759.03l1.93 91.3c0,2.48 -1.65,4.4 -3.3,4.4l-197.17 -1.38"/>
+     <line class="fil2 str115" x1="501.64" y1="1853.07" x2="462.59" y2= "1845.65" />
+     <line class="fil2 str73" x1="501.64" y1="1853.62" x2="462.59" y2= "1846.2" />
+     <line class="fil2 str116" x1="501.64" y1="1854.17" x2="462.59" y2= "1846.75" />
+     <line class="fil2 str117" x1="501.91" y1="1851.43" x2="462.04" y2= "1850.32" />
+     <line class="fil2 str118" x1="501.91" y1="1848.95" x2="462.59" y2= "1854.45" />
+     <line class="fil2 str67" x1="501.09" y1="1845.65" x2="463.69" y2= "1859.12" />
+     <line class="fil2 str119" x1="499.16" y1="1842.07" x2="465.89" y2= "1863.8" />
+     <line class="fil2 str120" x1="496.69" y1="1838.78" x2="469.19" y2= "1867.37" />
+     <line class="fil2 str121" x1="493.94" y1="1836.57" x2="472.76" y2= "1870.12" />
+     <line class="fil2 str122" x1="491.74" y1="1835.47" x2="476.06" y2= "1872.05" />
+     <line class="fil2 str85" x1="490.09" y1="1834.65" x2="479.09" y2= "1872.87" />
+     <line class="fil2 str84" x1="488.99" y1="1834.37" x2="481.29" y2= "1873.42" />
+     <line class="fil2 str83" x1="488.44" y1="1834.1" x2="482.94" y2= "1873.42" />
+     <line class="fil2 str123" x1="488.44" y1="1834.1" x2="484.59" y2= "1873.7" />
+     <line class="fil2 str53" x1="488.71" y1="1834.1" x2="485.69" y2= "1873.7" />
+     <line class="fil2 str124" x1="489.26" y1="1834.1" x2="486.51" y2= "1873.7" />
+     <line class="fil2 str125" x1="490.36" y1="1834.1" x2="487.34" y2= "1873.7" />
+     <line class="fil2 str49" x1="492.84" y1="1834.37" x2="486.24" y2= "1873.42" />
+     <line class="fil2 str126" x1="493.39" y1="1834.37" x2="486.79" y2= "1873.7" />
+     <line class="fil2 str127" x1="493.94" y1="1834.37" x2="487.34" y2= "1873.7" />
+     <line class="fil2 str12" x1="494.49" y1="1834.37" x2="487.89" y2= "1873.7" />
+     <line class="fil2 str44" x1="495.04" y1="1834.65" x2="488.44" y2= "1873.97" />
+     <line class="fil2 str128" x1="495.59" y1="1834.65" x2="488.99" y2= "1873.7" />
+     <line class="fil2 str41" x1="496.14" y1="1834.65" x2="489.54" y2= "1873.97" />
+     <line class="fil2 str129" x1="496.69" y1="1834.65" x2="490.09" y2= "1873.97" />
+     <line class="fil2 str2" x1="497.24" y1="1834.65" x2="490.64" y2= "1873.97" />
+     <line class="fil2 str37" x1="497.79" y1="1834.65" x2="491.19" y2= "1873.97" />
+     <line class="fil2 str34" x1="498.34" y1="1834.93" x2="491.74" y2= "1873.97" />
+     <line class="fil2 str31" x1="498.89" y1="1834.93" x2="492.29" y2= "1874.25" />
+     <line class="fil2 str28" x1="499.44" y1="1834.93" x2="492.84" y2= "1874.25" />
+     <line class="fil2 str24" x1="499.99" y1="1834.93" x2="493.39" y2= "1874.25" />
+     <line class="fil2 str20" x1="500.54" y1="1834.93" x2="493.94" y2= "1874.25" />
+     <line class="fil2 str108" x1="688.08" y1="1736.2" x2="680.93" y2= "1761.5" />
+     <line class="fil2 str117" x1="688.35" y1="1736.2" x2="682.03" y2= "1761.5" />
+     <line class="fil2 str130" x1="689.18" y1="1736.2" x2="683.13" y2= "1761.5" />
+     <line class="fil2 str119" x1="690" y1="1736.48" x2="683.96" y2= "1761.5" />
+     <line class="fil2 str87" x1="690.83" y1="1736.48" x2="684.23" y2= "1761.23" />
+     <line class="fil2 str131" x1="692.2" y1="1736.75" x2="684.5" y2= "1761.23" />
+     <line class="fil2 str59" x1="693.58" y1="1737.3" x2="684.23" y2= "1760.95" />
+     <line class="fil2 str57" x1="695.23" y1="1738.13" x2="683.41" y2= "1760.68" />
+     <line class="fil2 str123" x1="697.15" y1="1739.23" x2="682.31" y2= "1759.85" />
+     <line class="fil2 str106" x1="699.35" y1="1740.88" x2="681.48" y2= "1758.75" />
+     <line class="fil2 str97" x1="701" y1="1742.8" x2="680.38" y2= "1757.65" />
+     <line class="fil2 str132" x1="702.11" y1="1745" x2="679.56" y2= "1756.55" />
+     <line class="fil2 str133" x1="702.93" y1="1746.93" x2="679.28" y2= "1756" />
+     <line class="fil2 str134" x1="703.48" y1="1748.58" x2="679" y2= "1755.73" />
+     <line class="fil2 str10" x1="704.03" y1="1749.95" x2="679.28" y2= "1755.73" />
+     <line class="fil2 str7" x1="704.03" y1="1751.33" x2="679" y2= "1756" />
+     <line class="fil2 str4" x1="704.3" y1="1752.7" x2="679" y2= "1756.83" />
+     <line class="fil2 str112" x1="704.3" y1="1754.08" x2="679" y2= "1758.2" />
+     <line class="fil2 str34" x1="704.3" y1="1754.63" x2="678.73" y2= "1759.03" />
+     <line class="fil2 str135" x1="704.3" y1="1755.18" x2="678.73" y2= "1760.13" />
+     <line class="fil2 str26" x1="704.3" y1="1755.45" x2="678.73" y2= "1761.23" />
+     <line class="fil2 str20" x1="704.3" y1="1756" x2="678.73" y2= "1762.33" />
+     <path class="fil2 str136" d="M757.65 1982.04c-11,11 -31.63,28.05 -44.82,37.13"/>
+     <path class="fil2 str137" d="M474.96 1579.46c-1.38,-1.37 -5.5,-2.75 -7.43,-2.75 -1.38,0 -5.5,1.93 -6.6,2.48 -4.12,2.47 -7.43,4.4 -11.28,7.15 -69.57,47.57 -112.74,128.97 -112.74,213.94"/>
+     <path class="fil2 str138" d="M478.54 2007.34l0 -99.82c0,-2.2 1.1,-4.4 4.4,-4.4l204.87 0m-209.81 -312.39l0 107.8"/>
+     <path class="fil2 str137" d="M690.56 1593.48l0 97.34c0,3.57 0.55,6.88 -3.02,6.88l-18.7 0 -177.37 0m199.09 218.07l0.28 87.44"/>
+     <line class="fil2 str80" x1="724.65" y1="2035.12" x2="700.73" y2= "2003.22" />
+     <line class="fil2 str77" x1="723.28" y1="2035.94" x2="699.91" y2= "2003.77" />
+     <line class="fil2 str19" x1="721.63" y1="2037.04" x2="699.35" y2= "2004.04" />
+     <line class="fil2 str15" x1="719.43" y1="2038.42" x2="699.35" y2= "2004.04" />
+     <line class="fil2 str115" x1="716.41" y1="2040.07" x2="699.63" y2= "2004.04" />
+     <line class="fil2 str139" x1="712.28" y1="2041.72" x2="701" y2= "2003.49" />
+     <line class="fil2 str98" x1="709.26" y1="2042.27" x2="700.73" y2= "2003.49" />
+     <line class="fil2 str69" x1="706.23" y1="2042.81" x2="700.18" y2= "2003.49" />
+     <line class="fil2 str130" x1="703.76" y1="2043.09" x2="699.91" y2= "2003.49" />
+     <line class="fil2 str119" x1="701.28" y1="2043.37" x2="699.08" y2= "2003.77" />
+     <line class="fil2 str64" x1="699.63" y1="2043.37" x2="698.8" y2= "2003.49" />
+     <line class="fil2 str121" x1="698.26" y1="2043.37" x2="698.26" y2= "2003.49" />
+     <line class="fil2 str86" x1="697.43" y1="2043.37" x2="697.43" y2= "2003.49" />
+     <line class="fil2 str140" x1="693.03" y1="2043.09" x2="700.18" y2= "2004.04" />
+     <line class="fil2 str57" x1="688.91" y1="2041.99" x2="701.56" y2= "2004.32" />
+     <line class="fil2 str55" x1="685.61" y1="2040.62" x2="702.65" y2= "2004.59" />
+     <line class="fil2 str141" x1="682.85" y1="2038.97" x2="703.76" y2= "2005.14" />
+     <line class="fil2 str124" x1="680.11" y1="2037.04" x2="704.03" y2= "2005.42" />
+     <line class="fil2 str142" x1="677.63" y1="2035.12" x2="704.3" y2= "2005.69" />
+     <line class="fil2 str95" x1="675.16" y1="2032.64" x2="704.58" y2= "2005.97" />
+     <line class="fil2 str143" x1="673.23" y1="2029.89" x2="705.13" y2= "2005.97" />
+     <line class="fil2 str45" x1="671.03" y1="2027.14" x2="705.13" y2= "2006.52" />
+     <line class="fil2 str11" x1="669.38" y1="2023.84" x2="705.41" y2= "2007.07" />
+     <line class="fil2 str128" x1="668" y1="2020.27" x2="705.68" y2= "2007.89" />
+     <line class="fil2 str41" x1="667.18" y1="2016.14" x2="706.23" y2= "2008.99" />
+     <line class="fil2 str4" x1="666.63" y1="2011.74" x2="706.23" y2= "2010.09" />
+     <line class="fil2 str2" x1="666.63" y1="2009.82" x2="706.5" y2= "2009.54" />
+     <line class="fil2 str35" x1="666.63" y1="2008.44" x2="706.5" y2= "2008.17" />
+     <line class="fil2 str32" x1="666.63" y1="2007.07" x2="706.5" y2= "2006.8" />
+     <line class="fil2 str29" x1="666.63" y1="2005.69" x2="706.5" y2= "2005.42" />
+     <line class="fil2 str25" x1="666.63" y1="2004.32" x2="706.5" y2= "2004.04" />
+     <line class="fil2 str20" x1="666.63" y1="2002.94" x2="706.5" y2= "2002.39" />
+     <line class="fil2 str138" x1="494.21" y1="2007.34" x2="454.34" y2= "2007.07" />
+     <line class="fil2 str144" x1="494.21" y1="2008.44" x2="454.61" y2= "2008.44" />
+     <line class="fil2 str145" x1="494.21" y1="2009.82" x2="454.61" y2= "2010.09" />
+     <line class="fil2 str146" x1="494.21" y1="2010.92" x2="454.61" y2= "2011.47" />
+     <line class="fil2 str147" x1="494.21" y1="2012.02" x2="454.61" y2= "2013.12" />
+     <line class="fil2 str148" x1="493.94" y1="2016.69" x2="454.61" y2= "2012.57" />
+     <line class="fil2 str149" x1="492.84" y1="2021.37" x2="454.61" y2= "2011.19" />
+     <line class="fil2 str150" x1="491.19" y1="2026.04" x2="455.17" y2= "2009.54" />
+     <line class="fil2 str151" x1="488.71" y1="2030.44" x2="455.99" y2= "2007.89" />
+     <line class="fil2 str152" x1="485.41" y1="2034.02" x2="457.36" y2= "2006.24" />
+     <line class="fil2 str153" x1="481.84" y1="2037.04" x2="458.74" y2= "2005.14" />
+     <line class="fil2 str154" x1="478.26" y1="2039.24" x2="459.84" y2= "2004.32" />
+     <line class="fil2 str155" x1="474.69" y1="2040.62" x2="460.94" y2= "2003.49" />
+     <line class="fil2 str156" x1="471.39" y1="2041.44" x2="461.49" y2= "2003.22" />
+     <line class="fil2 str157" x1="468.36" y1="2041.99" x2="462.04" y2= "2002.94" />
+     <line class="fil2 str158" x1="465.34" y1="2042.27" x2="462.31" y2= "2002.94" />
+     <line class="fil2 str159" x1="462.59" y1="2042.27" x2="462.59" y2= "2002.67" />
+     <line class="fil2 str160" x1="459.84" y1="2041.99" x2="462.86" y2= "2002.67" />
+     <line class="fil2 str161" x1="457.36" y1="2041.72" x2="463.41" y2= "2002.67" />
+     <line class="fil2 str162" x1="454.61" y1="2040.89" x2="464.24" y2= "2002.39" />
+     <line class="fil2 str163" x1="452.69" y1="2040.34" x2="464.79" y2= "2002.67" />
+     <line class="fil2 str164" x1="451.04" y1="2039.52" x2="464.24" y2= "2002.39" />
+     <line class="fil2 str165" x1="449.39" y1="2038.69" x2="463.41" y2= "2001.57" />
+     <line class="fil2 str166" x1="447.74" y1="2037.87" x2="462.59" y2= "2001.29" />
+     <line class="fil2 str167" x1="445.81" y1="2036.77" x2="461.76" y2= "2000.74" />
+     <line class="fil2 str168" x1="443.89" y1="2035.67" x2="461.21" y2= "1999.92" />
+     <line class="fil2 str169" x1="443.06" y1="2035.12" x2="460.39" y2= "1999.37" />
+     <line class="fil2 str170" x1="442.51" y1="2034.57" x2="459.01" y2= "1998.54" />
+     <line class="fil2 str171" x1="441.41" y1="2033.74" x2="457.64" y2= "1997.44" />
+     <line class="fil2 str172" x1="440.31" y1="2032.92" x2="455.99" y2= "1996.62" />
+     <line class="fil2 str173" x1="439.21" y1="2032.37" x2="454.89" y2= "1995.8" />
+     <path class="fil2 str139" d="M438.11 2031.54l15.67 -36.57m-15.67 36.57l15.67 -36.57"/>
+     <line class="fil2 str174" x1="433.99" y1="2028.79" x2="451.59" y2= "1993.32" />
+     <line class="fil2 str175" x1="429.86" y1="2025.77" x2="449.11" y2= "1991.12" />
+     <line class="fil2 str67" x1="425.74" y1="2022.47" x2="446.36" y2= "1988.64" />
+     <line class="fil2 str65" x1="421.89" y1="2019.17" x2="443.89" y2= "1986.17" />
+     <line class="fil2 str87" x1="418.04" y1="2015.59" x2="441.14" y2= "1983.42" />
+     <line class="fil2 str131" x1="414.19" y1="2012.29" x2="438.39" y2= "1980.94" />
+     <line class="fil2 str176" x1="410.61" y1="2008.99" x2="435.64" y2= "1978.47" />
+     <line class="fil2 str107" x1="407.04" y1="2005.42" x2="432.89" y2= "1975.44" />
+     <line class="fil2 str177" x1="403.74" y1="2002.12" x2="430.41" y2= "1972.97" />
+     <line class="fil2 str54" x1="400.44" y1="1998.82" x2="427.94" y2= "1970.22" />
+     <path class="fil2 str52" d="M397.14 1995.8l28.05 -28.05m-28.05 28.05l28.05 -28.05"/>
+     <line class="fil2 str51" x1="393.84" y1="1992.49" x2="421.89" y2= "1964.44" />
+     <line class="fil2 str97" x1="390.54" y1="1988.92" x2="418.87" y2= "1960.87" />
+     <line class="fil2 str96" x1="386.96" y1="1985.34" x2="415.29" y2= "1957.57" />
+     <line class="fil2 str49" x1="383.67" y1="1981.49" x2="412.26" y2= "1954" />
+     <line class="fil2 str95" x1="380.37" y1="1977.65" x2="409.24" y2= "1950.42" />
+     <line class="fil2 str94" x1="377.07" y1="1974.07" x2="406.22" y2= "1947.12" />
+     <line class="fil2 str47" x1="374.04" y1="1969.94" x2="403.46" y2= "1943.27" />
+     <line class="fil2 str46" x1="370.74" y1="1966.09" x2="400.44" y2= "1939.7" />
+     <line class="fil2 str93" x1="367.72" y1="1961.97" x2="397.96" y2= "1936.12" />
+     <line class="fil2 str45" x1="364.69" y1="1957.85" x2="395.49" y2= "1932.55" />
+     <path class="fil2 str12" d="M361.94 1953.72l31.07 -24.75m-31.07 24.75l31.07 -24.75"/>
+     <line class="fil2 str11" x1="358.92" y1="1949.04" x2="390.81" y2= "1925.4" />
+     <line class="fil2 str10" x1="356.17" y1="1944.09" x2="388.89" y2= "1921.55" />
+     <line class="fil2 str9" x1="353.42" y1="1939.42" x2="386.96" y2= "1917.97" />
+     <line class="fil2 str8" x1="350.94" y1="1934.74" x2="385.04" y2= "1914.12" />
+     <line class="fil2 str7" x1="348.47" y1="1929.8" x2="383.11" y2= "1910.27" />
+     <line class="fil2 str6" x1="345.99" y1="1924.85" x2="381.19" y2= "1906.15" />
+     <line class="fil2 str5" x1="343.79" y1="1919.9" x2="379.27" y2= "1902.02" />
+     <line class="fil2 str4" x1="341.59" y1="1914.94" x2="377.61" y2= "1897.9" />
+     <line class="fil2 str3" x1="339.67" y1="1910.27" x2="375.96" y2= "1894.05" />
+     <line class="fil2 str2" x1="337.47" y1="1905.32" x2="374.04" y2= "1889.65" />
+     <path class="fil2 str1" d="M335.82 1900.37l36.85 -14.85m-36.85 14.85l36.85 -14.85"/>
+     <line class="fil2 str38" x1="333.89" y1="1895.42" x2="371.02" y2= "1881.4" />
+     <line class="fil2 str37" x1="331.97" y1="1890.47" x2="369.37" y2= "1877.27" />
+     <line class="fil2 str36" x1="330.32" y1="1885.52" x2="367.99" y2= "1873.15" />
+     <line class="fil2 str35" x1="328.94" y1="1880.3" x2="366.89" y2= "1868.75" />
+     <path class="fil2 str34" d="M327.29 1875.35l38.22 -10.72m-39.6 5.5l38.5 -9.9"/>
+     <line class="fil2 str33" x1="324.82" y1="1864.9" x2="363.59" y2= "1855.55" />
+     <line class="fil2 str32" x1="323.44" y1="1859.4" x2="362.49" y2= "1851.15" />
+     <path class="fil2 str31" d="M322.34 1854.17l39.05 -7.43m-39.87 2.2l39.05 -6.6"/>
+     <path class="fil2 str30" d="M320.42 1843.72l39.32 -5.78m-39.32 5.78l39.32 -5.78m-39.87 1.93l39.33 -5.22"/>
+     <line class="fil2 str29" x1="319.32" y1="1836.02" x2="358.64" y2= "1831.07" />
+     <line class="fil2 str28" x1="319.04" y1="1832.17" x2="358.64" y2= "1827.78" />
+     <line class="fil2 str27" x1="318.49" y1="1828.05" x2="358.09" y2= "1824.2" />
+     <line class="fil2 str26" x1="318.22" y1="1824.2" x2="357.81" y2= "1820.9" />
+     <line class="fil2 str25" x1="317.67" y1="1820.07" x2="357.27" y2= "1817.32" />
+     <line class="fil2 str24" x1="317.67" y1="1816.22" x2="357.27" y2= "1813.75" />
+     <line class="fil2 str23" x1="317.39" y1="1812.1" x2="356.99" y2= "1810.45" />
+     <line class="fil2 str22" x1="317.12" y1="1808.25" x2="356.99" y2= "1806.87" />
+     <line class="fil2 str21" x1="317.12" y1="1804.13" x2="356.99" y2= "1803.57" />
+     <path class="fil2 str20" d="M317.12 1800l39.87 0m105.87 -201.84l14.3 -30.52"/>
+     <line class="fil2 str24" x1="463.96" y1="1598.71" x2="476.89" y2= "1567.63" />
+     <line class="fil2 str29" x1="464.79" y1="1598.98" x2="476.89" y2= "1567.63" />
+     <line class="fil2 str31" x1="465.61" y1="1599.26" x2="477.16" y2= "1567.63" />
+     <line class="fil2 str35" x1="466.16" y1="1599.53" x2="477.71" y2= "1567.91" />
+     <line class="fil2 str1" x1="466.71" y1="1599.53" x2="478.26" y2= "1568.19" />
+     <line class="fil2 str178" x1="466.99" y1="1599.53" x2="479.09" y2= "1568.46" />
+     <line class="fil2 str111" x1="466.99" y1="1599.81" x2="480.19" y2= "1569.01" />
+     <line class="fil2 str179" x1="466.99" y1="1599.53" x2="481.29" y2= "1569.28" />
+     <line class="fil2 str10" x1="466.99" y1="1599.53" x2="482.66" y2= "1570.11" />
+     <line class="fil2 str12" x1="466.71" y1="1599.26" x2="484.04" y2= "1570.93" />
+     <line class="fil2 str93" x1="466.16" y1="1598.98" x2="485.41" y2= "1571.76" />
+     <line class="fil2 str126" x1="465.61" y1="1598.71" x2="487.06" y2= "1573.13" />
+     <line class="fil2 str49" x1="465.06" y1="1597.88" x2="488.71" y2= "1574.51" />
+     <line class="fil2 str125" x1="464.24" y1="1597.33" x2="489.81" y2= "1576.43" />
+     <line class="fil2 str52" x1="463.69" y1="1596.23" x2="491.46" y2= "1578.08" />
+     <line class="fil2 str54" x1="463.14" y1="1595.41" x2="492.56" y2= "1580.56" />
+     <line class="fil2 str55" x1="462.59" y1="1594.31" x2="493.66" y2= "1582.76" />
+     <line class="fil2 str57" x1="462.31" y1="1593.21" x2="494.21" y2= "1584.96" />
+     <line class="fil2 str180" x1="462.31" y1="1592.38" x2="494.76" y2= "1587.43" />
+     <line class="fil2 str60" x1="462.31" y1="1591.56" x2="495.04" y2= "1589.91" />
+     <line class="fil2 str181" x1="462.31" y1="1592.11" x2="495.04" y2= "1590.73" />
+     <line class="fil2 str87" x1="462.31" y1="1592.66" x2="495.04" y2= "1591.28" />
+     <line class="fil2 str65" x1="462.31" y1="1593.21" x2="495.04" y2= "1591.83" />
+     <line class="fil2 str67" x1="462.31" y1="1593.76" x2="495.04" y2= "1592.38" />
+     <line class="fil2 str118" x1="462.59" y1="1594.58" x2="495.31" y2= "1593.21" />
+     <line class="fil2 str70" x1="462.59" y1="1595.13" x2="495.04" y2= "1593.76" />
+     <line class="fil2 str108" x1="462.59" y1="1595.68" x2="495.04" y2= "1594.31" />
+     <line class="fil2 str73" x1="462.59" y1="1596.23" x2="495.04" y2= "1594.86" />
+     <line class="fil2 str115" x1="462.59" y1="1596.78" x2="495.04" y2= "1595.68" />
+     <line class="fil2 str16" x1="462.59" y1="1597.61" x2="495.04" y2= "1596.51" />
+     <line class="fil2 str19" x1="462.86" y1="1598.16" x2="495.31" y2= "1597.06" />
+     <line class="fil2 str20" x1="710.63" y1="1593.48" x2="670.76" y2= "1593.48" />
+     <line class="fil2 str21" x1="710.63" y1="1591.83" x2="670.76" y2= "1592.11" />
+     <line class="fil2 str23" x1="710.35" y1="1590.46" x2="670.76" y2= "1590.73" />
+     <line class="fil2 str24" x1="710.35" y1="1588.81" x2="670.76" y2= "1589.36" />
+     <line class="fil2 str25" x1="710.35" y1="1589.36" x2="670.76" y2= "1584.96" />
+     <line class="fil2 str27" x1="710.08" y1="1590.46" x2="671.58" y2= "1580.83" />
+     <line class="fil2 str28" x1="709.8" y1="1591.28" x2="672.96" y2= "1576.16" />
+     <line class="fil2 str29" x1="709.26" y1="1592.38" x2="674.88" y2= "1572.58" />
+     <line class="fil2 str30" x1="708.7" y1="1593.21" x2="677.08" y2= "1569.01" />
+     <line class="fil2 str135" x1="708.15" y1="1593.76" x2="679.56" y2= "1566.26" />
+     <line class="fil2 str31" x1="707.6" y1="1594.31" x2="682.31" y2= "1563.78" />
+     <line class="fil2 str32" x1="707.06" y1="1594.58" x2="684.78" y2= "1561.86" />
+     <line class="fil2 str33" x1="706.78" y1="1594.58" x2="687.53" y2= "1559.93" />
+     <line class="fil2 str34" x1="706.5" y1="1594.86" x2="690.28" y2= "1558.56" />
+     <line class="fil2 str182" x1="705.95" y1="1595.13" x2="693.03" y2= "1557.73" />
+     <line class="fil2 str35" x1="705.41" y1="1595.13" x2="695.78" y2= "1556.63" />
+     <line class="fil2 str37" x1="705.41" y1="1595.13" x2="699.35" y2= "1555.81" />
+     <line class="fil2 str38" x1="704.85" y1="1595.41" x2="702.93" y2= "1555.81" />
+     <line class="fil2 str1" x1="704.03" y1="1595.41" x2="706.78" y2= "1555.81" />
+     <line class="fil2 str2" x1="703.2" y1="1595.13" x2="710.63" y2= "1556.08" />
+     <line class="fil2 str39" x1="702.38" y1="1595.13" x2="713.93" y2= "1557.19" />
+     <line class="fil2 str3" x1="702.11" y1="1594.86" x2="717.23" y2= "1558.28" />
+     <line class="fil2 str40" x1="702.11" y1="1594.86" x2="719.7" y2= "1559.38" />
+     <line class="fil2 str129" x1="702.93" y1="1595.41" x2="721.35" y2= "1560.21" />
+     <line class="fil2 str183" x1="703.76" y1="1596.23" x2="723" y2= "1561.58" />
+     <line class="fil2 str111" x1="704.85" y1="1596.78" x2="724.65" y2= "1562.41" />
+     <line class="fil2 str184" x1="705.68" y1="1597.33" x2="726.03" y2= "1563.23" />
+     <line class="fil2 str41" x1="706.78" y1="1598.16" x2="727.4" y2= "1564.06" />
+     <line class="fil2 str179" x1="707.88" y1="1598.71" x2="728.78" y2= "1564.88" />
+     <line class="fil2 str8" x1="709.26" y1="1599.53" x2="730.15" y2= "1565.71" />
+     <line class="fil2 str128" x1="710.35" y1="1600.63" x2="730.98" y2= "1566.81" />
+     <path class="fil2 str43" d="M711.73 1601.46l20.35 -34.1m-20.35 34.1l20.35 -34.1"/>
+     <line class="fil2 str44" x1="714.76" y1="1603.38" x2="736.48" y2= "1570.11" />
+     <line class="fil2 str185" x1="717.5" y1="1605.58" x2="740.33" y2= "1572.86" />
+     <line class="fil2 str45" x1="720.26" y1="1607.78" x2="743.9" y2= "1575.88" />
+     <line class="fil2 str93" x1="723.28" y1="1610.26" x2="747.75" y2= "1578.91" />
+     <line class="fil2 str143" x1="726.03" y1="1612.73" x2="751.33" y2= "1582.21" />
+     <line class="fil2 str94" x1="729.06" y1="1615.48" x2="754.9" y2= "1585.23" />
+     <line class="fil2 str95" x1="731.8" y1="1617.96" x2="758.2" y2= "1588.26" />
+     <line class="fil2 str186" x1="734.83" y1="1620.71" x2="761.78" y2= "1591.56" />
+     <line class="fil2 str142" x1="737.58" y1="1623.46" x2="765.08" y2= "1594.86" />
+     <line class="fil2 str51" x1="740.33" y1="1626.2" x2="768.1" y2= "1597.88" />
+     <path class="fil2 str52" d="M743.08 1628.68l28.05 -28.05m-28.05 28.05l28.05 -28.05"/>
+     <line class="fil2 str106" x1="747.48" y1="1633.08" x2="776.35" y2= "1605.86" />
+     <line class="fil2 str54" x1="751.88" y1="1637.48" x2="781.58" y2= "1611.08" />
+     <line class="fil2 str187" x1="755.73" y1="1642.16" x2="786.25" y2= "1616.58" />
+     <line class="fil2 str55" x1="759.85" y1="1646.83" x2="790.93" y2= "1622.08" />
+     <line class="fil2 str102" x1="763.43" y1="1651.5" x2="795.33" y2= "1627.58" />
+     <line class="fil2 str57" x1="767.28" y1="1656.46" x2="799.72" y2= "1633.63" />
+     <line class="fil2 str84" x1="770.58" y1="1661.41" x2="803.57" y2= "1639.41" />
+     <line class="fil2 str140" x1="773.88" y1="1666.35" x2="807.43" y2= "1645.18" />
+     <line class="fil2 str188" x1="777.18" y1="1671.58" x2="811.28" y2= "1651.23" />
+     <line class="fil2 str101" x1="780.2" y1="1676.8" x2="814.85" y2= "1657.56" />
+     <line class="fil2 str131" x1="783.23" y1="1682.03" x2="818.43" y2= "1663.61" />
+     <line class="fil2 str62" x1="785.98" y1="1687.53" x2="821.45" y2= "1669.93" />
+     <line class="fil2 str63" x1="788.73" y1="1693.03" x2="824.75" y2= "1676.26" />
+     <line class="fil2 str120" x1="791.48" y1="1698.8" x2="827.78" y2= "1682.85" />
+     <line class="fil2 str88" x1="793.95" y1="1704.58" x2="830.8" y2= "1689.45" />
+     <line class="fil2 str119" x1="796.15" y1="1710.08" x2="833.28" y2= "1695.78" />
+     <line class="fil2 str66" x1="798.35" y1="1715.58" x2="835.75" y2= "1702.1" />
+     <line class="fil2 str189" x1="800.28" y1="1721.35" x2="837.95" y2= "1708.7" />
+     <line class="fil2 str68" x1="802.2" y1="1727.13" x2="840.15" y2= "1715.3" />
+     <line class="fil2 str69" x1="804.13" y1="1732.9" x2="842.35" y2= "1721.9" />
+     <line class="fil2 str117" x1="805.78" y1="1738.95" x2="844.28" y2= "1728.78" />
+     <line class="fil2 str174" x1="807.43" y1="1745" x2="846.2" y2= "1735.65" />
+     <line class="fil2 str116" x1="808.8" y1="1751.05" x2="847.57" y2= "1742.8" />
+     <line class="fil2 str139" x1="809.9" y1="1757.38" x2="848.95" y2= "1749.95" />
+     <line class="fil2 str73" x1="811" y1="1763.43" x2="850.32" y2= "1756.83" />
+     <line class="fil2 str74" x1="812.1" y1="1769.75" x2="851.43" y2= "1764.25" />
+     <line class="fil2 str115" x1="812.93" y1="1775.8" x2="852.52" y2= "1771.13" />
+     <line class="fil2 str14" x1="813.48" y1="1781.85" x2="853.07" y2= "1778.28" />
+     <line class="fil2 str16" x1="814.03" y1="1788.18" x2="853.63" y2= "1785.7" />
+     <line class="fil2 str18" x1="814.3" y1="1794.22" x2="853.9" y2= "1793.13" />
+     <path class="fil2 str19" d="M814.3 1800l39.87 0m0 0l-39.87 0m39.6 10.72l-39.6 -1.65"/>
+     <line class="fil2 str75" x1="853.35" y1="1821.17" x2="813.75" y2= "1817.87" />
+     <path class="fil2 str76" d="M852.25 1831.63l-39.6 -4.68m37.95 15.13l-39.05 -6.33m37.4 16.5l-39.05 -7.7m36.57 18.15l-38.5 -9.35"/>
+     <path class="fil2 str77" d="M844 1872.6l-38.22 -10.72m35.2 20.62l-37.95 -12.1m34.37 22l-37.4 -13.48m33.83 23.1l-36.85 -14.85m32.72 24.47l-36.3 -16.22"/>
+     <line class="fil2 str78" x1="825.3" y1="1921" x2="789.55" y2= "1903.4" />
+     <path class="fil2 str79" d="M820.63 1930.07l-34.93 -18.7m29.7 27.78l-34.37 -20.07m29.15 28.87l-33.55 -21.17m27.78 29.7l-32.72 -22.27"/>
+     <path class="fil2 str80" d="M798.35 1965l-31.9 -23.65m25.57 31.62l-31.07 -24.75m24.75 32.72l-30.25 -25.85m23.37 33.55l-29.43 -26.95m22.28 34.37l-28.32 -28.05"/>
+     <line class="fil2 str115" x1="501.64" y1="1697.43" x2="462.59" y2= "1690" />
+     <line class="fil2 str73" x1="501.64" y1="1697.98" x2="462.59" y2= "1690.56" />
+     <line class="fil2 str116" x1="501.64" y1="1698.53" x2="462.59" y2= "1691.1" />
+     <line class="fil2 str117" x1="501.91" y1="1695.78" x2="462.04" y2= "1694.68" />
+     <line class="fil2 str118" x1="501.91" y1="1693.3" x2="462.59" y2= "1698.8" />
+     <line class="fil2 str67" x1="501.09" y1="1690" x2="463.69" y2= "1703.48" />
+     <line class="fil2 str119" x1="499.16" y1="1686.15" x2="465.89" y2= "1707.88" />
+     <line class="fil2 str120" x1="496.69" y1="1683.13" x2="469.19" y2= "1711.73" />
+     <line class="fil2 str121" x1="493.94" y1="1680.93" x2="472.76" y2= "1714.48" />
+     <line class="fil2 str122" x1="491.74" y1="1679.56" x2="476.06" y2= "1716.13" />
+     <line class="fil2 str85" x1="490.09" y1="1679" x2="479.09" y2= "1717.23" />
+     <line class="fil2 str84" x1="488.99" y1="1678.73" x2="481.29" y2= "1717.78" />
+     <line class="fil2 str83" x1="488.44" y1="1678.46" x2="482.94" y2= "1717.78" />
+     <line class="fil2 str123" x1="488.44" y1="1678.46" x2="484.59" y2= "1718.06" />
+     <line class="fil2 str53" x1="488.71" y1="1678.46" x2="485.69" y2= "1718.06" />
+     <line class="fil2 str124" x1="489.26" y1="1678.46" x2="486.51" y2= "1718.06" />
+     <line class="fil2 str125" x1="490.36" y1="1678.46" x2="487.34" y2= "1718.06" />
+     <line class="fil2 str49" x1="492.84" y1="1678.73" x2="486.24" y2= "1717.78" />
+     <line class="fil2 str126" x1="493.39" y1="1678.73" x2="486.79" y2= "1718.06" />
+     <line class="fil2 str127" x1="493.94" y1="1678.73" x2="487.34" y2= "1718.06" />
+     <line class="fil2 str12" x1="494.49" y1="1678.73" x2="487.89" y2= "1718.06" />
+     <line class="fil2 str44" x1="495.04" y1="1678.73" x2="488.44" y2= "1718.06" />
+     <line class="fil2 str128" x1="495.59" y1="1679" x2="488.99" y2= "1718.06" />
+     <line class="fil2 str41" x1="496.14" y1="1679" x2="489.54" y2= "1718.33" />
+     <line class="fil2 str129" x1="496.69" y1="1679" x2="490.09" y2= "1718.33" />
+     <line class="fil2 str2" x1="497.24" y1="1679" x2="490.64" y2= "1718.33" />
+     <line class="fil2 str37" x1="497.79" y1="1679" x2="491.19" y2= "1718.33" />
+     <line class="fil2 str34" x1="498.34" y1="1679" x2="491.74" y2= "1718.33" />
+     <line class="fil2 str31" x1="498.89" y1="1679.28" x2="492.29" y2= "1718.6" />
+     <line class="fil2 str28" x1="499.44" y1="1679.28" x2="492.84" y2= "1718.6" />
+     <line class="fil2 str24" x1="499.99" y1="1679.28" x2="493.39" y2= "1718.6" />
+     <line class="fil2 str20" x1="500.54" y1="1679.28" x2="493.94" y2= "1718.6" />
+     <line class="fil2 str14" x1="687.53" y1="1892.94" x2="680.38" y2= "1918.24" />
+     <line class="fil2 str73" x1="687.8" y1="1892.67" x2="681.76" y2= "1917.97" />
+     <line class="fil2 str71" x1="688.63" y1="1892.94" x2="682.85" y2= "1918.24" />
+     <line class="fil2 str69" x1="689.46" y1="1892.94" x2="683.68" y2= "1918.24" />
+     <line class="fil2 str89" x1="690.56" y1="1893.22" x2="684.23" y2= "1918.25" />
+     <line class="fil2 str190" x1="691.65" y1="1893.5" x2="684.23" y2= "1917.97" />
+     <line class="fil2 str62" x1="693.03" y1="1893.77" x2="683.68" y2= "1917.7" />
+     <line class="fil2 str188" x1="694.96" y1="1894.6" x2="683.13" y2= "1917.15" />
+     <line class="fil2 str191" x1="696.88" y1="1895.7" x2="682.03" y2= "1916.32" />
+     <line class="fil2 str55" x1="698.8" y1="1897.35" x2="680.93" y2= "1915.5" />
+     <line class="fil2 str106" x1="700.45" y1="1899.27" x2="679.83" y2= "1914.12" />
+     <line class="fil2 str125" x1="701.83" y1="1901.47" x2="679.28" y2= "1913.3" />
+     <line class="fil2 str95" x1="702.65" y1="1903.4" x2="679" y2= "1912.47" />
+     <line class="fil2 str46" x1="703.2" y1="1905.05" x2="678.73" y2= "1912.2" />
+     <line class="fil2 str192" x1="703.48" y1="1906.42" x2="678.73" y2= "1912.2" />
+     <line class="fil2 str128" x1="703.76" y1="1907.8" x2="678.73" y2= "1912.74" />
+     <line class="fil2 str111" x1="704.03" y1="1909.17" x2="678.73" y2= "1913.57" />
+     <line class="fil2 str39" x1="704.03" y1="1910.55" x2="678.73" y2= "1914.67" />
+     <line class="fil2 str35" x1="704.03" y1="1911.09" x2="678.46" y2= "1915.5" />
+     <line class="fil2 str31" x1="704.03" y1="1911.65" x2="678.46" y2= "1916.59" />
+     <line class="fil2 str27" x1="704.03" y1="1911.92" x2="678.46" y2= "1917.7" />
+     <line class="fil2 str20" x1="704.03" y1="1912.47" x2="678.46" y2= "1918.8" />
+    </g>
+    <path class="fil4" d="M584.69 2109.37c-170.5,0 -309.09,-138.6 -309.09,-309.37 0,-170.77 138.32,-309.09 309.09,-309.09 170.77,0 309.09,138.32 309.09,309.09 0,170.77 -138.32,309.37 -309.09,309.37zm120.44 -525.51c-0.83,-0.55 -1.93,-0.83 -2.75,-0.83 -3.02,0 -5.5,2.48 -5.5,5.5l0 105.05c0,6.05 -4.95,10.72 -10.73,10.72l-202.67 0c-6.05,0 -10.72,-4.95 -10.72,-10.72l0 -105.05c0,-3.02 -2.48,-5.5 -5.5,-5.5 -1.1,0 -1.93,0.28 -2.75,0.83 -73.15,44.27 -121.82,124.57 -121.82,216.14 0,91.57 48.67,171.87 121.82,216.14 2.48,1.65 5.78,0.83 7.43,-1.93 0.55,-0.82 0.83,-1.93 0.83,-2.75l0 -105.05c0,-6.05 4.95,-10.72 10.72,-10.72l202.67 0c6.05,0 10.73,4.95 10.73,10.72l0 105.32c0,3.02 2.47,5.5 5.5,5.5 1.1,0 1.93,-0.28 2.75,-0.83 73.15,-44.27 121.82,-124.57 121.82,-216.14 0,-91.57 -48.67,-172.15 -121.82,-216.42l0 0zm-326.41 216.14c0,-59.67 23.65,-113.85 61.87,-153.44 -2.48,15.67 -3.85,33.55 -3.85,52.25l0 202.39c0,18.7 1.37,36.57 3.85,52.25 -38.22,-39.6 -61.87,-93.5 -61.87,-153.44zm318.17 48.95c0,6.05 -4.95,10.72 -10.73,10.72l-202.67 0c-6.05,0 -10.72,-4.95 -10.72,-10.72l0 -97.62c0,-6.05 4.95,-10.72 10.72,-10.72l202.67 0c6.05,0 10.73,4.95 10.73,10.72l0 97.62zm32.17 104.5c2.47,-15.67 3.85,-33.55 3.85,-52.25l0 -202.39c0,-18.7 -1.38,-36.57 -3.85,-52.25 38.22,39.6 61.6,93.77 61.6,153.44 0.27,59.95 -23.37,113.85 -61.6,153.44zm-482.33 -153.44c0,186.44 151.52,337.96 337.96,337.96 186.44,0 338.24,-151.52 338.24,-337.96 0,-186.44 -151.52,-337.96 -337.96,-337.96 -186.44,0 -338.24,151.52 -338.24,337.96z"/>
+    <path class="fil2 str193" d="M584.69 1456.26c-187.27,0 -344.02,156.47 -344.02,343.74"/>
+    <line class="fil2 str194" x1="253.05" y1="1932.55" x2="276.97" y2= "1921.82" />
+    <line class="fil2 str195" x1="255.52" y1="1938.32" x2="279.17" y2= "1927.05" />
+    <line class="fil2 str196" x1="258" y1="1944.37" x2="281.65" y2= "1932.82" />
+    <line class="fil2 str197" x1="260.74" y1="1950.15" x2="284.12" y2= "1938.05" />
+    <line class="fil2 str198" x1="263.5" y1="1955.92" x2="286.59" y2= "1943.54" />
+    <line class="fil2 str199" x1="266.52" y1="1961.69" x2="289.34" y2= "1949.04" />
+    <line class="fil2 str200" x1="269.54" y1="1967.47" x2="292.37" y2= "1954.54" />
+    <line class="fil2 str201" x1="272.57" y1="1972.97" x2="295.12" y2= "1959.77" />
+    <line class="fil2 str202" x1="275.87" y1="1978.47" x2="298.42" y2= "1965" />
+    <line class="fil2 str203" x1="279.17" y1="1983.97" x2="301.44" y2= "1970.22" />
+    <line class="fil2 str204" x1="282.47" y1="1989.47" x2="304.47" y2= "1975.44" />
+    <line class="fil2 str205" x1="285.77" y1="1994.69" x2="307.77" y2= "1980.39" />
+    <line class="fil2 str206" x1="467.81" y1="2137.69" x2="476.34" y2= "2112.94" />
+    <line class="fil2 str207" x1="477.71" y1="2140.99" x2="485.41" y2= "2115.96" />
+    <line class="fil2 str208" x1="487.89" y1="2144.01" x2="494.76" y2= "2118.71" />
+    <line class="fil2 str209" x1="498.34" y1="2146.76" x2="504.66" y2= "2121.19" />
+    <line class="fil2 str210" x1="508.79" y1="2149.24" x2="514.29" y2= "2123.67" />
+    <line class="fil2 str211" x1="519.51" y1="2151.16" x2="524.19" y2= "2125.31" />
+    <line class="fil2 str212" x1="530.24" y1="2153.09" x2="534.09" y2= "2127.24" />
+    <line class="fil2 str213" x1="540.96" y1="2154.46" x2="543.98" y2= "2128.34" />
+    <line class="fil2 str214" x1="551.96" y1="2155.56" x2="554.16" y2= "2129.44" />
+    <line class="fil2 str215" x1="562.69" y1="2156.39" x2="564.33" y2= "2130.26" />
+    <line class="fil2 str216" x1="573.69" y1="2156.94" x2="574.51" y2= "2130.81" />
+    <line class="fil2 str217" x1="584.69" y1="2156.94" x2="584.69" y2= "2130.81" />
+    <line class="fil2 str218" x1="584.96" y1="1443.06" x2="584.96" y2= "1469.19" />
+    <line class="fil2 str219" x1="591.56" y1="1443.34" x2="591.01" y2= "1469.46" />
+    <line class="fil2 str220" x1="598.43" y1="1443.34" x2="597.33" y2= "1469.74" />
+    <line class="fil2 str221" x1="605.31" y1="1443.89" x2="603.66" y2= "1470.01" />
+    <line class="fil2 str222" x1="611.91" y1="1444.16" x2="609.71" y2= "1470.29" />
+    <line class="fil2 str223" x1="618.78" y1="1444.99" x2="616.03" y2= "1471.11" />
+    <line class="fil2 str224" x1="625.38" y1="1445.54" x2="622.36" y2= "1471.66" />
+    <line class="fil2 str225" x1="631.98" y1="1446.36" x2="628.41" y2= "1472.49" />
+    <line class="fil2 str226" x1="638.58" y1="1447.46" x2="634.46" y2= "1473.59" />
+    <line class="fil2 str227" x1="645.18" y1="1448.56" x2="640.78" y2= "1474.41" />
+    <line class="fil2 str228" x1="651.78" y1="1449.66" x2="646.83" y2= "1475.51" />
+    <path class="fil2 str229" d="M658.11 1451.04l-5.5 25.57m5.5 -25.57l-5.5 25.57"/>
+    <line class="fil2 str230" x1="664.43" y1="1452.41" x2="658.66" y2= "1477.99" />
+    <line class="fil2 str231" x1="670.76" y1="1453.79" x2="664.7" y2= "1479.36" />
+    <line class="fil2 str232" x1="677.08" y1="1455.44" x2="670.48" y2= "1481.01" />
+    <line class="fil2 str233" x1="683.41" y1="1457.09" x2="676.53" y2= "1482.39" />
+    <line class="fil2 str234" x1="689.73" y1="1459.01" x2="682.58" y2= "1484.31" />
+    <line class="fil2 str235" x1="695.78" y1="1460.94" x2="688.08" y2= "1485.96" />
+    <line class="fil2 str236" x1="702.11" y1="1463.14" x2="694.13" y2= "1488.16" />
+    <line class="fil2 str237" x1="708.15" y1="1465.34" x2="699.63" y2= "1490.09" />
+    <line class="fil2 str238" x1="714.2" y1="1467.54" x2="705.41" y2= "1492.29" />
+    <line class="fil2 str239" x1="720.26" y1="1469.74" x2="711.18" y2= "1494.21" />
+    <path class="fil2 str194" d="M726.03 1472.49l-9.62 24.47m0 -0.28l9.62 -24.47"/>
+    <line class="fil2 str240" x1="721.91" y1="1499.44" x2="732.08" y2= "1475.24" />
+    <line class="fil2 str241" x1="727.68" y1="1501.91" x2="738.4" y2= "1477.71" />
+    <line class="fil2 str242" x1="733.45" y1="1504.94" x2="744.45" y2= "1481.29" />
+    <line class="fil2 str199" x1="739.78" y1="1508.24" x2="751.33" y2= "1484.59" />
+    <line class="fil2 str243" x1="746.1" y1="1511.54" x2="758.2" y2= "1488.16" />
+    <line class="fil2 str244" x1="752.43" y1="1515.39" x2="765.08" y2= "1492.29" />
+    <line class="fil2 str203" x1="759.03" y1="1519.24" x2="772.23" y2= "1496.69" />
+    <line class="fil2 str204" x1="765.63" y1="1523.63" x2="779.38" y2= "1501.36" />
+    <line class="fil2 str205" x1="772.23" y1="1528.04" x2="786.53" y2= "1506.04" />
+    <line class="fil2 str245" x1="778.83" y1="1532.71" x2="793.68" y2= "1510.98" />
+    <line class="fil2 str246" x1="785.7" y1="1537.66" x2="801.1" y2= "1516.48" />
+    <line class="fil2 str247" x1="792.3" y1="1542.89" x2="808.25" y2= "1521.98" />
+    <line class="fil2 str248" x1="798.9" y1="1548.39" x2="815.68" y2= "1528.04" />
+    <line class="fil2 str249" x1="805.5" y1="1554.16" x2="822.83" y2= "1534.36" />
+    <line class="fil2 str250" x1="812.1" y1="1560.21" x2="829.98" y2= "1540.96" />
+    <path class="fil2 str251" d="M818.43 1566.54l18.43 -18.43m-18.43 18.43l18.43 -18.43"/>
+    <line class="fil2 str252" x1="825.02" y1="1573.41" x2="844" y2= "1555.26" />
+    <line class="fil2 str253" x1="831.63" y1="1580.56" x2="851.15" y2= "1563.23" />
+    <line class="fil2 str254" x1="837.95" y1="1587.98" x2="858.02" y2= "1571.21" />
+    <line class="fil2 str255" x1="844.28" y1="1595.41" x2="864.9" y2= "1579.18" />
+    <line class="fil2 str256" x1="850.05" y1="1603.38" x2="871.22" y2= "1587.71" />
+    <line class="fil2 str257" x1="855.82" y1="1611.36" x2="877.28" y2= "1596.23" />
+    <line class="fil2 str258" x1="861.32" y1="1619.33" x2="883.32" y2= "1605.03" />
+    <line class="fil2 str259" x1="866.55" y1="1627.58" x2="888.82" y2= "1613.83" />
+    <line class="fil2 str260" x1="871.77" y1="1636.11" x2="894.6" y2= "1622.91" />
+    <line class="fil2 str261" x1="876.45" y1="1644.91" x2="899.55" y2= "1632.53" />
+    <line class="fil2 str262" x1="881.12" y1="1653.7" x2="904.5" y2= "1641.88" />
+    <line class="fil2 str263" x1="885.52" y1="1662.78" x2="909.45" y2= "1651.78" />
+    <line class="fil2 str264" x1="889.37" y1="1671.85" x2="913.57" y2= "1661.41" />
+    <line class="fil2 str265" x1="893.22" y1="1680.93" x2="917.7" y2= "1671.3" />
+    <line class="fil2 str266" x1="896.8" y1="1690.28" x2="921.55" y2= "1681.48" />
+    <line class="fil2 str267" x1="900.1" y1="1699.91" x2="925.12" y2= "1691.65" />
+    <line class="fil2 str268" x1="903.12" y1="1709.53" x2="928.42" y2= "1702.1" />
+    <line class="fil2 str269" x1="905.6" y1="1719.15" x2="930.9" y2= "1712.55" />
+    <line class="fil2 str270" x1="908.07" y1="1729.05" x2="933.65" y2= "1723.28" />
+    <line class="fil2 str271" x1="910.27" y1="1738.95" x2="936.12" y2= "1734" />
+    <line class="fil2 str210" x1="911.92" y1="1748.85" x2="937.77" y2= "1744.73" />
+    <line class="fil2 str272" x1="913.57" y1="1759.03" x2="939.7" y2= "1755.73" />
+    <line class="fil2 str273" x1="914.67" y1="1769.2" x2="940.8" y2= "1766.72" />
+    <line class="fil2 str274" x1="915.5" y1="1779.37" x2="941.62" y2= "1777.72" />
+    <line class="fil2 str275" x1="916.05" y1="1789.83" x2="942.17" y2= "1789" />
+    <path class="fil2 str217" d="M916.05 1800l26.13 0m-26.13 0l26.13 0"/>
+    <path class="fil2 str276" d="M916.05 1810.45l26.12 0.83m-26.67 9.62l26.13 1.65"/>
+    <line class="fil2 str277" x1="914.67" y1="1831.07" x2="940.8" y2= "1833.55" />
+    <line class="fil2 str278" x1="913.57" y1="1841.52" x2="939.7" y2= "1844.82" />
+    <line class="fil2 str279" x1="912.2" y1="1851.7" x2="938.05" y2= "1855.82" />
+    <line class="fil2 str280" x1="910.27" y1="1861.87" x2="936.12" y2= "1866.82" />
+    <line class="fil2 str281" x1="908.35" y1="1871.77" x2="933.92" y2= "1877.55" />
+    <line class="fil2 str282" x1="905.87" y1="1881.67" x2="931.44" y2= "1888" />
+    <line class="fil2 str283" x1="903.4" y1="1891.57" x2="928.7" y2= "1898.72" />
+    <line class="fil2 str284" x1="900.37" y1="1901.2" x2="925.4" y2= "1909.17" />
+    <line class="fil2 str285" x1="897.07" y1="1910.82" x2="921.82" y2= "1919.62" />
+    <line class="fil2 str286" x1="893.77" y1="1920.44" x2="918.25" y2= "1929.8" />
+    <line class="fil2 str287" x1="889.92" y1="1929.8" x2="914.12" y2= "1939.97" />
+    <line class="fil2 str288" x1="885.8" y1="1938.87" x2="909.72" y2= "1949.59" />
+    <line class="fil2 str289" x1="881.67" y1="1947.94" x2="905.32" y2= "1959.5" />
+    <line class="fil2 str290" x1="877" y1="1957.02" x2="900.1" y2= "1969.39" />
+    <line class="fil2 str291" x1="872.32" y1="1965.82" x2="895.15" y2= "1978.74" />
+    <line class="fil2 str292" x1="867.37" y1="1974.34" x2="889.92" y2= "1987.82" />
+    <line class="fil2 str293" x1="861.87" y1="1982.87" x2="883.87" y2= "1997.17" />
+    <line class="fil2 str294" x1="856.37" y1="1990.84" x2="878.1" y2= "2005.69" />
+    <line class="fil2 str295" x1="850.87" y1="1999.09" x2="872.05" y2= "2014.77" />
+    <line class="fil2 str296" x1="844.83" y1="2006.79" x2="865.45" y2= "2023.02" />
+    <line class="fil2 str297" x1="838.78" y1="2014.49" x2="858.85" y2= "2031.27" />
+    <line class="fil2 str298" x1="832.45" y1="2021.92" x2="851.97" y2= "2039.24" />
+    <line class="fil2 str299" x1="825.85" y1="2029.07" x2="844.83" y2= "2047.22" />
+    <path class="fil2 str300" d="M818.98 2035.94l18.42 18.7m0 0l-18.43 -18.7"/>
+    <line class="fil2 str299" x1="829.98" y1="2061.79" x2="812.1" y2= "2042.54" />
+    <line class="fil2 str298" x1="822.28" y1="2068.67" x2="804.95" y2= "2048.87" />
+    <line class="fil2 str297" x1="814.3" y1="2075.54" x2="797.53" y2= "2055.19" />
+    <line class="fil2 str296" x1="806.05" y1="2082.14" x2="790.1" y2= "2061.24" />
+    <line class="fil2 str295" x1="797.53" y1="2088.46" x2="782.13" y2= "2067.29" />
+    <line class="fil2 str294" x1="789" y1="2094.52" x2="774.15" y2= "2072.79" />
+    <line class="fil2 str293" x1="780.2" y1="2100.29" x2="766.18" y2= "2078.29" />
+    <line class="fil2 str292" x1="771.13" y1="2105.79" x2="757.65" y2= "2083.24" />
+    <line class="fil2 str291" x1="762.05" y1="2111.02" x2="749.4" y2= "2088.19" />
+    <line class="fil2 str290" x1="752.43" y1="2115.96" x2="740.33" y2= "2092.59" />
+    <line class="fil2 str289" x1="743.08" y1="2120.91" x2="731.8" y2= "2097.26" />
+    <line class="fil2 str288" x1="733.18" y1="2125.31" x2="722.45" y2= "2101.39" />
+    <line class="fil2 str287" x1="723.56" y1="2129.71" x2="713.65" y2= "2105.52" />
+    <line class="fil2 str286" x1="713.38" y1="2133.56" x2="704.03" y2= "2109.09" />
+    <line class="fil2 str285" x1="703.2" y1="2137.14" x2="694.68" y2= "2112.39" />
+    <line class="fil2 str284" x1="693.03" y1="2140.44" x2="685.06" y2= "2115.41" />
+    <line class="fil2 str283" x1="682.58" y1="2143.46" x2="675.43" y2= "2118.17" />
+    <line class="fil2 str282" x1="672.13" y1="2146.49" x2="665.81" y2= "2120.91" />
+    <line class="fil2 str281" x1="661.41" y1="2148.69" x2="655.91" y2= "2123.11" />
+    <line class="fil2 str280" x1="650.68" y1="2150.89" x2="645.73" y2= "2125.04" />
+    <line class="fil2 str279" x1="639.96" y1="2152.81" x2="635.83" y2= "2126.96" />
+    <line class="fil2 str278" x1="628.96" y1="2154.19" x2="625.66" y2= "2128.06" />
+    <line class="fil2 str277" x1="618.23" y1="2155.56" x2="615.76" y2= "2129.44" />
+    <path class="fil2 str276" d="M606.96 2156.39l-1.65 -26.12m-9.35 26.67l-0.82 -26.12"/>
+    <line class="fil2 str217" x1="584.96" y1="2156.94" x2="584.96" y2= "2130.81" />
+    <line class="fil2 str251" x1="332.79" y1="2052.17" x2="351.22" y2= "2033.47" />
+    <line class="fil2 str301" x1="339.94" y1="2059.04" x2="357.81" y2= "2039.79" />
+    <line class="fil2 str302" x1="347.37" y1="2065.64" x2="364.69" y2= "2046.12" />
+    <line class="fil2 str303" x1="354.79" y1="2072.24" x2="371.84" y2= "2052.17" />
+    <line class="fil2 str304" x1="362.49" y1="2078.84" x2="378.99" y2= "2058.22" />
+    <line class="fil2 str305" x1="370.46" y1="2084.89" x2="386.42" y2= "2063.99" />
+    <line class="fil2 str258" x1="378.44" y1="2090.94" x2="393.84" y2= "2069.49" />
+    <line class="fil2 str259" x1="386.69" y1="2096.72" x2="401.54" y2= "2074.99" />
+    <line class="fil2 str306" x1="395.22" y1="2102.22" x2="409.24" y2= "2080.22" />
+    <line class="fil2 str307" x1="403.74" y1="2107.72" x2="417.22" y2= "2085.17" />
+    <line class="fil2 str308" x1="412.54" y1="2112.67" x2="425.46" y2= "2089.84" />
+    <line class="fil2 str309" x1="421.34" y1="2117.61" x2="433.44" y2= "2094.52" />
+    <line class="fil2 str310" x1="430.41" y1="2122.29" x2="441.96" y2= "2098.64" />
+    <line class="fil2 str311" x1="439.49" y1="2126.41" x2="450.21" y2= "2102.49" />
+    <line class="fil2 str312" x1="448.84" y1="2130.54" x2="459.01" y2= "2106.34" />
+    <line class="fil2 str313" x1="458.19" y1="2134.39" x2="467.54" y2= "2109.91" />
+    <line class="fil2 str206" x1="467.81" y1="2137.69" x2="476.34" y2= "2112.94" />
+    <line class="fil2 str205" x1="285.77" y1="1994.69" x2="307.77" y2= "1980.39" />
+    <line class="fil2 str314" x1="289.62" y1="2000.19" x2="311.34" y2= "1985.34" />
+    <line class="fil2 str315" x1="293.47" y1="2005.97" x2="314.92" y2= "1990.57" />
+    <line class="fil2 str316" x1="297.59" y1="2011.19" x2="318.49" y2= "1995.52" />
+    <line class="fil2 str317" x1="301.72" y1="2016.69" x2="322.34" y2= "2000.47" />
+    <line class="fil2 str247" x1="305.84" y1="2021.92" x2="326.19" y2= "2005.42" />
+    <line class="fil2 str318" x1="310.24" y1="2027.42" x2="330.32" y2= "2010.64" />
+    <line class="fil2 str319" x1="314.64" y1="2032.37" x2="334.44" y2= "2015.04" />
+    <line class="fil2 str249" x1="319.04" y1="2037.59" x2="338.57" y2= "2019.99" />
+    <line class="fil2 str320" x1="323.44" y1="2042.54" x2="342.69" y2= "2024.67" />
+    <line class="fil2 str321" x1="328.12" y1="2047.22" x2="346.82" y2= "2028.79" />
+    <line class="fil2 str251" x1="332.79" y1="2052.17" x2="351.22" y2= "2033.47" />
+    <line class="fil2 str229" x1="233.52" y1="1868.2" x2="259.09" y2= "1863.25" />
+    <line class="fil2 str230" x1="234.62" y1="1874.25" x2="260.2" y2= "1868.47" />
+    <line class="fil2 str231" x1="236" y1="1880.3" x2="261.57" y2= "1873.97" />
+    <line class="fil2 str232" x1="237.65" y1="1886.35" x2="262.94" y2= "1879.47" />
+    <line class="fil2 str233" x1="239.3" y1="1892.4" x2="264.32" y2= "1884.97" />
+    <line class="fil2 str234" x1="240.94" y1="1898.17" x2="265.97" y2= "1890.2" />
+    <line class="fil2 str235" x1="242.87" y1="1904.22" x2="267.62" y2= "1895.7" />
+    <line class="fil2 str236" x1="244.8" y1="1910" x2="269.27" y2= "1900.92" />
+    <line class="fil2 str237" x1="246.72" y1="1915.77" x2="271.19" y2= "1906.15" />
+    <line class="fil2 str238" x1="248.65" y1="1921.27" x2="272.85" y2= "1911.37" />
+    <line class="fil2 str239" x1="250.85" y1="1927.05" x2="275.04" y2= "1916.6" />
+    <line class="fil2 str194" x1="253.05" y1="1932.55" x2="276.97" y2= "1921.82" />
+    <line class="fil2 str218" x1="227.47" y1="1800" x2="253.59" y2= "1800" />
+    <line class="fil2 str219" x1="227.47" y1="1806.33" x2="253.59" y2= "1806.05" />
+    <line class="fil2 str220" x1="227.75" y1="1812.65" x2="253.87" y2= "1811.83" />
+    <line class="fil2 str221" x1="228.02" y1="1818.7" x2="254.15" y2= "1817.6" />
+    <line class="fil2 str222" x1="228.3" y1="1825.02" x2="254.42" y2= "1823.37" />
+    <line class="fil2 str223" x1="228.57" y1="1831.35" x2="254.7" y2= "1829.43" />
+    <line class="fil2 str224" x1="229.12" y1="1837.67" x2="255.24" y2= "1835.2" />
+    <line class="fil2 str225" x1="229.67" y1="1843.72" x2="255.8" y2= "1840.97" />
+    <line class="fil2 str226" x1="230.5" y1="1850.05" x2="256.62" y2= "1846.75" />
+    <line class="fil2 str227" x1="231.32" y1="1856.1" x2="257.44" y2= "1852.25" />
+    <line class="fil2 str228" x1="232.42" y1="1862.15" x2="258.27" y2= "1857.75" />
+    <line class="fil2 str229" x1="233.52" y1="1868.2" x2="259.09" y2= "1863.25" />
+    <line class="fil2 str217" x1="584.69" y1="1509.89" x2="584.69" y2= "1483.48" />
+    <line class="fil2 str322" x1="595.96" y1="1510.16" x2="596.78" y2= "1483.76" />
+    <line class="fil2 str323" x1="607.23" y1="1510.71" x2="609.16" y2= "1484.59" />
+    <line class="fil2 str324" x1="617.96" y1="1511.81" x2="620.71" y2= "1485.69" />
+    <line class="fil2 str325" x1="628.96" y1="1513.19" x2="632.81" y2= "1487.33" />
+    <line class="fil2 str209" x1="639.41" y1="1515.11" x2="644.08" y2= "1489.26" />
+    <line class="fil2 str326" x1="649.85" y1="1517.31" x2="655.63" y2= "1491.74" />
+    <line class="fil2 str327" x1="660.31" y1="1519.78" x2="666.91" y2= "1494.48" />
+    <line class="fil2 str328" x1="670.48" y1="1522.81" x2="678.18" y2= "1497.51" />
+    <line class="fil2 str267" x1="680.38" y1="1526.11" x2="688.91" y2= "1501.36" />
+    <line class="fil2 str311" x1="690.56" y1="1529.96" x2="699.91" y2= "1505.48" />
+    <line class="fil2 str310" x1="700.18" y1="1534.08" x2="710.35" y2= "1509.89" />
+    <line class="fil2 str329" x1="467.26" y1="1534.63" x2="456.54" y2= "1510.71" />
+    <line class="fil2 str291" x1="477.16" y1="1530.24" x2="467.26" y2= "1505.76" />
+    <line class="fil2 str289" x1="487.34" y1="1526.39" x2="478.54" y2= "1501.64" />
+    <line class="fil2 str287" x1="497.51" y1="1523.09" x2="489.54" y2= "1498.06" />
+    <line class="fil2 str330" x1="507.96" y1="1520.06" x2="501.09" y2= "1494.76" />
+    <line class="fil2 str284" x1="518.41" y1="1517.31" x2="512.36" y2= "1491.74" />
+    <line class="fil2 str331" x1="529.14" y1="1515.11" x2="524.19" y2= "1489.26" />
+    <line class="fil2 str332" x1="539.86" y1="1513.19" x2="536.01" y2= "1487.06" />
+    <line class="fil2 str279" x1="550.86" y1="1511.81" x2="547.83" y2= "1485.69" />
+    <line class="fil2 str277" x1="562.13" y1="1510.71" x2="560.21" y2= "1484.59" />
+    <line class="fil2 str276" x1="573.41" y1="1510.16" x2="572.31" y2= "1483.76" />
+    <line class="fil2 str217" x1="584.69" y1="1509.89" x2="584.69" y2= "1483.48" />
+    <line class="fil2 str300" x1="379.54" y1="1594.58" x2="361.12" y2= "1575.88" />
+    <line class="fil2 str333" x1="386.69" y1="1587.71" x2="368.81" y2= "1568.46" />
+    <path class="fil2 str298" d="M393.84 1581.38l-17.32 -19.8m24.75 13.48l-16.5 -20.35"/>
+    <line class="fil2 str334" x1="408.96" y1="1569.01" x2="393.02" y2= "1548.11" />
+    <line class="fil2 str335" x1="416.67" y1="1563.23" x2="401.54" y2= "1541.78" />
+    <line class="fil2 str296" x1="424.64" y1="1557.73" x2="410.07" y2= "1536.01" />
+    <line class="fil2 str295" x1="432.61" y1="1552.78" x2="418.87" y2= "1530.51" />
+    <path class="fil2 str294" d="M441.14 1547.83l-12.93 -22.83m21.45 18.15l-12.1 -23.37"/>
+    <line class="fil2 str293" x1="458.19" y1="1538.76" x2="446.91" y2= "1515.11" />
+    <line class="fil2 str329" x1="467.26" y1="1534.63" x2="456.54" y2= "1510.71" />
+    <line class="fil2 str300" x1="379.54" y1="1594.58" x2="361.12" y2= "1575.88" />
+    <line class="fil2 str298" x1="372.94" y1="1601.46" x2="353.69" y2= "1583.31" />
+    <line class="fil2 str335" x1="366.34" y1="1608.61" x2="346.54" y2= "1591.28" />
+    <line class="fil2 str295" x1="360.29" y1="1616.03" x2="339.94" y2= "1599.26" />
+    <line class="fil2 str293" x1="354.24" y1="1623.46" x2="333.34" y2= "1607.51" />
+    <line class="fil2 str336" x1="348.47" y1="1631.16" x2="327.29" y2= "1615.76" />
+    <line class="fil2 str290" x1="342.97" y1="1639.13" x2="321.24" y2= "1624.28" />
+    <line class="fil2 str288" x1="337.74" y1="1647.11" x2="315.47" y2= "1633.35" />
+    <line class="fil2 str337" x1="332.79" y1="1655.35" x2="310.24" y2= "1642.16" />
+    <line class="fil2 str285" x1="328.12" y1="1663.61" x2="305.02" y2= "1651.5" />
+    <line class="fil2 str283" x1="323.72" y1="1672.41" x2="300.07" y2= "1660.85" />
+    <path class="fil2 str281" d="M319.59 1681.2l-23.93 -10.72m0 0l23.93 10.72"/>
+    <line class="fil2 str332" x1="290.99" y1="1681.48" x2="315.19" y2= "1691.38" />
+    <line class="fil2 str280" x1="286.59" y1="1692.76" x2="311.34" y2= "1701.56" />
+    <path class="fil2 str279" d="M282.74 1704.03l25.02 7.98m-28.32 3.3l25.3 6.87"/>
+    <line class="fil2 str278" x1="276.42" y1="1727.13" x2="301.99" y2= "1733.18" />
+    <line class="fil2 str277" x1="273.94" y1="1738.68" x2="299.8" y2= "1743.63" />
+    <line class="fil2 str338" x1="271.74" y1="1750.78" x2="297.59" y2= "1754.63" />
+    <path class="fil2 str276" d="M270.09 1762.88l26.13 2.75m-27.22 9.63l26.12 1.93"/>
+    <line class="fil2 str339" x1="268.44" y1="1787.63" x2="294.57" y2= "1788.45" />
+    <line class="fil2 str217" x1="268.17" y1="1800.28" x2="294.3" y2= "1800" />
+    <line class="fil2 str194" x1="465.61" y1="2092.87" x2="475.51" y2= "2068.67" />
+    <line class="fil2 str238" x1="475.79" y1="2096.72" x2="484.86" y2= "2072.24" />
+    <line class="fil2 str236" x1="485.96" y1="2100.29" x2="494.21" y2= "2075.26" />
+    <line class="fil2 str234" x1="496.41" y1="2103.59" x2="503.83" y2= "2078.29" />
+    <line class="fil2 str232" x1="507.14" y1="2106.61" x2="513.74" y2= "2081.31" />
+    <line class="fil2 str230" x1="517.59" y1="2109.09" x2="523.36" y2= "2083.52" />
+    <line class="fil2 str228" x1="528.59" y1="2111.29" x2="533.26" y2= "2085.44" />
+    <line class="fil2 str226" x1="539.59" y1="2113.21" x2="543.44" y2= "2087.37" />
+    <line class="fil2 str224" x1="550.59" y1="2114.59" x2="553.33" y2= "2088.46" />
+    <line class="fil2 str222" x1="561.86" y1="2115.41" x2="563.78" y2= "2089.29" />
+    <line class="fil2 str220" x1="573.13" y1="2116.24" x2="573.96" y2= "2090.11" />
+    <line class="fil2 str218" x1="584.69" y1="2116.24" x2="584.69" y2= "2090.11" />
+    <path class="fil2 str193" d="M888 1800c0,169.12 -133.92,303.04 -303.31,303.04"/>
+    <line class="fil2 str340" x1="359.19" y1="2021.37" x2="377.61" y2= "2002.67" />
+    <line class="fil2 str341" x1="367.72" y1="2029.62" x2="385.59" y2= "2010.37" />
+    <line class="fil2 str342" x1="376.24" y1="2037.59" x2="393.29" y2= "2017.79" />
+    <line class="fil2 str343" x1="385.31" y1="2045.02" x2="401.81" y2= "2024.67" />
+    <line class="fil2 str344" x1="394.39" y1="2052.44" x2="410.06" y2= "2031.27" />
+    <line class="fil2 str345" x1="403.74" y1="2059.04" x2="418.59" y2= "2037.32" />
+    <line class="fil2 str346" x1="413.37" y1="2065.64" x2="427.39" y2= "2043.37" />
+    <line class="fil2 str347" x1="423.26" y1="2071.69" x2="436.46" y2= "2049.14" />
+    <line class="fil2 str348" x1="433.44" y1="2077.46" x2="445.81" y2= "2054.37" />
+    <line class="fil2 str197" x1="443.89" y1="2082.96" x2="455.44" y2= "2059.31" />
+    <line class="fil2 str349" x1="454.61" y1="2087.92" x2="465.34" y2= "2063.99" />
+    <line class="fil2 str194" x1="465.61" y1="2092.87" x2="475.51" y2= "2068.67" />
+    <line class="fil2 str310" x1="291.82" y1="1917.97" x2="316.02" y2= "1908.07" />
+    <line class="fil2 str350" x1="296.22" y1="1928.42" x2="320.14" y2= "1917.42" />
+    <line class="fil2 str351" x1="301.17" y1="1938.87" x2="324.54" y2= "1927.05" />
+    <line class="fil2 str306" x1="306.12" y1="1949.04" x2="329.22" y2= "1936.39" />
+    <line class="fil2 str352" x1="311.62" y1="1958.94" x2="334.17" y2= "1945.47" />
+    <line class="fil2 str257" x1="317.39" y1="1968.57" x2="339.39" y2= "1954.54" />
+    <line class="fil2 str304" x1="323.72" y1="1977.92" x2="345.17" y2= "1963.07" />
+    <line class="fil2 str353" x1="330.04" y1="1986.99" x2="350.94" y2= "1971.32" />
+    <line class="fil2 str354" x1="336.92" y1="1996.07" x2="357.27" y2= "1979.57" />
+    <line class="fil2 str251" x1="344.07" y1="2004.87" x2="363.87" y2= "1987.54" />
+    <line class="fil2 str355" x1="351.49" y1="2013.12" x2="370.74" y2= "1995.24" />
+    <line class="fil2 str340" x1="359.19" y1="2021.37" x2="377.61" y2= "2002.67" />
+    <line class="fil2 str217" x1="268.17" y1="1800.28" x2="294.3" y2= "1800" />
+    <line class="fil2 str322" x1="268.17" y1="1811.55" x2="294.3" y2= "1810.45" />
+    <line class="fil2 str323" x1="269" y1="1822.82" x2="295.12" y2= "1820.63" />
+    <line class="fil2 str324" x1="270.09" y1="1834.1" x2="296.22" y2= "1831.07" />
+    <line class="fil2 str325" x1="271.47" y1="1844.82" x2="297.32" y2= "1840.7" />
+    <line class="fil2 str209" x1="273.39" y1="1855.82" x2="299.24" y2= "1850.87" />
+    <line class="fil2 str326" x1="275.59" y1="1866.55" x2="301.17" y2= "1860.5" />
+    <line class="fil2 str327" x1="278.07" y1="1877" x2="303.37" y2= "1870.12" />
+    <line class="fil2 str328" x1="281.09" y1="1887.45" x2="306.12" y2= "1879.75" />
+    <line class="fil2 str267" x1="284.39" y1="1897.62" x2="309.14" y2= "1889.1" />
+    <line class="fil2 str311" x1="287.97" y1="1907.8" x2="312.44" y2= "1898.44" />
+    <path class="fil2 str310" d="M291.82 1917.97l24.2 -9.9m384.16 -373.99l10.17 -24.2"/>
+    <line class="fil2 str356" x1="709.53" y1="1538.21" x2="720.53" y2= "1514.28" />
+    <line class="fil2 str357" x1="718.33" y1="1542.61" x2="729.88" y2= "1518.96" />
+    <line class="fil2 str261" x1="727.13" y1="1547.28" x2="739.5" y2= "1524.19" />
+    <line class="fil2 str358" x1="735.65" y1="1551.96" x2="748.85" y2= "1529.41" />
+    <line class="fil2 str359" x1="743.9" y1="1557.19" x2="757.93" y2= "1534.91" />
+    <line class="fil2 str360" x1="752.15" y1="1562.69" x2="767" y2= "1540.96" />
+    <line class="fil2 str256" x1="760.13" y1="1568.46" x2="775.53" y2= "1547.28" />
+    <line class="fil2 str361" x1="767.83" y1="1574.23" x2="784.05" y2= "1553.61" />
+    <line class="fil2 str362" x1="775.25" y1="1580.56" x2="792.3" y2= "1560.48" />
+    <line class="fil2 str301" x1="782.68" y1="1587.16" x2="800.55" y2= "1567.91" />
+    <path class="fil2 str251" d="M789.83 1594.03l18.43 -18.7m-18.43 18.7l18.43 -18.7"/>
+    <line class="fil2 str363" x1="797.25" y1="1601.46" x2="816.5" y2= "1583.58" />
+    <line class="fil2 str364" x1="804.13" y1="1609.43" x2="823.93" y2= "1592.11" />
+    <line class="fil2 str341" x1="811" y1="1617.68" x2="831.35" y2= "1601.18" />
+    <line class="fil2 str365" x1="817.33" y1="1625.93" x2="838.22" y2= "1610.26" />
+    <line class="fil2 str366" x1="823.37" y1="1634.73" x2="845.1" y2= "1619.88" />
+    <line class="fil2 str203" x1="829.15" y1="1643.53" x2="851.15" y2= "1629.51" />
+    <line class="fil2 str346" x1="834.37" y1="1652.61" x2="856.93" y2= "1639.13" />
+    <line class="fil2 str367" x1="839.6" y1="1661.96" x2="862.7" y2= "1649.31" />
+    <line class="fil2 str368" x1="844.55" y1="1671.58" x2="867.93" y2= "1659.76" />
+    <line class="fil2 str369" x1="848.95" y1="1681.48" x2="872.87" y2= "1670.48" />
+    <path class="fil2 str194" d="M853.35 1691.38l24.2 -10.45m-0.28 0l-24.2 10.45"/>
+    <line class="fil2 str238" x1="881.4" y1="1691.1" x2="856.93" y2= "1700.73" />
+    <line class="fil2 str236" x1="884.97" y1="1701.56" x2="860.22" y2= "1710.35" />
+    <line class="fil2 str234" x1="888.27" y1="1712" x2="863.25" y2= "1719.7" />
+    <line class="fil2 str232" x1="891.3" y1="1722.45" x2="866" y2= "1729.33" />
+    <line class="fil2 str230" x1="893.77" y1="1733.18" x2="868.2" y2= "1739.23" />
+    <line class="fil2 str228" x1="895.97" y1="1743.9" x2="870.12" y2= "1748.85" />
+    <line class="fil2 str226" x1="897.9" y1="1754.9" x2="872.05" y2= "1759.03" />
+    <line class="fil2 str224" x1="899.27" y1="1765.9" x2="873.15" y2= "1768.93" />
+    <line class="fil2 str222" x1="900.37" y1="1777.18" x2="874.25" y2= "1779.1" />
+    <line class="fil2 str220" x1="900.92" y1="1788.45" x2="874.8" y2= "1789.55" />
+    <line class="fil2 str218" x1="901.2" y1="1800" x2="875.07" y2= "1800" />
+   </g>
+   <g>
+    <path class="fil1" d="M445.36 1641.64l1.27 -6.6 -11.29 22.59 -0.63 5.84c-1.14,11.8 -1.78,23.6 -1.78,35.53l0 202.26c0,11.93 0.63,23.85 1.78,35.53l0.63 5.84 11.29 22.58 -1.27 -6.59c-3.17,-17.26 -4.82,-37.05 -4.82,-57.23l0 -202.39c-0.13,-20.17 1.65,-40.09 4.82,-57.35l0 0zm0 0l0 0 0 0z"/>
+   </g>
+   <path class="fil5" d="M724.26 1958.48l-1.27 6.6 11.29 -22.59 0.64 -5.83c1.14,-11.67 1.78,-23.6 1.78,-35.53l0 -202.13c0,-11.93 -0.63,-23.85 -1.78,-35.53l-0.64 -5.84 -11.29 -22.59 1.27 6.6c3.17,17.26 4.82,37.05 4.82,57.35l0 202.26c0,20.17 -1.65,39.97 -4.82,57.22z"/>
+   <g>
+    <path class="fil6" d="M1533.8 1885.52c0,-26.26 -19.41,-44.54 -60.15,-44.54l-81.71 0 0 89.71 83.62 0c34.13,0.13 58.11,-12.06 58.24,-45.17l0 0zm-14.72 -178.02c0,-25.63 -17.38,-43.14 -43.52,-43.14l-83.62 0 0 85.01 81.59 0c29.44,-0.13 45.55,-21.7 45.55,-41.87zm136.41 190.84c0,76.89 -70.93,127.52 -142.5,127.52l-233.47 0 0 -456.8 214.06 0c82.35,0 141.86,41.11 141.86,125.49 0,72.2 -62.81,93.77 -62.81,93.77 0,0.76 82.86,19.67 82.86,110.01l0 0zm349.45 -101.13c0,-71.57 -32.74,-129.56 -97.58,-129.56 -64.84,0 -97.07,57.99 -97.07,129.56 0,72.2 32.1,130.19 97.07,130.19 64.84,0 97.58,-57.99 97.58,-130.19zm112.42 0c0,134.24 -76.89,239.44 -210,239.44 -132.47,0 -210,-105.19 -210,-239.44 0,-133.61 77.65,-239.44 210,-239.44 132.98,-0.13 210,105.82 210,239.44l0 0zm392.21 90.34c0,100.5 -90.98,149.09 -176.5,149.09 -98.97,0 -149.85,-37.81 -189.95,-85.65l72.83 -71.57c30.83,39.08 70.93,58.75 115.72,58.75 36.8,0 61.54,-18.27 61.54,-45.17 0,-29.06 -21.83,-38.07 -81.72,-50.63l-15.99 -3.43c-71.94,-15.1 -131.07,-55.96 -131.07,-137.67 0,-89.71 72.96,-143.64 169.27,-143.64 81.59,0 134.5,35.02 166.6,71.44l-70.93 70.17c-22.08,-23.6 -55.57,-42.5 -93.64,-42.5 -26.01,0 -55.58,12.18 -55.58,42.5 0,27.66 30.58,37.69 69.54,45.93l16.11 3.43c65.22,13.7 143.76,33.75 143.76,138.94l0 0zm434.46 49.99c-46.82,67.5 -90.35,99.23 -180.56,99.23 -128.41,0 -211.39,-106.59 -211.39,-242.23 0,-128.92 74.99,-236.14 212.66,-236.14 75.63,0 129.81,29.69 176,99.22l-92.25 61.41c-18.78,-32.35 -42.76,-51.26 -82.98,-51.26 -50.76,0 -99.74,45.43 -99.74,126.89 0,91.23 52.91,132.85 103.04,132.85 43.39,0 63.44,-21.57 82.22,-52.66l93.01 62.68zm428.5 88.31l-120.41 0 0 -180.18 -138.56 0 0 180.18 -119.65 0 0 -456.8 119.65 0 0 168 138.56 0 0 -167.87 120.41 0 0 456.67z"/>
+   </g>
+  </g>
+ </g>
+</svg>

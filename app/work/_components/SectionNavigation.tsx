@@ -43,7 +43,7 @@ export default function SectionNavigation() {
     };
 
     return (
-        <div className="fixed right-0 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-end gap-6 z-50">
+        <div className="fixed right-0 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-end z-50">
             {sections.map(({ id, label }) => {
                 const isActive = activeSection === id;
                 return (
