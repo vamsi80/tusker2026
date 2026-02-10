@@ -43,7 +43,7 @@ export default function SectionNavigation() {
     };
 
     return (
-        <div className="fixed right-0 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-end z-50">
+        <div className="fixed right-0 top-1/2 -translate-y-1/2 flex flex-col items-end z-50 pr-2">
             {sections.map(({ id, label }) => {
                 const isActive = activeSection === id;
                 return (
@@ -60,9 +60,9 @@ export default function SectionNavigation() {
                         </span>
 
                         <div
-                            className={`h-[6px] rounded-full transition-all duration-500 ease-in-out ${isActive
-                                ? 'w-12 bg-[#41207be1]'
-                                : 'w-6 bg-[#D8D8F5] group-hover:w-10 group-hover:bg-[#41207bb7]'
+                            className={`h-1 sm:h-[6px] rounded-full transition-all duration-500 ease-in-out ${isActive
+                                ? 'w-8 sm:w-12 bg-[#41207be1]'
+                                : 'w-4 sm:w-6 bg-[#D8D8F5] group-hover:w-6 sm:group-hover:w-10 group-hover:bg-[#41207bb7]'
                                 }`}
                         />
                     </button>

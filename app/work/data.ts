@@ -68,7 +68,7 @@ export const projectsData: Record<string, Project[]> = {
             ],
             mainImage: '/Portfolio_Images/Interior Spaces/flight_nose/1.jpeg',
             galleryImages: [
-                '/Portfolio_Images/Interior Spaces/flight_nose/2.jpeg',
+                // '/Portfolio_Images/Interior Spaces/flight_nose/2.jpeg',
                 '/Portfolio_Images/Interior Spaces/flight_nose/3.png',
                 '/Portfolio_Images/Interior Spaces/flight_nose/4.jpeg'
             ]
@@ -83,9 +83,9 @@ export const projectsData: Record<string, Project[]> = {
             ],
             mainImage: '/Portfolio_Images/Interior Spaces/F-35/1.jpg',
             galleryImages: [
-                '/Portfolio_Images/Interior Spaces/F-35/2.jpeg',
-                '/Portfolio_Images/Interior Spaces/F-35/3.png',
-                '/Portfolio_Images/Interior Spaces/F-35/4.jpeg'
+                // '/Portfolio_Images/Interior Spaces/F-35/2.jpeg',
+                // '/Portfolio_Images/Interior Spaces/F-35/3.png',
+                // '/Portfolio_Images/Interior Spaces/F-35/4.jpeg'
             ]
         },
         {
@@ -386,10 +386,10 @@ export const projectsData: Record<string, Project[]> = {
                 "As people move through the space, the wall branding becomes a constant, intuitive presence. It energizes corridors, anchors collaboration zones, and creates moments of pause and reflection. More than static graphics, these interventions influence mood, reinforce shared values, and strengthen everyday connection to the brand.",
                 "Integrated seamlessly with architecture and circulation, the walls extend the experience beyond function-turning movement through space into engagement with culture.",
             ],
-            mainImage: '/Portfolio_Images/Interior Spaces/NPCC Mumbai/1.png',
+            mainImage: '/Portfolio_Images/Interior Spaces/NPCC Mumbai/2.png',
             galleryImages: [
-                '/Portfolio_Images/Interior Spaces/NPCC Mumbai/2.png',
-                '/Portfolio_Images/Interior Spaces/NPCC Mumbai/3.png',
+                // '/Portfolio_Images/Interior Spaces/NPCC Mumbai/2.png',
+                // '/Portfolio_Images/Interior Spaces/NPCC Mumbai/3.png',
                 '/Portfolio_Images/Interior Spaces/NPCC Mumbai/4.png'
             ]
         },
@@ -428,9 +428,9 @@ export const projectsData: Record<string, Project[]> = {
             description: [
                 "This office interior combines understated elegance with functional precision. From the executive desk layout to the meeting and library spaces, every element supports productivity while maintaining a warm, professional atmosphere.",
             ],
-            mainImage: "/Portfolio_Images/Interior Spaces/JoushasOffice/1.png",
+            mainImage: "/Portfolio_Images/Interior Spaces/JoushasOffice/2.png",
             galleryImages: [
-                "/Portfolio_Images/Interior Spaces/JoushasOffice/2.png",
+                // "/Portfolio_Images/Interior Spaces/JoushasOffice/2.png",
                 "/Portfolio_Images/Interior Spaces/JoushasOffice/3.png",
                 "/Portfolio_Images/Interior Spaces/JoushasOffice/4.png"
             ]
@@ -589,34 +589,34 @@ export const projectsData: Record<string, Project[]> = {
                 '/Portfolio_Images/Branding/ZEE/4.png'
             ],
         },
-        {
-            id: '5',
-            title: 'Infosys',
-            category: '',
-            description: [
-                "Each artwork merges illustration and typography to communicate ideas around innovation, mindset, progress, and resilience. The visual system brings together expressive portraits, bold typography, and layered graphic elements to create impactful compositions. Designed as a unified graphic language across multiple panels, the series maintains consistency while allowing each message to stand strong on its own, making it adaptable for large-scale displays and curated environments.",
-            ],
-            mainImage: '/Portfolio_Images/Branding/Infosys/1.png',
-            galleryImages: [
-                '/Portfolio_Images/Branding/Infosys/2.png',
-                '/Portfolio_Images/Branding/Infosys/3.png',
-                '/Portfolio_Images/Branding/Infosys/4.png'
-            ],
-        },
-        {
-            id: '8',
-            title: 'Great Indian Gin',
-            category: 'Brand Identity & Packaging',
-            description: [
-                "The packaging design for GiG translates the brand's spirit into a bold, contemporary label system. Vibrant illustrations, distinctive typography, and a cohesive colour palette create strong shelf presence while clearly differentiating flavours within the range.",
-            ],
-            mainImage: '/Portfolio_Images/Branding/Infosys/1.png',
-            galleryImages: [
-                '/Portfolio_Images/Branding/Infosys/2.png',
-                '/Portfolio_Images/Branding/Infosys/3.png',
-                '/Portfolio_Images/Branding/Infosys/4.png'
-            ],
-        },
+        // {
+        //     id: '5',
+        //     title: 'Infosys',
+        //     category: '',
+        //     description: [
+        //         "Each artwork merges illustration and typography to communicate ideas around innovation, mindset, progress, and resilience. The visual system brings together expressive portraits, bold typography, and layered graphic elements to create impactful compositions. Designed as a unified graphic language across multiple panels, the series maintains consistency while allowing each message to stand strong on its own, making it adaptable for large-scale displays and curated environments.",
+        //     ],
+        //     mainImage: '/Portfolio_Images/Branding/Infosys/1.png',
+        //     galleryImages: [
+        //         '/Portfolio_Images/Branding/Infosys/2.png',
+        //         '/Portfolio_Images/Branding/Infosys/3.png',
+        //         '/Portfolio_Images/Branding/Infosys/4.png'
+        //     ],
+        // },
+        // {
+        //     id: '8',
+        //     title: 'Great Indian Gin',
+        //     category: 'Brand Identity & Packaging',
+        //     description: [
+        //         "The packaging design for GiG translates the brand's spirit into a bold, contemporary label system. Vibrant illustrations, distinctive typography, and a cohesive colour palette create strong shelf presence while clearly differentiating flavours within the range.",
+        //     ],
+        //     mainImage: '/Portfolio_Images/Branding/Infosys/1.png',
+        //     galleryImages: [
+        //         '/Portfolio_Images/Branding/Infosys/2.png',
+        //         '/Portfolio_Images/Branding/Infosys/3.png',
+        //         '/Portfolio_Images/Branding/Infosys/4.png'
+        //     ],
+        // },
         {
             id: '9',
             title: 'World Of Brands',
@@ -638,8 +638,8 @@ export const projectsData: Record<string, Project[]> = {
             id: '1',
             title: 'Anamorph',
             category: 'Anamorphic story Build',
-            videoLink: '#',
-            buttonLabel: 'Watch Film',
+            // videoLink: '#',
+            // buttonLabel: 'Watch Film',
             description: [
                 "The façade is transformed into a three-dimensional visual stage using forced perspective design, depth mapping, and content calibration. Screen geometry, viewing angles, and motion sequences are engineered to create realistic spatial illusions that amplify attention, recall, and brand impact in high-traffic urban environments.",
             ],

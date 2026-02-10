@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 export default function BrandSolution() {
     return (
-        <div className="w-full flex flex-col text-black overflow-visible relative pt-24">
-            <div className="absolute top-0 bottom-0 left-0 w-screen z-0 pointer-events-none flex items-center justify-start -ml-6 sm:-ml-12 lg:-ml-24 overflow-visible">
+        <div className="w-full flex flex-col text-black overflow-visible relative">
+            <div className="absolute top-0 bottom-0 left-0 w-screen z-0 pointer-events-none flex items-center justify-start -ml-12 sm:-ml-16 lg:-ml-24 overflow-visible">
                 <div className="relative w-full h-full scale-100 origin-left">
                     <Image
                         src="/bagrounds/BG-2.png"
@@ -17,37 +17,36 @@ export default function BrandSolution() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 relative z-10">
-
-                <div className="flex flex-col space-y-8 justify-start order-2 lg:order-1 lg:col-span-2">
-                    <h2 className="text-5xl sm:text-6xl lg:text-[6rem] font-medium tracking-tighter leading-[0.85] text-black scale-x-110 origin-left">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+                <div className="flex flex-col space-y-2 sm:space-y-4 justify-start order-2 md:order-1 lg:col-span-2 mt-8 md:mt-0">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[6rem] font-medium tracking-tighter leading-[0.9] lg:leading-[0.85] text-black scale-x-110 origin-left">
                         BRAND SOLUTIONS
                     </h2>
 
                     <div className="space-y-4">
-                        <p className="text-3xl sm:text-4xl lg:text-5xl font-medium text-black leading-[0.9]">
+                        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-medium text-black leading-none">
                             We don't decorate brands. <br />
                             We define them.
                         </p>
                     </div>
 
-                    <p className="text-base sm:text-lg text-gray-800 leading-[1.2] max-w-xl text-left">
+                    <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-gray-800 leading-[1.2] max-w-xl text-left">
                         From logo creation and identity systems to brand books and spatial branding we decode the soul of the brand and translate it into visuals, environments, and experiences that feel unmistakably alive.
                     </p>
 
                     <div className="space-y-2 pt-4">
-                        <p className="text-3xl sm:text-4xl lg:text-5xl font-medium text-black leading-[0.9] tracking-tight">
+                        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-medium text-black leading-none tracking-tight">
                             Consistency is not enough. <br />
                             Resonance is the goal.
                         </p>
                     </div>
                 </div>
 
-                <div className="relative w-full flex justify-start order-1 lg:order-2 lg:col-span-1">
+                <div className="relative w-full flex justify-start order-1 md:order-2 lg:col-span-1 h-auto sm:h-[60vh] md:h-auto">
                     <img
                         src="/Branding.png"
                         alt="Brand Solutions - Bust with Digital Face"
-                        className="w-auto h-auto lg:h-[600px] max-w-full object-contain"
+                        className="w-full h-auto sm:h-full lg:h-[600px] max-w-full object-contain object-center md:object-left"
                     />
                 </div>
             </div>

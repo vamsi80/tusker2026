@@ -5,6 +5,7 @@ import FourVerticalIs from "./components/homepage/fourVerticaIs";
 import StoryEngineSection from "./components/homepage/StoryEngineSection";
 import ExistToCreateSection from "./components/homepage/ExistToCreateSection";
 import ClientLogos from "./components/homepage/ClientLogos";
+import TeamSection from "./components/homepage/TeamSection";
 
 export const metadata: Metadata = {
   title: "The White Tusker | Fluid by Nature",
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden text-black selection:bg-purple-200">
-      <div className="relative mx-auto space-y-8 sm:space-y-12 lg:space-y-16 max-w-[1920px] px-4 sm:px-8 md:px-12 lg:px-12 xl:px-24 overflow-hidden">
+      <div className="relative mx-auto space-y-8 sm:space-y-8 md:space-y-12 lg:space-y-16 xl:space-y-24 max-w-[1920px] px-4 sm:px-8 md:px-12 lg:px-12 xl:px-24 overflow-hidden">
         <div id="home">
           <HeroSection />
         </div>
@@ -24,6 +25,7 @@ export default function Home() {
         <div id="works">
           <Services />
         </div>
+        <TeamSection />
         <ClientLogos />
       </div>
     </div>

@@ -9,7 +9,7 @@ export default function WorkPage() {
     return (
         <>
             <SectionNavigation />
-            <div className="relative min-h-screen w-full max-w-[1920px] mx-auto px-6 sm:px-12 lg:px-24 overflow-hidden text-black bg-white">
+            <div className="relative mx-auto space-y-8 sm:space-y-12 lg:space-y-16 max-w-[1920px] px-8 sm:px-0 md:px-12 lg:px-12 xl:px-24 overflow-hidden text-black bg-white">
                 <div id="interior-spaces">
                     <InteriorSpaces />
                     <Portfolio service="ARCHITECTURE & INTERIOR SPACES" />

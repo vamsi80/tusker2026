@@ -33,11 +33,11 @@ export default function Portfolio({ service }: PortfolioProps) {
 
                                 {/* Bottom: Main Image (Full width) */}
                                 {hasMainImage && (
-                                    <div className="w-full h-auto overflow-hidden">
+                                    <div className="w-full h-auto overflow-hidden aspect-video">
                                         <img
                                             src={project.mainImage}
                                             alt={project.title}
-                                            className="w-full h-auto object-cover"
+                                            className="w-full h-full object-cover"
                                         />
                                     </div>
                                 )}
@@ -51,7 +51,7 @@ export default function Portfolio({ service }: PortfolioProps) {
                                         {/* Text Content */}
                                         <ProjectTextContent project={project} className="lg:col-span-1" />
 
-                                        <div className="lg:col-span-2 w-full h-[300px] sm:h-[400px] lg:h-[400px] overflow-hidden">
+                                        <div className="lg:col-span-2 w-full aspect-video h-auto overflow-hidden">
                                             <img
                                                 src={project.mainImage}
                                                 alt={project.title}
@@ -64,31 +64,15 @@ export default function Portfolio({ service }: PortfolioProps) {
                                 )}
 
                                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-4 ">
-                                    {project.galleryImages.map((img, idx) => {
-                                        const isTwoImages = project.galleryImages.length === 2;
-                                        let containerClasses = "w-full overflow-hidden";
-
-                                        if (isTwoImages) {
-                                            containerClasses += " h-[300px] lg:h-[400px]";
-                                            if (idx === 0) {
-                                                containerClasses += " sm:col-span-1";
-                                            } else {
-                                                containerClasses += " sm:col-span-2";
-                                            }
-                                        } else {
-                                            containerClasses += " aspect-square";
-                                        }
-
-                                        return (
-                                            <div key={idx} className={containerClasses}>
-                                                <img
-                                                    src={img}
-                                                    alt={`${project.title} gallery ${idx + 1}`}
-                                                    className="w-full h-full object-cover transition-transform"
-                                                />
-                                            </div>
-                                        );
-                                    })}
+                                    {project.galleryImages.map((img, idx) => (
+                                        <div key={idx} className="w-full overflow-hidden aspect-square h-auto">
+                                            <img
+                                                src={img}
+                                                alt={`${project.title} gallery ${idx + 1}`}
+                                                className="w-full h-full object-cover transition-transform"
+                                            />
+                                        </div>
+                                    ))}
                                 </div>
                             </>
                         )}
@@ -103,7 +87,7 @@ function ProjectTextContent({ project, className }: { project: any; className?: 
     return (
         <div className={`flex flex-col space-y-4 ${className || ''}`}>
             <div className="space-y-3">
-                <p className={`${outfit.className} text-5xl sm:text-6xl md:text-[40px] font-extralight tracking-tight scale-x-110 origin-left text-black`}>
+                <p className={`${outfit.className} text-4xl sm:text-4xl md:text-[40px] lg:text-[3.5rem] xl:text-[4rem] font-extralight tracking-tight scale-x-110 origin-left text-black max-w-[90%] leading-none`}>
                     {project.title}
                 </p>
                 <h2 className="text-md font-bold tracking-wide text-black">
