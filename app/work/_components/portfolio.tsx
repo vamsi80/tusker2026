@@ -24,7 +24,7 @@ export default function Portfolio({ service }: PortfolioProps) {
                     <div key={project.id} className="flex flex-col gap-8 z-1 bg-[#EDECFA] p-4">
                         {isStackedLayout ? (
                             // --- STACKED LAYOUT (Single Image or Text Only) ---
-                            <div className="flex flex-col gap-8 text-[#4038ae]">
+                            <div className="flex flex-col gap-8 text-[#000000]">
                                 {/* Top: Text Content */}
                                 <ProjectTextContent
                                     project={project}
