@@ -47,51 +47,64 @@ export default function Services() {
     ];
 
     return (
-        <section className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden px-4 py-12 sm:px-6 sm:py-24">
-            <div className="absolute inset-0 z-1 flex justify-center items-center pointer-events-none">
-                <div className="relative w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[600px]">
-                    <Image
-                        src="/homepage/service.png"
-                        alt="Services Centerpiece"
-                        fill
-                        className="object-contain opacity-50 lg:opacity-100 transition-opacity duration-300"
-                        priority
-                    />
-                </div>
-            </div>
-
-            <div className="relative z-2 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                {services.map((service, index) => (
-                    <div
-                        key={service.id}
-                        className={`flex flex-col space-y-4 ${service.col} text-left justify-center h-full ${index % 2 !== 0 ? 'lg:items-end' : 'lg:items-start'}`}
-                    >
-                        <div className="flex flex-col items-start text-left">
-                            <h3 className="flex flex-col text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tighter text-black mb-3 transform scale-x-110 origin-left leading-none">
-                                {Array.isArray(service.title) ? service.title.map((line, i) => (
-                                    <span key={i}>{line}</span>
-                                )) : service.title}
-                            </h3>
-                            <div className="text-xs sm:text-sm font-medium leading-[1.3] max-w-sm">
-                                {Array.isArray(service.description) ? (
-                                    <div className="space-y-1">
-                                        {service.description.map((point, i) => (
-                                            <p key={i}>{point}</p>
-                                        ))}
-                                    </div>
-                                ) : (
-                                    <p>{service.description}</p>
-                                )}
-                            </div>
-                            <WaterButton
-                                href={service.link}
-                                label="EXPLORE"
-                                className="mt-6"
-                            />
-                        </div>
+        <>
+            <section className="relative h-auto w-full flex flex-col items-center justify-center overflow-hidden">
+                <div className="absolute inset-0 z-1 justify-center items-center pointer-events-none hidden lg:flex">
+                    <div className="relative w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] lg:w-[350px] lg:h-[450px] xl:w-[500px] xl:h-[600px]">
+                        <Image
+                            src="/homepage/service.png"
+                            alt="Services Centerpiece"
+                            fill
+                            className="object-contain opacity-50 lg:opacity-100 transition-opacity duration-300"
+                            priority
+                        />
                     </div>
-                ))}
-            </div>
-        </section>
+                </div>
+
+                <div className="relative z-2 w-full mx-auto block lg:grid lg:grid-cols-2 gap-4 lg:gap-8 items-center px-4 sm:px-0">
+                    {services.map((service, index) => (
+                        <div
+                            key={service.id}
+                            className={`block lg:flex lg:flex-col space-y-4 ${service.col} text-left justify-center h-full mb-12 lg:mb-0 ${index % 2 !== 0 ? 'lg:items-end' : 'lg:items-start'}`}
+                        >
+                            {index === 2 && (
+                                <div className="lg:hidden float-right relative w-[240px] h-[240px] sm:w-[450px] sm:h-[450px] ml-4 mb-4 -mt-12 sm:-mt-24 z-10">
+                                    <Image
+                                        src="/homepage/service.png"
+                                        alt="Services Centerpiece"
+                                        fill
+                                        className="object-contain opacity-80"
+                                        priority
+                                    />
+                                </div>
+                            )}
+                            <div className="block lg:flex lg:flex-col lg:items-start text-left">
+                                <h3 className="flex flex-col text-2xl sm:text-3xl xl:text-4xl font-medium tracking-tighter text-black mb-3 transform scale-x-110 origin-left leading-none">
+                                    {Array.isArray(service.title) ? service.title.map((line, i) => (
+                                        <span key={i}>{line}</span>
+                                    )) : service.title}
+                                </h3>
+                                <div className="text-sm xl:text-base font-medium leading-[1.2] xl:leading-[1.2] w-full lg:max-w-xs xl:max-w-sm">
+                                    {Array.isArray(service.description) ? (
+                                        <div className="space-y-1">
+                                            {service.description.map((point, i) => (
+                                                <p key={i} className='leading-[1.2]'>{point}</p>
+                                            ))}
+                                        </div>
+                                    ) : (
+                                        <p className='leading-[1.2]'>{service.description}</p>
+                                    )}
+                                </div>
+                                <WaterButton
+                                    href={service.link}
+                                    label="EXPLORE"
+                                    className="mt-6"
+                                />
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
+        </>
     )
 }

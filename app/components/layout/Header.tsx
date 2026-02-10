@@ -66,7 +66,7 @@ export default function Header() {
                         <Image src="/LOGO.svg" alt="Tusker Logo" width={180} height={48} className="h-7.5 w-auto object-contain" />
                     </Link>
 
-                    <nav className="hidden md:block">
+                    <nav className="block">
                         <ul className="flex items-center gap-1">
                             {navItems.map((item) => {
                                 let isActive = false;
@@ -93,20 +93,13 @@ export default function Header() {
                                             className={`flex items-center gap-2 rounded-full px-4 py-1.5 transition-all hover:bg-black/5 ${isActive ? "text-black bg-black/5" : "text-black/70 hover:text-black"
                                                 }`}
                                         >
-                                            <span>{item.label}</span>
+                                            <span className="text-sm font-medium">{item.label}</span>
                                         </Link>
                                     </li>
                                 );
                             })}
                         </ul>
                     </nav>
-
-                    <button className="md:hidden group flex items-center justify-center rounded-full bg-black p-3 text-white shadow-lg transition-transform active:scale-95">
-                        <div className="flex flex-col gap-1.5">
-                            <span className="block h-0.5 w-5 bg-white transition-transform group-hover:translate-x-1"></span>
-                            <span className="block h-0.5 w-3 bg-white ml-auto transition-transform group-hover:-translate-x-1"></span>
-                        </div>
-                    </button>
                 </div>
             </div>
         </header>

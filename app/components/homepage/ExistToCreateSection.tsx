@@ -18,34 +18,34 @@ export default function ExistToCreateSection() {
                                 <div className="absolute top-0 right-0 w-px h-[70vh] md:h-[50vh] lg:h-full bg-black/20"></div>
                                 <div className="absolute top-0 left-0 w-full h-px bg-black/20 hidden"></div>
                                 <div className="relative z-30 space-y-2 sm:space-y-3 md:space-y-5">
-                                    <p>
+                                    <p className='leading-[1.2]'>
                                         We don't follow briefs. <br />
                                         We interrogate them.
                                     </p>
-                                    <p>
+                                    <p className='leading-[1.2]'>
                                         We don't design outputs. <br />
                                         We engineer experiences.
                                     </p>
-                                    <p>
+                                    <p className='leading-[1.2]'>
                                         We believe space is a language. <br />
                                         Technology is a tool. <br />
                                         Story is the weapon.
                                     </p>
-                                    <p>
+                                    <p className='leading-[1.2]'>
                                         We reject silos. <br />
                                         We dissolve categories. <br />
                                         Architecture, film, digital, brand <br />
                                         to us, they are one fluid system.
                                     </p>
-                                    <p>
+                                    <p className='leading-[1.2]'>
                                         We don't decorate environments. <br />
                                         We activate them.
                                     </p>
-                                    <p>
+                                    <p className='leading-[1.2]'>
                                         We don't chase trends. <br />
                                         We build work that outlives them.
                                     </p>
-                                    <p>
+                                    <p className='leading-[1.2]'>
                                         Every project must move people <br />
                                         emotionally, intellectually, instinctively. <br />
                                         If it doesn't, it doesn't leave our studio.

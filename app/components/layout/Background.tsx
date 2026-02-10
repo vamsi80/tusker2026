@@ -176,7 +176,7 @@ function GradientMesh() {
     useFrame((state) => {
         if (mesh.current) {
             // slower speed: 0.05 instead of 0.2
-            (mesh.current.material as THREE.ShaderMaterial).uniforms.uTime.value = (state.clock.elapsedTime * 0.05) % 10.0;
+            (mesh.current.material as THREE.ShaderMaterial).uniforms.uTime.value = (state.clock.elapsedTime * 0.1) % 10.0;
         }
     });
 

@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 export default function StoryEngineSection() {
-
     return (
         <section className="relative flex h-auto w-full flex-col justify-center overflow-hidden bg-transparent">
             <div className="relative z-10 mx-auto flex h-full w-full max-w-7xl flex-col">
@@ -16,8 +15,8 @@ export default function StoryEngineSection() {
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 w-full max-w-7xl mx-auto z-3 px-4 sm:px-0">
-                    <div className="sm:col-span-1 lg:col-span-1 relative h-[40vh] sm:h-[65vh] lg:-mt-12 lg:h-[80vh] w-full flex items-end justify-center lg:justify-start z-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 w-full max-w-7xl mx-auto z-3 px-4 sm:px-0 pt-0">
+                    <div className="sm:col-span-1 lg:col-span-1 relative h-[40vh] -mt-12 sm:mt-0 sm:h-[65vh] lg:-mt-12 lg:h-[80vh] w-full flex items-end justify-center lg:justify-start z-10">
                         <div className="relative w-full h-full transform">
                             <Image
                                 src="/homepage/1.png"
