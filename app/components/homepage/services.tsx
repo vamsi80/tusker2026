@@ -47,14 +47,14 @@ export default function Services() {
     ];
 
     return (
-        <section className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden px-6 py-24">
+        <section className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden px-4 py-12 sm:px-6 sm:py-24">
             <div className="absolute inset-0 z-1 flex justify-center items-center pointer-events-none">
-                <div className="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[600px]">
+                <div className="relative w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[600px]">
                     <Image
                         src="/homepage/service.png"
                         alt="Services Centerpiece"
                         fill
-                        className="object-contain"
+                        className="object-contain opacity-50 lg:opacity-100 transition-opacity duration-300"
                         priority
                     />
                 </div>
@@ -67,7 +67,7 @@ export default function Services() {
                         className={`flex flex-col space-y-4 ${service.col} text-left justify-center h-full ${index % 2 !== 0 ? 'lg:items-end' : 'lg:items-start'}`}
                     >
                         <div className="flex flex-col items-start text-left">
-                            <h3 className="flex flex-col text-3xl sm:text-4xl lg:text-4xl font-medium tracking-tighter text-black mb-3 transform scale-x-110 origin-left leading-none">
+                            <h3 className="flex flex-col text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tighter text-black mb-3 transform scale-x-110 origin-left leading-none">
                                 {Array.isArray(service.title) ? service.title.map((line, i) => (
                                     <span key={i}>{line}</span>
                                 )) : service.title}

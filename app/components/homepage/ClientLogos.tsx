@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 
 const LOGOS = [
@@ -29,12 +28,12 @@ const LOGOS = [
 
 export default function ClientLogos() {
     return (
-        <section className="relative w-full overflow-hidden">
-            <div className="mb-12 flex flex-col items-center justify-center space-y-4 px-4 text-center">
-                <h2 className="font-sans text-4xl font-normal tracking-tight text-black sm:text-5xl">
+        <section className="relative w-full overflow-hidden py-8 lg:py-16">
+            <div className="mb-8 lg:mb-12 flex flex-col items-center justify-center space-y-4 px-4 text-center">
+                <h2 className="font-sans text-2xl font-normal tracking-tight text-black sm:text-3xl lg:text-5xl">
                     OUR VALUABLE PARTNERS
                 </h2>
-                <p className="text-sm font-medium tracking-widest text-gray-500 uppercase">
+                <p className="text-[10px] sm:text-xs lg:text-sm font-medium tracking-widest text-gray-500 uppercase max-w-[90%] sm:max-w-full">
                     “Where space, story, and technology converge to express a brand in motion.”
                 </p>
             </div>
@@ -43,7 +42,7 @@ export default function ClientLogos() {
                 <div className="flex shrink-0 animate-marquee items-center justify-start gap-0 group-hover:[animation-play-state:paused] hover:[animation-play-state:paused]">
                     {LOGOS.map((logo, index) => (
                         <div key={index} className="group/item relative flex flex-col items-center justify-center gap-4 cursor-pointer px-2">
-                            <div className="relative h-40 w-80 flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">
+                            <div className="relative h-20 w-40 sm:h-28 sm:w-56 lg:h-40 lg:w-80 flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">
                                 <Image
                                     src={logo.url}
                                     alt={logo.name}
@@ -68,7 +67,7 @@ export default function ClientLogos() {
                 <div aria-hidden="true" className="flex shrink-0 animate-marquee items-center justify-start gap-0 group-hover:[animation-play-state:paused] hover:[animation-play-state:paused]">
                     {LOGOS.map((logo, index) => (
                         <div key={`dup-${index}`} className="group/item relative flex flex-col items-center justify-center gap-4 cursor-pointer px-2">
-                            <div className="relative h-40 w-80 flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">
+                            <div className="relative h-20 w-40 sm:h-28 sm:w-56 lg:h-40 lg:w-80 flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">
                                 <Image
                                     src={logo.url}
                                     alt={logo.name}

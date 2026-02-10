@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export default function FourVerticalIs() {
     return (
-        <section className="relative flex min-h-screen w-full flex-col justify-center overflow-hidden px-6 py-24 sm:px-12 md:py-0">
+        <section className="relative flex min-h-screen w-full flex-col justify-center overflow-hidden px-4 py-12 sm:px-12 md:py-0">
             <div className="relative z-10 mx-auto flex h-full w-full max-w-7xl flex-col justify-center">
-                <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-12 w-full h-full items-center">
-                    <div className="relative w-full h-full z-2">
+                <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-12 w-full h-full items-center">
+                    <div className="relative w-full h-[40vh] lg:h-full z-2 min-h-[300px] order-2 lg:order-1">
                         <Image
                             src="/homepage/3.png"
                             alt="Classical statue with futuristic tech nodes"
@@ -14,7 +14,7 @@ export default function FourVerticalIs() {
                             priority
                         />
                     </div>
-                    <div className="flex flex-col justify-center space-y-5 lg:pl-12">
+                    <div className="flex flex-col justify-center space-y-5 lg:pl-12 order-1 lg:order-2">
                         <h2 className="flex flex-col text-left font-sans text-4xl font-normal leading-[0.85] tracking-tighter text-black sm:text-6xl md:text-7xl lg:text-8xl transform scale-x-[1.15] origin-left pb-4">
                             <span>FOUR</span>
                             <span>VERTICALS.</span>
@@ -29,7 +29,7 @@ export default function FourVerticalIs() {
                                 Our four verticals are not services. They are interlocking forces - each designed to strengthen the other, each rooted in one philosophy:
                             </p>
 
-                            <p className="text-xl sm:text-2xl lg:text-3xl font-medium text-black leading-[0.9] uppercase tracking-wide">
+                            <p className="text-lg sm:text-2xl lg:text-3xl font-medium text-black leading-[0.9] uppercase tracking-wide">
                                 EVERY BRAND HAS A STORY.<br />
                                 OUR JOB IS TO MAKE PEOPLE<br />
                                 STEP INTO IT.

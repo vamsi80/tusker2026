@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden text-black selection:bg-purple-200">
-      <div className="relative mx-auto space-y-16 max-w-[1920px] px-24 overflow-hidden">
+      <div className="relative mx-auto space-y-8 sm:space-y-12 lg:space-y-16 max-w-[1920px] px-4 sm:px-8 md:px-12 lg:px-24 overflow-hidden">
         <div id="home">
           <HeroSection />
         </div>

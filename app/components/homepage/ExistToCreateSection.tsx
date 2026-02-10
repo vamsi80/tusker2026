@@ -2,57 +2,59 @@ import Image from 'next/image';
 
 export default function ExistToCreateSection() {
     return (
-        <section className="relative flex min-h-screen w-full flex-col justify-center overflow-hidden">
+        <section className="relative flex h-auto w-full flex-col justify-center overflow-hidden">
             <div className="relative z-10 mx-auto flex h-full w-full max-w-7xl flex-col">
-                <div className="w-full mb-8 md:mb-0 relative z-2">
-                    <h2 className="flex flex-col items-start justify-start text-black leading-[0.85]">
-                        <span className="text-5xl sm:text-6xl md:text-6xl lg:text-[7rem] tracking-tighter font-medium text-black transform scale-x-110 origin-left inline-block">
+                <div className="w-full relative z-2">
+                    <h2 className="flex flex-col items-start justify-start text-black leading-[0.85] px-4 sm:px-0">
+                        <span className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-[7rem] tracking-tighter font-medium text-black transform scale-x-110 origin-left inline-block">
                             EXIST TO CREATE
                         </span>
                     </h2>
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full max-w-7xl mx-auto z-3">
-                    <div className="lg:col-span-1 w-full pt-2 text-xs sm:text-sm font-medium tracking-wide leading-tight">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pl-2">
-                            <div className="relative space-y-5 pt-6 text-gray-700">
-                                <div className="absolute top-0 right-0 w-px h-full bg-black/20"></div>
-                                <div className="absolute top-0 left-0 w-full h-px bg-black/20"></div>
-                                <p>
-                                    We don't follow briefs. <br />
-                                    We interrogate them.
-                                </p>
-                                <p>
-                                    We don't design outputs. <br />
-                                    We engineer experiences.
-                                </p>
-                                <p>
-                                    We believe space is a language. <br />
-                                    Technology is a tool. <br />
-                                    Story is the weapon.
-                                </p>
-                                <p>
-                                    We reject silos. <br />
-                                    We dissolve categories. <br />
-                                    Architecture, film, digital, brand <br />
-                                    to us, they are one fluid system.
-                                </p>
-                                <p>
-                                    We don't decorate environments. <br />
-                                    We activate them.
-                                </p>
-                                <p>
-                                    We don't chase trends. <br />
-                                    We build work that outlives them.
-                                </p>
-                                <p>
-                                    Every project must move people <br />
-                                    emotionally, intellectually, instinctively. <br />
-                                    If it doesn't, it doesn't leave our studio.
-                                </p>
+                <div className="grid grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-8 xl:gap-12 w-full max-w-7xl mx-auto z-10 sm:z-20 px-4 sm:px-0">
+                    <div className="col-span-1 w-full pt-2 font-medium tracking-wide">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 md:gap-8 pl-0 sm:pl-2">
+                            <div className="relative pt-3 sm:pt-4 md:pt-6 text-black text-sm xl:text-base leading-[1.2] xl:leading-[1.2]">
+                                <div className="absolute top-0 right-0 w-px h-[70vh] md:h-[50vh] lg:h-full bg-black/20"></div>
+                                <div className="absolute top-0 left-0 w-full h-px bg-black/20 hidden"></div>
+                                <div className="relative z-30 space-y-2 sm:space-y-3 md:space-y-5">
+                                    <p>
+                                        We don't follow briefs. <br />
+                                        We interrogate them.
+                                    </p>
+                                    <p>
+                                        We don't design outputs. <br />
+                                        We engineer experiences.
+                                    </p>
+                                    <p>
+                                        We believe space is a language. <br />
+                                        Technology is a tool. <br />
+                                        Story is the weapon.
+                                    </p>
+                                    <p>
+                                        We reject silos. <br />
+                                        We dissolve categories. <br />
+                                        Architecture, film, digital, brand <br />
+                                        to us, they are one fluid system.
+                                    </p>
+                                    <p>
+                                        We don't decorate environments. <br />
+                                        We activate them.
+                                    </p>
+                                    <p>
+                                        We don't chase trends. <br />
+                                        We build work that outlives them.
+                                    </p>
+                                    <p>
+                                        Every project must move people <br />
+                                        emotionally, intellectually, instinctively. <br />
+                                        If it doesn't, it doesn't leave our studio.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="relative pb-6">
-                                <div className="absolute bottom-[6.3rem] left-0 w-full sm:-left-8 sm:w-[calc(100%+40rem)] h-px bg-black/20"></div>
-                                <p className="font-normal w-full max-w-md text-black text-lg md:text-2xl leading-tight normal-case md:uppercase">
+                            <div className="relative pb-4 sm:pb-6 hidden lg:block">
+                                <div className="absolute bottom-16 sm:bottom-20 md:bottom-[6.3rem] left-0 w-full sm:-left-8 sm:w-[calc(100%+40rem)] h-px bg-black/20 hidden sm:block"></div>
+                                <p className="font-normal w-full max-w-md text-black text-sm md:text-lg xl:text-2xl leading-tight normal-case md:uppercase">
                                     WHAT OTHERS <br />
                                     HESITATE TO ATTEMPT. <br />
                                     TO SEE WHAT <br />
@@ -60,7 +62,7 @@ export default function ExistToCreateSection() {
                                     TO DELIVER WHAT <br />
                                     OTHERS CAN'T.
                                 </p>
-                                <p className="font-extralight w-[400px] text-black text-lg md:text-3xl border-black mt-6">
+                                <p className="font-extralight w-full max-w-[400px] text-black text-sm md:text-xl xl:text-3xl border-black mt-3 sm:mt-4 md:mt-6">
                                     FLUID BY DESIGN. <br />
                                     RELENTLESS BY INTENT.
                                 </p>
@@ -68,8 +70,25 @@ export default function ExistToCreateSection() {
                         </div>
                     </div>
 
-                    <div className="lg:col-span-1 relative flex items-end justify-end">
-                        <div className="relative w-full h-[55vh] transform scale-125 origin-bottom-right">
+                    <div className="col-span-1 relative flex flex-col justify-between h-full">
+                        {/* Mobile Only: Show the "What Others..." text block here on the right side for mobile layout */}
+                        <div className="block lg:hidden relative z-20 pb-2 pt-3">
+                            <div className="absolute top-0 left-0 w-full h-px bg-black/20 hidden"></div>
+                            <p className="font-normal w-full text-black text-sm leading-tight uppercase mt-2">
+                                WHAT OTHERS <br />
+                                HESITATE TO ATTEMPT. <br />
+                                TO SEE WHAT <br />
+                                OTHERS OVERLOOK, <br />
+                                TO DELIVER WHAT <br />
+                                OTHERS CAN'T.
+                            </p>
+                            <p className="font-extralight w-full text-black text-sm border-black mt-2 leading-tight">
+                                FLUID BY DESIGN. <br />
+                                RELENTLESS BY INTENT.
+                            </p>
+                        </div>
+
+                        <div className="relative w-full h-[30vh] sm:h-[55vh] transform scale-125 origin-bottom-right mt-auto sm:z-10">
                             <Image
                                 src="/homepage/2.png"
                                 alt="Classical statue at a creative console"
