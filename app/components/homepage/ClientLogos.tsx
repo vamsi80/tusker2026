@@ -30,7 +30,7 @@ export default function ClientLogos() {
                 <h2 className="font-sans text-xl font-normal tracking-tight text-black sm:text-3xl lg:text-4xl">
                     OUR VALUABLE PARTNERS
                 </h2>
-                <p className="text-[10px] sm:text-xs lg:text-sm font-medium tracking-widest text-gray-500 uppercase max-w-[90%] sm:max-w-full">
+                <p className="text-[10px] sm:text-xs lg:text-sm font-medium tracking-widest text-black uppercase max-w-[90%] sm:max-w-full">
                     “Where space, story, and technology converge to express a brand in motion.”
                 </p>
             </div>

@@ -699,8 +699,8 @@ export const projectsData: Record<string, Project[]> = {
             id: '1',
             title: 'Anamorph',
             category: 'Anamorphic story Build',
-            // videoLink: '#',
-            // buttonLabel: 'Watch Film',
+            videoLink: 'https://vimeo.com/1160556289?fl=ip&fe=ec',
+            buttonLabel: 'Watch Film',
             description: [
                 "The façade is transformed into a three-dimensional visual stage using forced perspective design, depth mapping, and content calibration. Screen geometry, viewing angles, and motion sequences are engineered to create realistic spatial illusions that amplify attention, recall, and brand impact in high-traffic urban environments.",
             ],
@@ -728,6 +728,8 @@ export const projectsData: Record<string, Project[]> = {
             id: '3',
             title: 'MPL',
             category: 'CGI Sports League Opener',
+            videoLink: 'https://www.youtube.com/watch?v=4l_QwRanCB0',
+            buttonLabel: 'Watch Film',
             description: [
                 "This corporate film for MPL captures the scale, spirit, and prestige of the league through cinematic storytelling and high-impact visuals. The narrative centers around the trophy as a symbol of ambition and excellence, supported by dramatic lighting, detailed close-ups, and immersive stadium environments. Team identities, emblems, and visual effects are woven seamlessly into the film to celebrate competition, legacy, and pride. Every frame is designed to elevate the league's stature-blending motion design, realism, and emotion to create a powerful brand experience that reflects MPL's authority in the sporting ecosystem.",
             ],
@@ -742,6 +744,8 @@ export const projectsData: Record<string, Project[]> = {
             id: '4',
             title: 'Tanishq',
             category: 'Luxury Brand Film',
+            videoLink: 'https://www.youtube.com/watch?v=B-cY3NN8jdc&feature=youtu.be',
+            buttonLabel: 'Watch Film',
             description: [
                 "This corporate film for Tanishq traces the journey of a diamond from its raw origin to refined brilliance. Through evocative visuals of mining, craftsmanship, and final creation, the film captures precision, purity, and purpose-reflecting the values, trust, and artistry that define the brand's legacy.",
             ],
@@ -756,6 +760,8 @@ export const projectsData: Record<string, Project[]> = {
             id: '5',
             title: 'BIAL',
             category: 'Live - Action Corporate Film',
+            videoLink: 'https://www.youtube.com/watch?v=U-8uX7TQIgY&feature=youtu.be',
+            buttonLabel: 'Watch Film',
             description: [
                 "Through a collaborative corporate film with BIAL (Bengaluru International Airport Limited) and JCDecaux, iconic airport spaces become storytelling platforms. Large-format digital displays, architectural backdrops, and real passenger movement come together to showcase brand presence, partnership, and purpose-capturing how communication, environment, and audience intersect in a living, operational space.",
             ],
@@ -770,6 +776,8 @@ export const projectsData: Record<string, Project[]> = {
             id: '6',
             title: 'Titan x Ducati',
             category: 'Hybrid Product Film (Live + 3D)',
+            videoLink: 'https://www.youtube.com/watch?v=tXP-yaJrd5c&feature=youtu.be',
+            buttonLabel: 'Watch Film',
             description: [
                 "The design system brings together Ducati's racing heritage and Titan's horological expertise through structured layouts, product-first storytelling, and precision-led visual execution. Every frame is optimized to reinforce credibility, performance, and luxury appeal.",
             ],
@@ -784,6 +792,8 @@ export const projectsData: Record<string, Project[]> = {
             id: '7',
             title: '2D Narratives',
             category: 'Explainer Film',
+            videoLink: 'https://www.youtube.com/watch?v=VDrigsh3Eqg&feature=youtu.be',
+            buttonLabel: 'Watch Film',
             description: [
                 "From island topography to interior spaces and natural environments, each element is designed with scale, continuity, and narrative flow in mind. Composition, texture, and color harmony are used to maintain consistency while supporting story-driven interaction.",
             ],
@@ -798,6 +808,8 @@ export const projectsData: Record<string, Project[]> = {
             id: '8',
             title: 'SAP',
             category: 'Corporate Space and Mograph Film',
+            videoLink: 'https://www.youtube.com/watch?v=htbt3si8jIE&feature=youtu.be',
+            buttonLabel: 'Watch Film',
             description: [
                 "Through a corporate film for SAP, collaborative offices, innovation zones, and learning spaces are brought into focus. Clean architectural lines, branded environments, and active work settings come together to reflect efficiency, technology, and people-driven progress-showcasing how space, culture, and digital intelligence support everyday enterprise performanc ",
             ],
