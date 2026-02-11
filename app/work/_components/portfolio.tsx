@@ -2,6 +2,7 @@
 
 import { projectsData } from '../data';
 import { Outfit } from 'next/font/google';
+import Image from 'next/image';
 
 const outfit = Outfit({ subsets: ['latin'], weight: ['100', '200', '300'] });
 
@@ -21,10 +22,10 @@ export default function Portfolio({ service }: PortfolioProps) {
                 const hasMainImage = !!project.mainImage;
 
                 return (
-                    <div key={project.id} className="flex flex-col gap-8 z-1 bg-[#EDECFA] p-4">
+                    <div key={project.id} className="flex flex-col gap-4 z-1 bg-[#EDECFA] p-4">
                         {isStackedLayout ? (
                             // --- STACKED LAYOUT (Single Image or Text Only) ---
-                            <div className="flex flex-col gap-8 text-[#000000]">
+                            <div className="flex flex-col gap-4 text-[#000000]">
                                 {/* Top: Text Content */}
                                 <ProjectTextContent
                                     project={project}
@@ -33,7 +34,7 @@ export default function Portfolio({ service }: PortfolioProps) {
 
                                 {/* Bottom: Main Image (Full width) */}
                                 {hasMainImage && (
-                                    <div className="w-full h-auto overflow-hidden aspect-video">
+                                    <div className="w-full h-[300px] sm:h-[400px] overflow-hidden">
                                         <img
                                             src={project.mainImage}
                                             alt={project.title}
@@ -47,11 +48,11 @@ export default function Portfolio({ service }: PortfolioProps) {
                             <>
                                 {/* Top Section: Info + Main Image */}
                                 {hasMainImage ? (
-                                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-8">
+                                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-4">
                                         {/* Text Content */}
                                         <ProjectTextContent project={project} className="lg:col-span-1" />
 
-                                        <div className="lg:col-span-2 w-full aspect-video h-auto overflow-hidden">
+                                        <div className="lg:col-span-2 w-full h-[300px] sm:h-[400px] overflow-hidden">
                                             <img
                                                 src={project.mainImage}
                                                 alt={project.title}
@@ -64,15 +65,29 @@ export default function Portfolio({ service }: PortfolioProps) {
                                 )}
 
                                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-4 ">
-                                    {project.galleryImages.map((img, idx) => (
-                                        <div key={idx} className="w-full overflow-hidden aspect-square h-auto">
-                                            <img
-                                                src={img}
-                                                alt={`${project.title} gallery ${idx + 1}`}
-                                                className="w-full h-full object-cover transition-transform"
-                                            />
-                                        </div>
-                                    ))}
+                                    {project.galleryImages.map((img, idx) => {
+                                        const isTwoImages = project.galleryImages.length === 2;
+                                        let className = "relative w-full overflow-hidden h-[200px] sm:h-[300px]";
+
+                                        if (isTwoImages && idx === 1) {
+                                            className += " sm:col-span-2";
+                                        } else {
+                                            className += " sm:col-span-1";
+                                        }
+
+                                        return (
+                                            <div key={idx} className={className}>
+                                                <Image
+                                                    src={img}
+                                                    alt={`${project.title} gallery ${idx + 1}`}
+                                                    fill
+                                                    className="object-cover transition-transform hover:scale-105 duration-500"
+                                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                                    quality={100}
+                                                />
+                                            </div>
+                                        );
+                                    })}
                                 </div>
                             </>
                         )}
@@ -87,7 +102,7 @@ function ProjectTextContent({ project, className }: { project: any; className?: 
     return (
         <div className={`flex flex-col space-y-4 ${className || ''}`}>
             <div className="space-y-3">
-                <p className={`${outfit.className} text-4xl sm:text-4xl md:text-[40px] lg:text-[3.5rem] xl:text-[4rem] font-extralight tracking-tight scale-x-110 origin-left text-black max-w-[90%] leading-none`}>
+                <p className={`${outfit.className} text-4xl sm:text-2xl md:text-[32px] lg:text-[2.5rem] xl:text-[2.9rem] font-extralight tracking-tight scale-x-110 origin-left text-black max-w-[90%] leading-none`}>
                     {project.title}
                 </p>
                 <h2 className="text-md font-bold tracking-wide text-black">

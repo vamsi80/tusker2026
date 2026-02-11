@@ -29,7 +29,7 @@ const LOGOS = [
 export default function ClientLogos() {
     return (
         <section className="relative w-full overflow-hidden ">
-            <div className="flex flex-col items-center justify-center space-y-4 px-0 text-center">
+            <div className="flex flex-col items-center justify-center space-y-2 px-0 text-center">
                 <h2 className="font-sans text-2xl font-normal tracking-tight text-black sm:text-3xl lg:text-5xl">
                     OUR VALUABLE PARTNERS
                 </h2>
@@ -42,7 +42,7 @@ export default function ClientLogos() {
                 <div className="flex shrink-0 animate-marquee items-center justify-start gap-0 group-hover:[animation-play-state:paused] hover:[animation-play-state:paused]">
                     {LOGOS.map((logo, index) => (
                         <div key={index} className="group/item relative flex flex-col items-center justify-center gap-4 cursor-pointer">
-                            <div className="relative h-20 w-20 sm:h-28 sm:w-56 lg:h-40 lg:w-80 flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">
+                            <div className="relative h-20 w-30 sm:h-28 sm:w-56 lg:h-40 lg:w-80 flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">
                                 <Image
                                     src={logo.url}
                                     alt={logo.name}
@@ -63,7 +63,7 @@ export default function ClientLogos() {
                 <div aria-hidden="true" className="flex shrink-0 animate-marquee items-center justify-start gap-0 group-hover:[animation-play-state:paused] hover:[animation-play-state:paused]">
                     {LOGOS.map((logo, index) => (
                         <div key={`dup-${index}`} className="group/item relative flex flex-col items-center justify-center gap-4 cursor-pointer">
-                            <div className="relative h-20 w-20 sm:h-28 sm:w-56 lg:h-40 lg:w-80 flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">
+                            <div className="relative h-20 w-30 sm:h-28 sm:w-56 lg:h-40 lg:w-80 flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">
                                 <Image
                                     src={logo.url}
                                     alt={logo.name}

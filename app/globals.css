@@ -11,12 +11,14 @@
   --font-sans: var(--font-arial);
 }
 
+/* Disabled dark mode to prevent color changes in Samsung Browser and other browsers
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
+*/
 
 body {
   background: var(--background);

@@ -40,9 +40,9 @@ export const projectsData: Record<string, Project[]> = {
             title: 'Collins Aerospace',
             category: 'Architecture Design',
             description: "The Collins Aerospace Courtyard was conceived and executed as an open-air narrative space celebrating the evolution of aerospace innovation. Designed from concept to completion, the courtyard traces the journey from the Wright Brothers' first flight to the futuristic Airbus Bird of Prey, weaving in key milestones from Collins Aerospace's global and Indian legacy. Sculptural elements, timelines, and spatial storytelling transform the courtyard into a living chronicle where history, innovation, and vision converge offering visitors a reflective yet inspiring pause within the larger campus experience.",
-            mainImage: '/Portfolio_Images/Interior Spaces/north_gate_1/1.jpeg',
+            mainImage: '/Portfolio_Images/Interior Spaces/courtYard/1.png',
             galleryImages: [
-                '/Portfolio_Images/Interior Spaces/north_gate_1/2.jpeg',
+                '/Portfolio_Images/Interior Spaces/courtYard/2.jpeg',
                 '/Portfolio_Images/Interior Spaces/courtYard/3.jpeg',
                 '/Portfolio_Images/Interior Spaces/courtYard/4.jpeg'
             ],
@@ -54,7 +54,7 @@ export const projectsData: Record<string, Project[]> = {
             description: "The Collins Aerospace building façade was conceived and executed as a bold architectural narrative of flight itself. Designed from concept to completion, the façade visualizes the dynamic path of aircraft takeoff and landing, with the striking red geometry representing the precise curve and angle of ascent and descent. Integrated seamlessly into the architecture, a large-format LED wall becomes a living storyteller-broadcasting Collins Aerospace's industry innovations, milestones, and future vision-transforming the building into an iconic, ever-evolving expression of motion, technology, and aerospace excellence.",
             mainImage: '/Portfolio_Images/Interior Spaces/facade/1.png',
             galleryImages: [
-                '/Portfolio_Images/Interior Spaces/north_gate_1/2.jpeg',
+                '/Portfolio_Images/Interior Spaces/facade/2.png',
                 '/Portfolio_Images/Interior Spaces/facade/3.jpeg'
             ],
         },
@@ -68,7 +68,7 @@ export const projectsData: Record<string, Project[]> = {
             ],
             mainImage: '/Portfolio_Images/Interior Spaces/flight_nose/1.jpeg',
             galleryImages: [
-                // '/Portfolio_Images/Interior Spaces/flight_nose/2.jpeg',
+                '/Portfolio_Images/Interior Spaces/flight_nose/2.png',
                 '/Portfolio_Images/Interior Spaces/flight_nose/3.png',
                 '/Portfolio_Images/Interior Spaces/flight_nose/4.jpeg'
             ]
@@ -83,9 +83,9 @@ export const projectsData: Record<string, Project[]> = {
             ],
             mainImage: '/Portfolio_Images/Interior Spaces/F-35/1.jpg',
             galleryImages: [
-                // '/Portfolio_Images/Interior Spaces/F-35/2.jpeg',
-                // '/Portfolio_Images/Interior Spaces/F-35/3.png',
-                // '/Portfolio_Images/Interior Spaces/F-35/4.jpeg'
+                '/Portfolio_Images/Interior Spaces/F-35/2.png',
+                '/Portfolio_Images/Interior Spaces/F-35/3.png',
+                '/Portfolio_Images/Interior Spaces/F-35/4.jpeg'
             ]
         },
         {
@@ -386,10 +386,10 @@ export const projectsData: Record<string, Project[]> = {
                 "As people move through the space, the wall branding becomes a constant, intuitive presence. It energizes corridors, anchors collaboration zones, and creates moments of pause and reflection. More than static graphics, these interventions influence mood, reinforce shared values, and strengthen everyday connection to the brand.",
                 "Integrated seamlessly with architecture and circulation, the walls extend the experience beyond function-turning movement through space into engagement with culture.",
             ],
-            mainImage: '/Portfolio_Images/Interior Spaces/NPCC Mumbai/2.png',
+            mainImage: '/Portfolio_Images/Interior Spaces/NPCC Mumbai/1.png',
             galleryImages: [
-                // '/Portfolio_Images/Interior Spaces/NPCC Mumbai/2.png',
-                // '/Portfolio_Images/Interior Spaces/NPCC Mumbai/3.png',
+                '/Portfolio_Images/Interior Spaces/NPCC Mumbai/2.png',
+                '/Portfolio_Images/Interior Spaces/NPCC Mumbai/3.png',
                 '/Portfolio_Images/Interior Spaces/NPCC Mumbai/4.png'
             ]
         },
@@ -428,9 +428,9 @@ export const projectsData: Record<string, Project[]> = {
             description: [
                 "This office interior combines understated elegance with functional precision. From the executive desk layout to the meeting and library spaces, every element supports productivity while maintaining a warm, professional atmosphere.",
             ],
-            mainImage: "/Portfolio_Images/Interior Spaces/JoushasOffice/2.png",
+            mainImage: "/Portfolio_Images/Interior Spaces/JoushasOffice/1.png",
             galleryImages: [
-                // "/Portfolio_Images/Interior Spaces/JoushasOffice/2.png",
+                "/Portfolio_Images/Interior Spaces/JoushasOffice/2.png",
                 "/Portfolio_Images/Interior Spaces/JoushasOffice/3.png",
                 "/Portfolio_Images/Interior Spaces/JoushasOffice/4.png"
             ]
@@ -603,20 +603,20 @@ export const projectsData: Record<string, Project[]> = {
         //         '/Portfolio_Images/Branding/Infosys/4.png'
         //     ],
         // },
-        // {
-        //     id: '8',
-        //     title: 'Great Indian Gin',
-        //     category: 'Brand Identity & Packaging',
-        //     description: [
-        //         "The packaging design for GiG translates the brand's spirit into a bold, contemporary label system. Vibrant illustrations, distinctive typography, and a cohesive colour palette create strong shelf presence while clearly differentiating flavours within the range.",
-        //     ],
-        //     mainImage: '/Portfolio_Images/Branding/Infosys/1.png',
-        //     galleryImages: [
-        //         '/Portfolio_Images/Branding/Infosys/2.png',
-        //         '/Portfolio_Images/Branding/Infosys/3.png',
-        //         '/Portfolio_Images/Branding/Infosys/4.png'
-        //     ],
-        // },
+        {
+            id: '8',
+            title: 'Great Indian Gin',
+            category: 'Brand Identity & Packaging',
+            description: [
+                "The packaging design for GiG translates the brand's spirit into a bold, contemporary label system. Vibrant illustrations, distinctive typography, and a cohesive colour palette create strong shelf presence while clearly differentiating flavours within the range.",
+            ],
+            mainImage: '/Portfolio_Images/Branding/Gin/1.png',
+            galleryImages: [
+                '/Portfolio_Images/Branding/Gin/2.png',
+                '/Portfolio_Images/Branding/Gin/3.png',
+                '/Portfolio_Images/Branding/Gin/4.png'
+            ],
+        },
         {
             id: '9',
             title: 'World Of Brands',

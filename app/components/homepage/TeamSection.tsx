@@ -4,12 +4,12 @@ import Image from 'next/image';
 
 export default function TeamSection() {
     return (
-        <div className="w-full flex flex-col items-center justify-center space-y-8">
-            <div className="text-center space-y-4 px-4">
-                <h2 className="text-2xl font-normal tracking-tight text-black sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase">
+        <div className="w-full flex flex-col items-center justify-center space-y-12">
+            <div className="text-center space-y-1 px-4">
+                <h2 className="font-sans text-2xl font-normal tracking-tight text-black sm:text-3xl lg:text-5xl uppercase">
                     Our Team
                 </h2>
-                <p className="text-lg font-light text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-[10px] sm:text-xs lg:text-sm font-medium tracking-widest text-gray-500 uppercase max-w-[90%] sm:max-w-full">
                     “Where thinking, craft, and technology move as one.”
                 </p>
             </div>
