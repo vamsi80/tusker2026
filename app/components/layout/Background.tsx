@@ -199,11 +199,10 @@ export default function Background() {
         <div className="fixed inset-0 -z-50 w-full h-full pointer-events-none bg-black">
             <Canvas
                 gl={{
-                    preserveDrawingBuffer: true,
                     alpha: true,
-                    antialias: true
+                    antialias: false
                 }}
-                dpr={[1, 2]}
+                dpr={1}
                 style={{ filter: 'blur(30px)' }}
             >
                 <GradientMesh />

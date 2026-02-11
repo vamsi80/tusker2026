@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/footer";
 import BackToTop from "./components/layout/backToTop";
-import Background from "./components/layout/Background";
+import Background from "./components/layout/DynamicBackground";
 import FixedSidebar from "./components/layout/FixedSidebar";
 import SmoothScroll from "./components/layout/SmoothScroll";
 

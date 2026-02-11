@@ -33,9 +33,9 @@ export default function StoryEngineSection() {
                             <div className="w-px bg-blue-300/50 hidden sm:block relative">
                                 <div className="absolute top-[20%] right-0 w-[17vw] sm:w-[15vw] h-[1.5px] bg-blue-300/50 overflow-hidden" />
                             </div>
-                            <div className="w-full max-w-[450px] text-sm xl:text-base font-medium tracking-wide text-black leading-relaxed space-y-2 sm:space-y-3">
+                            <div className="w-full text-xs xl:text-base max-w-[450px] tracking-wide text-black leading-relaxed space-y-2 sm:space-y-3">
                                 <p className="leading-[1.2] xl:leading-[1.2]">
-                                    We design experiences that live beyond screens and walls. <br />
+                                    We design experiences that live beyond screens and walls.
                                     Experiences people walk into, interact with, and remember.
                                 </p>
 
@@ -45,7 +45,7 @@ export default function StoryEngineSection() {
                                     one fluid narrative.
                                 </p>
 
-                                <div className="space-y-0.5 text-black text-sm xl:text-xl font-medium tracking-widest leading-[1.2] xl:leading-[1.2]">
+                                <div className="text-black text-sm xl:text-xl font-medium tracking-widest leading-none">
                                     EVERY SPACE HAS INTENT.<br />
                                     EVERY FILM HAS PURPOSE.<br />
                                     EVERY TECHNOLOGY HAS A STORY TO TELL
@@ -57,7 +57,7 @@ export default function StoryEngineSection() {
                                     From carpet to content, from concept to completion,
                                 </p>
 
-                                <div className="space-y-0.5 text-black text-sm xl:text-xl font-medium tracking-widest leading-[1.2] xl:leading-[1.2]">
+                                <div className="space-y-0.5 text-black text-sm xl:text-xl font-medium tracking-widest leading-none">
                                     WE BUILD WORLDS<br />
                                     THAT MOVE PEOPLE EMOTIONALLY,<br />
                                     INTELLECTUALLY, AND EXPERIENTIALLY.
