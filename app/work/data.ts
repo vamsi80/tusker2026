@@ -2,7 +2,7 @@ export interface Project {
     id: string;
     title: string;
     category: string;
-    description: string | string[];
+    description?: string | string[];
     mainImage?: string;
     galleryImages?: string[];
     videoLink?: string;
@@ -589,20 +589,14 @@ export const projectsData: Record<string, Project[]> = {
                 '/Portfolio_Images/Branding/ZEE/4.png'
             ],
         },
-        // {
-        //     id: '5',
-        //     title: 'Infosys',
-        //     category: '',
-        //     description: [
-        //         "Each artwork merges illustration and typography to communicate ideas around innovation, mindset, progress, and resilience. The visual system brings together expressive portraits, bold typography, and layered graphic elements to create impactful compositions. Designed as a unified graphic language across multiple panels, the series maintains consistency while allowing each message to stand strong on its own, making it adaptable for large-scale displays and curated environments.",
-        //     ],
-        //     mainImage: '/Portfolio_Images/Branding/Infosys/1.png',
-        //     galleryImages: [
-        //         '/Portfolio_Images/Branding/Infosys/2.png',
-        //         '/Portfolio_Images/Branding/Infosys/3.png',
-        //         '/Portfolio_Images/Branding/Infosys/4.png'
-        //     ],
-        // },
+        {
+            id: '5',
+            title: 'Cover Design',
+            category: '',
+            galleryImages: [
+                '/Portfolio_Images/Branding/Graphic Design/41.png',
+            ],
+        },
         {
             id: '8',
             title: 'Great Indian Gin',

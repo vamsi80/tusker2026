@@ -96,7 +96,7 @@ function GridSection({ project }: { project: any }) {
 
                 // Default height for gallery images
                 let className = "relative w-full overflow-hidden h-[300px] md:h-[200px] lg:h-[300px] xl:h-[400px]";
-                let imageSizes = "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw";
+                let imageSizes = "(max-width: 1000px) 100vw, 1000px";
 
                 if (isSingleGalleryImage) {
                     // Single image: spans full width (3 cols) and 16:9 aspect ratio
@@ -143,7 +143,7 @@ function ProjectTextContent({ project, className }: { project: any; className?: 
     return (
         <div className={`flex flex-col space-y-4 ${className || ''}`}>
             <div className="space-y-3">
-                <p className={`${outfit.className} text-3xl sm:text-2xl md:text-[32px] lg:text-[2.5rem] xl:text-[2.9rem] font-extralight tracking-tight scale-x-110 origin-left text-black max-w-[90%] leading-none`}>
+                <p className={`${outfit.className} text-3xl sm:text-2xl md:text-[32px] lg:text-[2.5rem] xl:text-[2.65rem] font-extralight tracking-tight scale-x-110 origin-left text-black max-w-[90%] leading-none`}>
                     {project.title}
                 </p>
                 <h2 className="text-md font-bold tracking-wide text-black">
