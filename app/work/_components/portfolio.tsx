@@ -18,7 +18,7 @@ export default function Portfolio({ service }: PortfolioProps) {
     return (
         <div className="w-full flex flex-col gap-4 pt-10 z-1">
             {filteredProjects.map((project) => {
-                const isStackedLayout = project.galleryImages.length === 0;
+                const isStackedLayout = project.galleryImages?.length === 0;
                 const hasMainImage = !!project.mainImage;
 
                 return (
@@ -34,11 +34,14 @@ export default function Portfolio({ service }: PortfolioProps) {
 
                                 {/* Bottom: Main Image (Full width) */}
                                 {hasMainImage && (
-                                    <div className="w-full h-[300px] sm:h-[400px] overflow-hidden">
-                                        <img
-                                            src={project.mainImage}
+                                    <div className="relative w-full h-[300px] sm:h-[400px] overflow-hidden">
+                                        <Image
+                                            src={project.mainImage!}
                                             alt={project.title}
-                                            className="w-full h-full object-cover"
+                                            fill
+                                            className="object-cover"
+                                            sizes="(max-width: 1000px) 100vw, 1000px"
+                                            quality={100}
                                         />
                                     </div>
                                 )}
@@ -52,11 +55,14 @@ export default function Portfolio({ service }: PortfolioProps) {
                                         {/* Text Content */}
                                         <ProjectTextContent project={project} className="lg:col-span-1" />
 
-                                        <div className="lg:col-span-2 w-full h-[300px] sm:h-[400px] overflow-hidden">
-                                            <img
-                                                src={project.mainImage}
+                                        <div className="relative lg:col-span-2 w-full h-[300px] sm:h-[400px] overflow-hidden">
+                                            <Image
+                                                src={project.mainImage!}
                                                 alt={project.title}
-                                                className="w-full h-full object-cover transition-transform duration-700"
+                                                fill
+                                                className="object-cover transition-transform duration-700"
+                                                sizes="(max-width: 1000px) 100vw, 1000px"
+                                                quality={100}
                                             />
                                         </div>
                                     </div>
@@ -65,12 +71,21 @@ export default function Portfolio({ service }: PortfolioProps) {
                                 )}
 
                                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-4 ">
-                                    {project.galleryImages.map((img, idx) => {
-                                        const isTwoImages = project.galleryImages.length === 2;
-                                        let className = "relative w-full overflow-hidden h-[200px] sm:h-[300px]";
+                                    {project.galleryImages?.map((img, idx) => {
+                                        const isSingleGalleryImage = project.galleryImages?.length === 1;
+                                        const isTwoImages = project.galleryImages?.length === 2;
 
-                                        if (isTwoImages && idx === 1) {
+                                        // Default height for gallery images
+                                        let className = "relative w-full overflow-hidden h-[200px] sm:h-[400px]";
+                                        let imageSizes = "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw";
+
+                                        if (isSingleGalleryImage) {
+                                            // Single image without main image: spans full width (3 cols) and taller height
+                                            className = "relative w-full overflow-hidden h-[300px] sm:h-[400px] sm:col-span-3";
+                                            imageSizes = "(max-width: 1000px) 100vw, 1000px";
+                                        } else if (isTwoImages && idx === 1) {
                                             className += " sm:col-span-2";
+                                            imageSizes = "(max-width: 1000px) 100vw, 1000px";
                                         } else {
                                             className += " sm:col-span-1";
                                         }
@@ -81,8 +96,8 @@ export default function Portfolio({ service }: PortfolioProps) {
                                                     src={img}
                                                     alt={`${project.title} gallery ${idx + 1}`}
                                                     fill
-                                                    className="object-cover transition-transform hover:scale-105 duration-500"
-                                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                                    className="object-cover"
+                                                    sizes={imageSizes}
                                                     quality={100}
                                                 />
                                             </div>

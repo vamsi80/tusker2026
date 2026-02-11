@@ -3,8 +3,8 @@ export interface Project {
     title: string;
     category: string;
     description: string | string[];
-    mainImage: string;
-    galleryImages: string[];
+    mainImage?: string;
+    galleryImages?: string[];
     videoLink?: string;
     buttonLabel?: string;
 }
@@ -619,6 +619,17 @@ export const projectsData: Record<string, Project[]> = {
         },
         {
             id: '9',
+            title: 'Brand Identity Designs',
+            category: 'Brand Identity & Packaging',
+            description: [
+                "From logo creation to packaging systems and character design, our process brings strategy and creativity together to shape brands that are bold, consistent, and instantly recognizable. Color, typography, and illustration work as one language turning every touchpoint into a clear, memorable expression of the brand.",
+            ],
+            galleryImages: [
+                '/Portfolio_Images/Branding/The bakery/1.png',
+            ],
+        },
+        {
+            id: '10',
             title: 'World Of Brands',
             category: 'Brand Identity & Packaging',
             description: [
@@ -630,6 +641,56 @@ export const projectsData: Record<string, Project[]> = {
                 '/Portfolio_Images/Branding/WOB/2.png',
                 '/Portfolio_Images/Branding/WOB/3.png',
                 '/Portfolio_Images/Branding/WOB/4.png'
+            ],
+        },
+        {
+            id: '11',
+            title: 'The Garden of Minds',
+            category: 'Branding',
+            description: [
+                "This project translates an abstract theme into a rich visual narrative through detailed illustration and spatial composition. Layered landscapes, symbolic elements, and refined typography come together to create an immersive storytelling system across large-format panels and display surfaces. The visual language is designed to guide viewers through a journey of thought and imagination transforming the space into an experience that feels contemplative, engaging, and visually immersive.",
+            ],
+            galleryImages: [
+                '/Portfolio_Images/Branding/The Garden Of Minds/1.jpeg',
+                '/Portfolio_Images/Branding/The Garden Of Minds/2.png',
+            ],
+        },
+        {
+            id: '12',
+            title: 'Graphic Design',
+            category: 'Graphic Design',
+            description: [
+                "This project brings together expressive illustration and conceptual storytelling to translate complex subjects into engaging visual narratives. From the fluid, hand-crafted illustrations developed for the Equestrian Premier League to the bold, data-driven visual language used in the Securities Market booklet, each piece balances creativity with clarity. The designs combine movement, symbolism, and structured layouts to make information accessible, memorable, and visually compelling adapting seamlessly across print and editorial formats while maintaining a strong, cohesive identity.",
+            ],
+            galleryImages: [
+                '/Portfolio_Images/Branding/Graphic Design/12.png',
+                '/Portfolio_Images/Branding/Graphic Design/11.jpeg',
+            ],
+        },
+        {
+            id: '13',
+            title: 'Graphic Design',
+            category: 'Graphic Design',
+            description: [
+                "Each artwork brings together bold illustration and expressive typography to build a cohesive visual narrative around innovation, mindset, progress, and resilience. Surreal architectural forms, dynamic perspectives, and vibrant color systems are used to symbolize movement, growth, and forward thinking. The compositions are designed as interconnected panels, sharing a unified graphic language while allowing each piece to communicate a distinct idea. Together, they form a consistent branding system that feels immersive, energetic, and future-focused translating abstract concepts into visually engaging stories across multiple touchpoints.",
+            ],
+            mainImage: '/Portfolio_Images/Branding/Graphic Design/21.jpg',
+            galleryImages: [
+                '/Portfolio_Images/Branding/Graphic Design/22.jpg',
+                '/Portfolio_Images/Branding/Graphic Design/23.jpg',
+            ],
+        },
+        {
+            id: '14',
+            title: 'Graphic Design',
+            category: 'Graphic Design',
+            description: [
+                "Each artwork brings together bold illustration and expressive typography to build a cohesive visual narrative around innovation, mindset, progress, and resilience. Surreal architectural forms, dynamic perspectives, and vibrant color systems are used to symbolize movement, growth, and forward thinking. The compositions are designed as interconnected panels, sharing a unified graphic language while allowing each piece to communicate a distinct idea. Together, they form a consistent branding system that feels immersive, energetic, and future-focused translating abstract concepts into visually engaging stories across multiple touchpoints.",
+            ],
+            galleryImages: [
+                '/Portfolio_Images/Branding/Graphic Design/32.jpeg',
+                '/Portfolio_Images/Branding/Graphic Design/33.jpeg',
+                '/Portfolio_Images/Branding/Graphic Design/31.jpeg',
             ],
         },
     ],
@@ -646,7 +707,8 @@ export const projectsData: Record<string, Project[]> = {
             mainImage: '/Portfolio_Images/Corporate Brand Film/Anamorph/1.jpeg',
             galleryImages: [
                 '/Portfolio_Images/Corporate Brand Film/Anamorph/2.jpeg',
-                // '/Portfolio_Images/Corporate Brand Film/Anamorph/3.jpeg'
+                '/Portfolio_Images/Corporate Brand Film/Anamorph/3.png',
+                '/Portfolio_Images/Corporate Brand Film/Anamorph/4.png'
             ],
         },
         {

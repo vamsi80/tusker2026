@@ -1,36 +1,33 @@
-import Image from 'next/image';
-
 const LOGOS = [
-    // { name: 'BIAL', url: '/clints/BIAL.svg' },
     { name: 'Boeing', url: '/clints/Boeing.svg' },
     { name: 'Bosch', url: '/clints/Bosch.svg' },
-    // { name: 'Cab', url: '/clints/Cab.svg' }, // Might be generic
+    { name: 'Cab', url: '/clints/Cab.svg' },
     { name: 'Collins', url: '/clints/Collins.svg' },
-    { name: 'DIAGEO', url: '/clints/DIAGEO.svg' },
-    { name: 'ENEC', url: '/clints/ENEC.svg' },
-    // { name: 'Embassy', url: '/clints/Embassy.svg' },
-    // { name: 'Gig', url: '/clints/Gig.svg' },
-    { name: 'Herbalife', url: '/clints/Herbalife.svg' },
-    // { name: 'Karnataka Tourism', url: '/clints/Karnata tourism_ImgID1.png' },
-    // { name: 'PETRONAS', url: '/clints/PETRONAS.svg' },
-    // { name: 'SAUDI', url: '/clints/SAUDHII.svg' },
-    { name: 'Showtime', url: '/clints/Showtime.svg' },
+    { name: 'Volvo', url: '/clints/volvo.svg' },
     { name: 'Tata Steel', url: '/clints/TataSteel.svg' },
+    { name: 'DIAGEO', url: '/clints/DIAGEO.svg' },
+    { name: 'Herbalife', url: '/clints/Herbalife.svg' },
+    { name: 'ENEC', url: '/clints/ENEC.svg' },
+    { name: 'Embassy', url: '/clints/Embassy.svg' },
+    { name: 'Gig', url: '/clints/Gig.svg' },
+    { name: 'PETRONAS', url: '/clints/PETRONAS.svg' },
+    { name: 'Zebra Robotics', url: '/clints/Zebra Robotics.svg' },
+    { name: 'SAUDI', url: '/clints/SAUDHII.svg' },
+    { name: 'Showtime', url: '/clints/Showtime.svg' },
     { name: 'Tech Mahindra', url: '/clints/Tech mahindra.svg' },
     { name: 'Thinkpro', url: '/clints/Thinkpro.svg' },
-    // { name: 'Zebra Robotics', url: '/clints/Zebra Robotics.svg' },
     { name: 'Infosys', url: '/clints/infosys.svg' },
     { name: 'Percept', url: '/clints/percept.svg' },
     { name: 'Phase 1', url: '/clints/phase1.svg' },
-    { name: 'Volvo', url: '/clints/volvo.svg' },
-    // { name: 'The Barkery', url: '/clints/The Barkery_ImgID1.png' },
+    { name: 'The Barkery', url: '/clints/The Barkery.svg' },
+    { name: 'BIAL', url: '/clints/BIAL.svg' },
 ];
 
 export default function ClientLogos() {
     return (
-        <section className="relative w-full overflow-hidden ">
+        <section className="relative w-full overflow-hidden space-y-6 md:space-y-8 lg:space-y-10 xl:space-y-12">
             <div className="flex flex-col items-center justify-center space-y-2 px-0 text-center">
-                <h2 className="font-sans text-2xl font-normal tracking-tight text-black sm:text-3xl lg:text-5xl">
+                <h2 className="font-sans text-xl font-normal tracking-tight text-black sm:text-3xl lg:text-4xl">
                     OUR VALUABLE PARTNERS
                 </h2>
                 <p className="text-[10px] sm:text-xs lg:text-sm font-medium tracking-widest text-gray-500 uppercase max-w-[90%] sm:max-w-full">
@@ -38,43 +35,39 @@ export default function ClientLogos() {
                 </p>
             </div>
 
-            <div className="group flex w-full overflow-hidden select-none pointer-events-auto">
-                <div className="flex shrink-0 animate-marquee items-center justify-start gap-0 group-hover:[animation-play-state:paused] hover:[animation-play-state:paused]">
+            <div className="group flex gap-16 w-full overflow-hidden select-none pointer-events-auto">
+                <div className="flex shrink-0 animate-marquee items-center justify-start gap-16 group-hover:[animation-play-state:paused] hover:[animation-play-state:paused]">
                     {LOGOS.map((logo, index) => (
                         <div key={index} className="group/item relative flex flex-col items-center justify-center gap-4 cursor-pointer">
-                            <div className="relative h-20 w-30 sm:h-28 sm:w-56 lg:h-40 lg:w-80 flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">
-                                <Image
+                            <div className="relative h-6 sm:h-8 lg:h-12 w-auto flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">
+                                <img
                                     src={logo.url}
                                     alt={logo.name}
-                                    fill
-                                    className="object-contain transition-all duration-300"
+                                    className="h-full w-auto object-contain transition-all duration-300"
                                 />
                                 {/* Hover Original Logo (Overlay that fades in) */}
-                                <Image
+                                <img
                                     src={logo.url}
                                     alt={logo.name}
-                                    fill
-                                    className="object-contain absolute inset-0 opacity-0 transition-opacity duration-300 group-hover/item:opacity-100"
+                                    className="h-full w-auto object-contain absolute inset-0 opacity-0 transition-opacity duration-300 group-hover/item:opacity-100"
                                 />
                             </div>
                         </div>
                     ))}
                 </div>
-                <div aria-hidden="true" className="flex shrink-0 animate-marquee items-center justify-start gap-0 group-hover:[animation-play-state:paused] hover:[animation-play-state:paused]">
+                <div aria-hidden="true" className="flex shrink-0 animate-marquee items-center justify-start gap-16 group-hover:[animation-play-state:paused] hover:[animation-play-state:paused]">
                     {LOGOS.map((logo, index) => (
                         <div key={`dup-${index}`} className="group/item relative flex flex-col items-center justify-center gap-4 cursor-pointer">
-                            <div className="relative h-20 w-30 sm:h-28 sm:w-56 lg:h-40 lg:w-80 flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">
-                                <Image
+                            <div className="relative h-6 sm:h-8 lg:h-12 w-auto flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">
+                                <img
                                     src={logo.url}
                                     alt={logo.name}
-                                    fill
-                                    className="object-contain transition-all duration-300"
+                                    className="h-full w-auto object-contain transition-all duration-300"
                                 />
-                                <Image
+                                <img
                                     src={logo.url}
                                     alt={logo.name}
-                                    fill
-                                    className="object-contain absolute inset-0 opacity-0 transition-opacity duration-300 group-hover/item:opacity-100"
+                                    className="h-full w-auto object-contain absolute inset-0 opacity-0 transition-opacity duration-300 group-hover/item:opacity-100"
                                 />
                             </div>
                         </div>
