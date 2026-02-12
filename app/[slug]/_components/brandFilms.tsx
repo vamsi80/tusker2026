@@ -38,7 +38,7 @@ export default function BrandFilms() {
                     </h2>
 
                     <div className="space-y-2">
-                        <p className="text-2xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-medium text-black leading-none tracking-tight">
+                        <p className="text-2xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-normal text-black leading-none tracking-tight">
                             We don't make videos. We <br />
                             direct perception.
                         </p>
@@ -49,15 +49,15 @@ export default function BrandFilms() {
                         Every frame is intentional. Every second serves the brand's larger story.
                     </p>
 
-                    <p className="text-base sm:text-lg lg:text-xl font-medium text-black">
+                    <p className="text-base sm:text-lg lg:text-xl font-normal text-black">
                         This is cinema with clarity. Storytelling with strategy.
                     </p>
 
                     <div className="-space-y-1 text-[#666195] pt-4">
-                        <p className="text-2xl sm:text-3xl md:text-2xl lg:text-[2.6rem] tracking-tighter font-medium leading-none">
+                        <p className="text-2xl sm:text-3xl md:text-2xl lg:text-[2.6rem] tracking-tighter font-normal leading-none">
                             WE TURN BRANDS INTO
                         </p>
-                        <p className="text-3xl sm:text-3xl md:text-4xl lg:text-[3.5rem] tracking-tighter font-medium leading-none">
+                        <p className="text-3xl sm:text-3xl md:text-4xl lg:text-[3.5rem] tracking-tighter font-normal leading-none">
                             MOVING STORIES
                         </p>
                     </div>

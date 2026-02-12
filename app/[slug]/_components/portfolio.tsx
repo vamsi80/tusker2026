@@ -2,11 +2,8 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { services } from '../../data';
-import { Outfit } from 'next/font/google';
 import Image from 'next/image';
 import WaterButton from '../../components/ui/WaterButton';
-
-const outfit = Outfit({ subsets: ['latin'], weight: ['100', '200', '300'] });
 
 interface PortfolioProps {
     service?: string;
@@ -39,7 +36,7 @@ export default function Portfolio({ service }: PortfolioProps) {
     const displayedProjects = filteredProjects.slice(0, visibleCount);
 
     return (
-        <div className="w-full flex flex-col gap-4 pt-10 z-1">
+        <div className="w-full flex flex-col gap-6 pt-10 z-1">
             {displayedProjects.map((project, index) => (
                 <div key={project.id || index} className="flex flex-col gap-4 z-1 bg-[#EDECFA] p-4">
                     <ImageWithTextSection project={project} />
@@ -172,7 +169,7 @@ function ProjectTextContent({ project, className }: { project: any; className?: 
     return (
         <div className={`flex flex-col space-y-2 xl:space-y-4 ${className || ''}`}>
             <div className="space-y-3">
-                <p className={`${outfit.className} text-3xl sm:text-2xl md:text-[32px] lg:text-[2.5rem] xl:text-[2.65rem] font-extralight tracking-tight scale-x-110 origin-left text-black max-w-[90%] leading-none`}>
+                <p className={`text-3xl sm:text-2xl md:text-[32px] lg:text-[2.5rem] xl:text-[2.65rem] font-normal tracking-tight scale-x-110 origin-left text-black max-w-[90%] leading-none`}>
                     {project.title}
                 </p>
                 <h2 className="text-md font-bold tracking-wide text-black">

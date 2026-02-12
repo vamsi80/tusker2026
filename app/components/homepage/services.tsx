@@ -5,7 +5,7 @@ import { services } from '@/app/data';
 export default function Services() {
     return (
         <>
-            <section className="relative h-auto w-full flex flex-col items-center justify-center overflow-hidden">
+            <section className="relative h-auto w-full flex flex-col items-center justify-center overflow-hidden px-4">
                 <div className="absolute inset-0 z-1 justify-center items-center pointer-events-none hidden lg:flex">
                     <div className="relative w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] lg:w-[350px] lg:h-[450px] xl:w-[500px] xl:h-[600px]">
                         <Image
@@ -13,6 +13,7 @@ export default function Services() {
                             alt="Services Centerpiece"
                             fill
                             className="object-contain opacity-50 lg:opacity-100 transition-opacity duration-300"
+                            sizes="(max-width: 640px) 280px, (max-width: 1024px) 400px, 600px"
                             priority
                         />
                     </div>
@@ -31,17 +32,18 @@ export default function Services() {
                                         alt="Services Centerpiece"
                                         fill
                                         className="object-contain opacity-80"
+                                        sizes="(max-width: 640px) 240px, 450px"
                                         priority
                                     />
                                 </div>
                             )}
                             <div className="block lg:flex lg:flex-col lg:items-start text-left">
-                                <h3 className="flex flex-col text-2xl sm:text-3xl xl:text-4xl font-medium tracking-tighter text-black mb-3 transform scale-x-110 origin-left leading-none">
+                                <h3 className="flex flex-col text-2xl sm:text-3xl xl:text-4xl tracking-tighter text-black mb-3 transform scale-x-110 origin-left leading-none">
                                     {service.displayTitle?.map((line, i) => (
                                         <span key={i}>{line}</span>
                                     ))}
                                 </h3>
-                                <div className="text-xs xl:text-base font-medium leading-[1.1] w-full lg:max-w-xs xl:max-w-sm">
+                                <div className="text-xs xl:text-base leading-[1.1] w-full lg:max-w-xs xl:max-w-sm">
                                     <div className="space-y-1">
                                         {service.shortDescription?.map((point, i) => (
                                             <p key={i} className='leading-[1.1]'>{point}</p>

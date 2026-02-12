@@ -39,7 +39,7 @@ export default function InteractiveTech() {
                         TECHNOLOGY
                     </h2>
 
-                    <p className="text-base sm:text-lg lg:text-xl font-medium text-black leading-[1.2]">
+                    <p className="text-base sm:text-lg lg:text-xl font-normal text-black leading-[1.2]">
                         Technology is not our product. But experience is.
                     </p>
 
@@ -48,10 +48,10 @@ export default function InteractiveTech() {
                     </p>
 
                     <div className="flex flex-col lg:-space-y-1 xl:pt-4 lg:pt-3 md:pt-2">
-                        <p className="text-base sm:text-lg lg:text-xl font-medium text-black leading-[1.2]">
+                        <p className="text-base sm:text-lg lg:text-xl font-normal text-black leading-[1.2]">
                             This is storytelling at scale powered by intelligence.
                         </p>
-                        <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-8xl tracking-tighter font-medium text-black leading-[0.8]">
+                        <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-8xl tracking-tighter font-normal text-black leading-[0.8]">
                             takes over.
                         </p>
                     </div>

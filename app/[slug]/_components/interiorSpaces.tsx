@@ -15,7 +15,7 @@ export default function InteriorSpaces() {
             <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-8 lg:gap-0">
                 <div className="lg:col-span-1 flex flex-col justify-start z-2">
                     <div className="max-w-2xl space-y-1 text-black">
-                        <p className="text-base sm:text-lg lg:text-lg xl:text-xl font-medium leading-[1.1]">
+                        <p className="text-base sm:text-lg lg:text-lg xl:text-xl font-normal leading-[1.1]">
                             We don&apos;t design interiors.<br />
                             We script environments.
                         </p>
@@ -25,8 +25,8 @@ export default function InteriorSpaces() {
                         </p>
                         <div className='pt-2 space-y-6'>
                             <div className="-space-y-1 text-base sm:text-lg  xl:text-xl">
-                                <p className="font-medium">These are not buildings.</p>
-                                <p className="font-medium">These are brand experiences in three dimensions.</p>
+                                <p className="font-normal">These are not buildings.</p>
+                                <p className="font-normal">These are brand experiences in three dimensions.</p>
                             </div>
                             <div className='pt-2'>
                                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-medium leading-[0.85] tracking-tight max-w-4xl scale-x-110 origin-left">

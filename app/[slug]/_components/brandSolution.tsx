@@ -24,7 +24,7 @@ export default function BrandSolution() {
                     </h2>
 
                     <div className="space-y-4">
-                        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-medium text-black leading-none">
+                        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-normal text-black leading-none">
                             We don't decorate brands. <br />
                             We define them.
                         </p>
@@ -35,7 +35,7 @@ export default function BrandSolution() {
                     </p>
 
                     <div className="space-y-2 pt-4">
-                        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-medium text-black leading-none tracking-tight">
+                        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-normal text-black leading-none tracking-tight">
                             Consistency is not enough. <br />
                             Resonance is the goal.
                         </p>
