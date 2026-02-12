@@ -56,15 +56,15 @@ export default function WaterButton({ href, label, className = "" }: WaterButton
     return (
         <Link
             href={href}
-            className={`group relative inline-flex items-center justify-center rounded-full bg-[#8286e5] text-white px-5 py-2 h-10 overflow-hidden transition-colors uppercase tracking-widest text-xs font-bold ${className}`}
+            className={`group relative inline-flex items-center justify-center rounded-full bg-linear-to-r from-[#8286e5] to-transparent text-black border border-[#8286e5] px-3 sm:px-5 py-1.5 sm:py-2 h-8 sm:h-10 overflow-hidden transition-colors uppercase tracking-widest text-[10px] sm:text-xs font-bold ${className}`}
             onClick={handleClick}
         >
             <div
                 ref={shineRef}
-                className="absolute top-4 left-2 right-2 h-1/2 -translate-y-1/2 bg-linear-to-b from-white/40 to-transparent rounded-full opacity-60 pointer-events-none origin-center transform-gpu"
+                className="absolute top-4 sm:top-5 left-2 right-6 h-2/3 -translate-y-1/2 bg-linear-to-b from-white/40 to-transparent rounded-full opacity-60 pointer-events-none origin-center transform-gpu"
             />
 
-            <span className="relative z-10 drop-shadow-sm pointer-events-none">{label}</span>
+            <span className="relative z-10 drop-shadow-sm pointer-events-none text-white/80 text-[10px] sm:text-xs xl:text-base">{label}</span>
         </Link>
     );
 }

@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function InteriorSpaces() {
     return (
-        <div className="relative flex min-h-screen w-full flex-col pt-24 lg:pt-34">
+        <div className="relative flex h-auto w-full flex-col">
             <div className="w-full mb-8 md:mb-6 relative z-10">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5rem] font-medium leading-[0.9] tracking-tighter scale-x-110 origin-left">
                     ARCHITECTURE & <br />

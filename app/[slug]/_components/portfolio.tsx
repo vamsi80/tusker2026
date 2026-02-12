@@ -1,8 +1,9 @@
 'use client';
 
-import { projectsData } from '../data';
+import { services } from '../../data';
 import { Outfit } from 'next/font/google';
 import Image from 'next/image';
+import WaterButton from '../../components/ui/WaterButton';
 
 const outfit = Outfit({ subsets: ['latin'], weight: ['100', '200', '300'] });
 
@@ -11,7 +12,7 @@ interface PortfolioProps {
 }
 
 export default function Portfolio({ service }: PortfolioProps) {
-    const filteredProjects = service ? projectsData[service] || [] : [];
+    const filteredProjects = service ? services.find(s => s.title === service)?.projects || [] : [];
 
     if (!filteredProjects || filteredProjects.length === 0) return null;
 
@@ -141,7 +142,7 @@ function GridSection({ project }: { project: any }) {
 
 function ProjectTextContent({ project, className }: { project: any; className?: string }) {
     return (
-        <div className={`flex flex-col space-y-4 ${className || ''}`}>
+        <div className={`flex flex-col space-y-2 xl:space-y-4 ${className || ''}`}>
             <div className="space-y-3">
                 <p className={`${outfit.className} text-3xl sm:text-2xl md:text-[32px] lg:text-[2.5rem] xl:text-[2.65rem] font-extralight tracking-tight scale-x-110 origin-left text-black max-w-[90%] leading-none`}>
                     {project.title}
@@ -150,7 +151,7 @@ function ProjectTextContent({ project, className }: { project: any; className?: 
                     {project.category}
                 </h2>
             </div>
-            <div className="text-sm leading-[1.2] text-left opacity-90 space-y-4">
+            <div className="text-xs xl:text-sm leading-[1.2] text-left opacity-90 space-y-4">
                 {Array.isArray(project.description) ? (
                     project.description.map((desc: string, index: number) => (
                         <p key={index}>{desc}</p>
@@ -162,14 +163,10 @@ function ProjectTextContent({ project, className }: { project: any; className?: 
 
             {project.videoLink && (
                 <div className="pt-4">
-                    <a
+                    <WaterButton
                         href={project.videoLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center rounded-full text-xs font-extrabold uppercase tracking-widest transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-black text-white hover:bg-neutral-800 h-9 px-6 hover:scale-105"
-                    >
-                        {project.buttonLabel || 'Watch Video'}
-                    </a>
+                        label={project.buttonLabel || 'Watch Video'}
+                    />
                 </div>
             )}
         </div>

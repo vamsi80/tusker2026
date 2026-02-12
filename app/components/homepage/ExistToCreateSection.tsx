@@ -17,34 +17,34 @@ export default function ExistToCreateSection() {
                             <div className="relative pt-3 sm:pt-4 md:pt-6 text-black text-xs xl:text-base leading-none xl:leading-none">
                                 <div className="absolute top-0 right-0 w-px h-[70vh] md:h-[50vh] lg:h-full bg-black/20"></div>
                                 <div className="absolute top-0 left-0 w-full h-px bg-black/20 hidden"></div>
-                                <div className="relative z-30 space-y-2 sm:space-y-3 md:space-y-5 pr-2">
+                                <div className="relative z-30 space-y-2 sm:space-y-3 md:space-y-4.5 pr-2">
                                     <p>
-                                        We don't follow briefs. We interrogate them.
+                                        We don't follow briefs.<br /> We interrogate them.
                                     </p>
                                     <p>
-                                        We don't design outputs. We engineer experiences.
+                                        We don't design outputs.<br /> We engineer experiences.
                                     </p>
                                     <p>
-                                        We believe space is a language. Technology is a tool.
+                                        We believe space is a language.<br /> Technology is a tool.<br />
                                         Story is the weapon.
                                     </p>
                                     <p>
-                                        We reject silos.
-                                        We dissolve categories.
+                                        We reject silos. <br />
+                                        We dissolve categories.<br />
                                         Architecture, film, digital, brand
                                         to us, they are one fluid system.
                                     </p>
                                     <p>
-                                        We don't decorate environments.
+                                        We don't decorate environments.<br />
                                         We activate them.
                                     </p>
                                     <p>
-                                        We don't chase trends.
+                                        We don't chase trends.<br />
                                         We build work that outlives them.
                                     </p>
                                     <p>
                                         Every project must move people
-                                        emotionally, intellectually, instinctively.
+                                        emotionally, intellectually, instinctively.<br />
                                         If it doesn't, it doesn't leave our studio.
                                     </p>
                                 </div>
