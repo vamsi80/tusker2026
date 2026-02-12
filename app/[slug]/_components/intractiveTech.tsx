@@ -14,16 +14,20 @@ export default function InteractiveTech() {
                                 alt="Background pattern"
                                 fill
                                 className="object-contain object-left"
+                                sizes="(max-width: 768px) 100vw, 50vw"
                                 priority
                             />
                         </div>
                     </div>
 
-                    <div className="relative z-10 w-full h-full">
-                        <img
+                    <div className="relative z-10 w-full h-[300px] sm:h-[400px] lg:h-[600px] max-w-[1000px]">
+                        <Image
                             src="/intractive_tech.png"
                             alt="Immersive and Interactive Technology"
-                            className="w-full h-auto max-h-[300px] sm:max-h-[400px] lg:max-h-[600px] object-contain object-bottom -scale-x-100"
+                            fill
+                            className="object-contain object-bottom -scale-x-100"
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            priority
                         />
                     </div>
                 </div>

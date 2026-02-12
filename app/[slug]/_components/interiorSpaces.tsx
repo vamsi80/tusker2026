@@ -56,6 +56,7 @@ export default function InteriorSpaces() {
                             alt="Classical statue at a creative console"
                             fill
                             className="object-contain drop-shadow-2xl grayscale-20 contrast-110"
+                            sizes="(max-width: 768px) 100vw, 50vw"
                             priority
                         />
                     </div>

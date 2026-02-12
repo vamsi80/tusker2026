@@ -18,12 +18,17 @@ export default function BrandFilms() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 relative z-10">
-                <div className="relative w-full flex justify-start lg:col-span-2 h-auto sm:h-[60vh] md:h-auto order-1 lg:order-1">
-                    <img
-                        src="/film.png"
-                        alt="Corporate and Brand Films - TV Head Statue"
-                        className="w-full h-auto sm:h-full lg:h-[600px] object-contain object-center lg:object-top-left"
-                    />
+                <div className="relative w-full flex justify-start lg:col-span-2 h-auto sm:h-[60vh] md:h-auto order-1 lg:order-1 max-w-[1000px]">
+                    <div className="relative w-full h-[300px] sm:h-full">
+                        <Image
+                            src="/film.png"
+                            alt="Corporate and Brand Films - TV Head Statue"
+                            fill
+                            className="object-contain object-center lg:object-top-left"
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            priority
+                        />
+                    </div>
                 </div>
 
                 <div className="flex flex-col space-y-2 md:space-y-4 lg:space-y-6 xl:space-y-8 justify-start lg:pl-20 lg:col-span-3 order-2 lg:order-2">

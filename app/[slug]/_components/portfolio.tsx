@@ -71,11 +71,13 @@ function ImageWithTextSection({ project }: { project: any }) {
 
                 {/* Bottom: Main Image (Full width) */}
                 {hasMainImage && (
-                    <div className="relative w-full h-auto sm:h-[400px] overflow-hidden">
-                        <img
+                    <div className="relative w-full aspect-video sm:aspect-auto sm:h-[400px] overflow-hidden">
+                        <Image
                             src={project.mainImage!}
                             alt={project.title}
-                            className="w-full h-auto sm:h-full sm:object-cover"
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 640px) 100vw, 100vw"
                         />
                     </div>
                 )}
@@ -91,11 +93,13 @@ function ImageWithTextSection({ project }: { project: any }) {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-4">
                     <ProjectTextContent project={project} className="lg:col-span-1" />
 
-                    <div className="relative lg:col-span-2 w-full h-auto sm:h-[400px] overflow-hidden">
-                        <img
+                    <div className="relative lg:col-span-2 w-full aspect-video sm:aspect-auto sm:h-[400px] overflow-hidden">
+                        <Image
                             src={project.mainImage!}
                             alt={project.title}
-                            className="w-full h-auto sm:h-full sm:object-cover"
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 1024px) 100vw, 66vw"
                         />
                     </div>
                 </div>
@@ -135,11 +139,13 @@ function GridSection({ project }: { project: any }) {
                 if (isSingleGalleryImage || (isTwoImages && idx === 1)) {
                     const colSpanClass = isSingleGalleryImage ? 'sm:col-span-3' : 'sm:col-span-2';
                     return (
-                        <div key={idx} className={`relative w-full overflow-hidden ${colSpanClass} h-auto md:h-[200px] lg:h-[300px] xl:h-[400px]`}>
-                            <img
+                        <div key={idx} className={`relative w-full overflow-hidden ${colSpanClass} aspect-video md:aspect-auto md:h-[200px] lg:h-[300px] xl:h-[400px]`}>
+                            <Image
                                 src={img}
                                 alt={`${project.title} gallery ${idx + 1}`}
-                                className="w-full h-auto md:h-full md:object-cover"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 66vw"
                             />
                         </div>
                     );

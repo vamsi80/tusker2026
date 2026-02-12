@@ -42,12 +42,17 @@ export default function BrandSolution() {
                     </div>
                 </div>
 
-                <div className="relative w-full flex justify-start order-1 md:order-2 lg:col-span-1 h-auto sm:h-[60vh] md:h-auto">
-                    <img
-                        src="/Branding.png"
-                        alt="Brand Solutions - Bust with Digital Face"
-                        className="w-full h-auto sm:h-full lg:h-[600px] max-w-full object-contain object-center md:object-left"
-                    />
+                <div className="relative w-full flex justify-start order-1 md:order-2 lg:col-span-1 h-auto sm:h-[60vh] md:h-auto max-w-[1000px]">
+                    <div className="relative w-full h-[300px] sm:h-full">
+                        <Image
+                            src="/Branding.png"
+                            alt="Brand Solutions - Bust with Digital Face"
+                            fill
+                            className="object-contain object-center md:object-left"
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            priority
+                        />
+                    </div>
                 </div>
             </div>
         </div>
