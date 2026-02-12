@@ -53,8 +53,8 @@ export default function StoryEngineSection() {
                                 </div>
 
                                 <p className="leading-[1.2] xl:leading-[1.2] font-normal">
-                                    We don't believe in isolated deliverables.<br />
-                                    We believe in systems that breathe, adapt, and evolve.<br />
+                                    We don't believe in isolated deliverables.
+                                    We believe in systems that breathe, adapt, and evolve.
                                     From carpet to content, from concept to completion,
                                 </p>
 

@@ -17,7 +17,7 @@ export default function ExistToCreateSection() {
                             <div className="relative pt-3 sm:pt-4 md:pt-6 text-black leading-none xl:leading-none">
                                 <div className="absolute top-0 right-0 w-px h-[70vh] md:h-[50vh] lg:h-full bg-black/20"></div>
                                 <div className="absolute top-0 left-0 w-full h-px bg-black/20 hidden"></div>
-                                <div className="relative z-30 space-y-2 sm:space-y-3 md:space-y-4.5 pr-2">
+                                <div className="relative text-xs xl:xl:text-base z-30 space-y-2 sm:space-y-3 md:space-y-4.5 pr-2 leading-none">
                                     <p>
                                         We don't follow briefs.<br /> We interrogate them.
                                     </p>

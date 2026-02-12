@@ -15,14 +15,14 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden text-black selection:bg-purple-200">
-      <div className="relative mx-auto space-y-13 sm:space-y-12 md:space-y-12 lg:space-y-16 xl:space-y-36 max-w-[1920px] px-4 sm:px-8 md:px-12 lg:px-12 xl:px-24 overflow-hidden">
+      <div className="relative mx-auto space-y-13 sm:space-y-12 md:space-y-12 lg:space-y-16 xl:space-y-36 max-w-[1920px] px-6 sm:px-8 md:px-12 lg:px-12 xl:px-24 overflow-hidden">
         <div id="home" className="scroll-mt-32">
           <HeroSection />
         </div>
         <StoryEngineSection />
         <ExistToCreateSection />
         <FourVerticalIs />
-        <div id="works" className="scroll-mt-32">
+        <div id="works" className="scroll-mt-28">
           <Services />
         </div>
         <TeamSection />

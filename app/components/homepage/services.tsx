@@ -5,7 +5,7 @@ import { services } from '@/app/data';
 export default function Services() {
     return (
         <>
-            <section className="relative h-auto w-full flex flex-col items-center justify-center overflow-hidden px-4">
+            <section className="relative h-auto w-full flex flex-col items-center justify-center overflow-hidden xl:px-4">
                 <div className="absolute inset-0 z-1 justify-center items-center pointer-events-none hidden lg:flex">
                     <div className="relative w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] lg:w-[350px] lg:h-[450px] xl:w-[500px] xl:h-[600px]">
                         <Image
