@@ -2,8 +2,11 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { services } from '../../data';
+import { Outfit } from 'next/font/google';
 import Image from 'next/image';
 import WaterButton from '../../components/ui/WaterButton';
+
+const outfit = Outfit({ subsets: ['latin'], weight: ['100', '200', '300'] });
 
 interface PortfolioProps {
     service?: string;
@@ -169,7 +172,7 @@ function ProjectTextContent({ project, className }: { project: any; className?: 
     return (
         <div className={`flex flex-col space-y-2 xl:space-y-4 ${className || ''}`}>
             <div className="space-y-3">
-                <p className={`text-3xl sm:text-2xl md:text-[32px] lg:text-[2.5rem] xl:text-[2.65rem] font-normal tracking-tight scale-x-110 origin-left text-black max-w-[90%] leading-none`}>
+                <p className={`${outfit.className} text-3xl sm:text-2xl md:text-[32px] lg:text-[2.5rem] xl:text-[2.5rem] font-extralight tracking-tight scale-x-110 origin-left text-black max-w-[90%] leading-none`}>
                     {project.title}
                 </p>
                 <h2 className="text-md font-bold tracking-wide text-black">

@@ -16,6 +16,7 @@ const fragmentShader = `
 uniform float uTime;
 uniform float uGridSize;
 uniform float uSharpness;
+uniform float uTransition;
 varying vec2 vUv;
 
 // Simplex 3D Noise 
@@ -157,6 +158,10 @@ void main() {
   float finalGrainStrength = 0.15 * shapeIntensity;
   finalColor = mix(finalColor, grain, finalGrainStrength);
 
+  // ** TRANSITION FADE IN **
+  // Mix from Pure White to Final Color based on uTransition
+  finalColor = mix(c_white, finalColor, uTransition);
+
   gl_FragColor = vec4(finalColor, 1.0);
 }
 `;
@@ -169,14 +174,25 @@ function GradientMesh() {
             uTime: { value: 0 },
             uGridSize: { value: 1 },
             uSharpness: { value: 1.2 },
+            uTransition: { value: 0 },
         }),
         []
     );
 
-    useFrame((state) => {
+    useFrame((state, delta) => {
         if (mesh.current) {
+            const material = mesh.current.material as THREE.ShaderMaterial;
             // slower speed: 0.05 instead of 0.2
-            (mesh.current.material as THREE.ShaderMaterial).uniforms.uTime.value = state.clock.elapsedTime * 0.1;
+            material.uniforms.uTime.value = state.clock.elapsedTime * 0.1;
+
+            // Fade-in effect
+            // Transition from 0 to 1 over approx 1.5 seconds
+            if (material.uniforms.uTransition.value < 1.0) {
+                material.uniforms.uTransition.value += delta * 0.6;
+                if (material.uniforms.uTransition.value > 1.0) {
+                    material.uniforms.uTransition.value = 1.0;
+                }
+            }
         }
     });
 
@@ -196,7 +212,7 @@ function GradientMesh() {
 
 export default function Background() {
     return (
-        <div className="fixed inset-0 -z-50 w-full h-full pointer-events-none bg-black">
+        <div className="fixed inset-0 -z-50 w-full h-full pointer-events-none bg-white">
             <Canvas
                 gl={{
                     alpha: true,
