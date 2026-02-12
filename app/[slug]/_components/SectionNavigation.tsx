@@ -16,14 +16,14 @@ export default function SectionNavigation() {
     }, [pathname]);
 
     return (
-        <div className="fixed right-0 top-1/2 -translate-y-1/2 flex flex-col items-end z-50 pr-2">
+        <div className="fixed right-0 top-1/2 -translate-y-1/2 flex flex-col items-end z-50 pr-2 pointer-events-none">
             {services.map(({ slug, title }) => {
                 const isActive = activeSection === slug;
                 return (
                     <Link
                         key={slug}
                         href={`/${slug}`}
-                        className="group flex items-center gap-1 focus:outline-none cursor-pointer"
+                        className="group flex items-center gap-1 focus:outline-none cursor-pointer pointer-events-none"
                         aria-label={`Go to ${title}`}
                     >
                         <span
@@ -33,7 +33,7 @@ export default function SectionNavigation() {
                         </span>
 
                         <div
-                            className={`h-1 sm:h-[6px] rounded-full transition-all duration-500 ease-in-out ${isActive
+                            className={`pointer-events-auto h-1 sm:h-[6px] rounded-full transition-all duration-500 ease-in-out ${isActive
                                 ? 'w-8 sm:w-12 bg-[#41207be1]'
                                 : 'w-4 sm:w-6 bg-[#D8D8F5] group-hover:w-6 sm:group-hover:w-10 group-hover:bg-[#41207bb7]'
                                 }`}
@@ -44,5 +44,3 @@ export default function SectionNavigation() {
         </div>
     );
 }
-
-

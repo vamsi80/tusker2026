@@ -11,7 +11,7 @@ export interface Project {
 
 export const services = [
     {
-        title: "ARCHITECTURE & INTERIOR SPACES",
+        title: "Architecture & Interior Spaces",
         slug: "architecture-interior-spaces",
         displayTitle: ['ARCHITECTURE &', 'INTERIOR SPACES'],
         shortDescription: [
@@ -555,7 +555,7 @@ export const services = [
         ]
     },
     {
-        title: "branding solutions",
+        title: "Branding Solutions",
         slug: "branding-solutions",
         displayTitle: ['BRAND', 'SOLUTIONS'],
         shortDescription: [

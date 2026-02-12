@@ -64,7 +64,7 @@ export default function WaterButton({ href, label, className = "" }: WaterButton
                 className="absolute top-4 sm:top-5 left-2 right-6 h-2/3 -translate-y-1/2 bg-linear-to-b from-white/40 to-transparent rounded-full opacity-60 pointer-events-none origin-center transform-gpu"
             />
 
-            <span className="relative z-10 drop-shadow-sm pointer-events-none text-white/80 text-[10px] sm:text-xs xl:text-base">{label}</span>
+            <span className="relative z-10 drop-shadow-sm pointer-events-none text-white/80 text-[10px] sm:text-xs xl:text-xs">{label}</span>
         </Link>
     );
 }

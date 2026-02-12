@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect, useRef } from 'react';
 import { services } from '../../data';
 import { Outfit } from 'next/font/google';
 import Image from 'next/image';
@@ -13,17 +14,43 @@ interface PortfolioProps {
 
 export default function Portfolio({ service }: PortfolioProps) {
     const filteredProjects = service ? services.find(s => s.title === service)?.projects || [] : [];
+    const [visibleCount, setVisibleCount] = useState(2);
+    const observerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries[0].isIntersecting) {
+                    setVisibleCount((prev) => Math.min(prev + 2, filteredProjects.length));
+                }
+            },
+            { threshold: 0.1 }
+        );
+
+        if (observerRef.current) {
+            observer.observe(observerRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, [filteredProjects.length]);
 
     if (!filteredProjects || filteredProjects.length === 0) return null;
 
+    const displayedProjects = filteredProjects.slice(0, visibleCount);
+
     return (
         <div className="w-full flex flex-col gap-4 pt-10 z-1">
-            {filteredProjects.map((project, index) => (
+            {displayedProjects.map((project, index) => (
                 <div key={project.id || index} className="flex flex-col gap-4 z-1 bg-[#EDECFA] p-4">
                     <ImageWithTextSection project={project} />
                     <GridSection project={project} />
                 </div>
             ))}
+            {visibleCount < filteredProjects.length && (
+                <div ref={observerRef} className="h-20 w-full flex items-center justify-center">
+                    <span className="text-gray-400">Loading more projects...</span>
+                </div>
+            )}
         </div>
     );
 }
@@ -60,10 +87,8 @@ function ImageWithTextSection({ project }: { project: any }) {
     // Here we ONLY render the Image + Text part.
     return (
         <>
-            {/* Top Section: Info + Main Image */}
             {hasMainImage ? (
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-4">
-                    {/* Text Content */}
                     <ProjectTextContent project={project} className="lg:col-span-1" />
 
                     <div className="relative lg:col-span-2 w-full h-auto sm:h-[400px] overflow-hidden">
@@ -84,7 +109,6 @@ function ImageWithTextSection({ project }: { project: any }) {
 function GridSection({ project }: { project: any }) {
     const isStackedLayout = project.galleryImages?.length === 0;
 
-    // If stacked layout (no gallery images), return null
     if (isStackedLayout || !project.galleryImages || project.galleryImages.length === 0) {
         return null;
     }
@@ -95,12 +119,10 @@ function GridSection({ project }: { project: any }) {
                 const isSingleGalleryImage = project.galleryImages?.length === 1;
                 const isTwoImages = project.galleryImages?.length === 2;
 
-                // Default height for gallery images
                 let className = "relative w-full overflow-hidden h-[300px] md:h-[200px] lg:h-[300px] xl:h-[400px]";
                 let imageSizes = "(max-width: 1000px) 100vw, 1000px";
 
                 if (isSingleGalleryImage) {
-                    // Single image: spans full width (3 cols) and 16:9 aspect ratio
                     className = "relative w-full overflow-hidden aspect-video sm:col-span-3";
                     imageSizes = "(max-width: 1000px) 100vw, 1000px";
                 } else if (isTwoImages && idx === 1) {
@@ -162,7 +184,7 @@ function ProjectTextContent({ project, className }: { project: any; className?: 
             </div>
 
             {project.videoLink && (
-                <div className="pt-4">
+                <div className="pt-0">
                     <WaterButton
                         href={project.videoLink}
                         label={project.buttonLabel || 'Watch Video'}

@@ -6,6 +6,7 @@ import BrandSolution from './_components/brandSolution';
 import InteriorSpaces from './_components/interiorSpaces';
 import InteractiveTech from './_components/intractiveTech';
 import SectionNavigation from './_components/SectionNavigation';
+import ServicesPagination from './_components/ServicesPagination';
 
 const componentMap: Record<string, React.ComponentType<any>> = {
     'architecture-interior-spaces': InteriorSpaces,
@@ -31,7 +32,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     const IntroComponent = componentMap[slug];
 
     return (
-        <div className="relative mx-auto max-w-[1920px] space-y-10 sm:space-y-12 lg:space-y-14 xl:space-y-16 px-8 sm:px-0 md:px-12 lg:px-12 xl:px-24 overflow-hidden text-black bg-white">
+        <div className="relative mx-auto max-w-[1920px] space-y-10 sm:space-y-12 lg:space-y-14 xl:space-y-16 px-8 sm:px-0 md:px-12 lg:px-12 xl:px-18 overflow-hidden text-black bg-white">
             <SectionNavigation />
             {IntroComponent && (
                 <div className="pt-24">
@@ -39,6 +40,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                 </div>
             )}
             <Portfolio service={service.title} />
+            <ServicesPagination />
         </div>
     );
 }

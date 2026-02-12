@@ -23,7 +23,7 @@ export default function InteractiveTech() {
                         <img
                             src="/intractive_tech.png"
                             alt="Immersive and Interactive Technology"
-                            className="w-full h-auto sm:h-full object-contain object-bottom -scale-x-100"
+                            className="w-full h-auto max-h-[300px] sm:max-h-[400px] lg:max-h-[600px] object-contain object-bottom -scale-x-100"
                         />
                     </div>
                 </div>
