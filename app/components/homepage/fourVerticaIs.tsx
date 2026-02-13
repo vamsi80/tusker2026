@@ -1,11 +1,51 @@
+'use client';
+
+import { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function FourVerticalIs() {
+    const containerRef = useRef<HTMLElement>(null);
+    const imageRef = useRef<HTMLDivElement>(null);
+    const textRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: containerRef.current,
+                    start: "top 70%",
+                    toggleActions: "play none none reverse"
+                }
+            });
+
+            tl.addLabel("start")
+                .from(imageRef.current, {
+                    x: -100,
+                    opacity: 0,
+                    duration: 1.8,
+                    ease: "power3.out"
+                }, "start")
+                .from(textRef.current, {
+                    x: 100,
+                    opacity: 0,
+                    duration: 1.8,
+                    ease: "power3.out"
+                }, "start");
+
+        }, containerRef);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
-        <section className="relative flex h-auto w-full flex-col justify-center overflow-hidden md:py-0 px-4 sm:px-0">
+        <section ref={containerRef} className="relative flex h-auto w-full flex-col justify-center overflow-hidden md:py-0 px-4 sm:px-0">
             <div className="relative z-10 mx-auto flex h-full w-full flex-col justify-center">
                 <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-12 w-full h-full items-center">
-                    <div className="relative w-full h-[40vh] lg:h-full z-2 min-h-[300px] mt-4 lg:mt-0 order-2 lg:order-1">
+                    <div ref={imageRef} className="relative w-full h-[40vh] lg:h-full z-2 min-h-[300px] mt-4 lg:mt-0 order-2 lg:order-1">
                         <Image
                             src="/homepage/3.png"
                             alt="Classical statue with futuristic tech nodes"
@@ -15,7 +55,7 @@ export default function FourVerticalIs() {
                             priority
                         />
                     </div>
-                    <div className="flex flex-col justify-center space-y-2 sm:space-y-3 lg:space-y-4 xl:space-y-5 lg:pl-12 order-1 lg:order-2">
+                    <div ref={textRef} className="flex flex-col justify-center space-y-2 sm:space-y-3 lg:space-y-4 xl:space-y-5 lg:pl-12 order-1 lg:order-2">
                         <h2 className="flex flex-col text-left font-sans text-4xl font-normal tracking-tighter text-black sm:text-5xl md:text-6xl lg:text-6xl xl:text-[4.5rem] transform scale-x-[1.15] origin-left pb-2 sm:pb-3 lg:pb-4">
                             <span>FOUR</span>
                             <span>VERTICALS.</span>

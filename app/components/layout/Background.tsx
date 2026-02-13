@@ -179,11 +179,32 @@ function GradientMesh() {
         []
     );
 
+    const lastScrollY = useRef(0);
+    const totalTime = useRef(0);
+    const currentSpeed = useRef(0.1);
+
     useFrame((state, delta) => {
         if (mesh.current) {
             const material = mesh.current.material as THREE.ShaderMaterial;
-            // slower speed: 0.05 instead of 0.2
-            material.uniforms.uTime.value = state.clock.elapsedTime * 0.1;
+
+            // Calculate scroll velocity
+            const scrollY = window.scrollY;
+            const scrollDelta = Math.abs(scrollY - lastScrollY.current);
+            lastScrollY.current = scrollY;
+
+            // Determine target speed
+            // Base speed: 0.1
+            // Scroll influence: scrollDelta * factor (e.g. 0.05)
+            // When scrolling fast (e.g. delta = 20), speed ~= 0.1 + 1.0 = 1.1 (11x faster)
+            const targetSpeed = 0.1 + scrollDelta * 0.1;
+
+            // Interpolate speed for smooth but responsive transition ("suddenly")
+            // Alpha 0.2 gives a quick response that still feels continuous
+            currentSpeed.current = THREE.MathUtils.lerp(currentSpeed.current, targetSpeed, 0.2);
+
+            // Accumulate time
+            totalTime.current += delta * currentSpeed.current;
+            material.uniforms.uTime.value = totalTime.current;
 
             // Fade-in effect
             // Transition from 0 to 1 over approx 1.5 seconds
