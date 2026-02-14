@@ -21,7 +21,7 @@ export default function BrandFilms() {
                 <div className="relative w-full flex justify-start lg:col-span-2 h-auto sm:h-[60vh] md:h-auto order-1 lg:order-1 max-w-[1000px]">
                     <div className="relative w-full h-[300px] sm:h-full">
                         <Image
-                            src="/film.png"
+                            src="/film.avif"
                             alt="Corporate and Brand Films - TV Head Statue"
                             fill
                             className="object-contain object-center lg:object-top-left"

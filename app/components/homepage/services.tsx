@@ -9,7 +9,7 @@ export default function Services() {
                 <div className="absolute inset-0 z-1 justify-center items-center pointer-events-none hidden lg:flex">
                     <div className="relative w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] lg:w-[350px] lg:h-[450px] xl:w-[500px] xl:h-[600px]">
                         <Image
-                            src="/homepage/service.png"
+                            src="/homepage/service.avif"
                             alt="Services Centerpiece"
                             fill
                             className="object-contain opacity-50 lg:opacity-100 transition-opacity duration-300"
@@ -28,7 +28,7 @@ export default function Services() {
                             {index === 2 && (
                                 <div className="lg:hidden float-right relative w-[240px] h-[240px] sm:w-[450px] sm:h-[450px] ml-4 mb-4 -mt-12 sm:-mt-24 z-10">
                                     <Image
-                                        src="/homepage/service.png"
+                                        src="/homepage/service.avif"
                                         alt="Services Centerpiece"
                                         fill
                                         className="object-contain opacity-80"

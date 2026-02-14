@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/footer";
 import BackToTop from "./components/layout/backToTop";
-import Background from "./components/layout/DynamicBackground";
+// Background removed, moved to page.tsx
 import FixedSidebar from "./components/layout/FixedSidebar";
 import SmoothScroll from "./components/layout/SmoothScroll";
 
@@ -29,7 +29,7 @@ export default function RootLayout({
         className={`${arial.variable} antialiased`}
       >
         <SmoothScroll />
-        <Background />
+        {/* Background removed */}
         <Header />
         <FixedSidebar />
         <div className="">

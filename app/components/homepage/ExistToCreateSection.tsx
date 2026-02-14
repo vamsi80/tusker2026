@@ -135,7 +135,7 @@ export default function ExistToCreateSection() {
                             </p>
                             <div className="relative w-full h-[25vh] sm:h-[55vh] transform scale-125 origin-bottom-right sm:z-10">
                                 <Image
-                                    src="/homepage/2.png"
+                                    src="/homepage/2.avif"
                                     alt="Classical statue at a creative console"
                                     fill
                                     className="object-contain object-bottom-right drop-shadow-2xl grayscale-20 contrast-110"

@@ -1,7 +1,7 @@
 'use client';
 
-import { Canvas, useFrame } from '@react-three/fiber';
-import { useMemo, useRef } from 'react';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
+import { useMemo, useRef, useEffect, useState } from 'react';
 import * as THREE from 'three';
 
 const vertexShader = `
@@ -168,6 +168,7 @@ void main() {
 
 function GradientMesh() {
     const mesh = useRef<THREE.Mesh>(null);
+    const { invalidate } = useThree();
 
     const uniforms = useMemo(
         () => ({
@@ -182,39 +183,63 @@ function GradientMesh() {
     const lastScrollY = useRef(0);
     const totalTime = useRef(0);
     const currentSpeed = useRef(0.1);
+    const isVisible = useRef(true);
+
+    // Monitor visibility/tab state to pause completely
+    useEffect(() => {
+        const handleVisibilityChange = () => {
+            isVisible.current = document.visibilityState === 'visible';
+        };
+        document.addEventListener("visibilitychange", handleVisibilityChange);
+        return () => document.removeEventListener("visibilitychange", handleVisibilityChange);
+    }, []);
 
     useFrame((state, delta) => {
-        if (mesh.current) {
-            const material = mesh.current.material as THREE.ShaderMaterial;
+        if (!mesh.current || !isVisible.current) return;
 
-            // Calculate scroll velocity
-            const scrollY = window.scrollY;
-            const scrollDelta = Math.abs(scrollY - lastScrollY.current);
-            lastScrollY.current = scrollY;
+        const material = mesh.current.material as THREE.ShaderMaterial;
 
-            // Determine target speed
-            // Base speed: 0.1
-            // Scroll influence: scrollDelta * factor (e.g. 0.05)
-            // When scrolling fast (e.g. delta = 20), speed ~= 0.1 + 1.0 = 1.1 (11x faster)
-            const targetSpeed = 0.1 + scrollDelta * 0.1;
+        // Calculate scroll velocity
+        const scrollY = window.scrollY;
+        const scrollDelta = Math.abs(scrollY - lastScrollY.current);
+        lastScrollY.current = scrollY;
 
-            // Interpolate speed for smooth but responsive transition ("suddenly")
-            // Alpha 0.2 gives a quick response that still feels continuous
-            currentSpeed.current = THREE.MathUtils.lerp(currentSpeed.current, targetSpeed, 0.2);
+        // If inactive (no scroll) and transition complete, throttle frame rate?
+        // We use 'invalidate' via parent but framing 'always' is default.
+        // We will stick to demand frameloop in Canvas for optimizing idle, 
+        // but since shader needs time, we manually drive time but maybe clip delta?
 
-            // Accumulate time
-            totalTime.current += delta * currentSpeed.current;
-            material.uniforms.uTime.value = totalTime.current;
+        // Determine target speed
+        // Base speed: 0.1
+        // Scroll influence: scrollDelta * factor (e.g. 0.05)
+        const targetSpeed = 0.05 + scrollDelta * 0.1;
 
-            // Fade-in effect
-            // Transition from 0 to 1 over approx 1.5 seconds
-            if (material.uniforms.uTransition.value < 1.0) {
-                material.uniforms.uTransition.value += delta * 0.6;
-                if (material.uniforms.uTransition.value > 1.0) {
-                    material.uniforms.uTransition.value = 1.0;
-                }
+        // Interpolate speed for smooth but responsive transition
+        currentSpeed.current = THREE.MathUtils.lerp(currentSpeed.current, targetSpeed, 0.1);
+
+        // Cap delta to prevent huge jumps on tab resume
+        const validDelta = Math.min(delta, 0.1);
+
+        // Accumulate time
+        totalTime.current += validDelta * currentSpeed.current;
+        material.uniforms.uTime.value = totalTime.current;
+
+        // Fade-in effect
+        if (material.uniforms.uTransition.value < 1.0) {
+            material.uniforms.uTransition.value += validDelta * 0.6;
+            if (material.uniforms.uTransition.value > 1.0) {
+                material.uniforms.uTransition.value = 1.0;
             }
         }
+
+        // Request next frame if we are animating
+        // For 'demand' mode, we'd call invalidate() here to keep loop going 
+        // effectively making it 'always' but controllable.
+        // If we want to truly pause when idle, we would check if speed is near zero.
+        // But this shader mimics fluid noise, so it needs constant motion.
+        // Optimization: Reduce work? The shader is already simple.
+
+        invalidate();
     });
 
     return (
@@ -232,14 +257,28 @@ function GradientMesh() {
 }
 
 export default function Background() {
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        // Defer mounting slightly to prioritize main thread for hydration
+        const t = setTimeout(() => setMounted(true), 100);
+        return () => clearTimeout(t);
+    }, []);
+
+    if (!mounted) return null;
+
     return (
         <div className="fixed inset-0 -z-50 w-full h-full pointer-events-none bg-white">
             <Canvas
+                frameloop="demand" // Only render when needed (or invalidated)
                 gl={{
                     alpha: true,
-                    antialias: false
+                    antialias: false,
+                    powerPreference: "high-performance",
+                    stencil: false,
+                    depth: false
                 }}
-                dpr={1}
+                dpr={[1, 1.5]} // Cap DPR for performance
                 style={{ filter: 'blur(30px)' }}
             >
                 <GradientMesh />

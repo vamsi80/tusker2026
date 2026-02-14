@@ -6,9 +6,7 @@ export default function HeroSection() {
                 <div className="absolute h-[30vh] w-[90vw] -rotate-22 rounded-[50%] border-[0.5px] border-black/20 sm:h-[35vh] sm:w-[60vw] md:h-[40vh] md:w-[45vw] lg:h-[55vh] lg:w-[50vw] xl:h-[35vh] xl:w-[45vw]" />
             </div>
 
-            {/* Scattered Keywords Container */}
             <div className="pointer-events-none absolute inset-0 z-10 overflow-hidden">
-                {/* Randomly distributed keywords across the hero section */}
                 <span className="absolute top-[29%] left-[53%] text-[10px] font-bold tracking-widest text-black sm:text-[14px]">
                     + EXPERIENCE
                 </span>
@@ -31,10 +29,7 @@ export default function HeroSection() {
                     + Interactive
                 </span>
             </div>
-
-            {/* Spacer for Header Push */}
             <div className="h-0 sm:h-auto"></div>
-
             <div className="flex flex-1 flex-col items-start justify-center pl-4 sm:pl-[10%] lg:pl-[20%]">
                 <div className="relative -translate-y-12">
                     <h1 className="flex flex-col text-left font-sans text-5xl font-normal leading-none sm:leading-[0.85] tracking-tighter text-black sm:text-6xl md:text-7xl lg:text-8xl transform scale-x-[1.15] origin-left pb-4">

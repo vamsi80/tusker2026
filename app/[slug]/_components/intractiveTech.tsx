@@ -10,7 +10,7 @@ export default function InteractiveTech() {
                     <div className="absolute top-0 bottom-0 left-0 w-screen z-0 pointer-events-none flex items-center justify-start -ml-6 sm:-ml-12 lg:-ml-24 overflow-visible">
                         <div className="relative w-full h-full scale-200 sm:scale-200 md:scale-260 lg:scale-125 origin-left">
                             <Image
-                                src="/bagrounds/BG-2.png"
+                                src="/bagrounds/BG-2.avif"
                                 alt="Background pattern"
                                 fill
                                 className="object-contain object-left"
@@ -22,7 +22,7 @@ export default function InteractiveTech() {
 
                     <div className="relative z-10 w-full h-[300px] sm:h-[400px] lg:h-[600px] max-w-[1000px]">
                         <Image
-                            src="/intractive_tech.png"
+                            src="/intractive_tech.avif"
                             alt="Immersive and Interactive Technology"
                             fill
                             className="object-contain object-bottom -scale-x-100"

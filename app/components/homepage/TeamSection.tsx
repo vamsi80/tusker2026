@@ -1,4 +1,4 @@
-'use client';
+import Image from 'next/image';
 
 export default function TeamSection() {
     return (
@@ -12,11 +12,14 @@ export default function TeamSection() {
                 </p>
             </div>
 
-            <div className="w-full">
-                <img
-                    src="/teams.jpg"
+            <div className="w-full relative aspect-video sm:aspect-21/9">
+                <Image
+                    src="/teams.avif"
                     alt="Our Team"
-                    className="w-full h-auto"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 100vw"
+                    priority={false}
                 />
             </div>
         </div>

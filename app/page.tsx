@@ -6,6 +6,7 @@ import StoryEngineSection from "./components/homepage/StoryEngineSection";
 import ExistToCreateSection from "./components/homepage/ExistToCreateSection";
 import ClientLogos from "./components/homepage/ClientLogos";
 import TeamSection from "./components/homepage/TeamSection";
+import HomeBackground from "./components/homepage/HomeBackground";
 
 export const metadata: Metadata = {
   title: "The White Tusker | Fluid by Nature",
@@ -15,8 +16,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden text-black selection:bg-purple-200">
+      <HomeBackground />
       <div className="relative mx-auto space-y-13 sm:space-y-12 md:space-y-12 lg:space-y-16 xl:space-y-36 max-w-[1920px] px-6 sm:px-8 md:px-12 lg:px-12 xl:px-24 overflow-hidden">
-        <div id="home" className="scroll-mt-32">
+        <div id="home">
           <HeroSection />
         </div>
         <StoryEngineSection />

@@ -42,7 +42,7 @@ export default function InteriorSpaces() {
                     <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center scale-175 sm:scale-200 md:scale-260 lg:scale-260 lg:-translate-x-20 lg:-translate-y-20">
                         <div className="relative w-full h-full">
                             <Image
-                                src="/bagrounds/BG-1.png"
+                                src="/bagrounds/BG-1.avif"
                                 alt="Background pattern"
                                 fill
                                 className="object-contain opacity-100"
@@ -52,7 +52,7 @@ export default function InteriorSpaces() {
                     </div>
                     <div className="relative w-full h-full transform">
                         <Image
-                            src="/ARCHITECTURAL.png"
+                            src="/ARCHITECTURAL.avif"
                             alt="Classical statue at a creative console"
                             fill
                             className="object-contain drop-shadow-2xl grayscale-20 contrast-110"

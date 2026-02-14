@@ -66,7 +66,7 @@ export default function StoryEngineSection() {
                     <div ref={imageRef} className="sm:col-span-1 lg:col-span-1 relative h-[40vh] -mt-12 sm:mt-0 sm:h-[65vh] lg:-mt-12 lg:h-[80vh] w-full flex items-end justify-center lg:justify-start z-10">
                         <div className="relative w-full h-full transform">
                             <Image
-                                src="/homepage/1.png"
+                                src="/homepage/1.avif"
                                 alt="Classical statue using a laptop"
                                 fill
                                 className="object-contain object-bottom drop-shadow-2xl grayscale-10 z-10"
