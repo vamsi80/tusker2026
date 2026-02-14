@@ -212,7 +212,7 @@ function GradientMesh() {
         // Determine target speed
         // Base speed: 0.1
         // Scroll influence: scrollDelta * factor (e.g. 0.05)
-        const targetSpeed = 0.05 + scrollDelta * 0.1;
+        const targetSpeed = 0.05 + scrollDelta * 0.05;
 
         // Interpolate speed for smooth but responsive transition
         currentSpeed.current = THREE.MathUtils.lerp(currentSpeed.current, targetSpeed, 0.1);

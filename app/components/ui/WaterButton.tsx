@@ -53,11 +53,33 @@ export default function WaterButton({ href, label, className = "" }: WaterButton
         }
     };
 
+    const handleHover = () => {
+        if (shineRef.current) {
+            gsap.killTweensOf(shineRef.current);
+            const tl = gsap.timeline();
+            tl.to(shineRef.current, {
+                y: 4,
+                scaleX: 1.1,
+                scaleY: 0.9,
+                duration: 0.1,
+                ease: "power2.out"
+            })
+                .to(shineRef.current, {
+                    y: 0,
+                    scaleX: 1,
+                    scaleY: 1,
+                    duration: 0.5,
+                    ease: "elastic.out(1.2, 0.5)"
+                });
+        }
+    };
+
     return (
         <Link
             href={href}
             className={`group relative inline-flex items-center justify-center rounded-full bg-linear-to-r from-[#8286e5] to-transparent text-black border border-[#8286e5] px-3 sm:px-5 py-1.5 sm:py-2 h-8 sm:h-10 overflow-hidden transition-colors uppercase tracking-widest text-[10px] sm:text-xs font-bold ${className}`}
             onClick={handleClick}
+            onMouseEnter={handleHover}
         >
             <div
                 ref={shineRef}

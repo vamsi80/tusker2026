@@ -9,39 +9,21 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function StoryEngineSection() {
     const containerRef = useRef<HTMLElement>(null);
-    const titleRef = useRef<HTMLDivElement>(null);
-    const imageRef = useRef<HTMLDivElement>(null);
-    const contentRef = useRef<HTMLDivElement>(null);
+    const innerContainerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const ctx = gsap.context(() => {
-            const tl = gsap.timeline({
+            gsap.from(innerContainerRef.current, {
                 scrollTrigger: {
-                    trigger: titleRef.current,
-                    start: "top 70%",
+                    trigger: innerContainerRef.current,
+                    start: "top 80%",
                     toggleActions: "play none none reverse"
-                }
+                },
+                x: -200,
+                opacity: 0,
+                duration: 1,
+                ease: "power3.out"
             });
-
-            tl.addLabel("start")
-                .from(titleRef.current, {
-                    x: -100,
-                    opacity: 0,
-                    duration: 1.8,
-                    ease: "power3.out"
-                }, "start")
-                .from(imageRef.current, {
-                    x: -100,
-                    opacity: 0,
-                    duration: 1.8,
-                    ease: "power3.out"
-                }, "start")
-                .from(contentRef.current, {
-                    x: 100,
-                    opacity: 0,
-                    duration: 1.8,
-                    ease: "power3.out"
-                }, "start");
 
         }, containerRef);
 
@@ -50,8 +32,8 @@ export default function StoryEngineSection() {
 
     return (
         <section ref={containerRef} className="relative flex h-auto w-full flex-col justify-center overflow-hidden bg-transparent">
-            <div className="relative z-10 mx-auto flex h-full w-full max-w-7xl flex-col">
-                <div ref={titleRef} className="w-full mb-8 md:mb-0 relative z-2">
+            <div ref={innerContainerRef} className="relative z-10 mx-auto flex h-full w-full max-w-7xl flex-col">
+                <div className="w-full mb-8 md:mb-0 relative z-2">
                     <h2 className="flex flex-col items-start justify-start text-black leading-[0.85] pl-4 sm:pl-12 lg:pl-20">
                         <span className="block text-xs sm:text-sm md:text-base lg:text-xl font-normal tracking-wide text-black md:-mb-1 lg:-mb-2 uppercase ml-1">
                             We are not a service company. We are a
@@ -63,7 +45,7 @@ export default function StoryEngineSection() {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 w-full max-w-7xl mx-auto z-3 px-4 sm:px-0 pt-0">
-                    <div ref={imageRef} className="sm:col-span-1 lg:col-span-1 relative h-[40vh] -mt-12 sm:mt-0 sm:h-[65vh] lg:-mt-12 lg:h-[80vh] w-full flex items-end justify-center lg:justify-start z-10">
+                    <div className="sm:col-span-1 lg:col-span-1 relative h-[40vh] -mt-12 sm:mt-0 sm:h-[65vh] lg:-mt-12 lg:h-[80vh] w-full flex items-end justify-center lg:justify-start z-10">
                         <div className="relative w-full h-full transform">
                             <Image
                                 src="/homepage/1.avif"
@@ -76,7 +58,7 @@ export default function StoryEngineSection() {
                         </div>
                     </div>
 
-                    <div ref={contentRef} className="sm:col-span-1 lg:col-span-1 flex flex-col justify-center items-end lg:pl-0 pt-0 lg:pt-0 relative z-0 h-full">
+                    <div className="sm:col-span-1 lg:col-span-1 flex flex-col justify-center items-end lg:pl-0 pt-0 lg:pt-0 relative z-0 h-full">
                         <div className="flex flex-row items-stretch gap-3 sm:gap-4 lg:gap-8">
                             <div className="w-px bg-blue-300/50 hidden sm:block relative">
                                 <div className="absolute top-[20%] right-0 w-[17vw] sm:w-[15vw] h-[1.5px] bg-blue-300/50 overflow-hidden" />
