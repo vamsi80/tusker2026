@@ -15,7 +15,10 @@ export default function Services() {
     useEffect(() => {
         const ctx = gsap.context(() => {
             const items = gsap.utils.toArray('.service-item');
-            items.forEach((item: any) => {
+
+            // Animate service items
+            items.forEach((item: any, i: number) => {
+                const isBottom = i >= 2;
                 gsap.from(item, {
                     scrollTrigger: {
                         trigger: item,
@@ -24,12 +27,23 @@ export default function Services() {
                     },
                     y: 100,
                     opacity: 0,
-                    duration: 1.5,
+                    duration: isBottom ? 0.5 : 1.5, // Bottom row comes faster
                     ease: "power3.out"
                 });
             });
 
-
+            // Animate Center Image
+            gsap.from('.center-image', {
+                scrollTrigger: {
+                    trigger: '.center-image',
+                    start: "top 65%", // Comes when scrolled a little more
+                    toggleActions: "play none none reverse"
+                },
+                y: 100,
+                opacity: 0,
+                duration: 1.5,
+                ease: "power3.out"
+            });
         }, containerRef);
 
         return () => ctx.revert();

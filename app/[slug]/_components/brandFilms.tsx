@@ -4,11 +4,11 @@ import Image from 'next/image';
 
 export default function BrandFilms() {
     return (
-        <div className="w-full flex flex-col bg-white text-black overflow-visible relative">
-            <div className="absolute top-0 bottom-0 left-0 w-screen z-0 pointer-events-none flex items-center justify-start -ml-6 sm:-ml-12 lg:-ml-24 overflow-visible">
+        <div className="w-full min-h-screen flex flex-col bg-white text-black overflow-visible relative justify-center">
+            <div className="absolute top-0 bottom-0 left-0 w-screen z-0 pointer-events-none flex items-center justify-start -ml-12 sm:-ml-16 lg:-ml-24 overflow-visible">
                 <div className="relative w-full h-full scale-175 sm:scale-200 md:scale-260 lg:scale-100 origin-left">
                     <Image
-                        src="/bagrounds/BG-3.png"
+                        src="/bagrounds/BG-3.avif"
                         alt="Background pattern"
                         fill
                         className="object-contain object-left"
@@ -31,7 +31,7 @@ export default function BrandFilms() {
                     </div>
                 </div>
 
-                <div className="flex flex-col space-y-2 md:space-y-4 lg:space-y-6 xl:space-y-8 justify-start lg:pl-20 lg:col-span-3 order-2 lg:order-2">
+                <div className="flex flex-col space-y-2 md:space-y-4 lg:space-y-6 xl:space-y-8 justify-start lg:pl-20 lg:col-span-3 order-2 lg:order-2 xl:pt-6">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[6rem] font-medium tracking-tighter leading-[0.9] lg:leading-[0.85] text-black scale-x-110 origin-left lg:-ml-50">
                         CORPORATE & <br />
                         BRAND FILMS

@@ -20,8 +20,8 @@ export default function ServicesPagination() {
     const nextService = services[nextIndex];
 
     return (
-        <div className="w-full border-gray-200">
-            <div className="grid grid-cols-2 ">
+        <div className="w-full border-gray-200 p-4">
+            <div className="grid grid-cols-2">
                 <Link
                     href={`/${prevService.slug}`}
                     className="flex flex-col items-start justify-center hover:bg-gray-50 transition-colors group text-left"
@@ -37,7 +37,7 @@ export default function ServicesPagination() {
 
                 <Link
                     href={`/${nextService.slug}`}
-                    className="flex flex-col items-end justify-center px-4 sm:px-8 hover:bg-gray-50 transition-colors group text-right"
+                    className="flex flex-col items-end justify-center hover:bg-gray-50 transition-colors group text-right"
                 >
                     <div className="flex items-center gap-2 text-gray-400 mb-2 group-hover:text-black transition-colors">
                         <span className="text-sm font-medium uppercase tracking-widest">Next</span>

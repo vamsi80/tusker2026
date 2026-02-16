@@ -32,10 +32,10 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     const IntroComponent = componentMap[slug];
 
     return (
-        <div className="relative mx-auto max-w-[1920px] space-y-10 sm:space-y-12 lg:space-y-14 xl:space-y-16 px-8 sm:px-0 md:px-12 lg:px-12 xl:px-18 overflow-hidden text-black bg-white">
+        <div className="relative mx-auto max-w-[1920px] space-y-10 sm:space-y-0 lg:space-y-14 xl:space-y-0 px-8 sm:px-0 md:px-12 lg:px-12 xl:px-18 overflow-hidden text-black bg-white">
             <SectionNavigation />
             {IntroComponent && (
-                <div className="pt-24">
+                <div className="pt-0">
                     <IntroComponent />
                 </div>
             )}

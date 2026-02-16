@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function InteractiveTech() {
     return (
-        <div className="w-full flex flex-col bg-white text-black overflow-visible">
+        <div className="w-full min-h-screen flex flex-col bg-white text-black overflow-visible justify-center">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 items-end">
                 <div className="relative w-full flex justify-start lg:col-span-2 overflow-visible z-0 h-auto sm:h-[60vh] lg:h-auto order-1 lg:order-1">
                     <div className="absolute top-0 bottom-0 left-0 w-screen z-0 pointer-events-none flex items-center justify-start -ml-6 sm:-ml-12 lg:-ml-24 overflow-visible">

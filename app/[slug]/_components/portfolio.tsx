@@ -72,7 +72,7 @@ function ImageWithTextSection({ project }: { project: any }) {
                 {/* Bottom: Main Image (Full width) */}
                 {hasMainImage && (
                     <div className="relative w-full aspect-video sm:aspect-auto sm:h-[400px] overflow-hidden">
-                        <Image
+                        <ImageWithLoader
                             src={project.mainImage!}
                             alt={project.title}
                             fill
@@ -94,7 +94,7 @@ function ImageWithTextSection({ project }: { project: any }) {
                     <ProjectTextContent project={project} className="lg:col-span-1" />
 
                     <div className="relative lg:col-span-2 w-full aspect-video sm:aspect-auto sm:h-[400px] overflow-hidden">
-                        <Image
+                        <ImageWithLoader
                             src={project.mainImage!}
                             alt={project.title}
                             fill
@@ -119,51 +119,80 @@ function GridSection({ project }: { project: any }) {
 
     return (
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-4 ">
-            {project.galleryImages?.map((img: string, idx: number) => {
-                const isSingleGalleryImage = project.galleryImages?.length === 1;
-                const isTwoImages = project.galleryImages?.length === 2;
+            {project.galleryImages?.map((img: string, idx: number) => (
+                <GalleryItem key={idx} img={img} idx={idx} project={project} />
+            ))}
+        </div>
+    );
+}
 
-                let className = "relative w-full overflow-hidden h-[300px] md:h-[200px] lg:h-[300px] xl:h-[400px]";
-                let imageSizes = "(max-width: 1000px) 100vw, 1000px";
+function GalleryItem({ img, idx, project }: { img: string; idx: number; project: any }) {
+    const isSingleGalleryImage = project.galleryImages?.length === 1;
+    const isTwoImages = project.galleryImages?.length === 2;
+    const [aspectRatio, setAspectRatio] = useState<number | undefined>(undefined);
 
-                if (isSingleGalleryImage) {
-                    className = "relative w-full overflow-hidden aspect-video sm:col-span-3";
-                    imageSizes = "(max-width: 1000px) 100vw, 1000px";
-                } else if (isTwoImages && idx === 1) {
-                    className += " sm:col-span-2";
-                    imageSizes = "(max-width: 1000px) 100vw, 1000px";
-                } else {
-                    className += " sm:col-span-1";
-                }
+    let className = "relative w-full overflow-hidden h-[300px] md:h-[200px] lg:h-[300px] xl:h-[400px]";
+    let imageSizes = "(max-width: 1000px) 100vw, 1000px";
 
-                if (isSingleGalleryImage || (isTwoImages && idx === 1)) {
-                    const colSpanClass = isSingleGalleryImage ? 'sm:col-span-3' : 'sm:col-span-2';
-                    return (
-                        <div key={idx} className={`relative w-full overflow-hidden ${colSpanClass} aspect-video md:aspect-auto md:h-[200px] lg:h-[300px] xl:h-[400px]`}>
-                            <Image
-                                src={img}
-                                alt={`${project.title} gallery ${idx + 1}`}
-                                fill
-                                className="object-cover"
-                                sizes="(max-width: 768px) 100vw, 66vw"
-                            />
-                        </div>
-                    );
-                }
+    if (isSingleGalleryImage) {
+        className = "relative w-full overflow-hidden aspect-video sm:col-span-3";
+        imageSizes = "(max-width: 1000px) 100vw, 1000px";
+    } else if (isTwoImages && idx === 1) {
+        className += " sm:col-span-2";
+        imageSizes = "(max-width: 1000px) 100vw, 1000px";
+    } else {
+        className += " sm:col-span-1";
+    }
 
-                return (
-                    <div key={idx} className={className}>
-                        <Image
-                            src={img}
-                            alt={`${project.title} gallery ${idx + 1}`}
-                            fill
-                            className="object-cover"
-                            sizes={imageSizes}
-                            quality={100}
-                        />
-                    </div>
-                );
-            })}
+    if (isSingleGalleryImage) {
+        const style = aspectRatio ? { aspectRatio: aspectRatio } : {};
+        return (
+            <div
+                key={idx}
+                className="relative w-full overflow-hidden sm:col-span-3"
+                style={style}
+            >
+                <ImageWithLoader
+                    src={img}
+                    alt={`${project.title} gallery ${idx + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 100vw"
+                    onLoad={(e: any) => {
+                        setAspectRatio(e.target.naturalWidth / e.target.naturalHeight);
+                    }}
+                />
+            </div>
+        );
+    }
+
+    if (isTwoImages && idx === 1) {
+        return (
+            <div
+                key={idx}
+                className="relative w-full overflow-hidden sm:col-span-2 aspect-video md:aspect-auto md:h-[200px] lg:h-[300px] xl:h-[400px]"
+            >
+                <ImageWithLoader
+                    src={img}
+                    alt={`${project.title} gallery ${idx + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 66vw"
+                />
+            </div>
+        );
+    }
+
+    return (
+        <div key={idx} className={className}>
+            <ImageWithLoader
+                src={img}
+                alt={`${project.title} gallery ${idx + 1}`}
+                fill
+                className="object-cover"
+                sizes={imageSizes}
+                quality={100}
+            />
         </div>
     );
 }
@@ -198,5 +227,27 @@ function ProjectTextContent({ project, className }: { project: any; className?: 
                 </div>
             )}
         </div>
+    );
+}
+
+function ImageWithLoader(props: any) {
+    const [isLoading, setIsLoading] = useState(true);
+
+    return (
+        <>
+            {isLoading && (
+                <div className="absolute inset-0 bg-[#E0E0E0] animate-pulse z-10 flex items-center justify-center">
+                    <div className="w-8 h-8 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
+                </div>
+            )}
+            <Image
+                {...props}
+                className={`${props.className || ''} transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`}
+                onLoad={(e) => {
+                    setIsLoading(false);
+                    if (props.onLoad) props.onLoad(e);
+                }}
+            />
+        </>
     );
 }
