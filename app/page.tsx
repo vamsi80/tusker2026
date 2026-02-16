@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Services from "./components/homepage/services";
 import HeroSection from "./components/homepage/HeroSection";
-import FourVerticalIs from "./components/homepage/fourVerticaIs";
 import StoryEngineSection from "./components/homepage/StoryEngineSection";
 import ExistToCreateSection from "./components/homepage/ExistToCreateSection";
 import ClientLogos from "./components/homepage/ClientLogos";
@@ -23,7 +22,6 @@ export default function Home() {
         </div>
         <StoryEngineSection />
         <ExistToCreateSection />
-        <FourVerticalIs />
         <div id="works" className="scroll-mt-28">
           <Services />
         </div>

@@ -15,33 +15,20 @@ export default function Services() {
     useEffect(() => {
         const ctx = gsap.context(() => {
             const items = gsap.utils.toArray('.service-item');
-            items.forEach((item: any, i: number) => {
-                const isRight = i % 2 !== 0;
+            items.forEach((item: any) => {
                 gsap.from(item, {
                     scrollTrigger: {
                         trigger: item,
-                        start: "top 75%",
+                        start: "top 70%",
                         toggleActions: "play none none reverse"
                     },
-                    x: isRight ? 200 : -200,
+                    y: 100,
                     opacity: 0,
                     duration: 1,
                     ease: "power3.out"
                 });
             });
 
-            // Center image animation
-            gsap.from('.center-image', {
-                scrollTrigger: {
-                    trigger: '.center-image',
-                    start: "top 70%",
-                    toggleActions: "play none none reverse"
-                },
-                scale: 0.8,
-                opacity: 0,
-                duration: 1,
-                ease: "power3.out"
-            });
 
         }, containerRef);
 
@@ -56,7 +43,7 @@ export default function Services() {
                         src="/homepage/service.avif"
                         alt="Services Centerpiece"
                         fill
-                        className="object-contain opacity-50 lg:opacity-100 transition-opacity duration-300"
+                        className="object-contain opacity-50 lg:opacity-100"
                         sizes="(max-width: 640px) 280px, (max-width: 1024px) 400px, 600px"
                         priority
                     />
