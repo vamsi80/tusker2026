@@ -381,11 +381,10 @@ export const services = [
                 description: [
                     "The Cafe Mocha Mumbai outlet was executed as a vibrant social space that blends comfort, creativity, and community. The design reflects the brand's youthful spirit through layered materials, warm lighting, and an inviting spatial flow-creating an environment that encourages conversation, lingering, and shared moments over food and coffee.",
                 ],
-                mainImage: '/Portfolio_Images/Interior Spaces/Caperberry/1.avif',
+                mainImage: '/Portfolio_Images/Interior Spaces/Cafe Mocha/1.avif',
                 galleryImages: [
-                    '/Portfolio_Images/Interior Spaces/Caperberry/2.avif',
-                    '/Portfolio_Images/Interior Spaces/Caperberry/3.avif',
-                    '/Portfolio_Images/Interior Spaces/Caperberry/4.avif'
+                    '/Portfolio_Images/Interior Spaces/Cafe Mocha/2.avif',
+                    '/Portfolio_Images/Interior Spaces/Cafe Mocha/3.avif'
                 ]
             },
             {
