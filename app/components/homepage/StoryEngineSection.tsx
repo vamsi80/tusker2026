@@ -16,12 +16,12 @@ export default function StoryEngineSection() {
             gsap.from(innerContainerRef.current, {
                 scrollTrigger: {
                     trigger: innerContainerRef.current,
-                    start: "top 80%",
+                    start: "top 70%",
                     toggleActions: "play none none reverse"
                 },
                 x: -200,
                 opacity: 0,
-                duration: 1,
+                duration: 1.5,
                 ease: "power3.out"
             });
 

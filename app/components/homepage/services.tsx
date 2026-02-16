@@ -19,12 +19,12 @@ export default function Services() {
                 gsap.from(item, {
                     scrollTrigger: {
                         trigger: item,
-                        start: "top 70%",
+                        start: "top 80%",
                         toggleActions: "play none none reverse"
                     },
                     y: 100,
                     opacity: 0,
-                    duration: 1,
+                    duration: 1.5,
                     ease: "power3.out"
                 });
             });

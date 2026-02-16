@@ -6,6 +6,7 @@ import ExistToCreateSection from "./components/homepage/ExistToCreateSection";
 import ClientLogos from "./components/homepage/ClientLogos";
 import TeamSection from "./components/homepage/TeamSection";
 import HomeBackground from "./components/homepage/HomeBackground";
+import FourVerticals from "./components/homepage/Fourevirticals";
 
 export const metadata: Metadata = {
   title: "The White Tusker | Fluid by Nature",
@@ -22,6 +23,7 @@ export default function Home() {
         </div>
         <StoryEngineSection />
         <ExistToCreateSection />
+        <FourVerticals />
         <div id="works" className="scroll-mt-28">
           <Services />
         </div>
