@@ -17,6 +17,7 @@ uniform float uTime;
 uniform float uGridSize;
 uniform float uSharpness;
 uniform float uTransition;
+uniform vec3 uColor;
 varying vec2 vUv;
 
 // Simplex 3D Noise 
@@ -118,7 +119,7 @@ void main() {
 
   // Colors
   vec3 c_white = vec3(1.0, 1.0, 1.0);       // Background
-  vec3 c_purple = vec3(0.569, 0.459, 0.976); // #9175f9
+  vec3 c_target = uColor;
 
   // Color Map Logic
   // With high sharpness, values bunch around 0.5.
@@ -134,11 +135,11 @@ void main() {
   // Start purple earlier (0.1) -> MORE Purple visible
   // Direct transition to purple, skipping blue
   float t_layer1 = smoothstep(0.15, 0.5, distFromCenter);
-  color = mix(color, c_purple, t_layer1);
+  color = mix(color, c_target, t_layer1);
 
   // Deepen accent at peaks (using same color for consistency, or we could darken slightly)
   float t_layer3 = smoothstep(0.8, 1.0, distFromCenter);
-  color = mix(color, c_purple, t_layer3);
+  color = mix(color, c_target, t_layer3);
 
   // Vignette
   float dist = distance(vUv, vec2(0.5));
@@ -166,7 +167,12 @@ void main() {
 }
 `;
 
-function GradientMesh() {
+interface GradientMeshProps {
+    color: string;
+    speed: number;
+}
+
+function GradientMesh({ color, speed }: GradientMeshProps) {
     const mesh = useRef<THREE.Mesh>(null);
     const { invalidate } = useThree();
 
@@ -176,13 +182,21 @@ function GradientMesh() {
             uGridSize: { value: 1 },
             uSharpness: { value: 1.2 },
             uTransition: { value: 0 },
+            uColor: { value: new THREE.Color(color) },
         }),
         []
     );
 
+    // Update color when prop changes
+    useEffect(() => {
+        if (uniforms.uColor) {
+            uniforms.uColor.value.set(color);
+        }
+    }, [color, uniforms]);
+
     const lastScrollY = useRef(0);
     const totalTime = useRef(0);
-    const currentSpeed = useRef(0.1);
+    const currentSpeed = useRef(speed);
     const isVisible = useRef(true);
 
     // Monitor visibility/tab state to pause completely
@@ -204,15 +218,10 @@ function GradientMesh() {
         const scrollDelta = Math.abs(scrollY - lastScrollY.current);
         lastScrollY.current = scrollY;
 
-        // If inactive (no scroll) and transition complete, throttle frame rate?
-        // We use 'invalidate' via parent but framing 'always' is default.
-        // We will stick to demand frameloop in Canvas for optimizing idle, 
-        // but since shader needs time, we manually drive time but maybe clip delta?
-
         // Determine target speed
-        // Base speed: 0.1
+        // Base speed from prop
         // Scroll influence: scrollDelta * factor (e.g. 0.05)
-        const targetSpeed = 0.05 + scrollDelta * 0.05;
+        const targetSpeed = speed + scrollDelta * 0.05;
 
         // Interpolate speed for smooth but responsive transition
         currentSpeed.current = THREE.MathUtils.lerp(currentSpeed.current, targetSpeed, 0.1);
@@ -232,13 +241,6 @@ function GradientMesh() {
             }
         }
 
-        // Request next frame if we are animating
-        // For 'demand' mode, we'd call invalidate() here to keep loop going 
-        // effectively making it 'always' but controllable.
-        // If we want to truly pause when idle, we would check if speed is near zero.
-        // But this shader mimics fluid noise, so it needs constant motion.
-        // Optimization: Reduce work? The shader is already simple.
-
         invalidate();
     });
 
@@ -256,7 +258,19 @@ function GradientMesh() {
     );
 }
 
-export default function Background() {
+interface BackgroundProps {
+    color?: string; // Hex color
+    className?: string;
+    blur?: string; // CSS blur value, e.g. "30px"
+    speed?: number; // Base animation speed
+}
+
+export default function Background({
+    color = "#A18DE8",
+    className = "fixed inset-0 -z-50 w-full h-full pointer-events-none bg-white",
+    blur = "50px",
+    speed = 0.05
+}: BackgroundProps) {
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
@@ -268,7 +282,7 @@ export default function Background() {
     if (!mounted) return null;
 
     return (
-        <div className="fixed inset-0 -z-50 w-full h-full pointer-events-none bg-white">
+        <div className={className}>
             <Canvas
                 frameloop="demand" // Only render when needed (or invalidated)
                 gl={{
@@ -279,9 +293,9 @@ export default function Background() {
                     depth: false
                 }}
                 dpr={[1, 1.5]} // Cap DPR for performance
-                style={{ filter: 'blur(30px)' }}
+                style={{ width: '100%', height: '100%', filter: `blur(${blur})` }}
             >
-                <GradientMesh />
+                <GradientMesh color={color} speed={speed} />
             </Canvas>
         </div>
     );

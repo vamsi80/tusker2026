@@ -10,20 +10,67 @@ gsap.registerPlugin(ScrollTrigger);
 export default function ExistToCreateSection() {
     const containerRef = useRef<HTMLElement>(null);
     const innerContainerRef = useRef<HTMLDivElement>(null);
+    const verticalLineRef = useRef<HTMLDivElement>(null);
+    const horizontalLineRef = useRef<HTMLDivElement>(null);
+    const topHorizontalLineRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const ctx = gsap.context(() => {
-            gsap.from(innerContainerRef.current, {
+            const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: innerContainerRef.current,
                     start: "top 70%",
                     toggleActions: "play none none reverse"
-                },
+                }
+            });
+
+            // Container Slide-in
+            tl.from(innerContainerRef.current, {
                 x: 200,
                 opacity: 0,
                 duration: 1.5,
                 ease: "power3.out"
             });
+
+            // Draw lines based on scroll
+            if (verticalLineRef.current) {
+                gsap.from(verticalLineRef.current, {
+                    scaleY: 0,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: innerContainerRef.current,
+                        start: "top 50%",
+                        end: "center center",
+                        scrub: 1.5
+                    }
+                });
+            }
+
+            if (horizontalLineRef.current) {
+                gsap.from(horizontalLineRef.current, {
+                    scaleX: 0,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: innerContainerRef.current,
+                        start: "top 20%", // Start earlier
+                        end: "bottom 60%", // End later
+                        scrub: 1.5
+                    }
+                });
+            }
+
+            if (topHorizontalLineRef.current) {
+                gsap.from(topHorizontalLineRef.current, {
+                    scaleX: 0,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: innerContainerRef.current,
+                        start: "top 10%",
+                        end: "bottom 60%",
+                        scrub: 1.5
+                    }
+                });
+            }
 
         }, containerRef);
 
@@ -44,7 +91,7 @@ export default function ExistToCreateSection() {
                     <div className="col-span-1 w-full pt-2 tracking-wide">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 md:gap-8 pl-0 sm:pl-2">
                             <div className="relative pt-3 sm:pt-4 md:pt-6 text-black leading-none xl:leading-none">
-                                <div className="absolute top-0 right-0 w-px h-[70vh] md:h-[50vh] lg:h-full bg-black/20"></div>
+                                <div ref={verticalLineRef} className="absolute top-0 right-0 w-px h-[70vh] md:h-[50vh] lg:h-full bg-black/20 origin-top"></div>
                                 <div className="absolute top-0 left-0 w-full h-px bg-black/20 hidden"></div>
                                 <div className="relative text-xs xl:xl:text-base z-30 space-y-2 sm:space-y-3 md:space-y-4.5 pr-2 leading-none">
                                     <p>
@@ -79,7 +126,7 @@ export default function ExistToCreateSection() {
                                 </div>
                             </div>
                             <div className="relative pb-4 sm:pb-6 hidden lg:block">
-                                <div className="absolute bottom-16 sm:bottom-20 md:bottom-[6.3rem] left-0 w-full sm:-left-8 sm:w-[calc(100%+40rem)] h-px bg-black/20 hidden sm:block"></div>
+                                <div ref={horizontalLineRef} className="absolute bottom-16 sm:bottom-20 md:bottom-[6.3rem] left-0 w-full sm:-left-8 sm:w-[calc(100%+40rem)] h-px bg-black/20 hidden sm:block origin-left"></div>
                                 <p className="w-full max-w-md text-black text-sm md:text-lg xl:text-xl leading-none normal-case md:uppercase">
                                     WHAT OTHERS <br />
                                     HESITATE TO ATTEMPT. <br />

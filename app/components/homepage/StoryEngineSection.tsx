@@ -10,9 +10,12 @@ gsap.registerPlugin(ScrollTrigger);
 export default function StoryEngineSection() {
     const containerRef = useRef<HTMLElement>(null);
     const innerContainerRef = useRef<HTMLDivElement>(null);
+    const horizontalDotRef = useRef<HTMLDivElement>(null);
+    const verticalDotRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const ctx = gsap.context(() => {
+            // Intro Animation
             gsap.from(innerContainerRef.current, {
                 scrollTrigger: {
                     trigger: innerContainerRef.current,
@@ -24,6 +27,42 @@ export default function StoryEngineSection() {
                 duration: 1.5,
                 ease: "power3.out"
             });
+
+            // Dot Animations - Start when section is visible
+            // Dot Animations - Scroll Scrubbed
+            // Vertical Line Dot
+            if (verticalDotRef.current) {
+                gsap.fromTo(verticalDotRef.current,
+                    { top: "0%", opacity: 1 },
+                    {
+                        top: "100%",
+                        ease: "none",
+                        scrollTrigger: {
+                            trigger: innerContainerRef.current,
+                            start: "top 85%",
+                            end: "bottom center",
+                            scrub: 1.5
+                        }
+                    }
+                );
+            }
+
+            // Horizontal Line Dot
+            if (horizontalDotRef.current) {
+                gsap.fromTo(horizontalDotRef.current,
+                    { left: "0%", opacity: 1 },
+                    {
+                        left: "100%",
+                        ease: "none",
+                        scrollTrigger: {
+                            trigger: innerContainerRef.current,
+                            start: "top 85%",
+                            end: "bottom center",
+                            scrub: 1.5
+                        }
+                    }
+                );
+            }
 
         }, containerRef);
 
@@ -61,7 +100,13 @@ export default function StoryEngineSection() {
                     <div className="sm:col-span-1 lg:col-span-1 flex flex-col justify-center items-end lg:pl-0 pt-0 lg:pt-0 relative z-0 h-full">
                         <div className="flex flex-row items-stretch gap-3 sm:gap-4 lg:gap-8">
                             <div className="w-px bg-blue-300/50 hidden sm:block relative">
-                                <div className="absolute top-[20%] right-0 w-[17vw] sm:w-[15vw] h-[1.5px] bg-blue-300/50 overflow-hidden" />
+                                {/* Vertical Dot */}
+                                <div ref={verticalDotRef} className="absolute top-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)] z-20 opacity-1" />
+
+                                <div className="absolute top-[20%] right-0 w-[17vw] sm:w-[15vw] xl:w-[21vw] h-[1.5px] bg-blue-300/50 overflow-hidden">
+                                    {/* Horizontal Dot */}
+                                    <div ref={horizontalDotRef} className="absolute top-1/2 -translate-y-1/2 left-0 w-1.5 h-1.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)] z-20 opacity-0" />
+                                </div>
                             </div>
                             <div className="w-full text-xs xl:text-base max-w-[450px] tracking-wide text-black leading-relaxed space-y-2 sm:space-y-3">
                                 <p className="leading-[1.2] xl:leading-[1.2] font-normal">

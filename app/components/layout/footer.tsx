@@ -66,7 +66,6 @@ export default function Footer() {
                             <p className="opacity-0">+Indiranagar, Bengaluru 560038, Karnataka, India.</p>
                         </div>
                         <div className="text-sm sm:text-base md:text-sm font-medium tracking-normal leading-relaxed">
-                            <p className="opacity-0">+Web: www.thewhitetusker.com</p>
                             <p className="opacity-0">
                                 +email: <a href="mailto:hello@thewhitetusker.com" className="hover:text-black transition-colors">hello@thewhitetusker.com</a>
                             </p>
