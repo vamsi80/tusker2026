@@ -65,8 +65,8 @@ export default function ExistToCreateSection() {
                     ease: "none",
                     scrollTrigger: {
                         trigger: innerContainerRef.current,
-                        start: "top 10%",
-                        end: "bottom 60%",
+                        start: "top 0%",
+                        end: "bottom 90%",
                         scrub: 1.5
                     }
                 });

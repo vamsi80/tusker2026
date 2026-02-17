@@ -10,8 +10,8 @@ gsap.registerPlugin(ScrollTrigger);
 export default function StoryEngineSection() {
     const containerRef = useRef<HTMLElement>(null);
     const innerContainerRef = useRef<HTMLDivElement>(null);
-    const horizontalDotRef = useRef<HTMLDivElement>(null);
-    const verticalDotRef = useRef<HTMLDivElement>(null);
+    const horizontalLineRef = useRef<HTMLDivElement>(null);
+    const verticalLineRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -28,40 +28,33 @@ export default function StoryEngineSection() {
                 ease: "power3.out"
             });
 
-            // Dot Animations - Start when section is visible
-            // Dot Animations - Scroll Scrubbed
-            // Vertical Line Dot
-            if (verticalDotRef.current) {
-                gsap.fromTo(verticalDotRef.current,
-                    { top: "0%", opacity: 1 },
-                    {
-                        top: "100%",
-                        ease: "none",
-                        scrollTrigger: {
-                            trigger: innerContainerRef.current,
-                            start: "top 85%",
-                            end: "bottom center",
-                            scrub: 1.5
-                        }
+            // Line Drawing Animations - Scroll Scrubbed
+            // Vertical Line
+            if (verticalLineRef.current) {
+                gsap.from(verticalLineRef.current, {
+                    scaleY: 0,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: innerContainerRef.current,
+                        start: "top 15%",
+                        end: "bottom 95%",
+                        scrub: 1.5
                     }
-                );
+                });
             }
 
-            // Horizontal Line Dot
-            if (horizontalDotRef.current) {
-                gsap.fromTo(horizontalDotRef.current,
-                    { left: "0%", opacity: 1 },
-                    {
-                        left: "100%",
-                        ease: "none",
-                        scrollTrigger: {
-                            trigger: innerContainerRef.current,
-                            start: "top 85%",
-                            end: "bottom center",
-                            scrub: 1.5
-                        }
+            // Horizontal Line
+            if (horizontalLineRef.current) {
+                gsap.from(horizontalLineRef.current, {
+                    scaleX: 0,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: innerContainerRef.current,
+                        start: "top 15%",
+                        end: "bottom 95%",
+                        scrub: 1.5
                     }
-                );
+                });
             }
 
         }, containerRef);
@@ -71,6 +64,7 @@ export default function StoryEngineSection() {
 
     return (
         <section ref={containerRef} className="relative flex h-auto w-full flex-col justify-center overflow-hidden bg-transparent">
+            {/* ... lines 74-99 ... */}
             <div ref={innerContainerRef} className="relative z-10 mx-auto flex h-full w-full max-w-7xl flex-col">
                 <div className="w-full mb-8 md:mb-0 relative z-2">
                     <h2 className="flex flex-col items-start justify-start text-black leading-[0.85] pl-4 sm:pl-12 lg:pl-20">
@@ -99,14 +93,13 @@ export default function StoryEngineSection() {
 
                     <div className="sm:col-span-1 lg:col-span-1 flex flex-col justify-center items-end lg:pl-0 pt-0 lg:pt-0 relative z-0 h-full">
                         <div className="flex flex-row items-stretch gap-3 sm:gap-4 lg:gap-8">
-                            <div className="w-px bg-blue-300/50 hidden sm:block relative">
-                                {/* Vertical Dot */}
-                                <div ref={verticalDotRef} className="absolute top-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)] z-20 opacity-1" />
+                            {/* Lines Container Wrapper */}
+                            <div className="w-px hidden sm:block relative">
+                                {/* Vertical Line */}
+                                <div ref={verticalLineRef} className="absolute top-0 left-0 w-full h-full bg-black/20 origin-top" />
 
-                                <div className="absolute top-[20%] right-0 w-[17vw] sm:w-[15vw] xl:w-[21vw] h-[1.5px] bg-blue-300/50 overflow-hidden">
-                                    {/* Horizontal Dot */}
-                                    <div ref={horizontalDotRef} className="absolute top-1/2 -translate-y-1/2 left-0 w-1.5 h-1.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)] z-20 opacity-0" />
-                                </div>
+                                {/* Horizontal Line */}
+                                <div ref={horizontalLineRef} className="absolute top-[20%] right-0 w-[17vw] sm:w-[15vw] xl:w-[21vw] h-[1.5px] bg-black/20 overflow-hidden origin-right" />
                             </div>
                             <div className="w-full text-xs xl:text-base max-w-[450px] tracking-wide text-black leading-relaxed space-y-2 sm:space-y-3">
                                 <p className="leading-[1.2] xl:leading-[1.2] font-normal">
