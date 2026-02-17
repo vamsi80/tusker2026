@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { services } from '../../data';
 import { Outfit } from 'next/font/google';
 import Image from 'next/image';
@@ -41,16 +43,48 @@ export default function Portfolio({ service }: PortfolioProps) {
     return (
         <div className="w-full flex flex-col gap-6 pt-10 z-1">
             {displayedProjects.map((project, index) => (
-                <div key={project.id || index} className="flex flex-col gap-4 z-1 bg-[#EDECFA] p-4">
-                    <ImageWithTextSection project={project} />
-                    <GridSection project={project} />
-                </div>
+                <ProjectCard key={project.id || index} project={project} />
             ))}
             {visibleCount < filteredProjects.length && (
                 <div ref={observerRef} className="h-20 w-full flex items-center justify-center">
                     <span className="text-gray-400">Loading more projects...</span>
                 </div>
             )}
+        </div>
+    );
+}
+
+function ProjectCard({ project }: { project: any }) {
+    const cardRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const ctx = gsap.context(() => {
+            gsap.fromTo(
+                cardRef.current,
+                { y: 100, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 1,
+                    ease: 'power3.out',
+                    scrollTrigger: {
+                        trigger: cardRef.current,
+                        start: 'top bottom-=100',
+                        toggleActions: 'play none none reverse',
+                    },
+                }
+            );
+        }, cardRef);
+
+        return () => ctx.revert();
+    }, []);
+
+    return (
+        <div ref={cardRef} className="flex flex-col gap-4 z-1 bg-[#EDECFA] p-4 opacity-0 translate-y-[100px]">
+            <ImageWithTextSection project={project} />
+            <GridSection project={project} />
         </div>
     );
 }

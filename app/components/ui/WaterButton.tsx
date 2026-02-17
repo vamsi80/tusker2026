@@ -26,11 +26,10 @@ export default function WaterButton({ href, label, className = "" }: WaterButton
                 }
             });
 
-            // Bounce Animation
             tl.to(shineRef.current, {
-                y: 6,           // Move down
+                y: 6,
                 scaleX: 1.1,
-                scaleY: 0.8,    // Squash
+                scaleY: 0.8,
                 duration: 0.15,
                 ease: "power2.out"
             })

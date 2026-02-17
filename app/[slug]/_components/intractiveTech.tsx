@@ -32,23 +32,23 @@ export default function InteractiveTech() {
                     </div>
                 </div>
 
-                <div className="flex flex-col space-y-2 sm:space-y-4 justify-start lg:pl-20 lg:col-span-3 z-1 order-2 lg:order-2">
+                <div className="flex flex-col space-y-2 sm:space-y-4 justify-start lg:pl-20 lg:col-span-3 z-1 order-2 lg:order-2 self-center">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5.5rem] font-medium tracking-tighter leading-[0.9] lg:leading-[0.85] text-black scale-x-110 origin-left lg:-ml-22">
                         IMMERSIVE & <br />
                         INTERACTIVE <br />
                         TECHNOLOGY
                     </h2>
 
-                    <p className="text-base sm:text-lg lg:text-xl font-normal text-black leading-[1.2]">
+                    <p className="text-base sm:text-lg lg:text-lg font-normal text-black leading-[1.2]">
                         Technology is not our product. But experience is.
                     </p>
 
-                    <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-black leading-[1.2] max-w-2xl text-left">
+                    <p className="text-sm sm:text-base lg:text-lg xl:text-lg text-black leading-[1.2] max-w-2xl text-left">
                         From custom CMS platforms and interactive installations to immersive environments and digital twins we design digital ecosystems that people don't just watch, but participate in. Technology becomes invisible. Engagement becomes instinctive.
                     </p>
 
                     <div className="flex flex-col lg:-space-y-1 xl:pt-4 lg:pt-3 md:pt-2">
-                        <p className="text-base sm:text-lg lg:text-xl font-normal text-black leading-[1.2]">
+                        <p className="text-base sm:text-lg lg:text-lg font-normal text-black leading-[1.2]">
                             This is storytelling at scale powered by intelligence.
                         </p>
                         <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-8xl tracking-tighter font-normal text-black leading-[0.8]">

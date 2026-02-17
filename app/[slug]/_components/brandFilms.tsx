@@ -44,12 +44,12 @@ export default function BrandFilms() {
                         </p>
                     </div>
 
-                    <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-black leading-[1.2] max-w-2xl text-left">
+                    <p className="text-sm sm:text-base lg:text-lg xl:text-lg text-black leading-[1.2] max-w-2xl text-left">
                         From storyboarding to on-ground shoots, from corporate films to brand narratives and explainer content we handle everything under one roof. <br />
                         Every frame is intentional. Every second serves the brand's larger story.
                     </p>
 
-                    <p className="text-base sm:text-lg lg:text-xl font-normal text-black">
+                    <p className="text-base sm:text-lg lg:text-lg font-normal text-black">
                         This is cinema with clarity. Storytelling with strategy.
                     </p>
 

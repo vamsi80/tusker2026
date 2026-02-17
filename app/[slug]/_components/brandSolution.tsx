@@ -30,7 +30,7 @@ export default function BrandSolution() {
                         </p>
                     </div>
 
-                    <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-gray-800 leading-[1.2] max-w-xl text-left">
+                    <p className="text-sm sm:text-base lg:text-lg xl:text-lg text-gray-800 leading-[1.2] max-w-2xl text-left">
                         From logo creation and identity systems to brand books and spatial branding we decode the soul of the brand and translate it into visuals, environments, and experiences that feel unmistakably alive.
                     </p>
 
@@ -43,12 +43,12 @@ export default function BrandSolution() {
                 </div>
 
                 <div className="relative w-full flex justify-start order-1 md:order-2 lg:col-span-1 h-auto sm:h-[60vh] md:h-auto max-w-[1000px]">
-                    <div className="relative w-full h-[300px] sm:h-full">
+                    <div className="relative w-full h-[300px] sm:h-full scale-125">
                         <Image
                             src="/Branding.avif"
                             alt="Brand Solutions - Bust with Digital Face"
                             fill
-                            className="object-contain object-center md:object-left"
+                            className="object-contain object-center md:object-left lg:object-bottom"
                             sizes="(max-width: 768px) 100vw, 50vw"
                             priority
                         />
