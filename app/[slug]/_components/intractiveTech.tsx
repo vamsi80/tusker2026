@@ -1,8 +1,34 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export default function InteractiveTech() {
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const ctx = gsap.context(() => {
+            gsap.from(containerRef.current?.children || [], {
+                x: 100,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: containerRef.current,
+                    start: "top 80%",
+                    toggleActions: "play none none reverse"
+                }
+            });
+        }, containerRef);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
         <div className="w-full min-h-screen flex flex-col bg-white text-black overflow-visible justify-center">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 items-end">
@@ -32,7 +58,7 @@ export default function InteractiveTech() {
                     </div>
                 </div>
 
-                <div className="flex flex-col space-y-2 sm:space-y-4 justify-start lg:pl-20 lg:col-span-3 z-1 order-2 lg:order-2 self-center">
+                <div ref={containerRef} className="flex flex-col space-y-2 sm:space-y-4 justify-start lg:pl-20 lg:col-span-3 z-1 order-2 lg:order-2 self-center">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5.5rem] font-medium tracking-tighter leading-[0.9] lg:leading-[0.85] text-black scale-x-110 origin-left lg:-ml-22">
                         IMMERSIVE & <br />
                         INTERACTIVE <br />
@@ -44,7 +70,7 @@ export default function InteractiveTech() {
                     </p>
 
                     <p className="text-sm sm:text-base lg:text-lg xl:text-lg text-black leading-[1.2] max-w-2xl text-left">
-                        From custom CMS platforms and interactive installations to immersive environments and digital twins we design digital ecosystems that people don't just watch, but participate in. Technology becomes invisible. Engagement becomes instinctive.
+                        From custom CMS platforms and interactive installations to immersive environments and digital twins we design digital ecosystems that people don&apos;t just watch, but participate in. Technology becomes invisible. Engagement becomes instinctive.
                     </p>
 
                     <div className="flex flex-col lg:-space-y-1 xl:pt-4 lg:pt-3 md:pt-2">

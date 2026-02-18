@@ -1,11 +1,44 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export default function InteriorSpaces() {
+    const headerRef = useRef<HTMLDivElement>(null);
+    const textRef = useRef<HTMLDivElement>(null);
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const ctx = gsap.context(() => {
+            const targets = [
+                headerRef.current,
+                ...(textRef.current?.children ? Array.from(textRef.current.children) : [])
+            ];
+
+            gsap.from(targets, {
+                x: -100,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: containerRef.current,
+                    start: "top 80%",
+                    toggleActions: "play none none reverse"
+                }
+            });
+        }, containerRef);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
-        <div className="relative flex min-h-screen h-auto w-full flex-col justify-center">
-            <div className="w-full mb-8 md:mb-6 relative z-10">
+        <div ref={containerRef} className="relative flex min-h-screen h-auto w-full flex-col justify-center">
+            <div ref={headerRef} className="w-full mb-8 md:mb-6 relative z-10">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5rem] font-medium leading-[0.9] tracking-tighter scale-x-110 origin-left">
                     ARCHITECTURE & <br />
                     INTERIOR SPACES
@@ -14,7 +47,7 @@ export default function InteriorSpaces() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-8 lg:gap-0">
                 <div className="lg:col-span-1 flex flex-col justify-start z-2">
-                    <div className="max-w-2xl space-y-1 text-black">
+                    <div ref={textRef} className="max-w-2xl space-y-1 text-black">
                         <p className="text-base sm:text-lg lg:text-lg xl:text-lg font-normal leading-[1.1]">
                             We don&apos;t design interiors.<br />
                             We script environments.

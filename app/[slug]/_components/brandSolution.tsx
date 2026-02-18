@@ -1,8 +1,34 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export default function BrandSolution() {
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const ctx = gsap.context(() => {
+            gsap.from(containerRef.current?.children || [], {
+                x: -100,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: containerRef.current,
+                    start: "top 80%",
+                    toggleActions: "play none none reverse"
+                }
+            });
+        }, containerRef);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
         <div className="w-full min-h-screen flex flex-col text-black overflow-visible relative justify-center">
             <div className="absolute top-0 bottom-0 left-0 w-screen z-0 pointer-events-none flex items-center justify-start -ml-12 sm:-ml-16 lg:-ml-24 overflow-visible">
@@ -18,14 +44,14 @@ export default function BrandSolution() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
-                <div className="flex flex-col space-y-2 sm:space-y-4 justify-start order-2 md:order-1 lg:col-span-2 mt-8 md:mt-0">
+                <div ref={containerRef} className="flex flex-col space-y-2 sm:space-y-4 justify-start order-2 md:order-1 lg:col-span-2 mt-8 md:mt-0">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[6rem] font-medium tracking-tighter leading-[0.9] lg:leading-[0.85] text-black scale-x-110 origin-left">
                         BRAND SOLUTIONS
                     </h2>
 
                     <div className="space-y-4">
                         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-normal text-black leading-none">
-                            We don't decorate brands. <br />
+                            We don&apos;t decorate brands. <br />
                             We define them.
                         </p>
                     </div>
