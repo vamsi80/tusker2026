@@ -28,12 +28,12 @@ export default function FourVerticals() {
             gsap.from('.vertical-icon', {
                 scrollTrigger: {
                     trigger: innerContainerRef.current,
-                    start: "top 60%",
+                    start: "top 70%",
                     toggleActions: "play none none reverse"
                 },
-                y: 500,
-                duration: 1,
-                stagger: 0.05,
+                y: 250,
+                duration: 0.75,
+                stagger: 0.1,
                 ease: "power3.out"
             });
 

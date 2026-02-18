@@ -243,13 +243,13 @@ function ProjectTextContent({ project, className }: { project: any; className?: 
                 </h2>
             </div>
             <div className="text-xs xl:text-sm leading-[1.2] text-left opacity-90 space-y-4">
-                {Array.isArray(project.description) ? (
+                {project.description && (Array.isArray(project.description) ? (
                     project.description.map((desc: string, index: number) => (
                         <p key={index}>{desc}</p>
                     ))
                 ) : (
                     <p>{project.description}</p>
-                )}
+                ))}
             </div>
 
             {project.videoLink && (
