@@ -663,7 +663,7 @@ export const services = [
                 galleryImages: [
                     '/Portfolio_Images/Branding/WOB/2.avif',
                     '/Portfolio_Images/Branding/WOB/3.avif',
-                    '/Portfolio_Images/Branding/WOB/4.avif'
+                    '/1233.png'
                 ],
             },
             {

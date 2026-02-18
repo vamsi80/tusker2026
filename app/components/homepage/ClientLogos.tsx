@@ -38,31 +38,33 @@ export default function ClientLogos() {
             </div>
 
             <div className="group flex gap-16 w-full overflow-hidden select-none pointer-events-auto">
-                <div className="flex shrink-0 animate-marquee items-center justify-start gap-16 group-hover:[animation-play-state:paused] hover:[animation-play-state:paused]">
+                <div className="flex shrink-0 animate-marquee items-center justify-start gap-12 md:gap-24 group-hover:[animation-play-state:paused] hover:[animation-play-state:paused]">
                     {LOGOS.map((logo, index) => (
-                        <div key={index} className="group/item relative flex flex-col items-center justify-center gap-4 cursor-pointer">
-                            <div className="relative h-6 sm:h-8 lg:h-12 w-24 sm:w-32 lg:w-40 flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">
+                        <div key={index} className="group/item relative flex flex-col items-center justify-center cursor-pointer">
+                            <div className="relative h-6 sm:h-8 lg:h-12 w-auto flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">
                                 <Image
                                     src={logo.url}
                                     alt={logo.name}
-                                    fill
-                                    className="object-contain"
-                                    sizes="(max-width: 640px) 96px, (max-width: 1024px) 128px, 160px"
+                                    width={0}
+                                    height={0}
+                                    sizes="100vw"
+                                    className="w-auto h-full object-contain"
                                 />
                             </div>
                         </div>
                     ))}
                 </div>
-                <div aria-hidden="true" className="flex shrink-0 animate-marquee items-center justify-start gap-16 group-hover:[animation-play-state:paused] hover:[animation-play-state:paused]">
+                <div aria-hidden="true" className="flex shrink-0 animate-marquee items-center justify-start gap-8 md:gap-12 group-hover:[animation-play-state:paused] hover:[animation-play-state:paused]">
                     {LOGOS.map((logo, index) => (
-                        <div key={`dup-${index}`} className="group/item relative flex flex-col items-center justify-center gap-4 cursor-pointer">
-                            <div className="relative h-6 sm:h-8 lg:h-12 w-24 sm:w-32 lg:w-40 flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">
+                        <div key={`dup-${index}`} className="group/item relative flex flex-col items-center justify-center cursor-pointer">
+                            <div className="relative h-6 sm:h-8 lg:h-12 w-auto flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">
                                 <Image
                                     src={logo.url}
                                     alt={logo.name}
-                                    fill
-                                    className="object-contain"
-                                    sizes="(max-width: 640px) 96px, (max-width: 1024px) 128px, 160px"
+                                    width={0}
+                                    height={0}
+                                    sizes="100vw"
+                                    className="w-auto h-full object-contain"
                                 />
                             </div>
                         </div>

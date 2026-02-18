@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Services from "./components/homepage/services";
 import HeroSection from "./components/homepage/HeroSection";
-import StoryEngineSection from "./components/homepage/StoryEngineSection";
-import ExistToCreateSection from "./components/homepage/ExistToCreateSection";
 import ClientLogos from "./components/homepage/ClientLogos";
 import TeamSection from "./components/homepage/TeamSection";
-import HomeBackground from "./components/homepage/HomeBackground";
 import FourVerticals from "./components/homepage/Fourevirticals";
+import HomeBackground from "./components/homepage/HomeBackground";
+import StoryEngineSection from "./components/homepage/StoryEngineSection";
+import ExistToCreateSection from "./components/homepage/ExistToCreateSection";
 
 export const metadata: Metadata = {
   title: "The White Tusker | Fluid by Nature",

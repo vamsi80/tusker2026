@@ -25,6 +25,18 @@ export default function FourVerticals() {
                 ease: "power3.out"
             });
 
+            gsap.from('.vertical-icon', {
+                scrollTrigger: {
+                    trigger: innerContainerRef.current,
+                    start: "top 60%",
+                    toggleActions: "play none none reverse"
+                },
+                y: 500,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power3.out"
+            });
+
         }, containerRef);
 
         return () => ctx.revert();
@@ -36,13 +48,26 @@ export default function FourVerticals() {
                 <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-12 w-full h-full items-center">
                     <div className="relative w-full h-[40vh] lg:h-full z-2 min-h-[300px] mt-4 lg:mt-0 order-2 lg:order-1">
                         <Image
-                            src="/homepage/3.avif"
+                            src="/homepage/fourVirticals/Man.png"
                             alt="Classical statue with futuristic tech nodes"
                             fill
-                            className="object-contain object-center lg:object-left transform scale-[1.28] origin-center lg:origin-left"
+                            className="object-contain object-center lg:object-right transform"
                             sizes="(max-width: 1024px) 100vw, 40vw"
                             priority
                         />
+
+                        <div className="vertical-icon absolute top-[2%] left-[15%] lg:left-[30%] w-[15%] h-[15%] sm:w-[25%] sm:h-[25%] lg:w-[35%] lg:h-[35%] -rotate-45">
+                            <Image src="/homepage/fourVirticals/Blue.png" alt="Blue Vertical" fill className="object-contain" />
+                        </div>
+                        <div className="vertical-icon absolute top-[10%] right-[5%] lg:right-[-13%] w-[22%] h-[22%] sm:w-[35%] sm:h-[35%] lg:w-[45%] lg:h-[45%]">
+                            <Image src="/homepage/fourVirticals/Orange.png" alt="Orange Vertical" fill className="object-contain" />
+                        </div>
+                        <div className="vertical-icon absolute bottom-[5%] left-[5%] lg:left-[0%] w-[22%] h-[22%] sm:w-[35%] sm:h-[35%] lg:w-[45%] lg:h-[45%]">
+                            <Image src="/homepage/fourVirticals/Black.png" alt="Black Vertical" fill className="object-contain" />
+                        </div>
+                        <div className="vertical-icon absolute bottom-[5%] right-[5%] lg:right-[-10%] w-[15%] h-[15%] sm:w-[25%] sm:h-[25%] lg:w-[35%] lg:h-[35%] -rotate-45">
+                            <Image src="/homepage/fourVirticals/Grey.png" alt="Grey Vertical" fill className="object-contain" />
+                        </div>
                     </div>
                     <div className="flex flex-col justify-center space-y-2 sm:space-y-3 lg:space-y-4 xl:space-y-5 lg:pl-12 order-1 lg:order-2">
                         <h2 className="flex flex-col text-left font-sans text-4xl font-normal tracking-tighter text-black sm:text-5xl md:text-6xl lg:text-6xl xl:text-[4.5rem] transform scale-x-[1.15] origin-left pb-2 sm:pb-3 lg:pb-4">

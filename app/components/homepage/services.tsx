@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -53,14 +53,7 @@ export default function Services() {
         <section ref={containerRef} className="relative h-auto w-full flex flex-col items-center justify-center overflow-hidden xl:px-4">
             <div className="absolute inset-0 z-1 justify-center items-center pointer-events-none hidden lg:flex">
                 <div className="center-image relative w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] lg:w-[350px] lg:h-[450px] xl:w-[500px] xl:h-[600px]">
-                    <Image
-                        src="/homepage/service.avif"
-                        alt="Services Centerpiece"
-                        fill
-                        className="object-contain opacity-50 lg:opacity-100"
-                        sizes="(max-width: 640px) 280px, (max-width: 1024px) 400px, 600px"
-                        priority
-                    />
+                    <ImageSequence />
                 </div>
             </div>
 
@@ -68,21 +61,14 @@ export default function Services() {
                 {services.map((service, index) => (
                     <div
                         key={service.slug}
-                        className={`service-item block lg:flex lg:flex-col space-y-4 ${service.col} text-left justify-center h-full mb-12 lg:mb-0 ${index % 2 !== 0 ? 'lg:items-end' : 'lg:items-start'}`}
+                        className={`block lg:flex lg:flex-col space-y-4 ${service.col} text-left justify-center h-full mb-12 lg:mb-0 ${index % 2 !== 0 ? 'lg:items-end' : 'lg:items-start'}`}
                     >
                         {index === 2 && (
-                            <div className="lg:hidden float-right relative w-[240px] h-[240px] sm:w-[450px] sm:h-[450px] ml-4 mb-4 -mt-12 sm:-mt-24 z-10">
-                                <Image
-                                    src="/homepage/service.avif"
-                                    alt="Services Centerpiece"
-                                    fill
-                                    className="object-contain opacity-80"
-                                    sizes="(max-width: 640px) 240px, 450px"
-                                    priority
-                                />
+                            <div className="service-item lg:hidden float-right relative w-[240px] h-[240px] sm:w-[450px] sm:h-[450px] ml-4 mb-4 -mt-12 sm:-mt-24 z-10">
+                                <ImageSequence className="opacity-100" />
                             </div>
                         )}
-                        <div className="block lg:flex lg:flex-col lg:items-start text-left">
+                        <div className="service-item block lg:flex lg:flex-col lg:items-start text-left">
                             <h3 className="flex flex-col text-2xl sm:text-3xl xl:text-4xl tracking-tighter text-black mb-3 transform scale-x-110 origin-left leading-none">
                                 {service.displayTitle?.map((line, i) => (
                                     <span key={i}>{line}</span>
@@ -106,4 +92,43 @@ export default function Services() {
             </div>
         </section>
     )
+}
+
+function ImageSequence({ className = "opacity-50 lg:opacity-100" }: { className?: string }) {
+    const imgRef = useRef<HTMLImageElement>(null);
+    const totalFrames = 368;
+
+    useEffect(() => {
+        let frame = 1;
+
+        // Basic preload function
+        const preload = (f: number) => {
+            const img = new window.Image();
+            img.src = `/Services/${f}.avif`;
+        };
+
+        const interval = setInterval(() => {
+            frame = frame >= totalFrames ? 1 : frame + 1;
+            if (imgRef.current) {
+                imgRef.current.src = `/Services/${frame}.avif`;
+            }
+
+            // Preload next few frames
+            for (let i = 1; i <= 3; i++) {
+                let nextF = frame + i;
+                if (nextF > totalFrames) nextF -= totalFrames;
+                preload(nextF);
+            }
+        }, 30);
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <img
+            ref={imgRef}
+            src="/Services/1.avif"
+            alt="Services Sequence"
+            className={`w-full h-full object-contain scale-120 ${className}`}
+        />
+    );
 }
