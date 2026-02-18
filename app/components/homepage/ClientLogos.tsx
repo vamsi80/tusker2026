@@ -1,3 +1,5 @@
+
+import Image from 'next/image';
 const LOGOS = [
     { name: 'Boeing', url: '/clints/Boeing.svg' },
     { name: 'Bosch', url: '/clints/Bosch.svg' },
@@ -23,8 +25,6 @@ const LOGOS = [
     { name: 'BIAL', url: '/clints/BIAL.svg' },
 ];
 
-import Image from 'next/image';
-
 export default function ClientLogos() {
     return (
         <section className="relative w-full overflow-hidden space-y-6 md:space-y-8 lg:space-y-10 xl:space-y-12">
@@ -37,8 +37,8 @@ export default function ClientLogos() {
                 </p>
             </div>
 
-            <div className="group flex gap-16 w-full overflow-hidden select-none pointer-events-auto">
-                <div className="flex shrink-0 animate-marquee items-center justify-start gap-12 md:gap-24 group-hover:[animation-play-state:paused] hover:[animation-play-state:paused]">
+            <div className="group flex w-full overflow-hidden select-none pointer-events-auto">
+                <div className="flex shrink-0 animate-marquee items-center justify-start gap-12 md:gap-24 pr-12 md:pr-24 group-hover:[animation-play-state:paused] hover:[animation-play-state:paused]">
                     {LOGOS.map((logo, index) => (
                         <div key={index} className="group/item relative flex flex-col items-center justify-center cursor-pointer">
                             <div className="relative h-6 sm:h-8 lg:h-12 w-auto flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">
@@ -54,7 +54,7 @@ export default function ClientLogos() {
                         </div>
                     ))}
                 </div>
-                <div aria-hidden="true" className="flex shrink-0 animate-marquee items-center justify-start gap-8 md:gap-12 group-hover:[animation-play-state:paused] hover:[animation-play-state:paused]">
+                <div aria-hidden="true" className="flex shrink-0 animate-marquee items-center justify-start gap-12 md:gap-24 pr-12 md:pr-24 group-hover:[animation-play-state:paused] hover:[animation-play-state:paused]">
                     {LOGOS.map((logo, index) => (
                         <div key={`dup-${index}`} className="group/item relative flex flex-col items-center justify-center cursor-pointer">
                             <div className="relative h-6 sm:h-8 lg:h-12 w-auto flex items-center justify-center transition-all duration-300 group-hover/item:scale-110">

@@ -18,6 +18,7 @@ export default function Footer() {
     /** NEW refs for animated SVG strokes */
     const orbit1Ref = useRef<SVGEllipseElement>(null);
     const orbit2Ref = useRef<SVGEllipseElement>(null);
+    const containerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -49,12 +50,11 @@ export default function Footer() {
 
             /* ---------- SVG ORBIT HIGHLIGHT ANIMATION ---------- */
 
-            const animateOrbit = (el: SVGElement | null, reverse = false) => {
+            const animateOrbit = (el: SVGElement | null, reverse = false, duration = 6) => {
                 if (!el) return;
 
                 const length = (el as SVGGeometryElement).getTotalLength();
-
-                const val = length * 0.05;
+                const val = length * 0.03;
 
                 gsap.set(el, {
                     strokeDasharray: `${val} ${length - val}`,
@@ -63,19 +63,19 @@ export default function Footer() {
 
                 gsap.to(el, {
                     strokeDashoffset: reverse ? length : -length,
-                    duration: 6,
+                    duration: duration,
                     ease: "none",
                     repeat: -1,
                     scrollTrigger: {
-                        trigger: headerRef.current,
-                        start: "top 95%",
+                        trigger: containerRef.current,
+                        start: "top bottom",
                         toggleActions: "play none none none"
                     }
                 });
             };
 
-            animateOrbit(orbit1Ref.current, false);
-            animateOrbit(orbit2Ref.current, true);
+            animateOrbit(orbit1Ref.current, false, 11);
+            animateOrbit(orbit2Ref.current, true, 7);
 
         });
 
@@ -120,8 +120,8 @@ export default function Footer() {
                             cy="50"
                             rx="40"
                             ry="14"
-                            stroke="#7c6cff"
-                            strokeWidth="0.2"
+                            stroke="#9B89D8"
+                            strokeWidth="0.4"
                             fill="none"
                             strokeLinecap="round"
                             transform="rotate(-29 50 50)"
@@ -132,8 +132,8 @@ export default function Footer() {
                             cy="50"
                             rx="40"
                             ry="14"
-                            stroke="#7c6cff"
-                            strokeWidth="0.2"
+                            stroke="#9B89D8"
+                            strokeWidth="0.4"
                             fill="none"
                             strokeLinecap="round"
                             transform="rotate(-22 50 50)"

@@ -22,7 +22,7 @@ export default function InteriorSpaces() {
             gsap.from(targets, {
                 x: -100,
                 opacity: 0,
-                duration: 1,
+                duration: 1.5,
                 stagger: 0.2,
                 ease: "power3.out",
                 scrollTrigger: {

@@ -15,7 +15,7 @@ export default function BrandFilms() {
             gsap.from(containerRef.current?.children || [], {
                 x: 100,
                 opacity: 0,
-                duration: 1,
+                duration: 1.5,
                 stagger: 0.2,
                 ease: "power3.out",
                 scrollTrigger: {
@@ -57,7 +57,7 @@ export default function BrandFilms() {
                     </div>
                 </div>
 
-                <div ref={containerRef} className="flex flex-col space-y-2 md:space-y-4 lg:space-y-6 xl:space-y-8 justify-start lg:pl-20 lg:col-span-3 order-2 lg:order-2 xl:pt-6">
+                <div ref={containerRef} className="flex flex-col space-y-2 md:space-y-4 lg:space-y-6 xl:space-y-6 justify-start lg:pl-20 lg:col-span-3 order-2 lg:order-2 xl:pt-6">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[6rem] font-medium tracking-tighter leading-[0.9] lg:leading-[0.85] text-black scale-x-110 origin-left lg:-ml-50">
                         CORPORATE & <br />
                         BRAND FILMS

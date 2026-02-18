@@ -1,8 +1,8 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
-import Image from 'next/image';
 import { gsap } from 'gsap';
+import Image from 'next/image';
+import { useEffect, useRef } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -33,7 +33,7 @@ export default function FourVerticals() {
                 },
                 y: 500,
                 duration: 1,
-                stagger: 0.2,
+                stagger: 0.05,
                 ease: "power3.out"
             });
 
@@ -46,27 +46,30 @@ export default function FourVerticals() {
         <section ref={containerRef} className="relative flex h-auto w-full flex-col justify-center overflow-hidden md:py-0 px-4 sm:px-0">
             <div ref={innerContainerRef} className="relative z-10 mx-auto flex h-full w-full flex-col justify-center">
                 <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-12 w-full h-full items-center">
-                    <div className="relative w-full h-[40vh] lg:h-full z-2 min-h-[300px] mt-4 lg:mt-0 order-2 lg:order-1">
-                        <Image
-                            src="/homepage/fourVirticals/Man.png"
-                            alt="Classical statue with futuristic tech nodes"
-                            fill
-                            className="object-contain object-center lg:object-right transform"
-                            sizes="(max-width: 1024px) 100vw, 40vw"
-                            priority
-                        />
+                    <div className="relative w-full h-[40vh] lg:h-auto z-2 min-h-[300px] mt-4 lg:mt-0 order-2 lg:order-1 flex justify-center lg:justify-end">
+                        <div className="relative h-full lg:h-auto w-auto lg:w-[85%] aspect-580/1000 scale-100 lg:scale-95 origin-center lg:origin-right">
+                            <Image
+                                src="/homepage/fourVirticals/Man.avif"
+                                alt="Classical statue with futuristic tech nodes"
+                                width={580}
+                                height={1000}
+                                className="h-full w-auto object-contain"
+                                sizes="(max-width: 1024px) 100vw, 40vw"
+                                priority
+                            />
 
-                        <div className="vertical-icon absolute top-[2%] left-[15%] lg:left-[30%] w-[15%] h-[15%] sm:w-[25%] sm:h-[25%] lg:w-[35%] lg:h-[35%] -rotate-45">
-                            <Image src="/homepage/fourVirticals/Blue.png" alt="Blue Vertical" fill className="object-contain" />
-                        </div>
-                        <div className="vertical-icon absolute top-[10%] right-[5%] lg:right-[-13%] w-[22%] h-[22%] sm:w-[35%] sm:h-[35%] lg:w-[45%] lg:h-[45%]">
-                            <Image src="/homepage/fourVirticals/Orange.png" alt="Orange Vertical" fill className="object-contain" />
-                        </div>
-                        <div className="vertical-icon absolute bottom-[5%] left-[5%] lg:left-[0%] w-[22%] h-[22%] sm:w-[35%] sm:h-[35%] lg:w-[45%] lg:h-[45%]">
-                            <Image src="/homepage/fourVirticals/Black.png" alt="Black Vertical" fill className="object-contain" />
-                        </div>
-                        <div className="vertical-icon absolute bottom-[5%] right-[5%] lg:right-[-10%] w-[15%] h-[15%] sm:w-[25%] sm:h-[25%] lg:w-[35%] lg:h-[35%] -rotate-45">
-                            <Image src="/homepage/fourVirticals/Grey.png" alt="Grey Vertical" fill className="object-contain" />
+                            <div className="vertical-icon absolute top-[3%] left-[15%] lg:top-[2%] lg:left-[14%] w-[32%] h-[32%] lg:w-[40%] lg:h-[40%] -rotate-60">
+                                <Image src="/homepage/fourVirticals/Blue.avif" alt="Blue Vertical" fill className="object-contain" />
+                            </div>
+                            <div className="vertical-icon absolute top-[15%] right-[-10%] lg:top-[6%] lg:right-[-22%] w-[42%] h-[42%] lg:w-[55%] lg:h-[55%]">
+                                <Image src="/homepage/fourVirticals/Orange.avif" alt="Orange Vertical" fill className="object-contain" />
+                            </div>
+                            <div className="vertical-icon absolute bottom-[5%] left-[-13%] lg:bottom-[5%] lg:left-[-20%] w-[42%] h-[42%] lg:w-[55%] lg:h-[55%]">
+                                <Image src="/homepage/fourVirticals/Black.avif" alt="Black Vertical" fill className="object-contain" />
+                            </div>
+                            <div className="vertical-icon absolute bottom-[5%] right-[-15%] lg:bottom-[5%] lg:right-[-15%] w-[32%] h-[32%] lg:w-[40%] lg:h-[40%] -rotate-45">
+                                <Image src="/homepage/fourVirticals/Grey.avif" alt="Grey Vertical" fill className="object-contain" />
+                            </div>
                         </div>
                     </div>
                     <div className="flex flex-col justify-center space-y-2 sm:space-y-3 lg:space-y-4 xl:space-y-5 lg:pl-12 order-1 lg:order-2">
