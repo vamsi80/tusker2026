@@ -7,7 +7,7 @@ export default function TeamSection() {
                 <h2 className="font-sans text-2xl font-normal tracking-tight text-black sm:text-3xl lg:text-4xl uppercase">
                     Our Team
                 </h2>
-                <p className="text-[10px] sm:text-xs lg:text-sm font-medium tracking-widest text-black uppercase max-w-[90%] sm:max-w-full">
+                <p className="text-[10px] sm:text-xs lg:text-sm font-medium tracking-widest text-black uppercase max-w-full whitespace-nowrap">
                     “Built on Skill. Powered by Commitment.”
                 </p>
             </div>

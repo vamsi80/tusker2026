@@ -30,10 +30,10 @@ export default function InteractiveTech() {
     }, []);
 
     return (
-        <div className="w-full min-h-screen flex flex-col bg-white text-black overflow-visible justify-center">
+        <div className="w-full h-auto sm:min-h-screen pt-16 sm:pt-0 flex flex-col bg-white text-black overflow-visible justify-center">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 items-end">
                 <div className="relative w-full flex justify-start lg:col-span-2 overflow-visible z-0 h-auto sm:h-[60vh] lg:h-auto order-1 lg:order-1">
-                    <div className="absolute top-0 bottom-0 left-0 w-screen z-0 pointer-events-none flex items-center justify-start -ml-6 sm:-ml-12 lg:-ml-24 overflow-visible">
+                    <div className="absolute top-0 bottom-0 left-0 w-screen z-0 pointer-events-none flex items-center justify-start -ml-8 sm:-ml-12 lg:-ml-24 overflow-visible">
                         <div className="relative w-full h-full scale-200 sm:scale-200 md:scale-260 lg:scale-125 origin-left">
                             <Image
                                 src="/bagrounds/BG-2.avif"
