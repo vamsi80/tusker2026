@@ -45,8 +45,8 @@ export default function FourVerticals() {
     return (
         <section ref={containerRef} className="relative flex h-auto w-full flex-col justify-center overflow-hidden md:py-0 px-4 sm:px-0">
             <div ref={innerContainerRef} className="relative z-10 mx-auto flex h-full w-full flex-col justify-center">
-                <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-12 w-full h-full items-center">
-                    <div className="relative w-full h-[40vh] lg:h-auto z-2 min-h-[300px] mt-4 lg:mt-0 order-2 lg:order-1 flex justify-center lg:justify-end">
+                <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-0 lg:gap-12 w-full h-full items-center">
+                    <div className="relative w-full h-[40vh] lg:h-auto z-2 min-h-[300px] mt-0 lg:mt-0 order-2 lg:order-1 flex justify-center lg:justify-end">
                         <div className="relative h-full lg:h-auto w-auto lg:w-[85%] aspect-580/1000 scale-100 lg:scale-95 origin-center lg:origin-right">
                             <Image
                                 src="/homepage/fourVirticals/Man.avif"

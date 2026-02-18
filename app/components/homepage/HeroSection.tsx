@@ -165,25 +165,25 @@ export default function HeroSection() {
             </div>
 
             <div className="pointer-events-none absolute inset-0 z-10 overflow-hidden">
-                <span className="hero-floating-text absolute top-[29%] left-[53%] text-[10px] font-medium tracking-widest text-black sm:text-[14px]">
+                <span className="hero-floating-text absolute top-[28%] left-[20%] sm:top-[29%] sm:left-[53%] text-[10px] font-medium tracking-widest text-black sm:text-[14px]">
                     + EXPERIENCE
                 </span>
-                <span className="hero-floating-text absolute bottom-[15%] left-[30%] text-[10px] font-medium tracking-widest text-black sm:text-[14px]">
+                <span className="hero-floating-text absolute bottom-[32%] left-[8%] sm:bottom-[15%] sm:left-[30%] text-[10px] font-medium tracking-widest text-black sm:text-[14px]">
                     + DIGITAL
                 </span>
-                <span className="hero-floating-text absolute top-[45%] right-[12%] text-[11px] font-medium tracking-widest text-black sm:text-[14px]">
+                <span className="hero-floating-text absolute top-[30%] right-[5%] sm:top-[45%] sm:right-[12%] text-[11px] font-medium tracking-widest text-black sm:text-[14px]">
                     + DESIGN
                 </span>
-                <span className="hero-floating-text absolute top-[18%] right-[22%] text-[10px] font-medium tracking-widest text-black sm:text-[11px]">
+                <span className="hero-floating-text absolute top-[10%] right-[8%] sm:top-[18%] sm:right-[22%] text-[10px] font-medium tracking-widest text-black sm:text-[11px]">
                     + IMMERSIVE
                 </span>
-                <span className="hero-floating-text absolute bottom-[25%] right-[19%] text-[11px] font-medium tracking-widest text-black uppercase sm:text-[14px]">
+                <span className="hero-floating-text absolute bottom-[22%] right-[5%] sm:bottom-[25%] sm:right-[19%] text-[11px] font-medium tracking-widest text-black uppercase sm:text-[14px]">
                     + Creative
                 </span>
-                <span className="hero-floating-text absolute bottom-[20%] left-[50%] -translate-x-1/2 text-[9px] font-medium tracking-widest text-gray-500 uppercase sm:text-[11px] inline-flex overflow-hidden whitespace-nowrap">
+                <span className="hero-floating-text absolute bottom-[15%] left-[50%] sm:bottom-[20%] sm:left-[50%] -translate-x-1/2 text-[9px] font-medium tracking-widest text-gray-500 uppercase sm:text-[11px] inline-flex overflow-hidden whitespace-nowrap">
                     + Be Inspired
                 </span>
-                <span className="hero-floating-text absolute top-[20%] left-[4%] text-[9px] font-medium tracking-widest text-gray uppercase sm:text-[14px]">
+                <span className="hero-floating-text absolute top-[18%] left-[5%] sm:top-[20%] sm:left-[4%] text-[9px] font-medium tracking-widest text-gray uppercase sm:text-[14px]">
                     + Interactive
                 </span>
             </div>
