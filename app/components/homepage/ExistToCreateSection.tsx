@@ -20,7 +20,7 @@ export default function ExistToCreateSection() {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: innerContainerRef.current,
-                    start: isMobile ? "top 90%" : "top 70%",
+                    start: isMobile ? "top 95%" : "top 70%",
                     toggleActions: "play none none reverse"
                 }
             });

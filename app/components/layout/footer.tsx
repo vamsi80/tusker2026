@@ -14,6 +14,8 @@ export default function Footer() {
 
     const headerRef = useRef<HTMLHeadingElement>(null);
     const contactRef = useRef<HTMLDivElement>(null);
+    const line1Ref = useRef<HTMLSpanElement>(null);
+    const line2Ref = useRef<HTMLSpanElement>(null);
 
     /** NEW refs for animated SVG strokes */
     const orbit1Ref = useRef<SVGEllipseElement>(null);
@@ -32,10 +34,29 @@ export default function Footer() {
                 }
             });
 
-            tl.to(headerRef.current, {
-                text: "THANK YOU. LET`s TALK...",
-                duration: 2,
-                ease: "none",
+            const mm = gsap.matchMedia();
+
+            mm.add("(max-width: 767px)", () => {
+                // Mobile: both lines start simultaneously
+                tl.to(line1Ref.current, {
+                    text: "THANK YOU.",
+                    duration: 1,
+                    ease: "none",
+                });
+                tl.to(line2Ref.current, {
+                    text: "LET`s TALK.....",
+                    duration: 1.2,
+                    ease: "none",
+                }, "<"); // '<' = start at same time as previous tween's start
+            });
+
+            mm.add("(min-width: 768px)", () => {
+                // Desktop: one line
+                tl.to(line1Ref.current, {
+                    text: "THANK YOU. LET`s TALK.....",
+                    duration: 2,
+                    ease: "none",
+                });
             });
 
             const lines = contactRef.current?.querySelectorAll('p');
@@ -83,7 +104,7 @@ export default function Footer() {
     }, []);
 
     return (
-        <footer className={`relative min-h-screen w-full flex flex-col items-center justify-end overflow-hidden ${isHomePage ? 'bg-transparent' : 'bg-white'}`}>
+        <footer className={`relative h-auto lg:min-h-screen w-full flex flex-col items-center justify-end overflow-hidden ${isHomePage ? 'bg-transparent' : 'bg-white'}`}>
 
             {/* ---------- SVG BACKGROUND ---------- */}
             <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
@@ -144,20 +165,23 @@ export default function Footer() {
 
             {/* ---------- CONTENT ---------- */}
             <div className="w-[90%] sm:w-full self-start px-8 sm:px-10 lg:px-12 xl:px-24">
-                <div className="relative z-10 w-full h-auto min-h-[80vh] lg:h-[60vh] flex flex-col justify-center lg:justify-start items-start gap-4 sm:gap-4 pb-24 lg:pb-0">
+                <div className="relative z-10 w-full h-auto lg:h-[60vh] flex flex-col justify-center lg:justify-start items-start gap-4 sm:gap-4 pt-24 sm:pt-0 pb-12 lg:pb-0">
 
                     <h1
                         ref={headerRef}
                         className="text-4xl sm:text-5xl md:text-8xl lg:text-6xl xl:text-8xl font-medium tracking-tighter text-black leading-[0.85] transform scale-x-110 origin-left w-full text-left"
-                    />
+                    >
+                        <span ref={line1Ref} className="block sm:inline"></span>
+                        <span ref={line2Ref} className="block sm:inline"></span>
+                    </h1>
 
                     <div
                         ref={contactRef}
                         className="flex flex-col gap-1 sm:gap-4 text-gray-600 pl-1 sm:pl-7 transform scale-x-[1.15] origin-left"
                     >
                         <div className="text-sm sm:text-base md:text-sm font-medium max-w-xl leading-relaxed">
-                            <p className="opacity-0">+#1331, 13th Cross Road, 10th Main Road, 2nd stage,</p>
-                            <p className="opacity-0">+Indiranagar, Bengaluru 560038, Karnataka, India.</p>
+                            <p className="opacity-0 inline sm:block">+#1331, 13th Cross Road, 10th Main Road, 2nd stage,{' '}</p>
+                            <p className="opacity-0 inline sm:block">+Indiranagar, Bengaluru 560038, Karnataka, India.</p>
                         </div>
 
                         <div className="text-sm sm:text-base md:text-sm font-medium leading-relaxed">

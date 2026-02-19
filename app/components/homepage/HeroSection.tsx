@@ -13,71 +13,77 @@ export default function HeroSection() {
 
     useLayoutEffect(() => {
         const ctx = gsap.context(() => {
+            const isMobile = window.innerWidth < 768;
             const texts = gsap.utils.toArray<HTMLElement>('.hero-floating-text');
-            if (texts[0]) {
-                gsap.to(texts[0], {
-                    scaleX: 1.05,
-                    duration: 2,
-                    repeat: -1,
-                    yoyo: true,
-                    ease: "sine.inOut"
-                });
-            }
 
-            if (texts[1]) {
-                gsap.to(texts[1], {
-                    opacity: 0.4,
-                    duration: 0.2,
-                    repeat: -1,
-                    yoyo: true,
-                    repeatDelay: 4,
-                    ease: "power1.inOut"
-                });
-            }
-
-            if (texts[2]) {
-                gsap.to(texts[2], {
-                    fontWeight: "bold",
-                    duration: 0.5,
-                    repeat: -1,
-                    yoyo: true,
-                    repeatDelay: 3,
-                    ease: "power2.inOut"
-                });
-            }
-
-            if (texts[3]) {
-                gsap.to(texts[3], {
-                    scale: 1.1,
-                    duration: 3,
-                    repeat: -1,
-                    yoyo: true,
-                    ease: "sine.inOut"
-                });
-            }
-
-            if (texts[5]) {
-                gsap.to(texts[5], {
-                    fontWeight: "bold",
-                    duration: 1,
-                    repeat: -1,
-                    yoyo: true,
-                    repeatDelay: 5,
-                    ease: "sine.inOut"
-                });
-            }
-
-            if (texts[6]) {
-                gsap.fromTo(texts[6],
-                    { scale: 0.95 },
-                    {
-                        scale: 1,
-                        duration: 4,
+            // Skip infinite tweens on mobile — they run on main thread at 60fps
+            // and are barely legible on small screens anyway
+            if (!isMobile) {
+                if (texts[0]) {
+                    gsap.to(texts[0], {
+                        scaleX: 1.05,
+                        duration: 2,
                         repeat: -1,
                         yoyo: true,
                         ease: "sine.inOut"
-                    }
-                );
+                    });
+                }
+
+                if (texts[1]) {
+                    gsap.to(texts[1], {
+                        opacity: 0.4,
+                        duration: 0.2,
+                        repeat: -1,
+                        yoyo: true,
+                        repeatDelay: 4,
+                        ease: "power1.inOut"
+                    });
+                }
+
+                if (texts[2]) {
+                    gsap.to(texts[2], {
+                        fontWeight: "bold",
+                        duration: 0.5,
+                        repeat: -1,
+                        yoyo: true,
+                        repeatDelay: 3,
+                        ease: "power2.inOut"
+                    });
+                }
+
+                if (texts[3]) {
+                    gsap.to(texts[3], {
+                        scale: 1.1,
+                        duration: 3,
+                        repeat: -1,
+                        yoyo: true,
+                        ease: "sine.inOut"
+                    });
+                }
+
+                if (texts[5]) {
+                    gsap.to(texts[5], {
+                        fontWeight: "bold",
+                        duration: 1,
+                        repeat: -1,
+                        yoyo: true,
+                        repeatDelay: 5,
+                        ease: "sine.inOut"
+                    });
+                }
+
+                if (texts[6]) {
+                    gsap.fromTo(texts[6],
+                        { scale: 0.95 },
+                        {
+                            scale: 1,
+                            duration: 4,
+                            repeat: -1,
+                            yoyo: true,
+                            ease: "sine.inOut"
+                        }
+                    );
+                }
             }
 
             const animateOrbit = (el: SVGElement | null, reverse = false, duration = 6) => {
@@ -190,7 +196,7 @@ export default function HeroSection() {
             <div className="h-0 sm:h-auto"></div>
             <div className="flex flex-1 flex-col items-start justify-center pl-4 sm:pl-[10%] lg:pl-[20%]">
                 <div className="relative -translate-y-12">
-                    <h1 className="flex flex-col text-left font-sans text-5xl font-normal leading-none sm:leading-[0.85] tracking-tighter text-black sm:text-6xl md:text-7xl lg:text-8xl transform scale-x-[1.15] origin-left pb-4">
+                    <h1 className="flex flex-col text-left font-sans text-4xl font-normal leading-none sm:leading-[0.85] tracking-tighter text-black sm:text-6xl md:text-7xl lg:text-8xl transform scale-x-[1.15] origin-left pb-4">
                         <span className="flex items-baseline justify-start gap-2 sm:gap-4">
                             FLUID
                             <span className="text-lg font-light tracking-normal text-black sm:text-2xl md:text-5xl translate-y-[-0.1em]">

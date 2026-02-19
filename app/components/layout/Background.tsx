@@ -194,12 +194,10 @@ function GradientMesh({ color, speed }: GradientMeshProps) {
         }
     }, [color, uniforms]);
 
-    const lastScrollY = useRef(0);
     const totalTime = useRef(0);
-    const currentSpeed = useRef(speed);
     const isVisible = useRef(true);
 
-    // Monitor visibility/tab state to pause completely
+    // Pause when tab is hidden
     useEffect(() => {
         const handleVisibilityChange = () => {
             isVisible.current = document.visibilityState === 'visible';
@@ -208,29 +206,16 @@ function GradientMesh({ color, speed }: GradientMeshProps) {
         return () => document.removeEventListener("visibilitychange", handleVisibilityChange);
     }, []);
 
-    useFrame((state, delta) => {
+    useFrame((_, delta) => {
         if (!mesh.current || !isVisible.current) return;
 
         const material = mesh.current.material as THREE.ShaderMaterial;
 
-        // Calculate scroll velocity
-        const scrollY = window.scrollY;
-        const scrollDelta = Math.abs(scrollY - lastScrollY.current);
-        lastScrollY.current = scrollY;
-
-        // Determine target speed
-        // Base speed from prop
-        // Scroll influence removed for constant speed
-        const targetSpeed = speed;
-
-        // Interpolate speed for smooth but responsive transition
-        currentSpeed.current = THREE.MathUtils.lerp(currentSpeed.current, targetSpeed, 0.1);
-
         // Cap delta to prevent huge jumps on tab resume
         const validDelta = Math.min(delta, 0.1);
 
-        // Accumulate time
-        totalTime.current += validDelta * currentSpeed.current;
+        // Accumulate time at constant speed
+        totalTime.current += validDelta * speed;
         material.uniforms.uTime.value = totalTime.current;
 
         // Fade-in effect
