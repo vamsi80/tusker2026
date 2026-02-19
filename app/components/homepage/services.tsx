@@ -1,11 +1,10 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import WaterButton from '../ui/WaterButton';
 import { services } from '@/app/data';
+import { useEffect, useRef } from 'react';
+import WaterButton from '../ui/WaterButton';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -61,10 +60,10 @@ export default function Services() {
                 {services.map((service, index) => (
                     <div
                         key={service.slug}
-                        className={`block lg:flex lg:flex-col space-y-4 ${service.col} text-left justify-center h-full mb-12 lg:mb-0 ${index % 2 !== 0 ? 'lg:items-end' : 'lg:items-start'} ${index === 2 ? '-mx-4 lg:mx-0 pl-2 lg:pl-0' : ''}`}
+                        className={`block lg:flex lg:flex-col space-y-4 ${service.col} text-left justify-center h-full mb-6 lg:mb-0 ${index % 2 !== 0 ? 'lg:items-end' : 'lg:items-start'} ${index === 2 ? '-mx-4 lg:mx-0 pl-2 lg:pl-0' : ''}`}
                     >
                         {index === 2 && (
-                            <div className="service-item lg:hidden float-right relative w-[150px] h-[240px] sm:w-[450px] sm:h-[450px] ml-px mr-0 sm:ml-4 sm:mb-4 -mt-0 sm:-mt-24 z-10">
+                            <div className="service-item lg:hidden float-right relative w-[150px] h-[240px] sm:w-[450px] sm:h-[450px] ml-px mr-0 sm:ml-4 sm:mb-4 sm:-mt-24 z-10">
                                 <ImageSequence className="opacity-100 object-right origin-right absolute right-0 top-0 !w-[240px] max-w-none h-full sm:static sm:!w-full" />
                             </div>
                         )}

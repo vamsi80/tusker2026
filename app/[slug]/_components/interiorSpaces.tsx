@@ -38,7 +38,7 @@ export default function InteriorSpaces() {
 
     return (
         <div ref={containerRef} className="relative flex h-auto sm:min-h-screen pt-20 sm:pt-0 w-full flex-col justify-center">
-            <div ref={headerRef} className="w-full mb-8 md:mb-6 relative z-10">
+            <div ref={headerRef} className="w-full mb-4 md:mb-6 relative z-10">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5rem] font-medium leading-[0.9] tracking-tighter scale-x-110 origin-left">
                     ARCHITECTURE & <br />
                     INTERIOR SPACES
@@ -47,7 +47,7 @@ export default function InteriorSpaces() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-8 lg:gap-0">
                 <div className="lg:col-span-1 flex flex-col justify-start z-2">
-                    <div ref={textRef} className="max-w-2xl space-y-1 text-black">
+                    <div ref={textRef} className="max-w-2xl space-y-2 text-black">
                         <p className="text-base sm:text-lg lg:text-lg xl:text-lg font-normal leading-[1.1]">
                             We don&apos;t design interiors.<br />
                             We script environments.

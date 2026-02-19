@@ -113,7 +113,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <main ref={containerRef} className="relative z-10 flex min-h-screen w-full flex-col justify-between p-6 pt-24 sm:p-12 sm:pt-28">
+        <main ref={containerRef} className="relative z-10 flex h-auto sm:min-h-screen w-full flex-col justify-between p-6 pt-48 sm:p-12 sm:pt-28">
             <div className="pointer-events-none absolute inset-0 z-0 flex items-center justify-center overflow-hidden pl-0 sm:pl-[10%] md:pl-[20%]">
                 <svg viewBox="0 0 100 100" className="w-full h-full opacity-40">
                     <ellipse
@@ -165,25 +165,25 @@ export default function HeroSection() {
             </div>
 
             <div className="pointer-events-none absolute inset-0 z-10 overflow-hidden">
-                <span className="hero-floating-text absolute top-[28%] left-[20%] sm:top-[29%] sm:left-[53%] text-[10px] font-medium tracking-widest text-black sm:text-[14px]">
+                <span className="hero-floating-text absolute top-28 left-[40%] sm:top-[29%] sm:left-[53%] text-[10px] font-medium tracking-widest text-black sm:text-[14px]">
                     + EXPERIENCE
                 </span>
-                <span className="hero-floating-text absolute bottom-[32%] left-[8%] sm:bottom-[15%] sm:left-[30%] text-[10px] font-medium tracking-widest text-black sm:text-[14px]">
+                <span className="hero-floating-text absolute bottom-10 left-[8%] sm:bottom-[15%] sm:left-[30%] text-[10px] font-medium tracking-widest text-black sm:text-[14px]">
                     + DIGITAL
                 </span>
-                <span className="hero-floating-text absolute top-[30%] right-[5%] sm:top-[45%] sm:right-[12%] text-[11px] font-medium tracking-widest text-black sm:text-[14px]">
+                <span className="hero-floating-text absolute top-40 right-[5%] sm:top-[45%] sm:right-[12%] text-[11px] font-medium tracking-widest text-black sm:text-[14px]">
                     + DESIGN
                 </span>
-                <span className="hero-floating-text absolute top-[10%] right-[8%] sm:top-[18%] sm:right-[22%] text-[10px] font-medium tracking-widest text-black sm:text-[11px]">
+                <span className="hero-floating-text absolute top-12 right-[8%] sm:top-[18%] sm:right-[22%] text-[10px] font-medium tracking-widest text-black sm:text-[11px]">
                     + IMMERSIVE
                 </span>
-                <span className="hero-floating-text absolute bottom-[22%] right-[5%] sm:bottom-[25%] sm:right-[19%] text-[11px] font-medium tracking-widest text-black uppercase sm:text-[14px]">
+                <span className="hero-floating-text absolute bottom-3 right-[5%] sm:bottom-[25%] sm:right-[19%] text-[11px] font-medium tracking-widest text-black uppercase sm:text-[14px]">
                     + Creative
                 </span>
-                <span className="hero-floating-text absolute bottom-[15%] left-[50%] sm:bottom-[20%] sm:left-[50%] -translate-x-1/2 text-[9px] font-medium tracking-widest text-gray-500 uppercase sm:text-[11px] inline-flex overflow-hidden whitespace-nowrap">
+                <span className="hero-floating-text absolute bottom-15 left-[50%] sm:bottom-[20%] sm:left-[50%] -translate-x-1/2 text-[9px] font-medium tracking-widest text-gray-500 uppercase sm:text-[11px] inline-flex overflow-hidden whitespace-nowrap">
                     + Be Inspired
                 </span>
-                <span className="hero-floating-text absolute top-[18%] left-[5%] sm:top-[20%] sm:left-[4%] text-[9px] font-medium tracking-widest text-gray uppercase sm:text-[14px]">
+                <span className="hero-floating-text absolute top-20 left-[5%] sm:top-[20%] sm:left-[4%] text-[9px] font-medium tracking-widest text-gray uppercase sm:text-[14px]">
                     + Interactive
                 </span>
             </div>

@@ -158,7 +158,7 @@ export default function ExistToCreateSection() {
                         </div>
 
                         <div className="mt-auto">
-                            <p className="font-normal w-full text-black text-sm border-black mb-8 relative z-30 leading-none block lg:hidden">
+                            <p className="font-normal w-full text-black text-sm border-black mb-0 relative z-30 leading-none block lg:hidden">
                                 FLUID BY DESIGN. <br />
                                 RELENTLESS BY INTENT.
                             </p>
