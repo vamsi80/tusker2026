@@ -35,7 +35,6 @@ export default function HomeBackground() {
             <div
                 className="fixed inset-0 -z-50 w-full h-full pointer-events-none transition-opacity duration-1000 bg-white"
                 style={{
-                    background: 'radial-gradient(circle at 50% 50%, #eff6ff 0%, #dbeafe 100%)',
                     zIndex: -51
                 }}
             />
