@@ -37,7 +37,7 @@ export default function InteriorSpaces() {
     }, []);
 
     return (
-        <div ref={containerRef} className="relative flex h-auto sm:min-h-screen pt-16 sm:pt-0 w-full flex-col justify-center">
+        <div ref={containerRef} className="relative flex h-auto sm:min-h-screen pt-20 sm:pt-0 w-full flex-col justify-center">
             <div ref={headerRef} className="w-full mb-8 md:mb-6 relative z-10">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5rem] font-medium leading-[0.9] tracking-tighter scale-x-110 origin-left">
                     ARCHITECTURE & <br />

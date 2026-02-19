@@ -52,7 +52,7 @@ export default function Services() {
     return (
         <section ref={containerRef} className="relative h-auto w-full flex flex-col items-center justify-center overflow-hidden xl:px-4">
             <div className="absolute inset-0 z-1 justify-center items-center pointer-events-none hidden lg:flex">
-                <div className="center-image relative w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] lg:w-[350px] lg:h-[450px] xl:w-[500px] xl:h-[600px]">
+                <div className="center-image relative w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] lg:w-[350px] lg:h-[450px] xl:w-[500px] xl:h-[600px] scale-120 origin-center">
                     <ImageSequence />
                 </div>
             </div>
@@ -61,11 +61,11 @@ export default function Services() {
                 {services.map((service, index) => (
                     <div
                         key={service.slug}
-                        className={`block lg:flex lg:flex-col space-y-4 ${service.col} text-left justify-center h-full mb-12 lg:mb-0 ${index % 2 !== 0 ? 'lg:items-end' : 'lg:items-start'}`}
+                        className={`block lg:flex lg:flex-col space-y-4 ${service.col} text-left justify-center h-full mb-12 lg:mb-0 ${index % 2 !== 0 ? 'lg:items-end' : 'lg:items-start'} ${index === 2 ? '-mx-4 lg:mx-0 pl-2 lg:pl-0' : ''}`}
                     >
                         {index === 2 && (
-                            <div className="service-item lg:hidden float-right relative w-[240px] h-[240px] sm:w-[450px] sm:h-[450px] ml-4 mb-4 -mt-12 sm:-mt-24 z-10">
-                                <ImageSequence className="opacity-100" />
+                            <div className="service-item lg:hidden float-right relative w-[150px] h-[240px] sm:w-[450px] sm:h-[450px] ml-px mr-0 sm:ml-4 sm:mb-4 -mt-0 sm:-mt-24 z-10">
+                                <ImageSequence className="opacity-100 object-right origin-right absolute right-0 top-0 !w-[240px] max-w-none h-full sm:static sm:!w-full" />
                             </div>
                         )}
                         <div className="service-item block lg:flex lg:flex-col lg:items-start text-left">
@@ -128,7 +128,7 @@ function ImageSequence({ className = "opacity-50 lg:opacity-100" }: { className?
             ref={imgRef}
             src="/Services/1.avif"
             alt="Services Sequence"
-            className={`w-full h-full object-contain scale-120 ${className}`}
+            className={`w-full h-full object-contain scale-100 ${className}`}
         />
     );
 }

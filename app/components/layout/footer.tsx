@@ -83,7 +83,7 @@ export default function Footer() {
     }, []);
 
     return (
-        <footer className={`relative h-screen w-full flex flex-col items-center justify-end overflow-hidden ${isHomePage ? 'bg-transparent' : 'bg-white'}`}>
+        <footer className={`relative min-h-screen w-full flex flex-col items-center justify-end overflow-hidden ${isHomePage ? 'bg-transparent' : 'bg-white'}`}>
 
             {/* ---------- SVG BACKGROUND ---------- */}
             <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
@@ -143,8 +143,8 @@ export default function Footer() {
             </div>
 
             {/* ---------- CONTENT ---------- */}
-            <div className="w-full px-8 sm:px-10 lg:px-12 xl:px-24">
-                <div className="relative z-10 w-full h-[80vh] lg:h-[60vh] flex flex-col justify-center lg:justify-start items-start gap-4 sm:gap-4 pb-12 lg:pb-0">
+            <div className="w-[90%] sm:w-full self-start px-8 sm:px-10 lg:px-12 xl:px-24">
+                <div className="relative z-10 w-full h-auto min-h-[80vh] lg:h-[60vh] flex flex-col justify-center lg:justify-start items-start gap-4 sm:gap-4 pb-24 lg:pb-0">
 
                     <h1
                         ref={headerRef}
@@ -155,7 +155,7 @@ export default function Footer() {
                         ref={contactRef}
                         className="flex flex-col gap-1 sm:gap-4 text-gray-600 pl-1 sm:pl-7 transform scale-x-[1.15] origin-left"
                     >
-                        <div className="text-sm sm:text-base md:text-sm font-medium max-w-2xl leading-relaxed">
+                        <div className="text-sm sm:text-base md:text-sm font-medium max-w-xl leading-relaxed">
                             <p className="opacity-0">+#1331, 13th Cross Road, 10th Main Road, 2nd stage,</p>
                             <p className="opacity-0">+Indiranagar, Bengaluru 560038, Karnataka, India.</p>
                         </div>
