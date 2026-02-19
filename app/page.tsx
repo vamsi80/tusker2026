@@ -28,7 +28,7 @@ export default function Home() {
           <Services />
         </div>
         <TeamSection />
-        {/* <ClientLogos /> */}
+        <ClientLogos />
       </div>
     </div>
   );
