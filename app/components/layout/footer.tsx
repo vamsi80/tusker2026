@@ -165,7 +165,7 @@ export default function Footer() {
 
             {/* ---------- CONTENT ---------- */}
             <div className="w-[90%] sm:w-full self-start px-8 sm:px-10 lg:px-12 xl:px-24">
-                <div className="relative z-10 w-full h-auto lg:h-[60vh] flex flex-col justify-center lg:justify-start items-start gap-4 sm:gap-4 pt-24 sm:pt-0 pb-12 lg:pb-0">
+                <div className="relative z-10 w-full h-auto lg:h-[60vh] flex flex-col justify-center lg:justify-start items-start gap-4 sm:gap-4 pt-24 sm:pt-24 lg:pt-0 pb-12 lg:pb-0">
 
                     <h1
                         ref={headerRef}

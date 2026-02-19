@@ -30,7 +30,7 @@ export default function BrandFilms() {
     }, []);
 
     return (
-        <div className="w-full h-auto sm:min-h-screen pt-16 sm:pt-0 flex flex-col bg-white text-black overflow-visible relative justify-center">
+        <div className="w-full h-auto lg:min-h-screen pt-16 sm:pt-0 flex flex-col bg-white text-black overflow-visible relative justify-center">
             <div className="absolute top-0 bottom-0 left-0 w-screen z-0 pointer-events-none flex items-center justify-start -ml-12 sm:-ml-16 lg:-ml-24 overflow-visible">
                 <div className="relative w-full h-full scale-175 sm:scale-200 md:scale-260 lg:scale-100 origin-left">
                     <Image
@@ -45,7 +45,7 @@ export default function BrandFilms() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 relative z-10">
                 <div className="relative w-full flex justify-start lg:col-span-2 h-auto sm:h-[60vh] md:h-auto order-1 lg:order-1 max-w-[1000px]">
-                    <div className="relative w-full h-[300px] sm:h-full">
+                    <div className="relative w-full h-[200px] sm:h-[300px] lg:h-full">
                         <Image
                             src="/film.avif"
                             alt="Corporate and Brand Films - TV Head Statue"
@@ -57,7 +57,7 @@ export default function BrandFilms() {
                     </div>
                 </div>
 
-                <div ref={containerRef} className="flex flex-col space-y-2 md:space-y-4 lg:space-y-6 xl:space-y-6 justify-start lg:pl-20 lg:col-span-3 order-2 lg:order-2 xl:pt-6">
+                <div ref={containerRef} className="flex flex-col space-y-2 md:space-y-4 lg:space-y-6 xl:space-y-6 justify-start lg:pl-20 lg:col-span-3 order-2 lg:order-2 xl:pt-6 px-4 sm:px-0">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[6rem] font-medium tracking-tighter leading-[0.9] lg:leading-[0.85] text-black scale-x-110 origin-left lg:-ml-50">
                         CORPORATE & <br />
                         BRAND FILMS
@@ -75,15 +75,15 @@ export default function BrandFilms() {
                         Every frame is intentional. Every second serves the brand&apos;s larger story.
                     </p>
 
-                    <p className="text-base sm:text-lg lg:text-lg font-normal text-black">
+                    <p className="text-base sm:text-lg lg:text-lg font-normal text-black leading-none">
                         This is cinema with clarity. Storytelling with strategy.
                     </p>
 
-                    <div className="-space-y-1 text-[#666195] pt-4">
-                        <p className="text-2xl sm:text-3xl md:text-2xl lg:text-[2.6rem] tracking-tighter font-normal leading-none">
+                    <div className="space-y-0 sm:-space-y-1 text-[#666195] pt-2 sm:pt-4">
+                        <p className="text-xl sm:text-3xl md:text-2xl lg:text-[2.6rem] tracking-tighter font-normal leading-none">
                             WE TURN BRANDS INTO
                         </p>
-                        <p className="text-3xl sm:text-3xl md:text-4xl lg:text-[3.5rem] tracking-tighter font-normal leading-none">
+                        <p className="text-2xl sm:text-3xl md:text-4xl lg:text-[3.5rem] tracking-tighter font-normal leading-none">
                             MOVING STORIES
                         </p>
                     </div>

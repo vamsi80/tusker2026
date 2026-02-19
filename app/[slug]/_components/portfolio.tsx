@@ -253,7 +253,7 @@ function ProjectTextContent({ project, className }: { project: any; className?: 
             </div>
 
             {project.videoLink && (
-                <div className="pt-0">
+                <div className="pt-2 sm:pt-0">
                     <WaterButton
                         href={project.videoLink}
                         label={project.buttonLabel || 'Watch Video'}

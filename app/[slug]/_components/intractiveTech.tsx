@@ -30,7 +30,7 @@ export default function InteractiveTech() {
     }, []);
 
     return (
-        <div className="w-full h-auto sm:min-h-screen pt-16 sm:pt-0 flex flex-col bg-white text-black overflow-visible justify-center">
+        <div className="w-full h-auto lg:min-h-screen pt-16 sm:pt-0 flex flex-col bg-white text-black overflow-visible justify-center">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 items-end">
                 <div className="relative w-full flex justify-start lg:col-span-2 overflow-visible z-0 h-auto sm:h-[60vh] lg:h-auto order-1 lg:order-1">
                     <div className="absolute top-0 bottom-0 left-0 w-screen z-0 pointer-events-none flex items-center justify-start -ml-8 sm:-ml-12 lg:-ml-24 overflow-visible">
@@ -58,7 +58,7 @@ export default function InteractiveTech() {
                     </div>
                 </div>
 
-                <div ref={containerRef} className="flex flex-col space-y-2 sm:space-y-4 justify-start lg:pl-20 lg:col-span-3 z-1 order-2 lg:order-2 self-center">
+                <div ref={containerRef} className="flex flex-col space-y-2 sm:space-y-4 justify-start lg:pl-20 lg:col-span-3 z-1 order-2 lg:order-2 self-center px-4 sm:px-0">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5.5rem] font-medium tracking-tighter leading-[0.9] lg:leading-[0.85] text-black scale-x-110 origin-left lg:-ml-22">
                         IMMERSIVE & <br />
                         INTERACTIVE <br />

@@ -12,13 +12,14 @@ export default function TeamSection() {
                 </p>
             </div>
 
-            <div className="w-full relative aspect-video sm:aspect-21/9">
+            <div className="w-full">
                 <Image
                     src="/teams.avif"
                     alt="Our Team"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 100vw"
+                    width={1920}
+                    height={1080}
+                    className="w-full h-auto object-contain"
+                    sizes="100vw"
                     priority={false}
                 />
             </div>
