@@ -220,8 +220,8 @@ function GradientMesh({ color, speed }: GradientMeshProps) {
 
         // Determine target speed
         // Base speed from prop
-        // Scroll influence: scrollDelta * factor (e.g. 0.05)
-        const targetSpeed = speed + scrollDelta * 0.05;
+        // Scroll influence removed for constant speed
+        const targetSpeed = speed;
 
         // Interpolate speed for smooth but responsive transition
         currentSpeed.current = THREE.MathUtils.lerp(currentSpeed.current, targetSpeed, 0.1);

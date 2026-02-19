@@ -1,6 +1,6 @@
 export default function FixedSidebar() {
     return (
-        <div className="fixed bottom-4 left-3 sm:bottom-6 sm:left-4 md:left-5 lg:left-6 xl:left-8 z-40 flex-col items-start hidden sm:flex">
+        <div className="fixed bottom-4 left-3 sm:bottom-6 sm:left-4 md:left-5 lg:left-6 xl:left-8 z-40 flex-col items-start hidden lg:flex">
             <div className="relative block ml-[0.35rem]">
                 <span className="absolute bottom-0 left-[0.4rem] origin-bottom-left -rotate-90 whitespace-nowrap text-[9px] font-semibold tracking-[0.2em] text-black sm:text-[10px] lg:text-xs">
                     + WELCOME TO THE WORLD OF WHITE TUSKER

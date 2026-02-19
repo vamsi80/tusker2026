@@ -15,7 +15,6 @@ export default function StoryEngineSection() {
 
     useEffect(() => {
         const ctx = gsap.context(() => {
-            // Intro Animation
             gsap.from(innerContainerRef.current, {
                 scrollTrigger: {
                     trigger: innerContainerRef.current,
@@ -27,9 +26,6 @@ export default function StoryEngineSection() {
                 duration: 1.5,
                 ease: "power3.out"
             });
-
-            // Line Drawing Animations - Scroll Scrubbed
-            // Vertical Line
             if (verticalLineRef.current) {
                 gsap.from(verticalLineRef.current, {
                     scaleY: 0,
@@ -43,7 +39,6 @@ export default function StoryEngineSection() {
                 });
             }
 
-            // Horizontal Line
             if (horizontalLineRef.current) {
                 gsap.from(horizontalLineRef.current, {
                     scaleX: 0,

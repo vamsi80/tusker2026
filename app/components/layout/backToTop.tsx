@@ -8,7 +8,7 @@ export default function BackToTop() {
     };
 
     return (
-        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:bottom-6 sm:right-4 md:right-5 lg:right-6 xl:right-8 z-50">
+        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 lg:left-auto lg:translate-x-0 lg:bottom-6 lg:right-6 xl:right-8 z-50">
             <button
                 onClick={scrollToTop}
                 className="group flex h-12 items-center rounded-full bg-[#41207be1] text-white shadow-lg transition-all duration-300 ease-in-out hover:w-auto hover:pr-4 cursor-pointer"
