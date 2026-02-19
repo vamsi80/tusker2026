@@ -4,7 +4,7 @@ import HeroSection from "./components/homepage/HeroSection";
 import ClientLogos from "./components/homepage/ClientLogos";
 import TeamSection from "./components/homepage/TeamSection";
 import FourVerticals from "./components/homepage/Fourevirticals";
-import HomeBackground from "./components/homepage/HomeBackground";
+import HomeBackground from "./components/layout/HomeBackground";
 import StoryEngineSection from "./components/homepage/StoryEngineSection";
 import ExistToCreateSection from "./components/homepage/ExistToCreateSection";
 

@@ -26,9 +26,9 @@ export default function Services() {
                             start: "top 90%",
                             toggleActions: "play none none reverse"
                         },
-                        y: 100,
+                        y: 150,
                         opacity: 0,
-                        duration: 1,
+                        duration: 1.5,
                         ease: "power3.out"
                     });
                 });

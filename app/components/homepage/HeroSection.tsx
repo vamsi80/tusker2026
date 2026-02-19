@@ -194,9 +194,9 @@ export default function HeroSection() {
                 </span>
             </div>
             <div className="h-0 sm:h-auto"></div>
-            <div className="flex flex-1 flex-col items-start justify-center pl-4 sm:pl-[10%] lg:pl-[20%]">
+            <div className="flex flex-1 flex-col items-start justify-center pl-[10%] sm:pl-[10%] lg:pl-[20%]">
                 <div className="relative -translate-y-12">
-                    <h1 className="flex flex-col text-left font-sans text-4xl font-normal leading-none sm:leading-[0.85] tracking-tighter text-black sm:text-6xl md:text-7xl lg:text-8xl transform scale-x-[1.15] origin-left pb-4">
+                    <h1 className="flex flex-col text-left font-sans text-3xl font-normal leading-none sm:leading-[0.85] tracking-tighter text-black sm:text-6xl md:text-7xl lg:text-8xl transform scale-x-[1.15] origin-left pb-4">
                         <span className="flex items-baseline justify-start gap-2 sm:gap-4">
                             FLUID
                             <span className="text-lg font-light tracking-normal text-black sm:text-2xl md:text-5xl translate-y-[-0.1em]">

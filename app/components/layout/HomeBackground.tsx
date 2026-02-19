@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 
-const DynamicBackground = dynamic(() => import('../layout/Background'), {
+const DynamicBackground = dynamic(() => import('./Background'), {
     ssr: false,
     loading: () => null
 });
@@ -17,7 +17,7 @@ export default function HomeBackground() {
                 if ('requestIdleCallback' in window) {
                     requestIdleCallback(() => setShouldLoad(true));
                 } else {
-                    setTimeout(() => setShouldLoad(true), 1500);
+                    setTimeout(() => setShouldLoad(true), 500);
                 }
             };
 
@@ -35,7 +35,7 @@ export default function HomeBackground() {
             <div
                 className="fixed inset-0 -z-50 w-full h-full pointer-events-none transition-opacity duration-1000 bg-white"
                 style={{
-                    background: 'radial-gradient(circle at 50% 50%, #ffffff 0%, #f4f4f4 100%)',
+                    background: 'radial-gradient(circle at 50% 50%, #eff6ff 0%, #dbeafe 100%)',
                     zIndex: -51
                 }}
             />

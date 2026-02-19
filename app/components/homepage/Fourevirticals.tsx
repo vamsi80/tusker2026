@@ -18,7 +18,7 @@ export default function FourVerticals() {
             gsap.from(innerContainerRef.current, {
                 scrollTrigger: {
                     trigger: innerContainerRef.current,
-                    start: isMobile ? "top 90%" : "top 80%",
+                    start: isMobile ? "top 80%" : "top 80%",
                     toggleActions: "play none none reverse"
                 },
                 y: 200,
