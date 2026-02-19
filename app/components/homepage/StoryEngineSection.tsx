@@ -66,7 +66,7 @@ export default function StoryEngineSection() {
         <section ref={containerRef} className="relative flex h-auto w-full flex-col justify-center overflow-hidden bg-transparent">
             {/* ... lines 74-99 ... */}
             <div ref={innerContainerRef} className="relative z-10 mx-auto flex h-full w-full max-w-7xl flex-col">
-                <div className="w-full mb-8 md:mb-0 relative z-2">
+                <div className="w-full mb-2 sm:mb-8 md:mb-0 relative z-2">
                     <h2 className="flex flex-col items-start justify-start text-black leading-[0.85] pl-4 sm:pl-12 lg:pl-20">
                         <span className="block text-xs sm:text-sm md:text-base lg:text-xl font-normal tracking-wide text-black md:-mb-1 lg:-mb-2 uppercase ml-1">
                             We are not a service company. We are a
@@ -77,22 +77,22 @@ export default function StoryEngineSection() {
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 w-full max-w-7xl mx-auto z-3 px-4 sm:px-0 pt-0">
-                    <div className="sm:col-span-1 lg:col-span-1 relative h-[40vh] -mt-12 sm:mt-0 sm:h-[65vh] lg:-mt-12 lg:h-[80vh] w-full flex items-end justify-center lg:justify-start z-10">
+                <div className="block sm:grid sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 w-full max-w-7xl mx-auto z-3 px-4 sm:px-0 pt-0">
+                    <div className="float-left w-[40%] h-[19vh] mr-4 mb-2 sm:float-none sm:w-full sm:col-span-1 lg:col-span-1 relative sm:h-[65vh] lg:-mt-12 lg:h-[80vh] flex items-start sm:items-end justify-center lg:justify-start z-10">
                         <div className="relative w-full h-full transform">
                             <Image
                                 src="/homepage/1.avif"
                                 alt="Classical statue using a laptop"
                                 fill
-                                className="object-contain object-bottom drop-shadow-2xl grayscale-10 z-10"
+                                className="object-contain object-top sm:object-bottom drop-shadow-2xl grayscale-10 z-10"
                                 sizes="(max-width: 640px) 100vw, 50vw"
                                 priority
                             />
                         </div>
                     </div>
 
-                    <div className="sm:col-span-1 lg:col-span-1 flex flex-col justify-center items-end lg:pl-0 pt-0 lg:pt-0 relative z-0 h-full">
-                        <div className="flex flex-row items-stretch gap-3 sm:gap-4 lg:gap-8">
+                    <div className="block sm:flex sm:col-span-1 lg:col-span-1 flex-col justify-center items-end lg:pl-0 pt-0 lg:pt-0 relative z-0 h-full">
+                        <div className="block sm:flex sm:flex-row items-stretch gap-3 sm:gap-4 lg:gap-8">
                             {/* Lines Container Wrapper */}
                             <div className="w-px hidden sm:block relative">
                                 {/* Vertical Line */}
@@ -101,7 +101,7 @@ export default function StoryEngineSection() {
                                 {/* Horizontal Line */}
                                 <div ref={horizontalLineRef} className="absolute top-[20%] right-0 w-[17vw] sm:w-[15vw] xl:w-[21vw] h-[1.5px] bg-black/20 overflow-hidden origin-right" />
                             </div>
-                            <div className="w-full text-xs xl:text-base max-w-[450px] tracking-wide text-black leading-relaxed space-y-2 sm:space-y-3">
+                            <div className="w-full text-xs xl:text-base max-w-none sm:max-w-[450px] tracking-wide text-black leading-relaxed space-y-2 sm:space-y-3 text-left">
                                 <p className="leading-[1.2] xl:leading-[1.2] font-normal">
                                     We design experiences that live beyond screens and walls.
                                     Experiences people walk into, interact with, and remember.

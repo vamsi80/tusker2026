@@ -183,7 +183,7 @@ export default function HeroSection() {
                 <span className="hero-floating-text absolute bottom-15 left-[50%] sm:bottom-[20%] sm:left-[50%] -translate-x-1/2 text-[9px] font-medium tracking-widest text-gray-500 uppercase sm:text-[11px] inline-flex overflow-hidden whitespace-nowrap">
                     + Be Inspired
                 </span>
-                <span className="hero-floating-text absolute top-20 left-[5%] sm:top-[20%] sm:left-[4%] text-[9px] font-medium tracking-widest text-gray uppercase sm:text-[14px]">
+                <span className="hero-floating-text absolute top-25 left-[5%] sm:top-[20%] sm:left-[4%] text-[9px] font-medium tracking-widest text-gray uppercase sm:text-[14px]">
                     + Interactive
                 </span>
             </div>
