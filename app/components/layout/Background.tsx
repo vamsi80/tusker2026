@@ -272,10 +272,13 @@ export default function Background({
     speed = 0.05
 }: BackgroundProps) {
     const [mounted, setMounted] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        // Defer mounting slightly to prioritize main thread for hydration
-        const t = setTimeout(() => setMounted(true), 100);
+        const t = setTimeout(() => {
+            setMounted(true);
+            setIsMobile(window.innerWidth < 768);
+        }, 100);
         return () => clearTimeout(t);
     }, []);
 
@@ -284,7 +287,7 @@ export default function Background({
     return (
         <div className={className}>
             <Canvas
-                frameloop="demand" // Only render when needed (or invalidated)
+                frameloop="demand"
                 gl={{
                     alpha: true,
                     antialias: false,
@@ -292,10 +295,10 @@ export default function Background({
                     stencil: false,
                     depth: false
                 }}
-                dpr={[1, 1.5]} // Cap DPR for performance
+                dpr={[1, 1.5]}
                 style={{ width: '100%', height: '100%', filter: `blur(${blur})` }}
             >
-                <GradientMesh color={color} speed={speed} />
+                <GradientMesh color={color} speed={isMobile ? speed * 0.4 : speed} />
             </Canvas>
         </div>
     );
