@@ -26,7 +26,7 @@ export default function Services() {
                             start: "top 90%",
                             toggleActions: "play none none reverse"
                         },
-                        y: 40,          // Reduced from 150 — reveal not theatrics
+                        y: 50,          // Reduced from 150 — reveal not theatrics
                         opacity: 0,
                         duration: 0.9,
                         ease: "power2.out"
@@ -140,7 +140,7 @@ function ImageSequence({ className = "opacity-50 lg:opacity-100" }: { className?
     const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
     // Use fewer frames on mobile to reduce network requests
     const totalFrames = isMobile ? 140 : 368;
-    const targetFPS = 30; // 24fps is enough for smooth animation, saves CPU vs 33fps
+    const targetFPS = 30; // 30fps — smooth on 60 Hz, saves CPU vs higher rates
 
     const preloadedRef = useRef(new Set<number>());
 
@@ -149,9 +149,7 @@ function ImageSequence({ className = "opacity-50 lg:opacity-100" }: { className?
         let rafId: number;
         let lastTime = 0;
         let isVisible = false;
-        // Increase FPS slightly for smoother perception, though 24 is standard. 
-        // 30fps might feel smoother on 60hz screens.
-        const interval = 1000 / 30;
+        const interval = 1000 / targetFPS; // 33.33ms per frame
 
         const preloadImages = (startFrame: number, count: number) => {
             for (let i = 0; i < count; i++) {

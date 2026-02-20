@@ -11,6 +11,15 @@ export default function FourVerticals() {
     const containerRef = useRef<HTMLElement>(null);
     const innerContainerRef = useRef<HTMLDivElement>(null);
 
+    // Mobile stagger refs
+    const mobH2 = useRef<HTMLHeadingElement>(null);
+    const mobP1 = useRef<HTMLParagraphElement>(null);
+    const mobP2 = useRef<HTMLParagraphElement>(null);
+    const mobP3 = useRef<HTMLParagraphElement>(null);
+    const mobP4 = useRef<HTMLParagraphElement>(null);
+    const mobP5 = useRef<HTMLParagraphElement>(null);
+    const mobImg = useRef<HTMLDivElement>(null); // mobile image — fades from bottom
+
     useEffect(() => {
         const mm = gsap.matchMedia();
 
@@ -41,6 +50,49 @@ export default function FourVerticals() {
                 });
             }, containerRef);
             return () => ctx.revert();
+        });
+
+        // ── Mobile only: text from left, image from bottom ──────────
+        mm.add("(max-width: 767px)", () => {
+            // Text blocks stagger from x:-50
+            const textBlocks = [
+                mobH2.current,
+                mobP1.current,
+                mobP2.current,
+                mobP3.current,
+                mobP4.current,
+                mobP5.current,
+            ].filter(Boolean);
+
+            textBlocks.forEach((el, i) => {
+                gsap.from(el, {
+                    scrollTrigger: {
+                        trigger: el,
+                        start: "top 92%",
+                        toggleActions: "play none none reverse",
+                    },
+                    x: -50,
+                    opacity: 0,
+                    duration: 0.65,
+                    delay: i * 0.07,
+                    ease: "power2.out",
+                });
+            });
+
+            // Mobile image fades up from bottom
+            if (mobImg.current) {
+                gsap.from(mobImg.current, {
+                    scrollTrigger: {
+                        trigger: mobImg.current,
+                        start: "top 90%",
+                        toggleActions: "play none none reverse",
+                    },
+                    y: 40,
+                    opacity: 0,
+                    duration: 1,
+                    ease: "power2.out",
+                });
+            }
         });
 
         return () => mm.revert();
@@ -77,7 +129,7 @@ export default function FourVerticals() {
                         </div>
                     </div>
                     <div className="flex flex-col justify-center space-y-0 sm:space-y-3 lg:space-y-4 xl:space-y-5 lg:pl-12 order-1 lg:order-2">
-                        <h2 className="flex flex-col text-left font-sans text-3xl font-normal tracking-tighter text-black w-[90%] sm:w-auto sm:text-5xl md:text-6xl lg:text-6xl xl:text-[4.5rem] transform scale-x-[1.15] origin-left pb-0 sm:pb-3 lg:pb-4 leading-[0.85]">
+                        <h2 ref={mobH2} className="flex flex-col text-left font-sans text-3xl font-normal tracking-tighter text-black w-[90%] sm:w-auto sm:text-5xl md:text-6xl lg:text-6xl xl:text-[4.5rem] transform scale-x-[1.15] origin-left pb-0 sm:pb-3 lg:pb-4 leading-[0.85]">
                             <span className="block sm:hidden">FOUR VERTICALS.</span>
                             <span className="block sm:hidden">ONE UNIFIED STORY.</span>
                             <span className="hidden sm:block">FOUR</span>
@@ -87,7 +139,7 @@ export default function FourVerticals() {
                         </h2>
 
                         {/* Mobile Image Container */}
-                        <div className="block lg:hidden relative w-full h-[45vh] z-2 -mt-2">
+                        <div ref={mobImg} className="block lg:hidden relative w-full h-[45vh] z-2 -mt-2">
                             <div className="relative h-full w-full flex justify-center">
                                 <div className="relative h-full w-auto aspect-580/1000">
                                     <Image
@@ -113,24 +165,24 @@ export default function FourVerticals() {
                             </div>
                         </div>
 
-                        <p className="text-xs xl:text-base font-normal  max-w-2xl leading-[1.1]">
+                        <p ref={mobP1} className="text-xs xl:text-base font-normal  max-w-2xl leading-[1.1]">
                             At The White Tusker, we don't operate in silos. We build experiences that move seamlessly from space to screen, from technology to emotion, from brand to belief.
                         </p>
                         <div className="space-y-2 xl:space-y-0">
-                            <p className="text-xs xl:text-base font-normal  max-w-2xl leading-[1.1]">
+                            <p ref={mobP2} className="text-xs xl:text-base font-normal  max-w-2xl leading-[1.1]">
                                 Our four verticals are not services. They are interlocking forces - each designed to strengthen the other, each rooted in one philosophy:
                             </p>
 
-                            <p className="text-sm md:text-xl xl:text-3xl text-black uppercase leading-none">
+                            <p ref={mobP3} className="text-sm md:text-xl xl:text-3xl text-black uppercase leading-none">
                                 EVERY BRAND HAS A STORY.<br />
                                 OUR JOB IS TO MAKE PEOPLE<br />
                                 STEP INTO IT.
                             </p>
                         </div>
-                        <p className="font-normal text-xs xl:text-base max-w-2xl leading-[1.1]">
+                        <p ref={mobP4} className="font-normal text-xs xl:text-base max-w-2xl leading-[1.1]">
                             From physical environments to moving images, from intelligent technology to brand identity, we design ecosystems where architecture speaks, films persuade, technology engages, and brands resonate.
                         </p>
-                        <p className="font-medium text-xs xl:text-base max-w-2xl leading-[1.1]">
+                        <p ref={mobP5} className="font-medium text-xs xl:text-base max-w-2xl leading-[1.1]">
                             Together, these four verticals allow us to deliver end-to-end storytelling, from concept to execution, from blueprint to emotion.
                         </p>
                     </div>

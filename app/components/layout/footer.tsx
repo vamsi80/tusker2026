@@ -169,7 +169,7 @@ export default function Footer() {
 
                     <h1
                         ref={headerRef}
-                        className="text-4xl sm:text-5xl md:text-8xl lg:text-6xl xl:text-8xl font-medium tracking-tighter text-black leading-[0.85] transform scale-x-110 origin-left w-full text-left"
+                        className="text-4xl sm:text-5xl md:text-8xl lg:text-6xl xl:text-8xl font-medium tracking-tighter text-black leading-[0.85] w-full text-left"
                     >
                         <span ref={line1Ref} className="block sm:inline"></span>
                         <span ref={line2Ref} className="block sm:inline"></span>

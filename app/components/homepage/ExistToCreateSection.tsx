@@ -14,74 +14,122 @@ export default function ExistToCreateSection() {
     const horizontalLineRef = useRef<HTMLDivElement>(null);
     const topHorizontalLineRef = useRef<HTMLDivElement>(null);
 
+    // Mobile stagger refs — one per text block
+    const mob1 = useRef<HTMLParagraphElement>(null);
+    const mob2 = useRef<HTMLParagraphElement>(null);
+    const mob3 = useRef<HTMLParagraphElement>(null);
+    const mob4 = useRef<HTMLParagraphElement>(null);
+    const mob5 = useRef<HTMLParagraphElement>(null);
+    const mob6 = useRef<HTMLParagraphElement>(null);
+    const mob7 = useRef<HTMLParagraphElement>(null);
+    const mob8 = useRef<HTMLParagraphElement>(null);
+    const mob9 = useRef<HTMLParagraphElement>(null);
+    const mobImg = useRef<HTMLDivElement>(null); // image animates from right
+
     useEffect(() => {
-        const ctx = gsap.context(() => {
-            const isMobile = window.innerWidth < 768;
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: innerContainerRef.current,
-                    start: isMobile ? "top 80%" : "top 70%",
-                    toggleActions: "play none none reverse"
+        const mm = gsap.matchMedia();
+
+        // ── Desktop only: container slide-in + line animations ───────
+        mm.add("(min-width: 768px)", () => {
+            const ctx = gsap.context(() => {
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: innerContainerRef.current,
+                        start: "top 70%",
+                        toggleActions: "play none none reverse"
+                    }
+                });
+
+                tl.from(innerContainerRef.current, {
+                    x: 200,
+                    opacity: 0,
+                    duration: 1.5,
+                    ease: "power3.out"
+                });
+
+                if (verticalLineRef.current) {
+                    gsap.from(verticalLineRef.current, {
+                        scaleY: 0,
+                        ease: "none",
+                        scrollTrigger: {
+                            trigger: innerContainerRef.current,
+                            start: "top 50%",
+                            end: "center center",
+                            scrub: 1.5
+                        }
+                    });
                 }
+
+                if (horizontalLineRef.current) {
+                    gsap.from(horizontalLineRef.current, {
+                        scaleX: 0,
+                        ease: "none",
+                        scrollTrigger: {
+                            trigger: innerContainerRef.current,
+                            start: "top 20%",
+                            end: "bottom 60%",
+                            scrub: 1.5
+                        }
+                    });
+                }
+
+                if (topHorizontalLineRef.current) {
+                    gsap.from(topHorizontalLineRef.current, {
+                        scaleX: 0,
+                        ease: "none",
+                        scrollTrigger: {
+                            trigger: innerContainerRef.current,
+                            start: "top 0%",
+                            end: "bottom 90%",
+                            scrub: 1.5
+                        }
+                    });
+                }
+            }, containerRef);
+
+            return () => ctx.revert();
+        });
+
+        // ── Mobile only: stagger each block from x:-50 → 0 ──────────
+        mm.add("(max-width: 767px)", () => {
+            const blocks = [
+                mob1.current, mob2.current, mob3.current,
+                mob4.current, mob5.current, mob6.current,
+                mob7.current, mob8.current, mob9.current,
+            ].filter(Boolean);
+
+            blocks.forEach((el, i) => {
+                gsap.from(el, {
+                    scrollTrigger: {
+                        trigger: el,
+                        start: "top 92%",
+                        toggleActions: "play none none reverse",
+                    },
+                    x: -50,
+                    opacity: 0,
+                    duration: 0.65,
+                    delay: i * 0.06,
+                    ease: "power2.out",
+                });
             });
 
-            // Container Slide-in
-            tl.from(innerContainerRef.current, {
-                x: isMobile ? 100 : 200, // Match StoryEngineSection's direction on mobile/desktop as needed. 
-                // StoryEngine uses x: -200. Let's align or mirror.
-                // User asked to "adjust according to mobile version @StoryEngineSection".
-                // StoryEngine has x: -200.
-                // ExistToCreate had x: 200.
-                // I will set mobile to -100 to be similar but maybe less drastic, or just match -200.
-                // Let's us x: -100 for mobile to replicate the slide-in from left feel if that is what StoryEngine does (it does x:-200).
-                opacity: 0,
-                duration: 1.5,
-                ease: "power3.out"
-            });
-
-            // Draw lines based on scroll
-            if (verticalLineRef.current) {
-                gsap.from(verticalLineRef.current, {
-                    scaleY: 0,
-                    ease: "none",
+            // Image slides in from the right
+            if (mobImg.current) {
+                gsap.from(mobImg.current, {
                     scrollTrigger: {
-                        trigger: innerContainerRef.current,
-                        start: "top 50%",
-                        end: "center center",
-                        scrub: 1.5
-                    }
+                        trigger: mobImg.current,
+                        start: "top 95%",
+                        toggleActions: "play none none reverse",
+                    },
+                    x: 50,
+                    opacity: 0,
+                    duration: 0.8,
+                    ease: "power2.out",
                 });
             }
+        });
 
-            if (horizontalLineRef.current) {
-                gsap.from(horizontalLineRef.current, {
-                    scaleX: 0,
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: innerContainerRef.current,
-                        start: "top 20%", // Start earlier
-                        end: "bottom 60%", // End later
-                        scrub: 1.5
-                    }
-                });
-            }
-
-            if (topHorizontalLineRef.current) {
-                gsap.from(topHorizontalLineRef.current, {
-                    scaleX: 0,
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: innerContainerRef.current,
-                        start: "top 0%",
-                        end: "bottom 90%",
-                        scrub: 1.5
-                    }
-                });
-            }
-
-        }, containerRef);
-
-        return () => ctx.revert();
+        return () => mm.revert();
     }, []);
 
     return (
@@ -101,31 +149,31 @@ export default function ExistToCreateSection() {
                                 <div ref={verticalLineRef} className="absolute top-0 right-0 w-px h-[70vh] md:h-[50vh] lg:h-full bg-black/20 origin-top hidden md:block"></div>
                                 <div className="absolute top-0 left-0 w-full h-px bg-black/20 hidden"></div>
                                 <div className="relative text-xs xl:xl:text-base z-30 space-y-0.5 sm:space-y-3 md:space-y-4.5 pr-2 leading-[1.1] text-left">
-                                    <p>
+                                    <p ref={mob1}>
                                         We don't follow briefs.<br className="hidden sm:block" /> We interrogate them.
                                     </p>
-                                    <p>
+                                    <p ref={mob2}>
                                         We don't design outputs.<br className="hidden sm:block" /> We engineer experiences.
                                     </p>
-                                    <p>
+                                    <p ref={mob3}>
                                         We believe space is a language.<br className="hidden sm:block" /> Technology is a tool.<br className="hidden sm:block" />
                                         Story is the weapon.
                                     </p>
-                                    <p>
+                                    <p ref={mob4}>
                                         We reject silos. <br className="hidden sm:block" />
                                         We dissolve categories.<br className="hidden sm:block" />
                                         Architecture, film, digital, brand
                                         to us, they are one fluid system.
                                     </p>
-                                    <p>
+                                    <p ref={mob5}>
                                         We don't decorate environments.<br className="hidden sm:block" />
                                         We activate them.
                                     </p>
-                                    <p>
+                                    <p ref={mob6}>
                                         We don't chase trends.<br className="hidden sm:block" />
                                         We build work that outlives them.
                                     </p>
-                                    <p>
+                                    <p ref={mob7}>
                                         Every project must move people
                                         emotionally, intellectually, instinctively.<br className="hidden sm:block" />
                                         If it doesn't, it doesn't leave our studio.
@@ -152,7 +200,7 @@ export default function ExistToCreateSection() {
 
                             {/* Mobile "What Others..." Text (Flows after paragraphs) */}
                             <div className="block md:hidden relative z-20 pb-2 pt-1 clear-right">
-                                <p className="w-full text-black text-sm leading-none uppercase mt-3">
+                                <p ref={mob8} className="w-full text-black text-sm leading-none uppercase mt-3">
                                     WHAT OTHERS <br />
                                     HESITATE TO ATTEMPT. <br />
                                     TO SEE WHAT <br />
@@ -160,11 +208,11 @@ export default function ExistToCreateSection() {
                                     TO DELIVER WHAT <br />
                                     OTHERS CAN'T.
                                 </p>
-                                <p className="font-normal w-full text-black text-sm border-black mb-0 relative z-30 leading-none block md:hidden mt-3">
+                                <p ref={mob9} className="font-normal w-full text-black text-sm border-black mb-0 relative z-30 leading-none block md:hidden mt-3">
                                     FLUID BY DESIGN. <br />
                                     RELENTLESS BY INTENT.
                                 </p>
-                                <div className="absolute right-0 bottom-0 w-[50%] h-[20vh] -z-10">
+                                <div ref={mobImg} className="absolute right-0 bottom-0 w-[50%] h-[20vh] -z-10">
                                     <Image
                                         src="/homepage/2.avif"
                                         alt="Classical statue at a creative console"

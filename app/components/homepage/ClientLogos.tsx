@@ -28,7 +28,7 @@ const LOGOS = [
 export default function ClientLogos() {
     return (
         <section className="relative w-full overflow-hidden space-y-6 md:space-y-8 lg:space-y-10 xl:space-y-12">
-            <div className="flex flex-col items-center justify-center space-y-2 px-0 text-center">
+            <div className="flex flex-col items-center justify-center space-y-1 px-0 text-center">
                 <h2 className="font-sans text-xl font-normal tracking-tight text-black sm:text-3xl lg:text-4xl">
                     OUR VALUABLE PARTNERS
                 </h2>

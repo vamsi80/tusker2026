@@ -13,6 +13,13 @@ export default function StoryEngineSection() {
     const horizontalLineRef = useRef<HTMLDivElement>(null);
     const verticalLineRef = useRef<HTMLDivElement>(null);
 
+    // Mobile stagger refs — one per text block
+    const mobileP1Ref = useRef<HTMLParagraphElement>(null);
+    const mobileP2Ref = useRef<HTMLParagraphElement>(null);
+    const mobileD1Ref = useRef<HTMLDivElement>(null);
+    const mobileP3Ref = useRef<HTMLParagraphElement>(null);
+    const mobileD2Ref = useRef<HTMLDivElement>(null);
+
     useEffect(() => {
         const mm = gsap.matchMedia();
 
@@ -60,6 +67,32 @@ export default function StoryEngineSection() {
             return () => ctx.revert();
         });
 
+        // ── Mobile: staggered per-block reveal ──────────────────────
+        mm.add("(max-width: 767px)", () => {
+            const blocks = [
+                mobileP1Ref.current,
+                mobileP2Ref.current,
+                mobileD1Ref.current,
+                mobileP3Ref.current,
+                mobileD2Ref.current,
+            ].filter(Boolean);
+
+            blocks.forEach((el, i) => {
+                gsap.from(el, {
+                    scrollTrigger: {
+                        trigger: el,
+                        start: "top 92%",
+                        toggleActions: "play none none reverse",
+                    },
+                    x: 50,
+                    opacity: 0,
+                    duration: 0.65,
+                    delay: i * 0.06,
+                    ease: "power2.out",
+                });
+            });
+        });
+
         return () => mm.revert();
     }, []);
 
@@ -103,30 +136,30 @@ export default function StoryEngineSection() {
                                 <div ref={horizontalLineRef} className="absolute top-[20%] right-0 w-[17vw] sm:w-[15vw] xl:w-[21vw] h-[1.5px] bg-black/20 overflow-hidden origin-right" />
                             </div>
                             <div className="w-full text-xs xl:text-base max-w-none sm:max-w-[450px] tracking-wide text-black leading-relaxed space-y-2 sm:space-y-3 text-left">
-                                <p className="leading-[1.2] xl:leading-[1.2] font-normal">
+                                <p ref={mobileP1Ref} className="leading-[1.2] xl:leading-[1.2] font-normal">
                                     We design experiences that live beyond screens and walls.
                                     Experiences people walk into, interact with, and remember.
                                 </p>
 
-                                <p className="relative leading-[1.2] xl:leading-[1.2] font-normal">
+                                <p ref={mobileP2Ref} className="relative leading-[1.2] xl:leading-[1.2] font-normal">
                                     Operating seamlessly across architecture, film, technology,
                                     and branding, we connect the physical and the digital into
                                     one fluid narrative.
                                 </p>
 
-                                <div className="text-black text-sm xl:text-xl tracking-wide leading-none">
+                                <div ref={mobileD1Ref} className="text-black text-sm xl:text-xl tracking-wide leading-none">
                                     EVERY SPACE HAS INTENT.<br />
                                     EVERY FILM HAS PURPOSE.<br />
                                     EVERY TECHNOLOGY HAS A STORY TO TELL
                                 </div>
 
-                                <p className="leading-[1.2] xl:leading-[1.2] font-normal">
+                                <p ref={mobileP3Ref} className="leading-[1.2] xl:leading-[1.2] font-normal">
                                     We don't believe in isolated deliverables.
                                     We believe in systems that breathe, adapt, and evolve.
                                     From carpet to content, from concept to completion,
                                 </p>
 
-                                <div className="space-y-0.5 text-black text-sm xl:text-xl tracking-wide leading-none">
+                                <div ref={mobileD2Ref} className="space-y-0.5 text-black text-sm xl:text-xl tracking-wide leading-none">
                                     WE BUILD WORLDS<br />
                                     THAT MOVE PEOPLE EMOTIONALLY,<br />
                                     INTELLECTUALLY, AND EXPERIENTIALLY.
