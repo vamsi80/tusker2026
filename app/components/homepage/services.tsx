@@ -26,10 +26,10 @@ export default function Services() {
                             start: "top 90%",
                             toggleActions: "play none none reverse"
                         },
-                        y: 150,
+                        y: 40,          // Reduced from 150 — reveal not theatrics
                         opacity: 0,
-                        duration: 1.5,
-                        ease: "power3.out"
+                        duration: 0.9,
+                        ease: "power2.out"
                     });
                 });
 
@@ -40,10 +40,10 @@ export default function Services() {
                         start: "top 80%",
                         toggleActions: "play none none reverse"
                     },
-                    y: 100,
+                    y: 30,
                     opacity: 0,
-                    duration: 1.5,
-                    ease: "power3.out"
+                    duration: 0.8,
+                    ease: "power2.out"
                 });
             }, containerRef);
 
@@ -56,17 +56,16 @@ export default function Services() {
 
                 // Animate service items on desktop
                 items.forEach((item: any, i: number) => {
-                    const isBottom = i >= 2;
                     gsap.from(item, {
                         scrollTrigger: {
                             trigger: item,
                             start: "top 80%",
                             toggleActions: "play none none reverse"
                         },
-                        y: 150,
+                        y: 40,          // Reduced from 150px throw
                         opacity: 0,
-                        duration: isBottom ? 1.5 : 1.5,
-                        ease: "power3.out"
+                        duration: 0.9,
+                        ease: "power2.out"
                     });
                 });
 
@@ -77,10 +76,10 @@ export default function Services() {
                         start: "top 65%",
                         toggleActions: "play none none reverse"
                     },
-                    y: 100,
+                    y: 30,
                     opacity: 0,
-                    duration: 1.5,
-                    ease: "power3.out"
+                    duration: 1.0,
+                    ease: "power2.out"
                 });
             }, containerRef);
 
@@ -141,20 +140,46 @@ function ImageSequence({ className = "opacity-50 lg:opacity-100" }: { className?
     const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
     // Use fewer frames on mobile to reduce network requests
     const totalFrames = isMobile ? 140 : 368;
-    const targetFPS = 24; // 24fps is enough for smooth animation, saves CPU vs 33fps
+    const targetFPS = 30; // 24fps is enough for smooth animation, saves CPU vs 33fps
+
+    const preloadedRef = useRef(new Set<number>());
 
     useEffect(() => {
         let frame = 1;
         let rafId: number;
         let lastTime = 0;
         let isVisible = false;
-        const interval = 1000 / targetFPS;
+        // Increase FPS slightly for smoother perception, though 24 is standard. 
+        // 30fps might feel smoother on 60hz screens.
+        const interval = 1000 / 30;
+
+        const preloadImages = (startFrame: number, count: number) => {
+            for (let i = 0; i < count; i++) {
+                let f = startFrame + i;
+                if (f > totalFrames) f -= totalFrames;
+                if (f < 1) f = 1; // safety
+
+                if (!preloadedRef.current.has(f)) {
+                    const img = new window.Image();
+                    img.src = `/Services/${f}.avif`;
+                    preloadedRef.current.add(f);
+                }
+            }
+        };
+
+        // Initial preload
+        preloadImages(1, 10);
 
         const tick = (now: number) => {
             rafId = requestAnimationFrame(tick);
             if (!isVisible) return;
 
+            // Preload upcoming frames continuously
+            preloadImages(frame + 1, 3);
+
             if (now - lastTime < interval) return;
+            // Adjust frame based on elapsed time to maintain speed if we lag? 
+            // For simple image sequence, fixed interval is usually safer for sync.
             lastTime = now;
 
             frame = frame >= totalFrames ? 1 : frame + 1;
@@ -163,9 +188,12 @@ function ImageSequence({ className = "opacity-50 lg:opacity-100" }: { className?
             }
         };
 
-        // Only animate when visible in viewport
         const observer = new IntersectionObserver(
-            (entries) => { isVisible = entries[0].isIntersecting; },
+            (entries) => {
+                isVisible = entries[0].isIntersecting;
+                // Buffer more when visible
+                if (isVisible) preloadImages(frame, 10);
+            },
             { threshold: 0.1 }
         );
         if (imgRef.current) observer.observe(imgRef.current);

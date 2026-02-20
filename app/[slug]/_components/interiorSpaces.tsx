@@ -41,10 +41,18 @@ export default function InteriorSpaces() {
             <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-0 lg:gap-0">
                 <div className="lg:col-span-1 flex flex-col justify-start z-2 order-2 lg:order-1 w-full relative px-4 sm:px-0 gap-4 sm:gap-0">
                     <div ref={headerRef} className="w-full mb-0 -mt-14 lg:mt-0 md:mb-6 relative z-10">
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5rem] font-medium leading-[0.9] tracking-tighter scale-x-110 origin-left">
+                        {/* 
+                          sr-only: Provides keyword-rich semantic heading to search engines
+                          without altering the visual design.
+                          The visual h1 below uses aria-hidden to prevent duplicate heading announcements.
+                        */}
+                        <h1 className="sr-only">
+                            Architecture & Interior Design Agency in Bangalore — Experience Centers, Corporate Interiors & Brand Environments
+                        </h1>
+                        <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5rem] font-medium leading-[0.9] tracking-tighter scale-x-110 origin-left" aria-hidden="true">
                             ARCHITECTURE & <br />
                             INTERIOR SPACES
-                        </h1>
+                        </p>
                     </div>
                     <div ref={textRef} className="max-w-2xl space-y-0 text-black">
                         <p className="text-base sm:text-lg lg:text-lg xl:text-lg font-normal leading-[1.1]">

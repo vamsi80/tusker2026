@@ -12,36 +12,38 @@ export default function FourVerticals() {
     const innerContainerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        const ctx = gsap.context(() => {
-            const isMobile = window.innerWidth < 768;
+        const mm = gsap.matchMedia();
 
-            gsap.from(innerContainerRef.current, {
-                scrollTrigger: {
-                    trigger: innerContainerRef.current,
-                    start: isMobile ? "top 80%" : "top 80%",
-                    toggleActions: "play none none reverse"
-                },
-                y: 200,
-                opacity: 0,
-                duration: 1.5,
-                ease: "power3.out"
-            });
+        mm.add("(min-width: 768px)", () => {
+            const ctx = gsap.context(() => {
+                gsap.from(innerContainerRef.current, {
+                    scrollTrigger: {
+                        trigger: innerContainerRef.current,
+                        start: "top 70%",
+                        toggleActions: "play none none reverse"
+                    },
+                    y: 200,
+                    opacity: 0,
+                    duration: 1.5,
+                    ease: "power3.out"
+                });
 
-            gsap.from('.vertical-icon', {
-                scrollTrigger: {
-                    trigger: innerContainerRef.current,
-                    start: isMobile ? "top 85%" : "top 70%",
-                    toggleActions: "play none none reverse"
-                },
-                y: isMobile ? 350 : 250,
-                duration: 0.75,
-                stagger: 0.1,
-                ease: "power3.out"
-            });
+                gsap.from('.vertical-icon', {
+                    scrollTrigger: {
+                        trigger: innerContainerRef.current,
+                        start: "top 70%",
+                        toggleActions: "play none none reverse"
+                    },
+                    y: 250,
+                    duration: 0.75,
+                    stagger: 0.1,
+                    ease: "power3.out"
+                });
+            }, containerRef);
+            return () => ctx.revert();
+        });
 
-        }, containerRef);
-
-        return () => ctx.revert();
+        return () => mm.revert();
     }, []);
 
     return (

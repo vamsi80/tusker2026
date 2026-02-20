@@ -11,13 +11,13 @@ export default function SmoothScroll() {
         gsap.registerPlugin(ScrollTrigger);
 
         const lenis = new Lenis({
-            duration: 1.5,
+            duration: 0.9,  // Reduced from 1.5 — users feel in control, less sluggish
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
             orientation: "vertical",
             gestureOrientation: "vertical",
             smoothWheel: true,
-            wheelMultiplier: 0.8,
-            touchMultiplier: 2,
+            wheelMultiplier: 1.0,   // Slightly faster wheel response
+            touchMultiplier: 1.5,   // More natural touch scroll
         });
         lenisRef.current = lenis;
 

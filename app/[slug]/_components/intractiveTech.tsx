@@ -59,11 +59,15 @@ export default function InteractiveTech() {
                 </div>
 
                 <div ref={containerRef} className="flex flex-col space-y-2 sm:space-y-4 justify-start lg:pl-20 lg:col-span-3 z-1 order-2 lg:order-2 self-center px-4 sm:px-0">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5.5rem] font-medium tracking-tighter leading-[0.9] lg:leading-[0.85] text-black scale-x-110 origin-left lg:-ml-22">
+                    {/* sr-only H1: keyword-rich heading for search engines */}
+                    <h1 className="sr-only">
+                        Immersive & Interactive Technology Company in India — AR, VR, Digital Twins & Interactive Installations
+                    </h1>
+                    <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5.5rem] font-medium tracking-tighter leading-[0.9] lg:leading-[0.85] text-black scale-x-110 origin-left lg:-ml-22" aria-hidden="true">
                         IMMERSIVE & <br />
                         INTERACTIVE <br />
                         TECHNOLOGY
-                    </h2>
+                    </p>
 
                     <p className="text-base sm:text-lg lg:text-lg font-normal text-black leading-[1.2]">
                         Technology is not our product. But experience is.

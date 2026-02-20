@@ -180,7 +180,7 @@ export default function ExistToCreateSection() {
 
                     <div className="col-span-1 relative hidden md:flex flex-col justify-between h-full">
                         <div className="mt-auto">
-                            <div className="relative w-full h-[30vh] sm:h-[55vh] transform scale-125 origin-bottom-right sm:z-10">
+                            <div className="relative w-full h-auto aspect-square lg:h-[25vh] xl:h-[55vh] xl:aspect-auto transform scale-125 origin-bottom-right sm:z-10">
                                 <Image
                                     src="/homepage/2.avif"
                                     alt="Classical statue at a creative console"

@@ -79,7 +79,7 @@ export default function StoryEngineSection() {
                 </div>
 
                 <div className="block sm:grid sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 w-full max-w-7xl mx-auto z-3 px-4 sm:px-0 pt-0">
-                    <div className="float-left w-[40%] h-[19vh] mr-4 mb-2 sm:float-none sm:w-full sm:col-span-1 lg:col-span-1 relative sm:h-[50vh] sm:-mt-16 lg:-mt-12 lg:h-[80vh] flex items-start sm:items-end justify-center lg:justify-start z-10">
+                    <div className="float-left w-[40%] h-auto aspect-3/4 mr-4 mb-2 sm:float-none sm:w-full sm:col-span-1 lg:col-span-1 relative sm:h-auto sm:mt-0 xl:-mt-12 xl:h-[80vh] xl:aspect-auto flex items-start sm:items-end justify-center lg:justify-start z-10">
                         <div className="relative w-full h-full transform">
                             <Image
                                 src="/homepage/1.avif"

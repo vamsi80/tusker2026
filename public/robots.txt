@@ -1,0 +1,12 @@
+# The White Tusker — robots.txt
+# https://www.thewhitetusker.com
+
+User-agent: *
+Allow: /
+
+# Block Next.js internals
+Disallow: /_next/
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://www.thewhitetusker.com/sitemap.xml

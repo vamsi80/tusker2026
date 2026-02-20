@@ -45,9 +45,13 @@ export default function BrandSolution() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 sm:gap-8 relative z-10">
                 <div ref={containerRef} className="flex flex-col space-y-2 sm:space-y-4 justify-start order-2 md:order-1 lg:col-span-2 mt-8 md:mt-0 px-4 sm:px-0">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[6rem] font-medium tracking-tighter leading-[0.9] lg:leading-[0.85] text-black scale-x-110 origin-left">
+                    {/* sr-only H1: keyword-rich heading for search engines */}
+                    <h1 className="sr-only">
+                        Brand Identity & Spatial Branding Agency in Bangalore — Logo Design, Brand Books & Facility Branding
+                    </h1>
+                    <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[6rem] font-medium tracking-tighter leading-[0.9] lg:leading-[0.85] text-black scale-x-110 origin-left" aria-hidden="true">
                         BRAND SOLUTIONS
-                    </h2>
+                    </p>
 
                     <div className="space-y-4">
                         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-normal text-black leading-none">
