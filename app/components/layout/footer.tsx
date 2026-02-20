@@ -23,84 +23,128 @@ export default function Footer() {
     const containerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        const ctx = gsap.context(() => {
+        const mm = gsap.matchMedia();
 
-            /* ---------- TEXT ANIMATION ---------- */
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: headerRef.current,
-                    start: "top 85%",
-                    toggleActions: "play none none reverse"
-                }
-            });
-
-            const mm = gsap.matchMedia();
-
-            mm.add("(max-width: 767px)", () => {
-                // Mobile: both lines start simultaneously
-                tl.to(line1Ref.current, {
-                    text: "THANK YOU.",
-                    duration: 1,
-                    ease: "none",
+        /* ── DESKTOP: typewriter headline + contact fade ── */
+        mm.add("(min-width: 768px)", () => {
+            const ctx = gsap.context(() => {
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: headerRef.current,
+                        start: "top bottom",   // fires as soon as footer enters viewport
+                        toggleActions: "play none none reverse",
+                    }
                 });
-                tl.to(line2Ref.current, {
-                    text: "LET`s TALK.....",
-                    duration: 1.2,
-                    ease: "none",
-                }, "<"); // '<' = start at same time as previous tween's start
-            });
 
-            mm.add("(min-width: 768px)", () => {
-                // Desktop: one line
                 tl.to(line1Ref.current, {
                     text: "THANK YOU. LET`s TALK.....",
                     duration: 2,
                     ease: "none",
                 });
+
+                const lines = contactRef.current?.querySelectorAll('p');
+                if (lines) {
+                    tl.fromTo(
+                        lines,
+                        { opacity: 0, y: 10 },
+                        { opacity: 1, y: 0, duration: 0.5, stagger: 0.05, ease: "power2.out" },
+                        "-=1.8"
+                    );
+                }
+
+                /* SVG orbit animations */
+                const animateOrbit = (el: SVGElement | null, reverse = false, duration = 6) => {
+                    if (!el) return;
+                    const length = (el as SVGGeometryElement).getTotalLength();
+                    const val = length * 0.03;
+                    gsap.set(el, {
+                        strokeDasharray: `${val} ${length - val}`,
+                        strokeDashoffset: 0,
+                    });
+                    gsap.to(el, {
+                        strokeDashoffset: reverse ? length : -length,
+                        duration,
+                        ease: "none",
+                        repeat: -1,
+                        scrollTrigger: {
+                            trigger: containerRef.current,
+                            start: "top bottom",
+                            toggleActions: "play none none none",
+                        }
+                    });
+                };
+
+                animateOrbit(orbit1Ref.current, false, 11);
+                animateOrbit(orbit2Ref.current, true, 7);
             });
 
-            const lines = contactRef.current?.querySelectorAll('p');
-            if (lines) {
-                tl.fromTo(
-                    lines,
-                    { opacity: 0, y: 10 },
-                    { opacity: 1, y: 0, duration: 0.5, stagger: 0.05, ease: "power2.out" },
-                    "-=1.8"
-                );
-            }
-
-            /* ---------- SVG ORBIT HIGHLIGHT ANIMATION ---------- */
-
-            const animateOrbit = (el: SVGElement | null, reverse = false, duration = 6) => {
-                if (!el) return;
-
-                const length = (el as SVGGeometryElement).getTotalLength();
-                const val = length * 0.03;
-
-                gsap.set(el, {
-                    strokeDasharray: `${val} ${length - val}`,
-                    strokeDashoffset: 0,
-                });
-
-                gsap.to(el, {
-                    strokeDashoffset: reverse ? length : -length,
-                    duration: duration,
-                    ease: "none",
-                    repeat: -1,
-                    scrollTrigger: {
-                        trigger: containerRef.current,
-                        start: "top bottom",
-                        toggleActions: "play none none none"
-                    }
-                });
-            };
-
-            animateOrbit(orbit1Ref.current, false, 11);
-            animateOrbit(orbit2Ref.current, true, 7);
-
+            return () => ctx.revert();
         });
 
-        return () => ctx.revert();
+        /* ── MOBILE: headline lines + contact stagger from left ── */
+        mm.add("(max-width: 767px)", () => {
+            const ctx = gsap.context(() => {
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: headerRef.current,
+                        start: "top bottom",   // fires immediately on enter — no missed triggers
+                        toggleActions: "play none none reverse",
+                    }
+                });
+
+                // Both headline lines type simultaneously
+                tl.to(line1Ref.current, {
+                    text: "THANK YOU.",
+                    duration: 0.9,
+                    ease: "none",
+                });
+                tl.to(line2Ref.current, {
+                    text: "LET`s TALK.....",
+                    duration: 1.1,
+                    ease: "none",
+                }, "<");
+
+                // Contact lines stagger in from left
+                const lines = contactRef.current?.querySelectorAll('p');
+                if (lines) {
+                    tl.fromTo(
+                        lines,
+                        { opacity: 0, x: -30 },
+                        { opacity: 1, x: 0, duration: 0.5, stagger: 0.08, ease: "power2.out" },
+                        "-=0.6"
+                    );
+                }
+
+                /* SVG orbit animations */
+                const animateOrbit = (el: SVGElement | null, reverse = false, duration = 6) => {
+                    if (!el) return;
+                    const length = (el as SVGGeometryElement).getTotalLength();
+                    const val = length * 0.03;
+                    gsap.set(el, {
+                        strokeDasharray: `${val} ${length - val}`,
+                        strokeDashoffset: 0,
+                    });
+                    gsap.to(el, {
+                        strokeDashoffset: reverse ? length : -length,
+                        duration,
+                        ease: "none",
+                        repeat: -1,
+                        scrollTrigger: {
+                            trigger: containerRef.current,
+                            start: "top bottom",
+                            toggleActions: "play none none none",
+                        }
+                    });
+                };
+
+                animateOrbit(orbit1Ref.current, false, 11);
+                animateOrbit(orbit2Ref.current, true, 7);
+            });
+
+            return () => ctx.revert();
+        });
+
+        return () => mm.revert();
     }, []);
 
     return (
@@ -179,12 +223,12 @@ export default function Footer() {
                         ref={contactRef}
                         className="flex flex-col gap-1 sm:gap-4 text-gray-600 pl-1 sm:pl-7 transform scale-x-[1.15] origin-left"
                     >
-                        <div className="text-sm sm:text-base md:text-sm font-medium max-w-xl leading-relaxed">
+                        <div className="text-xs sm:text-base md:text-sm font-medium max-w-xl leading-[1.1] sm:leading-relaxed">
                             <p className="opacity-0 inline sm:block">+#1331, 13th Cross Road, 10th Main Road, 2nd stage,{' '}</p>
                             <p className="opacity-0 inline sm:block">+Indiranagar, Bengaluru 560038, Karnataka, India.</p>
                         </div>
 
-                        <div className="text-sm sm:text-base md:text-sm font-medium leading-relaxed">
+                        <div className="text-xs sm:text-base md:text-sm font-medium leading-[1.1] sm:leading-relaxed">
                             <p className="opacity-0">
                                 +email:
                                 <a href="mailto:hello@thewhitetusker.com" className="hover:text-black transition-colors">
@@ -193,7 +237,7 @@ export default function Footer() {
                             </p>
                         </div>
 
-                        <div className="text-sm sm:text-base md:text-xl font-semibold leading-snug mt-2">
+                        <div className="text-xs sm:text-base md:text-xl font-semibold leading-snug mt-2">
                             <p className="opacity-0">
                                 +Ph:
                                 <a href="tel:+919900110689" className="hover:text-black transition-colors">
