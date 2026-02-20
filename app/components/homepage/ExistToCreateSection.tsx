@@ -35,7 +35,7 @@ export default function ExistToCreateSection() {
                 const tl = gsap.timeline({
                     scrollTrigger: {
                         trigger: innerContainerRef.current,
-                        start: "top 70%",
+                        start: "top 72%",
                         toggleActions: "play none none reverse"
                     }
                 });
@@ -102,14 +102,14 @@ export default function ExistToCreateSection() {
                 gsap.from(el, {
                     scrollTrigger: {
                         trigger: el,
-                        start: "top 92%",
+                        start: "top 85%",
                         toggleActions: "play none none reverse",
                     },
-                    x: -50,
+                    x: -100,
                     opacity: 0,
-                    duration: 0.65,
-                    delay: i * 0.06,
-                    ease: "power2.out",
+                    duration: 1.2,
+                    delay: i * 0.1,
+                    ease: "power3.out",
                 });
             });
 
@@ -118,13 +118,13 @@ export default function ExistToCreateSection() {
                 gsap.from(mobImg.current, {
                     scrollTrigger: {
                         trigger: mobImg.current,
-                        start: "top 95%",
+                        start: "top 85%",
                         toggleActions: "play none none reverse",
                     },
-                    x: 50,
+                    x: 100,
                     opacity: 0,
-                    duration: 0.8,
-                    ease: "power2.out",
+                    duration: 1.2,
+                    ease: "power3.out",
                 });
             }
         });
@@ -165,7 +165,7 @@ export default function ExistToCreateSection() {
                                         Architecture, film, digital, brand
                                         to us, they are one fluid system.
                                     </p>
-                                    <p ref={mob5}>
+                                    {/* <p ref={mob5}>
                                         We don't decorate environments.<br className="hidden sm:block" />
                                         We activate them.
                                     </p>
@@ -177,13 +177,13 @@ export default function ExistToCreateSection() {
                                         Every project must move people
                                         emotionally, intellectually, instinctively.<br className="hidden sm:block" />
                                         If it doesn't, it doesn't leave our studio.
-                                    </p>
+                                    </p> */}
                                 </div>
                             </div>
 
                             {/* Desktop "What Others..." Text */}
                             <div className="relative pb-4 sm:pb-6 hidden md:block">
-                                <div ref={horizontalLineRef} className="absolute bottom-16 sm:bottom-20 md:bottom-[6.3rem] left-0 w-full sm:-left-8 sm:w-[calc(100%+40rem)] h-px bg-black/20 hidden sm:block origin-left"></div>
+                                {/* <div ref={horizontalLineRef} className="absolute bottom-16 sm:bottom-20 md:bottom-[6.3rem] left-0 w-full sm:-left-8 sm:w-[calc(100%+40rem)] h-px bg-black/20 hidden sm:block origin-left"></div> */}
                                 <p className="w-full max-w-md text-black text-sm md:text-lg xl:text-xl leading-none normal-case md:uppercase">
                                     WHAT OTHERS <br />
                                     HESITATE TO ATTEMPT. <br />
@@ -228,7 +228,7 @@ export default function ExistToCreateSection() {
 
                     <div className="col-span-1 relative hidden md:flex flex-col justify-between h-full">
                         <div className="mt-auto">
-                            <div className="relative w-full h-auto aspect-square lg:h-[25vh] xl:h-[55vh] xl:aspect-auto transform scale-125 origin-bottom-right sm:z-10">
+                            <div className="relative w-full h-auto aspect-square lg:h-[25vh] xl:h-[55vh] xl:aspect-auto transform scale-110 origin-bottom-right sm:z-10">
                                 <Image
                                     src="/homepage/2.avif"
                                     alt="Classical statue at a creative console"

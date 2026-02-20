@@ -119,7 +119,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <main ref={containerRef} className="relative z-10 flex h-[70vh] max-h-[70vh] sm:h-auto sm:max-h-none sm:min-h-screen w-full flex-col justify-between p-0 pt-[40%] sm:p-12 sm:pt-28">
+        <main ref={containerRef} className="relative z-10 flex min-h-screen w-full flex-col justify-between p-0 pt-[40%] sm:p-12 sm:pt-28">
             <div className="pointer-events-none absolute inset-0 z-0 flex items-center justify-center overflow-hidden pl-0 sm:pl-[10%] md:pl-[20%]">
                 <svg viewBox="0 0 100 100" className="w-full h-full opacity-40">
                     <ellipse
@@ -171,32 +171,32 @@ export default function HeroSection() {
             </div>
 
             <div className="pointer-events-none absolute inset-0 z-10 overflow-hidden">
-                <span className="hero-floating-text absolute top-40 left-[40%] sm:top-[29%] sm:left-[53%] text-[10px] font-medium tracking-widest text-black sm:text-[14px]">
+                <span className="hero-floating-text absolute top-[32%] left-[40%] sm:top-[29%] sm:left-[53%] text-[10px] font-medium tracking-widest text-black sm:text-[14px]">
                     + EXPERIENCE
                 </span>
-                <span className="hero-floating-text absolute bottom-40 left-[8%] sm:bottom-[15%] sm:left-[30%] text-[10px] font-medium tracking-widest text-black sm:text-[14px]">
+                <span className="hero-floating-text absolute bottom-[38%] left-[8%] sm:bottom-[15%] sm:left-[30%] text-[10px] font-medium tracking-widest text-black sm:text-[14px]">
                     + DIGITAL
                 </span>
-                <span className="hero-floating-text absolute top-60 right-[15%] sm:top-[45%] sm:right-[12%] text-[11px] font-medium tracking-widest text-black sm:text-[14px]">
+                <span className="hero-floating-text absolute top-[40%] right-[18%] sm:top-[45%] sm:right-[12%] text-[11px] font-medium tracking-widest text-black sm:text-[14px]">
                     + DESIGN
                 </span>
-                <span className="hero-floating-text absolute top-25 right-[8%] sm:top-[18%] sm:right-[22%] text-[10px] font-medium tracking-widest text-black sm:text-[11px]">
+                <span className="hero-floating-text absolute top-[23%] right-[12%] sm:top-[18%] sm:right-[22%] text-[10px] font-medium tracking-widest text-black sm:text-[11px]">
                     + IMMERSIVE
                 </span>
-                <span className="hero-floating-text absolute bottom-55 right-[5%] sm:bottom-[25%] sm:right-[19%] text-[11px] font-medium tracking-widest text-black uppercase sm:text-[14px]">
+                <span className="hero-floating-text absolute bottom-[38%] right-[8%] sm:bottom-[25%] sm:right-[19%] text-[11px] font-medium tracking-widest text-black uppercase sm:text-[14px]">
                     + Creative
                 </span>
-                <span className="hero-floating-text absolute bottom-25 left-[50%] sm:bottom-[20%] sm:left-[50%] -translate-x-1/2 text-[9px] font-medium tracking-widest text-gray-500 uppercase sm:text-[11px] inline-flex overflow-hidden whitespace-nowrap">
+                <span className="hero-floating-text absolute bottom-[40%] left-[50%] sm:bottom-[20%] sm:left-[50%] -translate-x-1/2 text-[9px] font-medium tracking-widest text-gray-500 uppercase sm:text-[11px] inline-flex overflow-hidden whitespace-nowrap">
                     + Be Inspired
                 </span>
-                <span className="hero-floating-text absolute top-30 left-[5%] sm:top-[20%] sm:left-[4%] text-[9px] font-medium tracking-widest text-gray uppercase sm:text-[14px]">
+                <span className="hero-floating-text absolute top-[25%] left-[8%] sm:top-[20%] sm:left-[4%] text-[9px] font-medium tracking-widest text-gray uppercase sm:text-[14px]">
                     + Interactive
                 </span>
             </div>
             <div className="h-0 sm:h-auto"></div>
-            <div className="flex flex-1 flex-col items-start justify-center pl-[10%] sm:pl-[10%] lg:pl-[20%]">
+            <div className="flex flex-1 flex-col items-start justify-center pl-[10%] sm:pl-[10%] lg:pl-[20%] pt-[10%] sm:pt-0">
                 <div className="relative -translate-y-12">
-                    <h1 className="flex flex-col text-left font-sans text-3xl font-normal leading-none sm:leading-[0.85] tracking-tighter text-black sm:text-6xl md:text-7xl lg:text-8xl transform scale-x-[1.15] origin-left pb-4">
+                    <h1 className="flex flex-col text-left font-sans text-4xl font-normal leading-none sm:leading-[0.85] tracking-tighter text-black sm:text-6xl md:text-7xl lg:text-8xl transform scale-x-[1.15] origin-left pb-4">
                         <span className="flex items-baseline justify-start gap-2 sm:gap-4">
                             FLUID
                             <span className="text-lg font-light tracking-normal text-black sm:text-2xl md:text-5xl translate-y-[-0.1em]">
@@ -218,7 +218,7 @@ export default function HeroSection() {
             </div>
 
             {/* Mobile-only bottom block — strip + separator line */}
-            <div className="flex lg:hidden flex-col">
+            <div className="flex lg:hidden flex-col pb-[18vh]">
                 <div className="flex items-center justify-center gap-6 pb-3">
                     {/* ++ 2026 block */}
                     <div className="flex items-center gap-0 text-base font-bold leading-none tracking-widest text-black scale-x-[1.18] origin-left shrink-0">

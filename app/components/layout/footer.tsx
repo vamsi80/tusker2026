@@ -148,15 +148,12 @@ export default function Footer() {
     }, []);
 
     return (
-        <footer className={`relative h-auto lg:min-h-screen w-full flex flex-col items-center justify-end overflow-hidden ${isHomePage ? 'bg-transparent' : 'bg-white'}`}>
-
-            {/* ---------- SVG BACKGROUND ---------- */}
+        <footer className={`relative min-h-[70vh] pt-16 sm:pt-20 lg:pt-0 w-full flex flex-col items-center justify-start lg:justify-center overflow-hidden ${isHomePage ? 'bg-transparent' : 'bg-white'}`}>
             <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
                 <div className="absolute bottom-0 right-0 translate-x-1/3 translate-y-1/5 w-[150%] h-[150%] z-0 pl-15">
 
                     <svg viewBox="0 0 100 100" className="w-full h-full opacity-40">
 
-                        {/* Base faint ellipses */}
                         <ellipse
                             cx="50"
                             cy="50"
@@ -207,9 +204,8 @@ export default function Footer() {
                 </div>
             </div>
 
-            {/* ---------- CONTENT ---------- */}
             <div className="w-[90%] sm:w-full self-start px-8 sm:px-10 lg:px-12 xl:px-24">
-                <div className="relative z-10 w-full h-auto lg:h-[60vh] flex flex-col justify-center lg:justify-start items-start gap-4 sm:gap-4 pt-24 sm:pt-24 lg:pt-0 pb-12 lg:pb-0">
+                <div className="relative z-10 w-full h-auto lg:h-screen flex flex-col justify-start lg:justify-center items-start gap-4 sm:gap-4 pt-10 sm:pt-12 lg:pt-0 pb-12 lg:pb-0">
 
                     <h1
                         ref={headerRef}
@@ -221,9 +217,9 @@ export default function Footer() {
 
                     <div
                         ref={contactRef}
-                        className="flex flex-col gap-1 sm:gap-4 text-gray-600 pl-1 sm:pl-7 transform scale-x-[1.15] origin-left"
+                        className="flex flex-col space-y-3 sm:space-y-0 gap-1 sm:gap-4 text-gray-600 pl-1 sm:pl-7 transform origin-left"
                     >
-                        <div className="text-xs sm:text-base md:text-sm font-medium max-w-xl leading-[1.1] sm:leading-relaxed">
+                        <div className="text-xs sm:text-base md:text-sm font-medium max-w-xl leading-[1.2] sm:leading-relaxed">
                             <p className="opacity-0 inline sm:block">+#1331, 13th Cross Road, 10th Main Road, 2nd stage,{' '}</p>
                             <p className="opacity-0 inline sm:block">+Indiranagar, Bengaluru 560038, Karnataka, India.</p>
                         </div>
@@ -237,7 +233,7 @@ export default function Footer() {
                             </p>
                         </div>
 
-                        <div className="text-xs sm:text-base md:text-xl font-semibold leading-snug mt-2">
+                        <div className="text-xs sm:text-base md:text-xl font-semibold leading-snug mt-0 sm:mt-2 scale-x-[1.15] origin-left">
                             <p className="opacity-0">
                                 +Ph:
                                 <a href="tel:+919900110689" className="hover:text-black transition-colors">

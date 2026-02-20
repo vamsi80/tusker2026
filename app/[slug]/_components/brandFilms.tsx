@@ -43,9 +43,9 @@ export default function BrandFilms() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 relative z-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-8 lg:gap-12 relative z-10">
                 <div className="relative w-full flex justify-start lg:col-span-2 h-auto sm:h-[60vh] md:h-auto order-1 lg:order-1 max-w-[1000px]">
-                    <div className="relative w-full h-[200px] sm:h-[300px] lg:h-full">
+                    <div className="relative w-full h-[300px] sm:h-[300px] lg:h-full">
                         <Image
                             src="/film.avif"
                             alt="Corporate and Brand Films - TV Head Statue"

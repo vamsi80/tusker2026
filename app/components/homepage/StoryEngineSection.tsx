@@ -28,7 +28,7 @@ export default function StoryEngineSection() {
                 gsap.from(innerContainerRef.current, {
                     scrollTrigger: {
                         trigger: innerContainerRef.current,
-                        start: "top 70%",
+                        start: "top 72%",
                         toggleActions: "play none none reverse"
                     },
                     x: -200,
@@ -81,14 +81,14 @@ export default function StoryEngineSection() {
                 gsap.from(el, {
                     scrollTrigger: {
                         trigger: el,
-                        start: "top 92%",
+                        start: "top 85%",
                         toggleActions: "play none none reverse",
                     },
-                    x: 50,
+                    x: 100,
                     opacity: 0,
-                    duration: 0.65,
-                    delay: i * 0.06,
-                    ease: "power2.out",
+                    duration: 1.2,
+                    delay: i * 0.1,
+                    ease: "power3.out",
                 });
             });
         });
@@ -111,8 +111,8 @@ export default function StoryEngineSection() {
                     </h2>
                 </div>
 
-                <div className="block sm:grid sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 w-full max-w-7xl mx-auto z-3 px-4 sm:px-0 pt-0">
-                    <div className="float-left w-[40%] h-auto aspect-3/4 mr-4 mb-2 sm:float-none sm:w-full sm:col-span-1 lg:col-span-1 relative sm:h-auto sm:mt-0 xl:-mt-12 xl:h-[80vh] xl:aspect-auto flex items-start sm:items-end justify-center lg:justify-start z-10">
+                <div className="block sm:grid sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-0 w-full max-w-7xl mx-auto z-3 px-4 sm:px-0 pt-0">
+                    <div className="float-left w-[45%] h-auto aspect-3/4 mr-4 mb-2 sm:float-none sm:w-full sm:col-span-1 lg:col-span-1 relative sm:min-h-[420px] sm:max-h-[55vh] sm:h-full sm:mt-0 xl:-mt-12 flex items-start sm:items-end justify-center lg:justify-start z-10">
                         <div className="relative w-full h-full transform">
                             <Image
                                 src="/homepage/1.avif"
@@ -125,7 +125,7 @@ export default function StoryEngineSection() {
                         </div>
                     </div>
 
-                    <div className="block sm:flex sm:col-span-1 lg:col-span-1 flex-col justify-center items-end lg:pl-0 pt-0 lg:pt-0 relative z-0 h-full">
+                    <div className="block sm:flex sm:col-span-1 lg:col-span-1 flex-col justify-center items-center lg:pl-0 pt-0 lg:pt-0 relative z-0 h-full">
                         <div className="block sm:flex sm:flex-row items-stretch gap-3 sm:gap-4 lg:gap-8">
                             {/* Lines Container Wrapper */}
                             <div className="w-px hidden sm:block relative">
@@ -141,11 +141,11 @@ export default function StoryEngineSection() {
                                     Experiences people walk into, interact with, and remember.
                                 </p>
 
-                                <p ref={mobileP2Ref} className="relative leading-[1.2] xl:leading-[1.2] font-normal">
+                                {/* <p ref={mobileP2Ref} className="relative leading-[1.2] xl:leading-[1.2] font-normal">
                                     Operating seamlessly across architecture, film, technology,
                                     and branding, we connect the physical and the digital into
                                     one fluid narrative.
-                                </p>
+                                </p> */}
 
                                 <div ref={mobileD1Ref} className="text-black text-sm xl:text-xl tracking-wide leading-none">
                                     EVERY SPACE HAS INTENT.<br />
@@ -153,7 +153,7 @@ export default function StoryEngineSection() {
                                     EVERY TECHNOLOGY HAS A STORY TO TELL
                                 </div>
 
-                                <p ref={mobileP3Ref} className="leading-[1.2] xl:leading-[1.2] font-normal">
+                                <p ref={mobileP3Ref} className="leading-[1.1] xl:leading-[1.2] font-normal">
                                     We don't believe in isolated deliverables.
                                     We believe in systems that breathe, adapt, and evolve.
                                     From carpet to content, from concept to completion,

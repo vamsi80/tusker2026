@@ -28,10 +28,10 @@ export default function FourVerticals() {
                 gsap.from(innerContainerRef.current, {
                     scrollTrigger: {
                         trigger: innerContainerRef.current,
-                        start: "top 70%",
+                        start: "top 72%",
                         toggleActions: "play none none reverse"
                     },
-                    y: 200,
+                    y: 80,
                     opacity: 0,
                     duration: 1.5,
                     ease: "power3.out"
@@ -40,11 +40,11 @@ export default function FourVerticals() {
                 gsap.from('.vertical-icon', {
                     scrollTrigger: {
                         trigger: innerContainerRef.current,
-                        start: "top 70%",
+                        start: "top 72%",
                         toggleActions: "play none none reverse"
                     },
-                    y: 250,
-                    duration: 0.75,
+                    y: 100,
+                    duration: 1.0,
                     stagger: 0.1,
                     ease: "power3.out"
                 });
@@ -68,14 +68,14 @@ export default function FourVerticals() {
                 gsap.from(el, {
                     scrollTrigger: {
                         trigger: el,
-                        start: "top 92%",
+                        start: "top 85%",
                         toggleActions: "play none none reverse",
                     },
-                    x: -50,
+                    x: -100,
                     opacity: 0,
-                    duration: 0.65,
-                    delay: i * 0.07,
-                    ease: "power2.out",
+                    duration: 1.2,
+                    delay: i * 0.1,
+                    ease: "power3.out",
                 });
             });
 
@@ -84,14 +84,31 @@ export default function FourVerticals() {
                 gsap.from(mobImg.current, {
                     scrollTrigger: {
                         trigger: mobImg.current,
-                        start: "top 90%",
+                        start: "top 85%",
                         toggleActions: "play none none reverse",
                     },
-                    y: 40,
+                    y: 60,
                     opacity: 0,
-                    duration: 1,
-                    ease: "power2.out",
+                    duration: 1.5,
+                    ease: "power3.out",
                 });
+
+                // Overlay icons slide up after the image — scoped to mobile container only
+                const mobileIcons = mobImg.current.querySelectorAll('.vertical-icon');
+                if (mobileIcons.length) {
+                    gsap.from(mobileIcons, {
+                        scrollTrigger: {
+                            trigger: mobImg.current,
+                            start: "top 80%",
+                            toggleActions: "play none none reverse",
+                        },
+                        y: 80,
+                        opacity: 0,
+                        duration: 0.75,
+                        stagger: 0.1,
+                        ease: "power3.out",
+                    });
+                }
             }
         });
 
@@ -165,23 +182,23 @@ export default function FourVerticals() {
                             </div>
                         </div>
 
-                        <p ref={mobP1} className="text-xs xl:text-base font-normal  max-w-2xl leading-[1.1]">
+                        <p ref={mobP1} className="text-xs xl:text-base font-normal  max-w-2xl leading-[1.1] pb-2 sm:pb-0">
                             At The White Tusker, we don't operate in silos. We build experiences that move seamlessly from space to screen, from technology to emotion, from brand to belief.
                         </p>
                         <div className="space-y-2 xl:space-y-0">
-                            <p ref={mobP2} className="text-xs xl:text-base font-normal  max-w-2xl leading-[1.1]">
+                            {/* <p ref={mobP2} className="text-xs xl:text-base font-normal  max-w-2xl leading-[1.1]">
                                 Our four verticals are not services. They are interlocking forces - each designed to strengthen the other, each rooted in one philosophy:
-                            </p>
+                            </p> */}
 
-                            <p ref={mobP3} className="text-sm md:text-xl xl:text-3xl text-black uppercase leading-none">
+                            <p ref={mobP3} className="text-sm md:text-xl xl:text-3xl text-black uppercase leading-none pb-2 sm:pb-0">
                                 EVERY BRAND HAS A STORY.<br />
                                 OUR JOB IS TO MAKE PEOPLE<br />
                                 STEP INTO IT.
                             </p>
                         </div>
-                        <p ref={mobP4} className="font-normal text-xs xl:text-base max-w-2xl leading-[1.1]">
+                        {/* <p ref={mobP4} className="font-normal text-xs xl:text-base max-w-2xl leading-[1.1]">
                             From physical environments to moving images, from intelligent technology to brand identity, we design ecosystems where architecture speaks, films persuade, technology engages, and brands resonate.
-                        </p>
+                        </p> */}
                         <p ref={mobP5} className="font-medium text-xs xl:text-base max-w-2xl leading-[1.1]">
                             Together, these four verticals allow us to deliver end-to-end storytelling, from concept to execution, from blueprint to emotion.
                         </p>

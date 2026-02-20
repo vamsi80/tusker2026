@@ -17,20 +17,22 @@ const BASE_URL = "https://www.thewhitetusker.com";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "The White Tusker | Brand Experience Agency in Bangalore",
+    default: "The White Tusker — Brand Experience Design Studio",
     template: "%s | The White Tusker",
   },
   description:
-    "The White Tusker is a brand experience agency in Bangalore, India. We design experience centers, immersive technology installations, brand identities, and corporate films for global brands.",
+    "We design brand experiences that move people. Experience centers, immersive environments, spatial storytelling and corporate films — trusted by Collins Aerospace, Boeing, Tata Power and 40+ global enterprises.",
   keywords: [
-    "brand experience agency bangalore",
-    "experience center design india",
-    "experiential marketing agency bangalore",
-    "immersive technology company india",
-    "branding agency bangalore",
-    "corporate film production bangalore",
-    "spatial branding india",
-    "customer experience center design",
+    "brand experience design studio",
+    "experience center design",
+    "immersive environment design",
+    "spatial storytelling studio",
+    "experiential design studio",
+    "corporate film production",
+    "interactive technology installations",
+    "global brand experience",
+    "immersive technology studio",
+    "brand experience agency",
   ],
   authors: [{ name: "The White Tusker", url: BASE_URL }],
   creator: "The White Tusker",
@@ -48,26 +50,26 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_IN",
+    locale: "en_US",
     url: BASE_URL,
     siteName: "The White Tusker",
-    title: "The White Tusker | Brand Experience Agency in Bangalore",
+    title: "The White Tusker — Brand Experience Design Studio",
     description:
-      "We design experience centers, immersive technology, brand identities, and corporate films for global brands. Based in Bangalore, operating across India.",
+      "We design brand experiences that move people. Experience centers, immersive environments, spatial storytelling and corporate films for global enterprises.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "The White Tusker — Brand Experience Agency",
+        alt: "The White Tusker — Brand Experience Design Studio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "The White Tusker | Brand Experience Agency in Bangalore",
+    title: "The White Tusker — Brand Experience Design Studio",
     description:
-      "Experience centers, immersive tech, branding & corporate films. India's leading brand experience studio.",
+      "Experience centers, spatial storytelling, immersive technology and corporate films. A creator-led brand experience studio.",
     images: ["/og-image.jpg"],
   },
   alternates: {
@@ -75,7 +77,8 @@ export const metadata: Metadata = {
   },
 };
 
-// Organization + LocalBusiness structured data
+// Global Organization + ProfessionalService + WebSite structured data
+// NOTE: LocalBusiness schema removed — signals global positioning, not local.
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -91,59 +94,48 @@ const structuredData = {
         height: 48,
       },
       description:
-        "The White Tusker is a brand experience agency in Bangalore, India, specializing in experience center design, immersive technology, brand identity, and corporate film production.",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "#1331, 13th Cross Road, 10th Main Road, 2nd Stage, Indiranagar",
-        addressLocality: "Bengaluru",
-        addressRegion: "Karnataka",
-        postalCode: "560038",
-        addressCountry: "IN",
+        "The White Tusker is a global brand experience design studio. We create experience centers, immersive environments, corporate films, and spatial storytelling for leading enterprises worldwide.",
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+91-99001-10689",
+        contactType: "client inquiries",
+        availableLanguage: ["English"],
       },
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "+91-99001-10689",
-          contactType: "customer service",
-          areaServed: "IN",
-          availableLanguage: ["English", "Hindi"],
-        },
-        {
-          "@type": "ContactPoint",
-          telephone: "+91-99455-65505",
-          contactType: "sales",
-          areaServed: "IN",
-        },
-      ],
       email: "hello@thewhitetusker.com",
+      sameAs: [
+        "https://www.linkedin.com/company/the-white-tusker",
+        "https://www.instagram.com/thewhitetusker",
+        "https://www.behance.net/thewhitetusker",
+      ],
     },
     {
-      "@type": "LocalBusiness",
-      "@id": `${BASE_URL}/#localbusiness`,
-      name: "The White Tusker",
+      "@type": "ProfessionalService",
+      "@id": `${BASE_URL}/#service`,
+      name: "The White Tusker — Brand Experience Design Studio",
+      provider: { "@id": `${BASE_URL}/#organization` },
+      serviceType: [
+        "Brand Experience Design",
+        "Experience Center Design",
+        "Immersive Technology",
+        "Spatial Storytelling",
+        "Corporate Film Production",
+        "Interactive Environments",
+        "Spatial Architecture",
+        "Brand Identity & Spatial Branding",
+      ],
+      areaServed: { "@type": "GeoShape", name: "Worldwide" },
       url: BASE_URL,
-      telephone: "+919900110689",
-      email: "hello@thewhitetusker.com",
-      priceRange: "₹₹₹",
-      image: `${BASE_URL}/LOGO.svg`,
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "#1331, 13th Cross Road, 10th Main Road, 2nd Stage, Indiranagar",
-        addressLocality: "Bengaluru",
-        addressRegion: "Karnataka",
-        postalCode: "560038",
-        addressCountry: "IN",
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: 12.9716,
-        longitude: 77.6412,
-      },
-      openingHoursSpecification: {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "09:00",
-        closes: "18:30",
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${BASE_URL}/#website`,
+      url: BASE_URL,
+      name: "The White Tusker",
+      publisher: { "@id": `${BASE_URL}/#organization` },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: `${BASE_URL}/?s={search_term_string}`,
+        "query-input": "required name=search_term_string",
       },
     },
   ],

@@ -19,33 +19,33 @@ export default function Services() {
             const ctx = gsap.context(() => {
                 const items = gsap.utils.toArray('.service-item');
 
-                // Animate service items on mobile
+                // Animate service items on mobile — from left, matching all other sections
                 items.forEach((item: any) => {
                     gsap.from(item, {
                         scrollTrigger: {
                             trigger: item,
-                            start: "top 90%",
+                            start: "top 85%",
                             toggleActions: "play none none reverse"
                         },
-                        y: 50,          // Reduced from 150 — reveal not theatrics
+                        x: -100,
                         opacity: 0,
-                        duration: 0.9,
-                        ease: "power2.out"
+                        duration: 1.2,
+                        ease: "power3.out"
                     });
                 });
 
-                // Animate Mobile Center Image via ref — avoids class-selector miss & Tailwind opacity conflict
+                // Mobile image fades up from bottom
                 if (mobileImgRef.current) {
                     gsap.from(mobileImgRef.current, {
                         scrollTrigger: {
                             trigger: mobileImgRef.current,
-                            start: "top 95%",   // fires as soon as image top hits 95% of viewport
+                            start: "top 85%",
                             toggleActions: "play none none reverse"
                         },
-                        y: 40,
+                        y: 60,
                         opacity: 0,
-                        duration: 1,
-                        ease: "power2.out"
+                        duration: 1.5,
+                        ease: "power3.out"
                     });
                 }
             }, containerRef);
@@ -57,18 +57,18 @@ export default function Services() {
             const ctx = gsap.context(() => {
                 const items = gsap.utils.toArray('.service-item');
 
-                // Animate service items on desktop
+                // Animate service items on desktop — from left, matching all sections
                 items.forEach((item: any, i: number) => {
                     gsap.from(item, {
                         scrollTrigger: {
                             trigger: item,
-                            start: "top 80%",
+                            start: "top 72%",
                             toggleActions: "play none none reverse"
                         },
-                        y: 40,          // Reduced from 150px throw
+                        y: 100,
                         opacity: 0,
-                        duration: 0.9,
-                        ease: "power2.out"
+                        duration: 1.5,
+                        ease: "power3.out"
                     });
                 });
 
@@ -76,13 +76,13 @@ export default function Services() {
                 gsap.from('.center-image', {
                     scrollTrigger: {
                         trigger: '.center-image',
-                        start: "top 65%",
+                        start: "top 72%",
                         toggleActions: "play none none reverse"
                     },
-                    y: 30,
+                    y: 60,
                     opacity: 0,
-                    duration: 1.0,
-                    ease: "power2.out"
+                    duration: 1,
+                    ease: "power3.out"
                 });
             }, containerRef);
 
@@ -186,6 +186,7 @@ function ImageSequence({ className = "opacity-50 lg:opacity-100" }: { className?
         let rafId: number;
         let lastTime = 0;
         let isVisible = false;
+        let loopFading = false; // true while we're fading out near the loop point
 
         const drawFrame = (img: HTMLImageElement) => {
             const { width, height } = canvas;
@@ -200,8 +201,11 @@ function ImageSequence({ className = "opacity-50 lg:opacity-100" }: { className?
             rafId = requestAnimationFrame(tick);
             if (!isVisible) return;
 
-            // Keep preloading 8 frames ahead continuously
+            // Keep preloading 8 frames ahead, wrapping around loop boundary
             preload(frame + 1, 8);
+
+            // Pre-warm loop start frames so they're always ready
+            if (frame >= totalFrames - 10) preload(1, 8);
 
             if (now - lastTime < interval) return;
             lastTime = now;
@@ -210,9 +214,21 @@ function ImageSequence({ className = "opacity-50 lg:opacity-100" }: { className?
             const img = cache.get(next);
 
             if (img) {
-                // Frame is decoded — draw immediately, zero main-thread cost
                 frame = next;
                 drawFrame(img);
+
+                // ── Smooth loop crossfade ─────────────────────────────────
+                // Fade OUT in last 3 frames before wrap
+                if (frame >= totalFrames - 2 && !loopFading) {
+                    loopFading = true;
+                    canvas.style.transition = 'opacity 0.3s ease';
+                    canvas.style.opacity = '0';
+                }
+                // Fade IN once we've wrapped to the start
+                if (frame <= 2 && loopFading) {
+                    canvas.style.opacity = '1';
+                    loopFading = false;
+                }
             }
             // If not ready: hold current frame (no jank) rather than forcing a decode
         };

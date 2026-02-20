@@ -81,9 +81,9 @@ export default function InteractiveTech() {
                         <p className="text-base sm:text-lg lg:text-lg font-normal text-black leading-[1.2]">
                             This is storytelling at scale powered by intelligence.
                         </p>
-                        <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-8xl tracking-tighter font-normal text-black leading-[0.8]">
+                        {/* <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-8xl tracking-tighter font-normal text-black leading-[0.8]">
                             takes over.
-                        </p>
+                        </p> */}
                     </div>
                 </div>
             </div>

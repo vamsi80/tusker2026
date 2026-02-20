@@ -78,7 +78,7 @@ export default function InteriorSpaces() {
                     </div>
                 </div>
 
-                <div className="lg:col-span-1 relative flex items-start justify-start h-[40vh] sm:h-[60vh] lg:h-auto lg:min-h-full overflow-visible z-1 mt-0 lg:mt-0 order-1 lg:order-2">
+                <div className="lg:col-span-1 relative flex items-start justify-start h-[47vh] sm:h-[60vh] lg:h-auto lg:min-h-full overflow-visible z-1 mt-0 lg:mt-0 order-1 lg:order-2">
                     <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center scale-175 sm:scale-200 md:scale-220 lg:scale-240 lg:-translate-x-20 lg:-translate-y-20">
                         <div className="relative w-full h-full">
                             <Image
