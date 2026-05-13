@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Trava Account Deletion Request | The White Tusker",
-  description: "Request deletion of your Trava account and associated data from the Trava platform.",
-  alternates: {
-    canonical: "https://thewhitetusker.com/delete-account",
-  },
-};
+// export const metadata: Metadata = {
+//   title: "Trava Account Deletion Request | The White Tusker",
+//   description: "Request deletion of your Trava account and associated data from the Trava platform.",
+//   alternates: {
+//     canonical: "https://thewhitetusker.com/delete-account",
+//   },
+// };
 
 export default function DeleteAccount() {
   return (
