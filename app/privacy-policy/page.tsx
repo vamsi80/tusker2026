@@ -163,21 +163,19 @@ export default function PrivacyPolicy() {
           </div>
 
           {/* Data Storage & Security Focus */}
-          <div className="relative overflow-hidden bg-black text-white p-10 sm:p-20 rounded-[2.5rem] sm:rounded-[4rem]">
-            <div className="relative z-10 max-w-2xl space-y-8">
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Data Storage & Security</h2>
-              <p className="text-white/70 text-lg sm:text-xl leading-relaxed font-light">
+          <div className="space-y-16">
+            <div className="space-y-8">
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight border-b border-black/10 pb-6">Data Storage & Security</h2>
+              <p className="text-black/70 text-lg leading-relaxed max-w-3xl">
                 We maintain rigorous technical and organizational safeguards to protect your information. While absolute security cannot be guaranteed, we retain data only as long as necessary for operational excellence.
               </p>
-              <div className="pt-4 border-t border-white/10">
-                <h3 className="font-bold text-sm uppercase tracking-widest mb-2 opacity-50">Children&apos;s Privacy</h3>
-                <p className="text-white/60 text-sm">
-                  Our services are not intended for or marketed to children under the age of 13.
-                </p>
-              </div>
             </div>
-            {/* Subtle decorative element */}
-            <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-purple-500/20 blur-[120px] rounded-full" />
+            <div className="space-y-6">
+              <h2 className="text-xl font-bold tracking-tight uppercase tracking-widest">Children&apos;s Privacy</h2>
+              <p className="text-black/60 text-lg leading-relaxed">
+                Our services are not intended for or marketed to children under the age of 13.
+              </p>
+            </div>
           </div>
 
           {/* Contact & Footer Info */}
