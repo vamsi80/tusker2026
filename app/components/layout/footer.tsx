@@ -250,10 +250,13 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* <div className="mt-12 sm:mt-20 flex flex-wrap gap-x-8 gap-y-2 opacity-40 text-[10px] sm:text-xs uppercase tracking-widest font-medium pl-1 sm:pl-7">
+                    {/* <div className="mt-12 sm:mt-20 flex flex-wrap gap-x-8 gap-y-2 opacity-40 text-[10px] sm:text-xs uppercase tracking-widest font-medium pl-1 sm:pl-7 pointer-events-auto relative z-20">
                         <p>© 2026 THE WHITE TUSKER</p>
                         <Link href="/privacy-policy" className="hover:text-black transition-colors underline underline-offset-4">
                             Privacy Policy
+                        </Link>
+                        <Link href="/delete-account" className="hover:text-black transition-colors underline underline-offset-4">
+                            Delete Account
                         </Link>
                     </div> */}
 
