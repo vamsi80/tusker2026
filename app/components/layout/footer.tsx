@@ -1,6 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -248,6 +249,13 @@ export default function Footer() {
                             </p>
                         </div>
                     </div>
+
+                    {/* <div className="mt-12 sm:mt-20 flex flex-wrap gap-x-8 gap-y-2 opacity-40 text-[10px] sm:text-xs uppercase tracking-widest font-medium pl-1 sm:pl-7">
+                        <p>© 2026 THE WHITE TUSKER</p>
+                        <Link href="/privacy-policy" className="hover:text-black transition-colors underline underline-offset-4">
+                            Privacy Policy
+                        </Link>
+                    </div> */}
 
                 </div>
             </div>
