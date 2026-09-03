@@ -2,6 +2,11 @@
 import type { NextConfig } from 'next';
 import TypeGPU from 'unplugin-typegpu';
 
+// public/ assets are unhashed, so 'immutable' in dev makes swapped files
+// (logo.png etc.) unreachable until the browser cache expires.
+const IMMUTABLE = process.env.NODE_ENV === 'production'
+  ? 'public, max-age=31536000, immutable'
+  : 'no-store';
 const nextConfig: NextConfig = {
   // Required in Next.js 16: empty turbopack config silences the
   // "webpack config with no turbopack config" error when both coexist.
@@ -46,7 +51,7 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
+            value: IMMUTABLE,
           },
         ],
       },
@@ -56,7 +61,7 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
+            value: IMMUTABLE,
           },
         ],
       },

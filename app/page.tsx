@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden text-black selection:bg-purple-200">
+    <div className="relative min-h-screen w-full overflow-hidden text-black">
       {/*
         DeferredHomeBackground is a Client Component wrapper that uses dynamic(ssr:false).
         It loads after window.load via requestIdleCallback — zero LCP impact.

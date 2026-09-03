@@ -89,7 +89,7 @@ const structuredData = {
       url: BASE_URL,
       logo: {
         "@type": "ImageObject",
-        url: `${BASE_URL}/LOGO.svg`,
+        url: `${BASE_URL}/logo.png`,
         width: 180,
         height: 48,
       },

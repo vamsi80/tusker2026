@@ -10,7 +10,7 @@ import type { Metadata } from "next";
 
 export default function DeleteAccount() {
   return (
-    <main className="min-h-screen bg-white text-black selection:bg-purple-200 pt-32 pb-24 sm:pt-48 sm:pb-32 font-sans">
+    <main className="min-h-screen bg-white text-black pt-32 pb-24 sm:pt-48 sm:pb-32 font-sans">
       <div className="max-w-7xl mx-auto px-6 sm:px-12">
         {/* Header Section */}
         <header className="mb-16 sm:mb-24">

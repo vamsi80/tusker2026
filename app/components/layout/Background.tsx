@@ -251,9 +251,9 @@ interface BackgroundProps {
 }
 
 export default function Background({
-    color = "#A18DE8",
+    color = "#",
     className = "fixed inset-0 -z-50 w-full h-full pointer-events-none bg-white",
-    blur = "50px",
+    blur = "70px",
     speed = 0.05
 }: BackgroundProps) {
     const [mounted, setMounted] = useState(false);

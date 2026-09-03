@@ -13,7 +13,7 @@ interface WaterButtonProps {
     backgroundColor?: string;
 }
 
-export default function WaterButton({ href, label, className = "", backgroundColor = "#9175f9" }: WaterButtonProps) {
+export default function WaterButton({ href, label, className = "", backgroundColor = "#e21d3e" }: WaterButtonProps) {
     const shineRef = useRef<HTMLDivElement>(null);
     const router = useRouter();
 
@@ -78,7 +78,7 @@ export default function WaterButton({ href, label, className = "", backgroundCol
     return (
         <Link
             href={href}
-            className={`group relative inline-flex items-center justify-center rounded-full border border-[#8286e5] px-3 sm:px-5 py-1.5 sm:py-2 h-8 sm:h-10 overflow-hidden transition-colors uppercase tracking-widest text-[10px] sm:text-xs font-bold ${className}`}
+            className={`group relative inline-flex items-center justify-center rounded-full border border-[#e21d3e] px-3 sm:px-5 py-1.5 sm:py-2 h-8 sm:h-10 overflow-hidden transition-colors uppercase tracking-widest text-[10px] sm:text-xs font-bold ${className}`}
             onClick={handleClick}
             onMouseEnter={handleHover}
         >
