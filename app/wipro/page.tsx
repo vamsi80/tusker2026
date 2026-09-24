@@ -25,6 +25,10 @@ const videos: Record<number, [string, number, number, number, number][]> = {
   47: [["media18", 5, 35.486, 50, 50]],
   48: [["media19", 5, 35.652, 52.187, 52.187]],
 };
+// Clickable hotspots over URLs baked into the slide image, same % box format.
+const links: Record<number, [string, number, number, number, number][]> = {
+  10: [["https://flight-simulation-bice.vercel.app/", 4.9, 76.4, 31.4, 4.8]],
+};
 
 const btn = "absolute top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-black/40 text-white hover:bg-black/70 disabled:opacity-0";
 
@@ -49,6 +53,11 @@ export default function Wipro() {
         {videos[n]?.map(([src, x, y, w, h]) => (
           <video key={src} src={`/wipro/${src}.mp4`} autoPlay loop controls playsInline
             className="absolute object-cover"
+            style={{ left: `${x}%`, top: `${y}%`, width: `${w}%`, height: `${h}%` }} />
+        ))}
+        {links[n]?.map(([href, x, y, w, h]) => (
+          <a key={href} href={href} target="_blank" rel="noopener noreferrer" aria-label={href}
+            className="absolute cursor-pointer hover:bg-blue-500/10"
             style={{ left: `${x}%`, top: `${y}%`, width: `${w}%`, height: `${h}%` }} />
         ))}
         {/* preload next slide */}
