@@ -47,7 +47,7 @@ export default function Wipro() {
   }, []);
 
   return (
-    <div className="fixed inset-0 z-[9999] bg-black flex items-center justify-center select-none">
+    <div className="fixed inset-0 z-9999 bg-black flex items-center justify-center select-none">
       <div className="relative aspect-video w-[min(100vw,calc(100vh*16/9))]">
         <img src={`/wipro/${n}.jpg`} alt={`Slide ${n}`} className="absolute inset-0 w-full h-full" />
         {videos[n]?.map(([src, x, y, w, h]) => (
