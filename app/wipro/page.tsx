@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight, Maximize } from "lucide-react";
 
 // Slides exported from public/Wipro.pptx as public/wipro/{n}.jpg; videos extracted as public/wipro/mediaN.mp4.
 // Video boxes are % of the slide (x, y, w, h), taken from the PPT so they sit exactly where the poster frame is.
-const TOTAL = 53;
+const TOTAL = 62;
 const videos: Record<number, [string, number, number, number, number][]> = {
   11: [["media1", 4.927, 17.704, 65.073, 65.073]],
   15: [["media2", 5, 35.819, 55, 55]],
