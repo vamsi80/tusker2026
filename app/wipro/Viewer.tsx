@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, Maximize } from "lucide-react";
 
 // Slides exported from public/Wipro.pptx as public/wipro/{n}.jpg; videos extracted as public/wipro/mediaN.mp4.
+// Images are served immutable (next.config.ts), so bump V whenever a slide jpg is replaced.
+const V = 2;
 // Video boxes are % of the slide (x, y, w, h), taken from the PPT so they sit exactly where the poster frame is.
 const videos: Record<number, [string, number, number, number, number][]> = {
   11: [["media1", 4.927, 17.704, 65.073, 65.073]],
@@ -49,7 +51,7 @@ export default function Viewer({ first, last }: { first: number; last: number })
   return (
     <div className="fixed inset-0 z-9999 bg-black flex items-center justify-center select-none">
       <div className="relative aspect-video w-[min(100vw,calc(100vh*16/9))]">
-        <img src={`/wipro/${n}.jpg`} alt={`Slide ${n}`} className="absolute inset-0 w-full h-full" />
+        <img src={`/wipro/${n}.jpg?v=${V}`} alt={`Slide ${n}`} className="absolute inset-0 w-full h-full" />
         {videos[n]?.map(([src, x, y, w, h]) => (
           <video key={src} src={`/wipro/${src}.mp4`} autoPlay loop controls playsInline
             className="absolute object-cover"
@@ -61,7 +63,7 @@ export default function Viewer({ first, last }: { first: number; last: number })
             style={{ left: `${x}%`, top: `${y}%`, width: `${w}%`, height: `${h}%` }} />
         ))}
         {/* preload next slide */}
-        {n < last && <link rel="preload" as="image" href={`/wipro/${n + 1}.jpg`} />}
+        {n < last && <link rel="preload" as="image" href={`/wipro/${n + 1}.jpg?v=${V}`} />}
       </div>
 
       <button onClick={() => go(-1)} disabled={n === first} aria-label="Previous slide" className={`${btn} left-4`}><ChevronLeft /></button>
