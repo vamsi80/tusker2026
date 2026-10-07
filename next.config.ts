@@ -27,6 +27,7 @@ const nextConfig: NextConfig = {
   env: {
     DECK_V_WIPRO: deckVersion('wipro'),
     DECK_V_CAPABILITIES: deckVersion('capabilities'),
+    DECK_V_NYKAA: deckVersion('nykaa'),
   },
 
   // Compress responses
