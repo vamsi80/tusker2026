@@ -1,6 +1,5 @@
 import Viewer from "../wipro/Viewer";
 import type { Boxes } from "../wipro/Viewer";
-import { deckVersion } from "../wipro/version";
 
 export const metadata = { title: "Capabilities", robots: { index: false, follow: false } };
 
@@ -50,5 +49,5 @@ const links: Boxes = {
 };
 
 export default function Capabilities() {
-  return <Viewer dir="capabilities" v={deckVersion("capabilities")} videos={videos} links={links} last={12} />;
+  return <Viewer dir="capabilities" v={process.env.DECK_V_CAPABILITIES} videos={videos} links={links} last={12} />;
 }
