@@ -1,5 +1,6 @@
 import Viewer from "./Viewer";
+import { wipro } from "./deck";
 
 export default function Wipro() {
-  return <Viewer first={1} last={62} />;
+  return <Viewer {...wipro} last={62} />;
 }
