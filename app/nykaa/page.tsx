@@ -4,7 +4,12 @@ import type { Boxes } from "../wipro/Viewer";
 export const metadata = { title: "Nykaa", robots: { index: false, follow: false } };
 
 // Slides exported from "White_Tusker_Nykaa_Retail_Experience_Proposal.pptx" as public/nykaa/{n}.jpg (1920x1080).
+// Video boxes sit over the PPT's poster frames; lidar / ai-consultation are its embedded videos, copied as-is.
 // Link boxes are the PPT's hyperlinked source citations.
+const videos: Boxes = {
+  6: [["lidar", 4.867, 26.785, 53.333, 53.333]],
+  7: [["ai-consultation", 41.667, 26.785, 53.333, 53.333]],
+};
 const links: Boxes = {
   2: [["https://www.nykaa.com/media/wysiwyg/uiTools/2026-8/Transcript-of-the-Conference-Call-for-Analyst-Investors-Q1-FY27.pdf", 4.861, 86.667, 24.908, 2.489]],
   3: [
@@ -15,5 +20,5 @@ const links: Boxes = {
 };
 
 export default function Nykaa() {
-  return <Viewer dir="nykaa" v={process.env.DECK_V_NYKAA} links={links} last={10} />;
+  return <Viewer dir="nykaa" v={process.env.DECK_V_NYKAA} videos={videos} links={links} last={11} />;
 }
