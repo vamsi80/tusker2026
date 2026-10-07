@@ -1,7 +1,6 @@
 import type { Boxes, Deck } from "./Viewer";
 
 // Slides exported from public/Wipro.pptx as public/wipro/{n}.jpg; videos extracted as public/wipro/mediaN.mp4.
-// Images are served immutable (next.config.ts), so bump v whenever a slide jpg is replaced.
 // Video boxes are % of the slide (x, y, w, h), taken from the PPT so they sit exactly where the poster frame is.
 const videos: Boxes = {
   11: [["media1", 4.927, 17.704, 65.073, 65.073]],
@@ -27,4 +26,4 @@ const links: Boxes = {
   10: [["https://flight-simulation-bice.vercel.app/", 4.9, 76.4, 31.4, 4.8]],
 };
 
-export const wipro: Deck = { dir: "wipro", v: 2, videos, links };
+export const wipro: Deck = { dir: "wipro", videos, links };
