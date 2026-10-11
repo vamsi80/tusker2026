@@ -13,7 +13,7 @@ const videos: Boxes = {
   6: [
     ["lidar-wall", 4.5, 66.667, 21.45, 21.45],
     ["tangible-table", 27.6, 66.667, 21.45, 21.45],
-    ["https://www.youtube.com/embed/ws0vMwz79tg", 50.7, 66.667, 21.45, 21.45],
+    ["lift-and-learn", 50.7, 66.667, 21.45, 21.45],
     ["rfid-nfc", 73.8, 66.667, 21.45, 21.45],
   ],
   7: [["gesture", 46.125, 20.667, 49.35, 49.35]],
@@ -30,7 +30,7 @@ const links: Boxes = {
   6: [
     ["/capabilities/lidar-wall.mp4", 4.5, 88.917, 13.5, 3.467],
     ["/capabilities/tangible-table.mp4", 27.6, 88.917, 13.5, 3.467],
-    ["https://www.youtube.com/watch?v=ws0vMwz79tg", 50.7, 88.917, 13.5, 3.467],
+    ["/capabilities/lift-and-learn.mp4", 50.7, 88.917, 13.5, 3.467],
     ["/capabilities/rfid-nfc.mp4", 73.8, 88.917, 13.5, 3.467],
   ],
   7: [["/capabilities/gesture.mp4", 46.125, 70.817, 13.5, 3.467]],
