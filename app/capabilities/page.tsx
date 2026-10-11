@@ -24,8 +24,8 @@ const videos: Boxes = {
 const links: Boxes = {
   3: [["https://www.youtube.com/watch?v=_WcRgc-3eAw", 46.125, 50.758, 13.5, 3.467], ["https://www.youtube.com/watch?v=3J0qc44Ak4o", 62.85, 90.092, 13.5, 3.467]],
   4: [
-    ["https://data-art-studio.vercel.app/", 46.125, 17.333, 32.625, 32.625],
-    ["https://data-art-studio.vercel.app/", 46.125, 50.758, 13.5, 3.467],
+    ["https://data-art-studio.vercel.app/", 46.125, 20.667, 49.35, 49.35],
+    ["https://data-art-studio.vercel.app/", 46.125, 70.817, 13.5, 3.467],
   ],
   6: [
     ["/capabilities/lidar-wall.mp4", 4.5, 88.917, 13.5, 3.467],
