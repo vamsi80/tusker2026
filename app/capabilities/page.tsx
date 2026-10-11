@@ -18,7 +18,7 @@ const videos: Boxes = {
   ],
   7: [["gesture", 46.125, 20.667, 49.35, 49.35]],
   8: [["https://www.youtube.com/embed/HCKb778RhRI", 46.125, 20.667, 49.35, 49.35]],
-  9: [["trava-film", 46.125, 17.333, 32.625, 32.625]],
+  9: [["trava-film", 46.125, 17.333, 32.625, 32.625], ["hms-film", 62.85, 56.667, 32.625, 32.625]],
   10: [["https://pub-b087a9a8256a4a79a4c2272b6883f1cd.r2.dev/brand-film-1080p.mp4", 46.125, 20.667, 49.35, 49.35]],
 };
 const links: Boxes = {
@@ -38,9 +38,7 @@ const links: Boxes = {
   9: [
     ["https://tusker-managment.vercel.app/", 7.125, 87.6, 6.375, 3.733],
     ["https://hospital-management-system-mu-pied.vercel.app/", 15.375, 87.6, 3.375, 3.733],
-    // ponytail: hms-intro.mp4 is 404 on R2; move it to videos once it's uploaded.
-    ["https://pub-b087a9a8256a4a79a4c2272b6883f1cd.r2.dev/hms-intro.mp4", 62.85, 56.667, 32.625, 32.625],
-    ["https://pub-b087a9a8256a4a79a4c2272b6883f1cd.r2.dev/hms-intro.mp4", 62.85, 90.092, 13.5, 3.467],
+    ["/capabilities/hms-film.mp4", 62.85, 90.092, 13.5, 3.467],
   ],
   10: [["https://pub-b087a9a8256a4a79a4c2272b6883f1cd.r2.dev/brand-film-1080p.mp4", 46.125, 70.817, 13.5, 3.467]],
   12: [["https://www.thewhitetusker.com/", 43.811, 67.867, 15.75, 4.267]],
